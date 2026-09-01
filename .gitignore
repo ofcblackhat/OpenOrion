@@ -1,5 +1,16 @@
-# OpenOrion Git Ignore
+# Local configurations and IDE files
+.codex/
+.thoth/
+.vscode/
+.idea/
+.mcp.json
+opencode.json
+mcp.json
+
+# Python and temp files
 *.py
+*.pyc
+__pycache__/
 *.log
 *.tmp
 .DS_Store
