@@ -92,23 +92,25 @@ if ! docker info 2>/dev/null | grep -q "Swarm: active"; then
 fi
 
 # 6. Carregar o motor OpenOrion e os Extras
-echo -e "$ciano[5/6] Preparando motor OpenOrion e templates offline...$reset"
+echo -e "$ciano[5/6] Baixando a versão mais recente do OpenOrion e templates offline...$reset"
 
-if [ -f "./openorion.sh" ]; then
-    echo -e "$verde[OK] openorion.sh local detectado.$reset"
-elif [ -f "../openorion.sh" ]; then
-    cp "../openorion.sh" ./openorion.sh
-    echo -e "$verde[OK] openorion.sh copiado do diretório superior.$reset"
-else
-    echo -e "$ciano[i] Baixando openorion.sh do repositório...$reset"
-    curl -sSL "${REPO_URL}/openorion.sh" -o "./openorion.sh" || {
-        echo -e "$vermelho[!] Falha ao baixar via raw. Tentando clone do repositório...$reset"
-        git clone --depth 1 "$GIT_REPO" /tmp/openorion_repo > /dev/null 2>&1 || true
-        if [ -f "/tmp/openorion_repo/openorion.sh" ]; then
-            cp -r /tmp/openorion_repo/* "$INSTALL_DIR/"
-            rm -rf /tmp/openorion_repo
-        fi
-    }
+# Baixar sempre a versão mais recente do motor para garantir atualizações
+curl -sSL "${REPO_URL}/openorion.sh" -o "./openorion.sh" || {
+    echo -e "$vermelho[!] Falha ao baixar via raw. Tentando clone do repositório...$reset"
+    git clone --depth 1 "$GIT_REPO" /tmp/openorion_repo > /dev/null 2>&1 || true
+    if [ -f "/tmp/openorion_repo/openorion.sh" ]; then
+        cp -r /tmp/openorion_repo/* "$INSTALL_DIR/"
+        rm -rf /tmp/openorion_repo
+    fi
+}
+
+# Sincronizar extras se não existirem
+if [ ! -d "./extras" ]; then
+    git clone --depth 1 "$GIT_REPO" /tmp/openorion_repo > /dev/null 2>&1 || true
+    if [ -d "/tmp/openorion_repo/extras" ]; then
+        cp -r /tmp/openorion_repo/extras "$INSTALL_DIR/"
+        rm -rf /tmp/openorion_repo
+    fi
 fi
 
 # Garantir permissão de execução
