@@ -53,10 +53,10 @@ direitos_setup() {
     echo -e "$verde=  $branco Este auto instalador OpenOrion foi desenvolvido para automatizar o deploy das principais   $verde  =\e[0m"
     echo -e "$verde=  $branco aplicações disponíveis no ecossistema open source. Todos os créditos aos criadores de   $verde  =\e[0m"
     echo -e "$verde=  $branco cada projeto. OpenOrion é distribuído livremente sob a Licença MIT.                     $verde  =\e[0m"
-    echo -e "$verde=  $branco Vocêê tem total liberdade de uso, modificação, redistribuição e uso comercial.         $verde  =\e[0m"
+    echo -e "$verde=  $branco Você tem total liberdade de uso, modificação, redistribuição e uso comercial.         $verde  =\e[0m"
     echo -e "$verde=  $branco Privacidade Absoluta: 0% Telemetria | 100% Local no seu próprio servidor.              $verde  =\e[0m"
     echo -e "$verde=                                                                                                 =\e[0m"
-    echo -e "$verde===================================================================================================\e[0m"
+    echo -e "$verde===================================================================================================$reset"
     echo ""
     echo ""
     read -p "Deseja continuar com a inicialização do OpenOrion? (Y/N): " choice
@@ -83,15 +83,15 @@ direitos_instalador() {
     echo -e "$amarelo=                                                                                                 =\e[0m"
     echo -e "$amarelo=  $branco Este auto instalador foi desenvolvido para auxiliar na instalação das principais aplicações $amarelo  =\e[0m"
     echo -e "$amarelo=  $branco  disponíveis no mercado open source. Já deixo todos os créditos aos desenvolvedores de cada $amarelo  =\e[0m"
-    echo -e "$amarelo=  $branco aplicação disponíveis aqui. Este Setup é licenciado sob a Licença MIT (MIT). Vocêê pode usar, $amarelo =\e[0m"
+    echo -e "$amarelo=  $branco aplicação disponíveis aqui. Este Setup é licenciado sob a Licença MIT (MIT). Você pode usar, $amarelo =\e[0m"
     echo -e "$amarelo=  $branco  copiar, modificar, integrar, publicar, distribuir e/ou vender cópias dos produtos finais,  $amarelo  =\e[0m"
-    echo -e "$amarelo=  $branco   mas deve sempre declarar que OpenOrion (admin@seudominio.com) é o autor original  $amarelo  =\e[0m"
-    echo -e "$amarelo=  $branco           destáes códigos e atribuir um link para https://seudominio.com/setup           $amarelo  =\e[0m"
+    echo -e "$amarelo=  $branco   mas deve sempre declarar que OpenOrion (contato@openorion.art.br) é o autor original  $amarelo  =\e[0m"
+    echo -e "$amarelo=  $branco           destes códigos e atribuir um link para https://openorion.art.br/setup           $amarelo  =\e[0m"
     echo -e "$amarelo=                                                                                                 =\e[0m"
     echo -e "$amarelo===================================================================================================\e[0m"
     echo ""
     echo ""
-    read -p "Ao digitar Y vocêê aceita e concorda com as orientações passadas acima (Y/N): " choice
+    read -p "Ao digitar Y você aceita e concorda com as orientações passadas acima (Y/N): " choice
     while true; do
         case $choice in
             Y|y)
@@ -100,7 +100,7 @@ direitos_instalador() {
             N|n)
                 clear
                 nome_finalizado
-                echo "Que pena que vocêê não concorda, então estáarei encerrando o instalador. Até mais."
+                echo "Que pena que você não concorda, então estarei encerrando o instalador. Até mais."
                 sleep 2
                 clear
                 exit 1
@@ -117,7 +117,7 @@ direitos_instalador() {
                 direitos_setup
                 ;;
         esac
-        read -p "Ao digitar Y vocêê aceita e concorda com as orientações passadas acima (Y/N): " choice
+        read -p "Ao digitar Y você aceita e concorda com as orientações passadas acima (Y/N): " choice
     done
 }
 
@@ -125,9 +125,9 @@ direitos_instalador() {
 info_credenciais(){ 
     echo -e "$amarelo===================================================================================================\e[0m"
     echo -e "$amarelo=                                                                                                 =\e[0m"
-    echo -e "$amarelo=  $branco A partir da versão 2.5.0 destáe Setup foi implementado uma função para realizar deploy dentro $amarelo =\e[0m"
-    echo -e "$amarelo=  $branco   do proprio portainer através de uma requisição api. Para que estáa nova função funcione em  $amarelo =\e[0m"
-    echo -e "$amarelo=  $branco suas próximas instalações, vocêê precisará informar às credenciais de acesso do seu portainer $amarelo =\e[0m"
+    echo -e "$amarelo=  $branco A partir da versão 2.5.0 deste Setup foi implementado uma função para realizar deploy dentro $amarelo =\e[0m"
+    echo -e "$amarelo=  $branco   do proprio portainer através de uma requisição api. Para que esta nova função funcione em  $amarelo =\e[0m"
+    echo -e "$amarelo=  $branco suas proximas instalações, você precisará informar às credenciais de acesso do seu portainer $amarelo =\e[0m"
     echo -e "$amarelo=                                                                                                 =\e[0m"
     echo -e "$amarelo===================================================================================================\e[0m"
     echo ""
@@ -145,7 +145,7 @@ creditos_msg() {
     echo -e "$verde=                                                                                                 $verde=\e[0m"
     echo -e "$verde=               $branco Deploy concluído com sucesso no seu ambiente Traefik / Docker Swarm!             $verde=\e[0m"
     echo -e "$verde=                                                                                                 $verde=\e[0m"
-    echo -e "$verde===================================================================================================\e[0m"
+    echo -e "$verde===================================================================================================$reset"
     echo ""
 }
 
@@ -168,12 +168,12 @@ preencha_as_info() {
     echo ""
 }
 
-## Mensagem pedindo para verificar se as informações estáão certas
+## Mensagem pedindo para verificar se as informações estão certas
 
 conferindo_as_info() {
     echo -e "$amarelo===================================================================================================\e[0m"
     echo -e "$amarelo=                                                                                                 $amarelo=\e[0m"
-    echo -e "$amarelo=                          $branco Verifique se os dados abaixo estáão certos                            $amarelo=\e[0m"
+    echo -e "$amarelo=                          $branco Verifique se os dados abaixos estão certos                            $amarelo=\e[0m"
     echo -e "$amarelo=                                                                                                 $amarelo=\e[0m"
     echo -e "$amarelo===================================================================================================\e[0m"
     echo ""
@@ -244,9 +244,9 @@ instalado_msg() {
     echo ""
 }
 
-## Mensagem de Testáando
+## Mensagem de Testando
 
-nome_testáando() {
+nome_testando() {
     clear
     echo ""
     echo -e "$branco               ████████╗███████╗███████╗████████╗ █████╗ ███╗   ██╗██████╗  ██████╗ \e[0m"
@@ -327,9 +327,9 @@ nome_menu() {
     echo ""
 }
 
-## Titulo Testáe de Email [0]
+## Titulo Teste de Email [0]
 
-nome_testáeemail() {
+nome_testeemail() {
   clear
   echo ""
   echo -e "$branco                            ████████╗███████╗███████╗████████╗███████╗        \e[0m"  
@@ -795,8 +795,8 @@ nome_odoo() {
     echo ""
 }
 
-## Titulo Chatwoot Nestáãor [26]
-nome_chatwoot_nestáãor(){
+## Titulo Chatwoot Nestor [26]
+nome_chatwoot_nestor(){
     clear
     echo ""
     echo -e "$branco               ██████╗██╗  ██╗ █████╗ ████████╗██╗    ██╗ ██████╗  ██████╗ ████████╗\e[0m"
@@ -2000,7 +2000,7 @@ nome_evolution_go(){
 
 ## Titulo EvoCRM [98]
 
-nome_evocêrm(){
+nome_evocrm(){
     clear
     echo ""
     echo ""
@@ -2189,12 +2189,12 @@ nome_finalizado() {
 ## Menu de opções
 
 #menu_instalador(){
-#    echo -e "${amarelo}[ 00 ]${reset} - ${branco}Testáar SMTP                             ${verde}| ${reset}  ${amarelo}[ 21 ]${reset} - ${branco}Formbricks${reset}"
+#    echo -e "${amarelo}[ 00 ]${reset} - ${branco}Testar SMTP                             ${verde}| ${reset}  ${amarelo}[ 21 ]${reset} - ${branco}Formbricks${reset}"
 #    echo -e "${amarelo}[ 01 ]${reset} - ${branco}Traefik & Portainer                     ${verde}| ${reset}  ${amarelo}[ 22 ]${reset} - ${branco}NocoDB${reset}"
 #    echo -e "${amarelo}[ 02 ]${reset} - ${branco}Chatwoot                                ${verde}| ${reset}  ${amarelo}[ 23 ]${reset} - ${branco}Langfuse${reset}"
 #    echo -e "${branco}  '-->${amarelo}[ 2.1 ]${reset} - ${branco}Chatwoot (ARM)                   ${verde}| ${reset}  ${amarelo}[ 24 ]${reset} - ${branco}Metabase${reset}"
 #    echo -e "${amarelo}[ 03 ]${reset} -  ${branco}Evolution API                          ${verde}| ${reset}  ${amarelo}[ 25 ]${reset} - ${branco}Odoo${reset}"
-#    echo -e "${branco}  '-->${amarelo}[ 3.1 ]${reset} - ${branco}Evolution API (ARM)              ${verde}| ${reset}  ${amarelo}[ 26 ]${reset} - ${branco}Chatwoot Nestáãor${reset}"
+#    echo -e "${branco}  '-->${amarelo}[ 3.1 ]${reset} - ${branco}Evolution API (ARM)              ${verde}| ${reset}  ${amarelo}[ 26 ]${reset} - ${branco}Chatwoot Nestor${reset}"
 #    echo -e "${amarelo}[ 04 ]${reset} - ${branco}MinIO                                   ${verde}| ${reset}  ${amarelo}[ 27 ]${reset} - ${branco}Uno API${reset}"
 #    echo -e "${amarelo}[ 05 ]${reset} - ${branco}Typebot                                 ${verde}| ${reset}  ${amarelo}[ 28 ]${reset} - ${branco}N8N + Nodes Quepasa $vermelho[OFF]${reset}"
 #    echo -e "${amarelo}[ 06 ]${reset} - ${branco}N8N                                     ${verde}| ${reset}  ${amarelo}[ 29 ]${reset} - ${branco}Quepasa API $vermelho[OFF]${reset}"
@@ -2226,7 +2226,7 @@ menu_instalador() {
 }
 
 menu_instalador_pg_1(){
-    echo -e "${amarelo}[ 00 ]${reset} - ${branco}Testáar SMTP                            ${verde}| ${reset}  ${amarelo}[ 23 ]${reset} - ${branco}Langfuse ${verde}[1/1] ${reset}"
+    echo -e "${amarelo}[ 00 ]${reset} - ${branco}Testar SMTP                            ${verde}| ${reset}  ${amarelo}[ 23 ]${reset} - ${branco}Langfuse ${verde}[1/1] ${reset}"
     echo -e "${amarelo}[ 01 ]${reset} - ${branco}Traefik & Portainer ${verde}[1/1]${reset}              ${verde}| ${reset}  ${amarelo}[ 24 ]${reset} - ${branco}Metabase ${verde}[1/1] ${reset}"
     echo -e "${amarelo}[ 02 ]${reset} - ${branco}Chatwoot ${verde}[2/2]${reset}                         ${verde}| ${reset}  ${amarelo}[ 25 ]${reset} - ${branco}Odoo ${verde}[2/2] ${reset}"
     echo -e "${amarelo}[ 03 ]${reset} - ${branco}Evolution API ${verde}[1/1]${reset}                    ${verde}| ${reset}  ${amarelo}[ 26 ]${reset} - ${branco}Uno API ${verde}[1/1] ${reset}"
@@ -2315,7 +2315,7 @@ menu_instalador_pg_3(){
 menu_comandos(){
   ## Portainer
   echo -e "> ${verde}Gerenciamento de Serviços:${reset}"
-  echo -e "${branco} • ${amarelo}portainer.restáart${reset} - ${branco}Reinicia o Portainer${reset}"
+  echo -e "${branco} • ${amarelo}portainer.restart${reset} - ${branco}Reinicia o Portainer${reset}"
   echo -e "${branco} • ${amarelo}portainer.reset${reset} - ${branco}Reseta a senha do Portainer${reset}"
   echo -e "${branco} • ${amarelo}portainer.update${reset} - ${branco}Atualiza o Portainer${reset}"
   echo -e "${branco} • ${amarelo}traefik.update${reset} - ${branco}Atualiza o Traefik${reset}"
@@ -2418,7 +2418,7 @@ recursos() {
         echo -e "Ops, parece que o seu servidor não atende os requisitos mínimos dessa aplicação."
         echo -e "Esse serviço precisa de \e[32m$vcpu_requerido vCPU${reset} e \e[32m$ram_requerido Gb RAM${reset}."
         echo -e "Atualmente, seu servidor possui apenas: \e[32m$vcpu_disponivel vCPU${reset} com \e[32m$ram_disponivel Gb RAM${reset}."
-        echo -e "Vocêê pode ter problemas de desempenho, falhas na execução ou problemas na instalação."
+        echo -e "Você pode ter problemas de desempenho, falhas na execução ou problemas na instalação."
 
         echo ""
         read -p "Deseja continuar mesmo assim? (y/n): " escolha
@@ -2571,10 +2571,10 @@ stack_editavel(){
         echo "9/10 - [ OFF ] - Erro ao pegar ID do Swarm"
     fi
 
-    ## Testáa o Swarm
+    ## Testa o Swarm
     SWARM_STATUS=$(docker info --format '{{.Swarm.LocalNodeState}}')
     if [ "$SWARM_STATUS" != "active" ]; then
-        echo "Erro: Docker Swarm não estáá ativo."
+        echo "Erro: Docker Swarm não está ativo."
         exit 1
     fi
 
@@ -2637,7 +2637,7 @@ criar_arquivo() {
     nome_credenciais
     echo -e "\e[97mPasso$amarelo 1/3\e[0m"
     #echo -e "\e[97mObs: Coloque o https:// antes do link do portainer\e[0m"
-    read -p "Digite a Url do Portainer (ex: portainer.seudominio.com): " PORTAINER_URL
+    read -p "Digite a Url do Portainer (ex: portainer.openorion.art.br): " PORTAINER_URL
     echo ""
 
     echo -e "\e[97mPasso$amarelo 2/3\e[0m"
@@ -2655,9 +2655,9 @@ criar_arquivo() {
 
 ## Função para verificar os campos do arquivo de dados do Portainer
 verificar_campos() {
-    PORTAINER_URL=$(grep -oP '(?<=Dominio do portainer: ).*' /root/dados_vps/dados_portainer)
-    USUARIO=$(grep -oP '(?<=Usuario: ).*' /root/dados_vps/dados_portainer)
-    SENHA=$(grep -oP '(?<=Senha: ).*' /root/dados_vps/dados_portainer)
+    PORTAINER_URL=$(grep 'Dominio do portainer: ' /root/dados_vps/dados_portainer | awk -F'Dominio do portainer: ' '{print $2}')
+    USUARIO=$(grep 'Usuario: ' /root/dados_vps/dados_portainer | awk -F'Usuario: ' '{print $2}')
+    SENHA=$(grep 'Senha: ' /root/dados_vps/dados_portainer | awk -F'Senha: ' '{print $2}')
 
     ## se por acaso não tiver login nem senha lá vem para ca
     if [ -z "$USUARIO" ] || [ -z "$SENHA" ]; then
@@ -2665,7 +2665,7 @@ verificar_campos() {
         nome_credenciais
         echo -e "\e[97mPasso$amarelo 1/3\e[0m"
         #echo -e "\e[97mObs: Coloque o https:// antes do link do portainer\e[0m"
-        read -p "Digite a Url do Portainer (ex: portainer.seudominio.com): " PORTAINER_URL
+        read -p "Digite a Url do Portainer (ex: portainer.openorion.art.br): " PORTAINER_URL
         echo ""
     
         echo -e "\e[97mPasso$amarelo 2/3\e[0m"
@@ -2679,13 +2679,13 @@ verificar_campos() {
 
         ATUALIZAR="true" ## Verificar se já existe TOKEN no arquivo
         verificar_token "$PORTAINER_URL" "$USUARIO" "$SENHA" true
-    ## Caso o usuario e senha estáiver como "Precisa criar dentro do portainer" como o arquivo oficial vem para ca
+    ## Caso o usuario e senha estiver como "Precisa criar dentro do portainer" como o arquivo oficial vem para ca
     elif [ "$USUARIO" == "Precisa criar dentro do portainer" ] || [ "$SENHA" == "Precisa criar dentro do portainer" ]; then
         
         nome_credenciais
         echo -e "\e[97mPasso$amarelo 1/3\e[0m"
         #echo -e "\e[97mObs: Coloque o https:// antes do link do portainer\e[0m"
-        read -p "Digite a Url do Portainer (ex: portainer.seudominio.com): " PORTAINER_URL
+        read -p "Digite a Url do Portainer (ex: portainer.openorion.art.br): " PORTAINER_URL
         echo ""
     
         echo -e "\e[97mPasso$amarelo 2/3\e[0m"
@@ -2715,7 +2715,7 @@ verificar_token() {
     while [ $TENTATIVAS -lt $MAX_TENTATIVAS ]; do
         TENTATIVAS=$((TENTATIVAS+1))
 
-        #echo -e "Dados a serem testáados:"
+        #echo -e "Dados a serem testados:"
         #echo "Link do Portainer: $PORTAINER_URL"
         #echo "Usuário: $USUARIO"
         #echo "Senha: $SENHA"
@@ -2739,7 +2739,7 @@ verificar_token() {
                 erro_msg
                 echo ""
                 echo ""
-                echo "              Não foi possível autenticar suas credenciais. Por favor tente novamente"
+                echo "              Não foi possivel autenticar suas credenciais. Por favor tente novamente"
                 echo "                                           Tentativa: $TENTATIVAS/$MAX_TENTATIVAS"
     
                 sleep 3
@@ -2754,7 +2754,7 @@ verificar_token() {
                 nome_credenciais
                 echo -e "\e[97mPasso$amarelo 1/3\e[0m"
                 #echo -e "\e[97mObs: Coloque o https:// antes do link do portainer\e[0m"
-                read -p "Digite a Url do Portainer (ex: portainer.seudominio.com): " PORTAINER_URL
+                read -p "Digite a Url do Portainer (ex: portainer.openorion.art.br): " PORTAINER_URL
                 echo ""
             
                 echo -e "\e[97mPasso$amarelo 2/3\e[0m"
@@ -2772,7 +2772,7 @@ verificar_token() {
 
                 echo ""
                 echo ""
-                echo "                         Vocêê atingiu o limite maximo de tentativas ($TENTATIVAS/$MAX_TENTATIVAS)."
+                echo "                         Você atingiu o limite maximo de tentativas ($TENTATIVAS/$MAX_TENTATIVAS)."
                 echo "                         Tente novamente quando lembrar da sua credencial!"
                 echo 5
                 clear
@@ -2791,9 +2791,7 @@ atualizar_arquivo() {
 telemetria() {
     # OpenOrion: Telemetria desativada. Zero tracking. 100% privado.
     :
-}' > /dev/null 2>&1
 }
-
 ## // ## // ## // ## // ## // ## // ## // ## //## // ## // ## // ## // ## // ## // ## // ## // ##
 ##                                         OPENORION ENGINE                                        ##
 ## // ## // ## // ## // ## // ## // ## // ## //## // ## // ## // ## // ## // ## // ## // ## // ##
@@ -2803,12 +2801,12 @@ telemetria() {
 
 ## Verifica se existe Docker, Portainer e Traefik na VPS
 verificar_docker_e_portainer_traefik() {
-    ## Verifica se o Docker estáá instalado
+    ## Verifica se o Docker está instalado
     if ! command -v docker &> /dev/null; then
         clear
         erro_msg
-        echo -e "Ops, parece que vocêê não instalou a opção \e[32m[1] Traefik e Portainer${reset} ${branco}do nosso instalador.${reset}"
-        echo "Instale antes de tentar instalar estáa aplicação."
+        echo -e "Ops, parece que você não instalou a opção \e[32m[1] Traefik e Portainer${reset} ${branco}do nosso instalador.${reset}"
+        echo "Instale antes de tentar instalar esta aplicação."
 
         echo ""
         echo "Voltando ao menu em 5 segundos."
@@ -2820,12 +2818,12 @@ verificar_docker_e_portainer_traefik() {
         return 1
     fi
 
-    ## Verifica se o Portainer estáá instalado
+    ## Verifica se o Portainer está instalado
     if ! docker ps -a --format "{{.Names}}" | grep -q "portainer"; then
         clear
         erro_msg
-        echo -e "Ops, parece que vocêê não instalou a opção \e[32m[1] Traefik e Portainer${reset} ${branco}do nosso instalador.${reset}"
-        echo "Instale antes de tentar instalar estáa aplicação."
+        echo -e "Ops, parece que você não instalou a opção \e[32m[1] Traefik e Portainer${reset} ${branco}do nosso instalador.${reset}"
+        echo "Instale antes de tentar instalar esta aplicação."
 
         echo ""
         echo "Voltando ao menu em 5 segundos."
@@ -2837,12 +2835,12 @@ verificar_docker_e_portainer_traefik() {
         return 1
     fi
 
-    ## Verificar se o Traefik estáá instalado
+    ## Verificar se o Traefik está instalado
     if ! docker ps -a --format "{{.Names}}" | grep -q "traefik"; then
         clear
         erro_msg
-        echo -e "Ops, parece que vocêê não instalou a opção \e[32m[1] Traefik e Portainer${reset} ${branco}do nosso instalador.${reset}"
-        echo "Instale antes de tentar instalar estáa aplicação."
+        echo -e "Ops, parece que você não instalou a opção \e[32m[1] Traefik e Portainer${reset} ${branco}do nosso instalador.${reset}"
+        echo "Instale antes de tentar instalar esta aplicação."
 
         echo ""
         echo "Voltando ao menu em 5 segundos."
@@ -2860,12 +2858,12 @@ verificar_docker_e_portainer_traefik() {
 ## Verifica se existe Minio
 verificar_antes_se_tem_minio() {
 
-    ## Verifica se o Portainer estáá instalado
+    ## Verifica se o Portainer está instalado
     if ! docker ps -a --format "{{.Names}}" | grep -q "minio"; then
         clear
         erro_msg
-        echo -e "Ops, parece que vocêê não instalou a opção \e[32m[ 4 ] - MinIO${reset} ${branco}do nosso instalador.${reset}"
-        echo "Instale antes de tentar instalar estáa aplicação."
+        echo -e "Ops, parece que você não instalou a opção \e[32m[ 4 ] - MinIO${reset} ${branco}do nosso instalador.${reset}"
+        echo "Instale antes de tentar instalar esta aplicação."
 
         echo ""
         echo "Voltando ao menu em 5 segundos."
@@ -2882,12 +2880,12 @@ verificar_antes_se_tem_minio() {
 
 verificar_antes_se_tem_clickhouse() {
   
-  ## Verifica se o Portainer estáá instalado
+  ## Verifica se o Portainer está instalado
     if ! docker ps -a --format "{{.Names}}" | grep -q "clickhouse"; then
         clear
         erro_msg
-        echo -e "Ops, parece que vocêê não instalou a opção \e[32m[ 58 ] - ClickHouse${reset} ${branco}do nosso instalador.${reset}"
-        echo "Instale antes de tentar instalar estáa aplicação."
+        echo -e "Ops, parece que você não instalou a opção \e[32m[ 58 ] - ClickHouse${reset} ${branco}do nosso instalador.${reset}"
+        echo "Instale antes de tentar instalar esta aplicação."
 
         echo ""
         echo "Voltando ao menu em 5 segundos."
@@ -2905,12 +2903,12 @@ verificar_antes_se_tem_clickhouse() {
 ## Verifica se existe rabbitMQ
 verificar_antes_se_tem_rabbitmq() {
 
-    ## Verifica se o Portainer estáá instalado
+    ## Verifica se o Portainer está instalado
     if ! docker ps -a --format "{{.Names}}" | grep -q "rabbitmq"; then
         clear
         erro_msg
-        echo -e "Ops, parece que vocêê não instalou a opção \e[32m[ 14 ] - RabbitMQ${reset} ${branco}do nosso instalador.${reset}"
-        echo "Instale antes de tentar instalar estáa aplicação."
+        echo -e "Ops, parece que você não instalou a opção \e[32m[ 14 ] - RabbitMQ${reset} ${branco}do nosso instalador.${reset}"
+        echo "Instale antes de tentar instalar esta aplicação."
 
         echo ""
         echo "Voltando ao menu em 5 segundos."
@@ -2927,12 +2925,12 @@ verificar_antes_se_tem_rabbitmq() {
 
 ## Verifica se existe Minio RabbitMQ e Chatwoot 
 verificar_antes_se_tem_minio_e_rabbitmq_e_chatwoot() {
-    ## Verifica se o minio estáá instalado
+    ## Verifica se o minio está instalado
     if ! docker ps -a --format "{{.Names}}" | grep -q "minio"; then
         clear
         erro_msg
-        echo -e "Ops, parece que vocêê não instalou a opção \e[32m[ 4 ] - MinIO${reset} ${branco}do nosso instalador.${reset}"
-        echo "Instale antes de tentar instalar estáa aplicação."
+        echo -e "Ops, parece que você não instalou a opção \e[32m[ 4 ] - MinIO${reset} ${branco}do nosso instalador.${reset}"
+        echo "Instale antes de tentar instalar esta aplicação."
 
         echo ""
         echo "Voltando ao menu em 5 segundos."
@@ -2944,12 +2942,12 @@ verificar_antes_se_tem_minio_e_rabbitmq_e_chatwoot() {
         return 1
     fi
 
-    ## Verifica se o rabbitmq estáá instalado
+    ## Verifica se o rabbitmq está instalado
     if ! docker ps -a --format "{{.Names}}" | grep -q "rabbitmq"; then
         clear
         erro_msg
-        echo -e "Ops, parece que vocêê não instalou a opção \e[32m[ 14 ] - RabbitMQ${reset} ${branco}do nosso instalador.${reset}"
-        echo "Instale antes de tentar instalar estáa aplicação."
+        echo -e "Ops, parece que você não instalou a opção \e[32m[ 14 ] - RabbitMQ${reset} ${branco}do nosso instalador.${reset}"
+        echo "Instale antes de tentar instalar esta aplicação."
 
         echo ""
         echo "Voltando ao menu em 5 segundos."
@@ -2961,12 +2959,12 @@ verificar_antes_se_tem_minio_e_rabbitmq_e_chatwoot() {
         return 1
     fi
 
-    ## Verificar se o chatwoot estáá instalado
+    ## Verificar se o chatwoot está instalado
     if ! docker ps -a --format "{{.Names}}" | grep -q "chatwoot"; then
         clear
         erro_msg
-        echo -e "Ops, parece que vocêê não instalou a opção \e[32m[ 2 ] - Chatwoot${reset} ou  \e[32m[ 26 ] - Chatwoot Nestáãor (ft. Francis) ${branco}do nosso instalador.${reset}"
-        echo "Instale antes de tentar instalar estáa aplicação."
+        echo -e "Ops, parece que você não instalou a opção \e[32m[ 2 ] - Chatwoot${reset} ou  \e[32m[ 26 ] - Chatwoot Nestor (ft. Francis) ${branco}do nosso instalador.${reset}"
+        echo "Instale antes de tentar instalar esta aplicação."
 
         echo ""
         echo "Voltando ao menu em 5 segundos."
@@ -2983,12 +2981,12 @@ verificar_antes_se_tem_minio_e_rabbitmq_e_chatwoot() {
 
 ## Verifica se existe Minio e Qdrant
 verificar_antes_se_tem_minio_e_qdrant() {
-    ## Verifica se o minio estáá instalado
+    ## Verifica se o minio está instalado
     if ! docker ps -a --format "{{.Names}}" | grep -q "minio"; then
         clear
         erro_msg
-        echo -e "Ops, parece que vocêê não instalou a opção \e[32m[ 4 ] - MinIO${reset} ${branco}do nosso instalador.${reset}"
-        echo "Instale antes de tentar instalar estáa aplicação."
+        echo -e "Ops, parece que você não instalou a opção \e[32m[ 4 ] - MinIO${reset} ${branco}do nosso instalador.${reset}"
+        echo "Instale antes de tentar instalar esta aplicação."
 
         echo ""
         echo "Voltando ao menu em 5 segundos."
@@ -3000,12 +2998,12 @@ verificar_antes_se_tem_minio_e_qdrant() {
         return 1
     fi
 
-    ## Verifica se o rabbitmq estáá instalado
+    ## Verifica se o rabbitmq está instalado
     if ! docker ps -a --format "{{.Names}}" | grep -q "qdrant"; then
         clear
         erro_msg
-        echo -e "Ops, parece que vocêê não instalou a opção \e[32m[ 19 ] - Qdrant${reset} ${branco}do nosso instalador.${reset}"
-        echo "Instale antes de tentar instalar estáa aplicação."
+        echo -e "Ops, parece que você não instalou a opção \e[32m[ 19 ] - Qdrant${reset} ${branco}do nosso instalador.${reset}"
+        echo "Instale antes de tentar instalar esta aplicação."
 
         echo ""
         echo "Voltando ao menu em 5 segundos."
@@ -3023,12 +3021,12 @@ verificar_antes_se_tem_minio_e_qdrant() {
 ## Verifica se existe Minio
 verificar_antes_se_tem_mongo() {
 
-    ## Verifica se o Portainer estáá instalado
+    ## Verifica se o Portainer está instalado
     if ! docker ps -a --format "{{.Names}}" | grep -q "mongodb"; then
         clear
         erro_msg
-        echo -e "Ops, parece que vocêê não instalou a opção \e[32m[ 13 ] - MongoDB${reset} ${branco}do nosso instalador.${reset}"
-        echo "Instale antes de tentar instalar estáa aplicação."
+        echo -e "Ops, parece que você não instalou a opção \e[32m[ 13 ] - MongoDB${reset} ${branco}do nosso instalador.${reset}"
+        echo "Instale antes de tentar instalar esta aplicação."
 
         echo ""
         echo "Voltando ao menu em 5 segundos."
@@ -3046,12 +3044,12 @@ verificar_antes_se_tem_mongo() {
 ## Verifica se existe Qdrant
 verificar_antes_se_tem_qdrant() {
 
-    ## Verifica se o Portainer estáá instalado
+    ## Verifica se o Portainer está instalado
     if ! docker ps -a --format "{{.Names}}" | grep -q "qdrant"; then
         clear
         erro_msg
-        echo -e "Ops, parece que vocêê não instalou a opção \e[32m[ 19 ] - Qdrant${reset} ${branco}do nosso instalador.${reset}"
-        echo "Instale antes de tentar instalar estáa aplicação."
+        echo -e "Ops, parece que você não instalou a opção \e[32m[ 19 ] - Qdrant${reset} ${branco}do nosso instalador.${reset}"
+        echo "Instale antes de tentar instalar esta aplicação."
 
         echo ""
         echo "Voltando ao menu em 5 segundos."
@@ -3116,7 +3114,7 @@ verificar_container_minio() {
     fi
 }
 
-## Esperar Postgres estáar pronto
+## Esperar Postgres estar pronto
 
 wait_for_postgres() {
     dados
@@ -3150,7 +3148,7 @@ wait_for_pgvector() {
     done
 }
 
-## Verificar se o Traefik estáa online
+## Verificar se o Traefik esta online
 
 wait_30_sec() {
     sleep 30
@@ -3159,7 +3157,7 @@ wait_30_sec() {
 #wait_stack() {
 #    echo "Este processo pode demorar um pouco. Se levar mais de 5 minutos, cancele, pois algo deu errado."
 #    while true; do
-#        # Verifica se o serviço trarik estáá ativo
+#        # Verifica se o serviço trarik está ativo
 #        if docker service ls --filter "name=$1" | grep "1/1"; then
 #            sleep 10
 #            echo ""
@@ -3184,7 +3182,7 @@ wait_stack() {
         for service in "${!services_status[@]}"; do
             if docker service ls --filter "name=$service" | grep -q "1/1"; then
                 if [ "${services_status["$service"]}" != "ativo" ]; then
-                    echo -e "🟢 O serviço \e[32m$service\e[0m estáá online."
+                    echo -e "🟢 O serviço \e[32m$service\e[0m está online."
                     services_status["$service"]="ativo"
                 fi
             else
@@ -3195,7 +3193,7 @@ wait_stack() {
             fi
         done
 
-        # Sai do loop quando todos os serviços estáiverem ativos
+        # Sai do loop quando todos os serviços estiverem ativos
         if $all_active; then
             sleep 1
             break
@@ -3227,7 +3225,7 @@ pull() {
                 echo "Erro ao baixar $image. Tentando novamente..."
                 
                 # Verifica se o erro é relacionado a limite de taxa
-                if docker pull "$image" 2>&1 | grep -q "toomanyrequestás"; then
+                if docker pull "$image" 2>&1 | grep -q "toomanyrequests"; then
                     echo "Limite de taxa atingido no Docker Hub. Faça login para continuar."
                     docker login
                 else
@@ -3300,7 +3298,7 @@ pegar_user_senha_rabbitmq() {
         if [ -f /root/rabbitmq.yaml ]; then
             user_rabbit_mqs=$(grep "RABBITMQ_DEFAULT_USER" /root/rabbitmq.yaml | awk -F ': ' '{print $2}')
             senha_rabbit_mqs=$(grep "RABBITMQ_DEFAULT_PASS" /root/rabbitmq.yaml | awk -F ': ' '{print $2}')
-            url_rabbit_mqs=$(grep "traefik.http.routers.rabbitmq.rule" /root/rabbitmq.yaml | awk -F'[`]' '{print $2}')
+            url_rabbit_mqs=$(grep "traefik.http.routers.rabbitmq.rule" /root/rabbitmq.yaml | awk -F "Host" '{print $2}' | sed 's/[^a-zA-Z0-9.-]//g')
             break
         else
             sleep 5
@@ -3563,63 +3561,63 @@ validar_senha() {
 ##    ██║   ███████╗███████║   ██║   ███████╗    ███████║██║ ╚═╝ ██║   ██║   ██║     
 ##    ╚═╝   ╚══════╝╚══════╝   ╚═╝   ╚══════╝    ╚══════╝╚═╝     ╚═╝   ╚═╝   ╚═╝     
                                                                                   
-ferramenta_testáeemail() {
+ferramenta_testeemail() {
     clear
     dados
-    nome_testáeemail
+    nome_testeemail
     preencha_as_info
 
     while true; do
         echo -e "\e[97mPasso${amarelo} 1/5\e[0m"
-        echo -en "\e[33mDigite o endereço de Email (ex: admin@seudominio.com): \e[0m"
-        read -r email_testáe
+        echo -en "\e[33mDigite o endereço de Email (ex: contato@openorion.art.br): \e[0m"
+        read -r email_teste
         echo ""
 
         echo -e "\e[97mPasso${amarelo} 2/5\e[0m"
         echo -e "${amarelo}--> Caso não tiver um usuário do email, use o próprio email abaixo"
-        echo -en "\e[33mDigite o usuário de Email (ex: openorion ou admin@seudominio.com): \e[0m"
-        read -r user_testáe
+        echo -en "\e[33mDigite o usuário de Email (ex: openorion ou contato@openorion.art.br): \e[0m"
+        read -r user_teste
         echo ""
 
         echo -e "\e[97mPasso${amarelo} 3/5\e[0m"
-        echo -e "${amarelo}--> Sem caracteres especiais: !#$ | Se estáiver usando Gmail, use a senha de app"
+        echo -e "${amarelo}--> Sem caracteres especiais: !#$ | Se estiver usando Gmail, use a senha de app"
         echo -en "\e[33mDigite a Senha do email (ex: @Senha123_): \e[0m"
-        read -r senha_testáe
+        read -r senha_teste
         echo ""
 
         echo -e "\e[97mPasso${amarelo} 4/5\e[0m"
         echo -en "\e[33mDigite o Host SMTP (ex: smtp.hostinger.com): \e[0m"
-        read -r host_testáe
+        read -r host_teste
         echo ""
 
         echo -e "\e[97mPasso${amarelo} 5/5\e[0m"
         echo -en "\e[33mDigite a Porta SMTP (ex: 465): \e[0m"
-        read -r porta_testáe
+        read -r porta_teste
         echo ""
 
         clear
-        nome_testáeemail
+        nome_testeemail
         conferindo_as_info
 
-        echo -e "\e[33mEmail SMTP: \e[97m$email_testáe\e[0m"
+        echo -e "\e[33mEmail SMTP: \e[97m$email_teste\e[0m"
         echo ""
-        echo -e "\e[33mUsuário SMTP: \e[97m$user_testáe\e[0m"
+        echo -e "\e[33mUsuário SMTP: \e[97m$user_teste\e[0m"
         echo ""
-        echo -e "\e[33mSenha SMTP: \e[97m$senha_testáe\e[0m"
+        echo -e "\e[33mSenha SMTP: \e[97m$senha_teste\e[0m"
         echo ""
-        echo -e "\e[33mHost SMTP: \e[97m$host_testáe\e[0m"
+        echo -e "\e[33mHost SMTP: \e[97m$host_teste\e[0m"
         echo ""
-        echo -e "\e[33mPorta SMTP: \e[97m$porta_testáe\e[0m"
+        echo -e "\e[33mPorta SMTP: \e[97m$porta_teste\e[0m"
         echo ""
 
-        read -p "As respostas estáão corretas? (Y/N): " confirmacao
+        read -p "As respostas estão corretas? (Y/N): " confirmacao
         if [[ "$confirmacao" =~ ^[Yy]$ ]]; then
             clear
-            nome_testáando
+            nome_testando
             break
         else
             clear
-            nome_testáeemail
+            nome_testeemail
             preencha_as_info
         fi
     done
@@ -3631,42 +3629,42 @@ ferramenta_testáeemail() {
     sudo apt-get update > /dev/null 2>&1
     sudo apt-get install swaks -y > /dev/null 2>&1
 
-    msg="Se vocêê estáá lendo isso, o seu SMTP estáá funcionando =D.
+    msg="Se você está lendo isso, o seu SMTP está funcionando =D.
 By: OpenOrion"
 
-    if swaks --to "$email_testáe" --from "$email_testáe" \
-             --server "$host_testáe" --port "$porta_testáe" \
-             --auth LOGIN --auth-user "$user_testáe" \
-             --auth-password "$senha_testáe" --tls \
-             --header "Subject: ✅ Testáe de SMTP - OpenOrion" \
+    if swaks --to "$email_teste" --from "$email_teste" \
+             --server "$host_teste" --port "$porta_teste" \
+             --auth LOGIN --auth-user "$user_teste" \
+             --auth-password "$senha_teste" --tls \
+             --header "Subject: ✅ Teste de SMTP - OpenOrion" \
              --header "Content-Type: text/plain; charset=UTF-8" \
              --body "$msg"; then
 
         sleep 2
         clear
-        nome_testáeemail
-        echo -e "\e[32m[Resultado do Testáe SMTP]\e[0m"
+        nome_testeemail
+        echo -e "\e[32m[Resultado do Teste SMTP]\e[0m"
         echo ""
-        echo -e "\e[33mOs dados informados \e[92mestáão funcionando corretamente\e[33m.\e[0m"
+        echo -e "\e[33mOs dados informados \e[92mestão funcionando corretamente\e[33m.\e[0m"
 
     else
         sleep 2
         clear
-        nome_testáeemail
-        echo -e "\e[32m[Resultado do Testáe SMTP]\e[0m"
+        nome_testeemail
+        echo -e "\e[32m[Resultado do Teste SMTP]\e[0m"
         echo ""
-        echo -e "\e[33mOs dados informados \e[91mNÃO estáão funcionando corretamente\e[33m. Por favor, verifique os dados e tente novamente.\e[0m"
+        echo -e "\e[33mOs dados informados \e[91mNÃO estão funcionando corretamente\e[33m. Por favor, verifique os dados e tente novamente.\e[0m"
     fi
         echo ""
-        echo -e "\e[33mEmail SMTP: \e[97m$email_testáe\e[0m"
+        echo -e "\e[33mEmail SMTP: \e[97m$email_teste\e[0m"
         echo ""
-        echo -e "\e[33mUsuário SMTP: \e[97m$user_testáe\e[0m"
+        echo -e "\e[33mUsuário SMTP: \e[97m$user_teste\e[0m"
         echo ""
-        echo -e "\e[33mSenha SMTP: \e[97m$senha_testáe\e[0m"
+        echo -e "\e[33mSenha SMTP: \e[97m$senha_teste\e[0m"
         echo ""
-        echo -e "\e[33mHost SMTP: \e[97m$host_testáe\e[0m"
+        echo -e "\e[33mHost SMTP: \e[97m$host_teste\e[0m"
         echo ""
-        echo -e "\e[33mPorta SMTP: \e[97m$porta_testáe\e[0m"
+        echo -e "\e[33mPorta SMTP: \e[97m$porta_teste\e[0m"
 
     creditos_msg
 
@@ -3708,12 +3706,12 @@ nome_traefik_e_portainer
 ## Mostra mensagem para preencher informações
 preencha_as_info
 
-## Inicia um Loop até os dados estáarem certos
+## Inicia um Loop até os dados estarem certos
 while true; do
 
     ##Pergunta o Dominio para aplicação
     echo -e "\e[97mPasso$amarelo 1/6\e[0m"
-    echo -en "\e[33mDigite o Dominio para o Portainer (ex: portainer.seudominio.com): \e[0m" && read -r url_portainer
+    echo -en "\e[33mDigite o Dominio para o Portainer (ex: portainer.openorion.art.br): \e[0m" && read -r url_portainer
     echo ""
 
     ##Pergunta o Dominio para aplicação
@@ -3749,7 +3747,7 @@ while true; do
     
     ## Pergunta o Email para informações sobre o certificado
     echo -e "\e[97mPasso$amarelo 6/6\e[0m"
-    echo -en "\e[33mDigite um endereço de Email válido (ex: admin@seudominio.com): \e[0m" && read -r email_ssl
+    echo -en "\e[33mDigite um endereço de Email válido (ex: contato@openorion.art.br): \e[0m" && read -r email_ssl
     echo ""
 
     ## Limpa o termianl
@@ -3786,11 +3784,11 @@ while true; do
     echo ""
     echo ""
 
-    ## Pergunta se as respostas estáão corretas
-    read -p "As respostas estáão corretas? (Y/N): " confirmacao
+    ## Pergunta se as respostas estão corretas
+    read -p "As respostas estão corretas? (Y/N): " confirmacao
     if [ "$confirmacao" = "Y" ] || [ "$confirmacao" = "y" ]; then
 
-        ## Digitou Y para confirmar que as informações estáão corretas
+        ## Digitou Y para confirmar que as informações estão corretas
 
         ## Limpar o terminal
         clear
@@ -3802,7 +3800,7 @@ while true; do
         break
     else
 
-        ## Digitou N para dizer que as informações não estáão corretas.
+        ## Digitou N para dizer que as informações não estão corretas.
 
         ## Limpar o terminal
         clear
@@ -3822,9 +3820,9 @@ echo -e "\e[97m• INICIANDO A INSTALAÇÃO DO TRAEFIK \e[33m[1/9]\e[0m"
 echo ""
 sleep 1
 
-## Nestáe passo vamos estáar salvando os dados preenchidos anteriormente para que o instalador possa usar posteriormente na instalação de qualquer ferramenta.
+## Neste passo vamos estar salvando os dados preenchidos anteriormente para que o instalador possa usar posteriormente na instalação de qualquer ferramenta.
 
-## Garante que o usuario estáeja no /root/
+## Garante que o usuario esteja no /root/
 cd
 cd
 
@@ -3844,7 +3842,7 @@ cd dados_vps
 cat > dados_vps << EOL
 [DADOS DA VPS]
 
-Estes dados foram preenchidos na hora que vocêê foi instalar o Traefik e Portainer e
+Estes dados foram preenchidos na hora que você foi instalar o Traefik e Portainer e
 serão utilizados para realizar as instalações no do OpenOrion v.2
 
 Nome do Servidor: $nome_servidor
@@ -3858,7 +3856,7 @@ Link do Portainer: $url_portainer
 Obrigado por utilizar nosso AutoInstalador.
 Caso esse conteudo foi util, não deixe de apoiar nosso projeto.
 
-pix@seudominio.com
+pix@openorion.art.br
 
 Bebam água!
 EOL
@@ -3875,9 +3873,9 @@ echo -e "\e[97m• ATUALIZANDO E CONFIGURANDO A VPS \e[33m[2/9]\e[0m"
 echo ""
 sleep 1
 
-## Nestáe passo vamos estáar Atualizando e configurando a vps para conseguir rodar nosso setup
+## Neste passo vamos estar Atualizando e configurando a vps para conseguir rodar nosso setup
 
-## Todos os passo que estáão com "> /dev/null 2>&1" São para não mostrar os logs.
+## Todos os passo que estão com "> /dev/null 2>&1" São para não mostrar os logs.
 
 ## Fiz isso com o intuito de melhorar a visualização deixando o terminal apenas com os passos pré descritos
 
@@ -3946,7 +3944,7 @@ sleep 1
 
 telemetria Docker iniciado
 
-## Nesse passo vamos estáar instalando docker no modo swarm
+## Nesse passo vamos estar instalando docker no modo swarm
 
 
 #ip=$(curl -s ifconfig.me)
@@ -4019,7 +4017,7 @@ done
 if [ $attempt -gt $max_attempts ]; then
     echo "4/4 - [ FAIL ] - Não foi possível iniciar o Swarm após $max_attempts tentativas..."
     echo "Recomendo formatar a VPS e tentar novamente"
-    echo "Lembre-se que o primeiro requisito é estáar usando uma VPS Vazia."
+    echo "Lembre-se que o primeiro requisito é estar usando uma VPS Vazia."
     sleep 10
     exit 1
 else
@@ -4037,7 +4035,7 @@ echo -e "\e[97m• CRIANDO REDE INTERNA \e[33m[4/9]\e[0m"
 echo ""
 sleep 1
 
-## Nestáe passo vamos criar a rede interna para utilizar nas demais aplicações
+## Neste passo vamos criar a rede interna para utilizar nas demais aplicações
 
 docker network create --driver=overlay $nome_rede_interna > /dev/null 2>&1
 if [ $? -eq 0 ]; then
@@ -4054,10 +4052,10 @@ sleep 1
 
 telemetria Traefik iniciado
 
-## Nestáe passo vamos estáar criando a Stack yaml do traefik na pasta /root/
+## Neste passo vamos estar criando a Stack yaml do traefik na pasta /root/
 ## Isso possibilitará que o usuario consiga edita-lo posteriormente
 
-## Depois vamos instalar o traefik e verificar se estáa tudo certo.
+## Depois vamos instalar o traefik e verificar se esta tudo certo.
 
 ## Criando a stack traefik.yaml
 cat > traefik.yaml << EOL
@@ -4138,7 +4136,7 @@ if [ $? -eq 0 ]; then
     echo "1/2 - [ OK ] - Criando Stack"
 else
     echo "1/2 - [ OFF ] - Criando Stack"
-    echo "Ops, não foi possível criar a stack do Traefik"
+    echo "Ops, não foi possivel criar a stack do Traefik"
 fi
 
 docker stack deploy --prune --resolve-image always -c traefik.yaml traefik > /dev/null 2>&1
@@ -4146,7 +4144,7 @@ if [ $? -eq 0 ]; then
     echo "2/2 - [ OK ] - Deploy Stack"
 else
     echo "2/2 - [ OFF ] - Deploy Stack"
-    echo "Ops, não foi possível subir o Traefik."
+    echo "Ops, não foi possivel subir o Traefik."
 fi
 
 echo ""
@@ -4155,12 +4153,12 @@ echo -e "\e[97m• ESPERANDO O TRAEFIK ESTAR ONLINE \e[33m[6/9]\e[0m"
 echo ""
 sleep 1
 
-## Em testáe contra Rate Limit do Docker Hub
+## Em teste contra Rate Limit do Docker Hub
 pull ghcr.io/traefik/traefik:v3.5.3
 
 docker tag ghcr.io/traefik/traefik:v3.5.3 traefik/traefik:v3.5.3
 
-## Usa o serviço wait_stack "traefik" para verificar se o serviço estáa online
+## Usa o serviço wait_stack "traefik" para verificar se o serviço esta online
 wait_stack "traefik"
 
 telemetria Traefik finalizado
@@ -4174,10 +4172,10 @@ sleep 1
 
 telemetria Portainer iniciado
 
-## Nestáe passo vamos estáar criando a Stack yaml do Portainer na pasta /root/
+## Neste passo vamos estar criando a Stack yaml do Portainer na pasta /root/
 ## Isso possibilitará que o usuario consiga edita-lo posteriormente
 
-## Depois vamos instalar o Portainer e verificar se estáa tudo certo.
+## Depois vamos instalar o Portainer e verificar se esta tudo certo.
 
 ## Criando a stack portainer.yaml
 cat > portainer.yaml <<EOL
@@ -4187,7 +4185,7 @@ services:
 ## --------------------------- ORION --------------------------- ##
 
   agent:
-    image: portainer/agent:latestá ## Versão Agent do Portainer
+    image: portainer/agent:latest ## Versão Agent do Portainer
 
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
@@ -4204,7 +4202,7 @@ services:
 ## --------------------------- ORION --------------------------- ##
 
   portainer:
-    image: portainer/portainer-ce:latestá ## Versão do Portainer
+    image: portainer/portainer-ce:latest ## Versão do Portainer
     command: -H tcp://tasks.agent:9001 --tlsskipverify --no-setup-token
 
     volumes:
@@ -4245,7 +4243,7 @@ if [ $? -eq 0 ]; then
     echo "1/2 - [ OK ] - Criando Stack"
 else
     echo "1/2 - [ OFF ] - Criando Stack"
-    echo "Ops, não foi possível criar a stack do Portainer"
+    echo "Ops, não foi possivel criar a stack do Portainer"
 fi
 
 docker stack deploy --prune --resolve-image always -c portainer.yaml portainer > /dev/null 2>&1
@@ -4253,7 +4251,7 @@ if [ $? -eq 0 ]; then
     echo "2/2 - [ OK ] - Deploy Stack"
 else
     echo "2/2 - [ OFF ] - Deploy Stack"
-    echo "Ops, não foi possível Subir a stack do Portainer"
+    echo "Ops, não foi possivel Subir a stack do Portainer"
 fi
 
 echo ""
@@ -4262,9 +4260,9 @@ echo -e "\e[97m• ESPERANDO O PORTAINER ESTAR ONLINE \e[33m[8/9]\e[0m"
 echo ""
 sleep 1
 
-pull portainer/agent:latestá portainer/portainer-ce:latestá
+pull portainer/agent:latest portainer/portainer-ce:latest
 
-## Usa o serviço wait_portainer para verificar se o serviço estáa online
+## Usa o serviço wait_portainer para verificar se o serviço esta online
 wait_stack "portainer"
 
 sleep 5
@@ -4379,15 +4377,15 @@ else
   echo ""
   echo -e "\e[97mSenha:\e[33m Precisa criar dentro do portainer\e[0m"
   echo ""
-  echo -e "\e[97mObservação:\e[33m Vocêê tem menos de 5 minutos para criar uma conta no Portainer, caso\e[0m"
-  echo -e "\e[33mexceda esse tempo, vocêê precisara de voltar no menu anterior (digitando: Y)\e[0m"
-  echo -e "\e[33me no menu de ferramentas digitar: \e[97mportainer.restáart\e[0m"
+  echo -e "\e[97mObservação:\e[33m Você tem menos de 5 minutos para criar uma conta no Portainer, caso\e[0m"
+  echo -e "\e[33mexceda esse tempo, você precisara de voltar no menu anterior (digitando: Y)\e[0m"
+  echo -e "\e[33me no menu de ferramentas digitar: \e[97mportainer.restart\e[0m"
 fi
 #echo ""
 
-#echo -e "\e[97mObservação:\e[33m Vocêê tem menos de 5 minutos para criar uma conta no Portainer, caso\e[0m"
-#echo -e "\e[33mexceda esse tempo, vocêê precisara de voltar no menu anterior (digitando: Y)\e[0m"
-#echo -e "\e[33me no menu de ferramentas digitar: \e[97mportainer.restáart\e[0m"
+#echo -e "\e[97mObservação:\e[33m Você tem menos de 5 minutos para criar uma conta no Portainer, caso\e[0m"
+#echo -e "\e[33mexceda esse tempo, você precisara de voltar no menu anterior (digitando: Y)\e[0m"
+#echo -e "\e[33me no menu de ferramentas digitar: \e[97mportainer.restart\e[0m"
 
 ## Creditos do instalador
 creditos_msg
@@ -4472,7 +4470,7 @@ if [ $? -eq 0 ]; then
     echo "1/10 - [ OK ] - Criando Stack"
 else
     echo "1/10 - [ OFF ] - Criando Stack"
-    echo "Não foi possível criar a stack do Postgres"
+    echo "Não foi possivel criar a stack do Postgres"
 fi
 STACK_NAME="postgres"
 stack_editavel #> /dev/null 2>&1
@@ -4481,7 +4479,7 @@ stack_editavel #> /dev/null 2>&1
 #    echo "2/2 - [ OK ] - Deploy Stack"
 #else
 #    echo "2/2 - [ OFF ] - Deploy Stack"
-#    echo "Ops, não foi possível subir a stack do Postgres."
+#    echo "Ops, não foi possivel subir a stack do Postgres."
 #fi
 
 ## Salvando informações da instalação dentro de /dados_vps/
@@ -4610,7 +4608,7 @@ if [ $? -eq 0 ]; then
     echo "1/10 - [ OK ] - Criando Stack"
 else
     echo "1/10 - [ OFF ] - Criando Stack"
-    echo "Não foi possível criar a stack do Postgres"
+    echo "Não foi possivel criar a stack do Postgres"
 fi
 STACK_NAME="postgres${1:+_$1}"
 stack_editavel #> /dev/null 2>&1
@@ -4629,7 +4627,7 @@ telemetria Postgres finalizado
 #    echo "2/2 - [ OK ] - Deploy Stack"
 #else
 #    echo "2/2 - [ OFF ] - Deploy Stack"
-#    echo "Ops, não foi possível subir a stack do Postgres."
+#    echo "Ops, não foi possivel subir a stack do Postgres."
 #fi
 
 ## Salvando informações da instalação dentro de /dados_vps/
@@ -4755,7 +4753,7 @@ if [ $? -eq 0 ]; then
     echo "1/10 - [ OK ] - Criando Stack"
 else
     echo "1/10 - [ OFF ] - Criando Stack"
-    echo "Não foi possível criar a stack do PgVector"
+    echo "Não foi possivel criar a stack do PgVector"
 fi
 STACK_NAME="pgvector"
 stack_editavel #> /dev/null 2>&1
@@ -4763,7 +4761,7 @@ stack_editavel #> /dev/null 2>&1
 #    echo "2/2 - [ OK ] - Deploy Stack"
 #else
 #    echo "2/2 - [ OFF ] - Deploy Stack"
-#    echo "Ops, não foi possível subir a stack do PgVector."
+#    echo "Ops, não foi possivel subir a stack do PgVector."
 #fi
 #docker stack deploy --prune --resolve-image always -c pgvector.yaml pgvector > /dev/null 2>&1
 
@@ -4895,7 +4893,7 @@ if [ $? -eq 0 ]; then
     echo "1/10 - [ OK ] - Criando Stack"
 else
     echo "1/10 - [ OFF ] - Criando Stack"
-    echo "Não foi possível criar a stack do PgVector"
+    echo "Não foi possivel criar a stack do PgVector"
 fi
 STACK_NAME="pgvector${1:+_$1}"
 stack_editavel #> /dev/null 2>&1
@@ -4912,7 +4910,7 @@ telemetria PgVector finalizado
 #    echo "2/2 - [ OK ] - Deploy Stack"
 #else
 #    echo "2/2 - [ OFF ] - Deploy Stack"
-#    echo "Ops, não foi possível subir a stack do PgVector."
+#    echo "Ops, não foi possivel subir a stack do PgVector."
 #fi
 #docker stack deploy --prune --resolve-image always -c pgvector.yaml pgvector > /dev/null 2>&1
 
@@ -4988,7 +4986,7 @@ services:
 ## --------------------------- ORION --------------------------- ##
 
   redis:
-    image: redis:latestá  ## Versão do Redis
+    image: redis:latest  ## Versão do Redis
     command: [
         "redis-server",
         "--appendonly",
@@ -5032,7 +5030,7 @@ if [ $? -eq 0 ]; then
     echo "1/10 - [ OK ] - Criando Stack"
 else
     echo "1/10 - [ OFF ] - Criando Stack"
-    echo "Não foi possível criar a stack do Redis"
+    echo "Não foi possivel criar a stack do Redis"
 fi
 STACK_NAME="redis"
 stack_editavel #> /dev/null 2>&1
@@ -5041,7 +5039,7 @@ stack_editavel #> /dev/null 2>&1
 #    echo "2/2 - [ OK ] - Deploy Stack"
 #else
 #    echo "2/2 - [ OFF ] - Deploy Stack"
-#    echo "Ops, não foi possível subir a stack do Redis."
+#    echo "Ops, não foi possivel subir a stack do Redis."
 #fi
 
 ## Salvando informações da instalação dentro de /dados_vps/
@@ -5113,7 +5111,7 @@ services:
 ## --------------------------- ORION --------------------------- ##
 
   redis${1:+_$1}:
-    image: redis:latestá  ## Versão do Redis
+    image: redis:latest  ## Versão do Redis
     command: [
         "redis-server",
         "--appendonly",
@@ -5178,7 +5176,7 @@ telemetria Redis finalizado
 #    echo "2/2 - [ OK ] - Deploy Stack"
 #else
 #    echo "2/2 - [ OFF ] - Deploy Stack"
-#    echo "Ops, não foi possível subir a stack do Redis."
+#    echo "Ops, não foi possivel subir a stack do Redis."
 #fi
 
 ## Salvando informações da instalação dentro de /dados_vps/
@@ -5305,7 +5303,7 @@ if [ $? -eq 0 ]; then
     echo "1/10 - [ OK ] - Criando Stack"
 else
     echo "1/10 - [ OFF ] - Criando Stack"
-    echo "Não foi possível criar a stack do MySQL"
+    echo "Não foi possivel criar a stack do MySQL"
 fi
 
 STACK_NAME="mysql"
@@ -5314,7 +5312,7 @@ stack_editavel #> /dev/null 2>&1
 #    echo "2/2 - [ OK ] - Deploy Stack"
 #else
 #    echo "2/2 - [ OFF ] - Deploy Stack"
-#    echo "Ops, não foi possível subir a stack do Postgres."
+#    echo "Ops, não foi possivel subir a stack do Postgres."
 #fi
 
 wait_stack "mysql${1:+_$1}_mysql${1:+_$1}"
@@ -5464,7 +5462,7 @@ telemetria MySQL finalizado
 #    echo "2/2 - [ OK ] - Deploy Stack"
 #else
 #    echo "2/2 - [ OFF ] - Deploy Stack"
-#    echo "Ops, não foi possível subir a stack do Postgres."
+#    echo "Ops, não foi possivel subir a stack do Postgres."
 #fi
 
 #docker stack deploy --prune --resolve-image always -c mysql.yaml mysql #> /dev/null 2>&1
@@ -5536,12 +5534,12 @@ nome_chatwoot
 ## Mostra mensagem para preencher informações
 preencha_as_info
 
-## Inicia um Loop até os dados estáarem certos
+## Inicia um Loop até os dados estarem certos
 while true; do
 
     ##Pergunta o Dominio para aplicação
     echo -e "\e[97mPasso$amarelo 1/6\e[0m"
-    echo -en "\e[33mDigite o Dominio para o Chatwoot (ex: chatwoot.seudominio.com): \e[0m" && read -r url_chatwoot
+    echo -en "\e[33mDigite o Dominio para o Chatwoot (ex: chatwoot.openorion.art.br): \e[0m" && read -r url_chatwoot
     echo ""
     
     ## Pega o nome do dominio para ser o nome da empresa
@@ -5549,7 +5547,7 @@ while true; do
     
     ## Pergunta o email SMTP
     echo -e "\e[97mPasso$amarelo 2/6\e[0m"
-    echo -en "\e[33mDigite o Email para SMTP (ex: admin@seudominio.com): \e[0m" && read -r email_admin_chatwoot
+    echo -en "\e[33mDigite o Email para SMTP (ex: contato@openorion.art.br): \e[0m" && read -r email_admin_chatwoot
     echo ""
 
     ## Define o dominio SMTP com o dominio do email
@@ -5558,12 +5556,12 @@ while true; do
     ##Pergunta o usuário do Email SMTP
     echo -e "\e[97mPasso$amarelo 3/6\e[0m"
     echo -e "$amarelo--> Caso não tiver um usuario do email, use o proprio email abaixo"
-    echo -en "\e[33mDigite o Usuário para SMTP (ex: openorion ou admin@seudominio.com): \e[0m" && read -r user_smtp_chatwoot
+    echo -en "\e[33mDigite o Usuário para SMTP (ex: openorion ou contato@openorion.art.br): \e[0m" && read -r user_smtp_chatwoot
     echo ""
     
     ## Pergunta a senha do SMTP
     echo -e "\e[97mPasso$amarelo 4/6\e[0m"
-    echo -e "$amarelo--> Sem caracteres especiais: \!#$ | Se estáiver usando gmail use a senha de app"
+    echo -e "$amarelo--> Sem caracteres especiais: \!#$ | Se estiver usando gmail use a senha de app"
     echo -en "\e[33mDigite a Senha SMTP do Email (ex: @Senha123_): \e[0m" && read -r senha_email_chatwoot
     echo ""
     
@@ -5622,11 +5620,11 @@ while true; do
     echo ""
     echo ""
 
-    ## Pergunta se as respostas estáão corretas
-    read -p "As respostas estáão corretas? (Y/N): " confirmacao
+    ## Pergunta se as respostas estão corretas
+    read -p "As respostas estão corretas? (Y/N): " confirmacao
     if [ "$confirmacao" = "Y" ] || [ "$confirmacao" = "y" ]; then
 
-        ## Digitou Y para confirmar que as informações estáão corretas
+        ## Digitou Y para confirmar que as informações estão corretas
 
         ## Limpar o terminal
         clear
@@ -5638,7 +5636,7 @@ while true; do
         break
     else
 
-        ## Digitou N para dizer que as informações não estáão corretas.
+        ## Digitou N para dizer que as informações não estão corretas.
 
         ## Limpar o terminal
         clear
@@ -5692,10 +5690,10 @@ echo -e "\e[97m• INSTALANDO CHATWOOT \e[33m[3/6]\e[0m"
 echo ""
 sleep 1
 
-## Nestáe passo vamos estáar criando a Stack yaml do Chatwoot na pasta /root/
+## Neste passo vamos estar criando a Stack yaml do Chatwoot na pasta /root/
 ## Isso possibilitará que o usuario consiga edita-lo posteriormente
 
-## Depois vamos instalar o Chatwoot e verificar se estáa tudo certo.
+## Depois vamos instalar o Chatwoot e verificar se esta tudo certo.
 
 ## Criando key aleatória
 encryption_key=$(openssl rand -hex 16)
@@ -5708,7 +5706,7 @@ services:
 ## --------------------------- ORION --------------------------- ##
 
   chatwoot${1:+_$1}_app:
-    image: chatwoot/chatwoot:latestá ## Versão do Chatwoot
+    image: chatwoot/chatwoot:latest ## Versão do Chatwoot
     command: >
      sh -c "echo 'Rails.application.config.active_storage.variant_processor = :mini_magick' > /app/config/initializers/active_storage.rb && bundle exec rails db:chatwoot_prepare && bundle exec rails s -p 3000 -b 0.0.0.0"
     entrypoint: docker/entrypoints/rails.sh    
@@ -5814,13 +5812,13 @@ services:
         - traefik.http.routers.chatwoot${1:+_$1}_app.service=chatwoot${1:+_$1}_app
         - traefik.http.services.chatwoot${1:+_$1}_app.loadbalancer.server.port=3000
         - traefik.http.services.chatwoot${1:+_$1}_app.loadbalancer.passHostHeader=true
-        - traefik.http.middlewares.sslheader.headers.customrequestáheaders.X-Forwarded-Proto=https
+        - traefik.http.middlewares.sslheader.headers.customrequestheaders.X-Forwarded-Proto=https
         - traefik.http.routers.chatwoot${1:+_$1}_app.middlewares=sslheader
 
 ## --------------------------- ORION --------------------------- ##
 
   chatwoot${1:+_$1}_sidekiq:
-    image: chatwoot/chatwoot:latestá ## Versão do Chatwoot
+    image: chatwoot/chatwoot:latest ## Versão do Chatwoot
     command: bundle exec sidekiq -C config/sidekiq.yml
 
     volumes:
@@ -5919,7 +5917,7 @@ services:
 ## --------------------------- ORION --------------------------- ##
 
   chatwoot${1:+_$1}_redis:
-    image: redis:latestá  ## Versão do Redis
+    image: redis:latest  ## Versão do Redis
     command: [
         "redis-server",
         "--appendonly",
@@ -5975,7 +5973,7 @@ if [ $? -eq 0 ]; then
     echo "1/10 - [ OK ] - Criando Stack"
 else
     echo "1/10 - [ OFF ] - Criando Stack"
-    echo "Não foi possível criar a stack do Chatwoot"
+    echo "Não foi possivel criar a stack do Chatwoot"
 fi
 STACK_NAME="chatwoot${1:+_$1}"
 stack_editavel #> /dev/null 2>&1
@@ -5985,7 +5983,7 @@ stack_editavel #> /dev/null 2>&1
 #    echo "2/2 - [ OK ] - Deploy Stack"
 #else
 #    echo "2/2 - [ OFF ] - Deploy Stack"
-#    echo "Não foi possível subir a stack do Chatwoot"
+#    echo "Não foi possivel subir a stack do Chatwoot"
 #fi
 
 ## Mensagem de Passo
@@ -5994,9 +5992,9 @@ echo ""
 sleep 1
 
 ## Baixando imagens:
-pull redis:latestá chatwoot/chatwoot:latestá
+pull redis:latest chatwoot/chatwoot:latest
 
-## Usa o serviço wait_chatwoot para verificar se o serviço estáa online
+## Usa o serviço wait_chatwoot para verificar se o serviço esta online
 wait_stack chatwoot${1:+_$1}_chatwoot${1:+_$1}_redis chatwoot${1:+_$1}_chatwoot${1:+_$1}_app chatwoot${1:+_$1}_chatwoot${1:+_$1}_sidekiq
 
 sleep 30
@@ -6006,9 +6004,9 @@ echo -e "\e[97m• MIGRANDO BANCO DE DADOS \e[33m[5/6]\e[0m"
 echo ""
 sleep 7
 
-## Aqui vamos estáar migrando o banco de dados usando o comando "bundle exec rails db:chatwoot_prepare"
+## Aqui vamos estar migrando o banco de dados usando o comando "bundle exec rails db:chatwoot_prepare"
 
-## Basicamente vocêe poderia entrar no banco de dados do chatwoot e executar o comando por lá tambem
+## Basicamente voce poderia entrar no banco de dados do chatwoot e executar o comando por lá tambem
 
 container_name="chatwoot${1:+_$1}_chatwoot${1:+_$1}_app"
 
@@ -6037,7 +6035,7 @@ if [ $? -eq 0 ]; then
     echo "1/2 - [ OK ] - Executando no container: bundle exec rails db:chatwoot_prepare"
 else
     echo "1/2 - [ OFF ] - Executando no container: bundle exec rails db:chatwoot_prepare"
-    echo "Não foi possível migrar o banco de dados"
+    echo "Não foi possivel migrar o banco de dados"
 fi
 
 # Nome base do container (pode variar, por isso usamos grep para achar)
@@ -6075,7 +6073,7 @@ if [ $? -eq 0 ]; then
     echo "2/2 - [ OK ] - Executando no container: timezone configurado para UTC"
 else
     echo "2/2 - [ OFF ] - Falha ao configurar timezone no PostgreSQL"
-    echo "Verifique se o banco de dados e o usuário 'postgres' estáão acessíveis."
+    echo "Verifique se o banco de dados e o usuário 'postgres' estão acessíveis."
 fi
 
 echo ""
@@ -6096,7 +6094,7 @@ if [ $? -eq 0 ]; then
     echo "1/1 - [ OK ] - Desbloqueando tabela installation_configs no pgvector"
 else
     echo "1/1 - [ OFF ] - Desbloqueando tabela installation_configs no pgvector"
-    echo "Não foi possível liberar as funções do super_admin"
+    echo "Não foi possivel liberar as funções do super_admin"
 fi
 
 echo ""
@@ -6171,12 +6169,12 @@ nome_evolution
 ## Mostra mensagem para preencher informações
 preencha_as_info
 
-## Inicia um Loop até os dados estáarem certos
+## Inicia um Loop até os dados estarem certos
 while true; do
 
     ##Pergunta o Dominio para aplicação
     echo -e "\e[97mPasso$amarelo 1/1\e[0m"
-    echo -en "\e[33mDigite o Dominio para a Evolution API (ex: api.seudominio.com): \e[0m" && read -r url_evolution
+    echo -en "\e[33mDigite o Dominio para a Evolution API (ex: api.openorion.art.br): \e[0m" && read -r url_evolution
     echo ""
 
     ## Limpa o terminal
@@ -6192,11 +6190,11 @@ while true; do
     echo -e "\e[33mDominio da Evolution API:\e[97m $url_evolution\e[0m"
     echo ""
 
-    ## Pergunta se as respostas estáão corretas
-    read -p "As respostas estáão corretas? (Y/N): " confirmacao
+    ## Pergunta se as respostas estão corretas
+    read -p "As respostas estão corretas? (Y/N): " confirmacao
     if [ "$confirmacao" = "Y" ] || [ "$confirmacao" = "y" ]; then
 
-        ## Digitou Y para confirmar que as informações estáão corretas
+        ## Digitou Y para confirmar que as informações estão corretas
 
         ## Limpar o terminal
         clear
@@ -6208,7 +6206,7 @@ while true; do
         break
     else
 
-        ## Digitou N para dizer que as informações não estáão corretas.
+        ## Digitou N para dizer que as informações não estão corretas.
 
         ## Limpar o terminal
         clear
@@ -6278,7 +6276,7 @@ services:
 ## --------------------------- ORION --------------------------- ##
 
   evolution${1:+_$1}_api:
-    image: evoapicloud/evolution-api:latestá ## Versão da Evolution API
+    image: evoapicloud/evolution-api:latest ## Versão da Evolution API
 
     volumes:
       - evolution${1:+_$1}_instances:/evolution/instances
@@ -6328,7 +6326,7 @@ services:
       
     ## 💬 Integração com Typebot
       - TYPEBOT_ENABLED=true
-      - TYPEBOT_API_VERSION=latestá
+      - TYPEBOT_API_VERSION=latest
       
     ## 🗣️ Integração com Chatwoot
       - CHATWOOT_ENABLED=true
@@ -6473,7 +6471,7 @@ services:
 ## --------------------------- ORION --------------------------- ##
 
   evolution${1:+_$1}_redis:
-    image: redis:latestá  ## Versão do Redis
+    image: redis:latest  ## Versão do Redis
     command: [
         "redis-server",
         "--appendonly",
@@ -6520,7 +6518,7 @@ if [ $? -eq 0 ]; then
     echo "1/10 - [ OK ] - Criando Stack"
 else
     echo "1/10 - [ OFF ] - Criando Stack"
-    echo "Não foi possível criar a stack da Evolution API"
+    echo "Não foi possivel criar a stack da Evolution API"
 fi
 STACK_NAME="evolution${1:+_$1}"
 stack_editavel # > /dev/null 2>&1
@@ -6530,7 +6528,7 @@ stack_editavel # > /dev/null 2>&1
 #    echo "2/2 - [ OK ] - Deploy Stack"
 #else
 #    echo "2/2 - [ OFF ] - Deploy Stack"
-#    echo "Não foi possível subir a stack da Evolution API"
+#    echo "Não foi possivel subir a stack da Evolution API"
 #fi
 
 sleep 10
@@ -6541,9 +6539,9 @@ echo ""
 sleep 1
 
 ## Baixando imagens:
-pull redis:latestá evoapicloud/evolution-api:latestá
+pull redis:latest evoapicloud/evolution-api:latest
 
-## Usa o serviço wait_evolution para verificar se o serviço estáa online
+## Usa o serviço wait_evolution para verificar se o serviço esta online
 wait_stack evolution${1:+_$1}_evolution${1:+_$1}_redis evolution${1:+_$1}_evolution${1:+_$1}_api
 
 telemetria "Evolution API" "finalizado"
@@ -6622,12 +6620,12 @@ nome_evolution_lite
 ## Mostra mensagem para preencher informações
 preencha_as_info
 
-## Inicia um Loop até os dados estáarem certos
+## Inicia um Loop até os dados estarem certos
 while true; do
 
     ##Pergunta o Dominio para aplicação
     echo -e "\e[97mPasso$amarelo 1/1\e[0m"
-    echo -en "\e[33mDigite o Dominio para a Evolution API Lite (ex: api.seudominio.com): \e[0m" && read -r url_evolution
+    echo -en "\e[33mDigite o Dominio para a Evolution API Lite (ex: api.openorion.art.br): \e[0m" && read -r url_evolution
     echo ""
 
     ## Limpa o terminal
@@ -6643,11 +6641,11 @@ while true; do
     echo -e "\e[33mDominio da Evolution API:\e[97m $url_evolution\e[0m"
     echo ""
 
-    ## Pergunta se as respostas estáão corretas
-    read -p "As respostas estáão corretas? (Y/N): " confirmacao
+    ## Pergunta se as respostas estão corretas
+    read -p "As respostas estão corretas? (Y/N): " confirmacao
     if [ "$confirmacao" = "Y" ] || [ "$confirmacao" = "y" ]; then
 
-        ## Digitou Y para confirmar que as informações estáão corretas
+        ## Digitou Y para confirmar que as informações estão corretas
 
         ## Limpar o terminal
         clear
@@ -6659,7 +6657,7 @@ while true; do
         break
     else
 
-        ## Digitou N para dizer que as informações não estáão corretas.
+        ## Digitou N para dizer que as informações não estão corretas.
 
         ## Limpar o terminal
         clear
@@ -6727,7 +6725,7 @@ services:
 ## --------------------------- ORION --------------------------- ##
 
   evolution${1:+_$1}_lite:
-    image: atendai/evolution-api-lite:latestá ## Versão da Evolution API
+    image: atendai/evolution-api-lite:latest ## Versão da Evolution API
     entrypoint: ["/bin/bash", "-c", ". ./Docker/scripts/deploy_database.sh && npm run start:prod" ]
 
     volumes:
@@ -6890,7 +6888,7 @@ services:
 ## --------------------------- ORION --------------------------- ##
 
   evolution${1:+_$1}_lite_redis:
-    image: redis:latestá  ## Versão do Redis
+    image: redis:latest  ## Versão do Redis
     command: [
         "redis-server",
         "--appendonly",
@@ -6937,7 +6935,7 @@ if [ $? -eq 0 ]; then
     echo "1/10 - [ OK ] - Criando Stack"
 else
     echo "1/10 - [ OFF ] - Criando Stack"
-    echo "Não foi possível criar a stack da Evolution API"
+    echo "Não foi possivel criar a stack da Evolution API"
 fi
 STACK_NAME="evolution${1:+_$1}_lite"
 stack_editavel # > /dev/null 2>&1
@@ -6947,7 +6945,7 @@ stack_editavel # > /dev/null 2>&1
 #    echo "2/2 - [ OK ] - Deploy Stack"
 #else
 #    echo "2/2 - [ OFF ] - Deploy Stack"
-#    echo "Não foi possível subir a stack da Evolution API"
+#    echo "Não foi possivel subir a stack da Evolution API"
 #fi
 
 sleep 10
@@ -6958,9 +6956,9 @@ echo ""
 sleep 1
 
 ## Baixando imagens:
-pull redis:latestá atendai/evolution-api-lite:latestá
+pull redis:latest atendai/evolution-api-lite:latest
 
-## Usa o serviço wait_evolution para verificar se o serviço estáa online
+## Usa o serviço wait_evolution para verificar se o serviço esta online
 wait_stack "evolution${1:+_$1}_lite_evolution${1:+_$1}_lite"
 
 telemetria "Evolution API" "finalizado"
@@ -7030,12 +7028,12 @@ nome_evolution
 ## Mostra mensagem para preencher informações
 preencha_as_info
 
-## Inicia um Loop até os dados estáarem certos
+## Inicia um Loop até os dados estarem certos
 while true; do
 
     ##Pergunta o Dominio para aplicação
     echo -e "\e[97mPasso$amarelo 1/1\e[0m"
-    echo -en "\e[33mDigite o Dominio para a Evolution API (ex: api.seudominio.com): \e[0m" && read -r url_evolution
+    echo -en "\e[33mDigite o Dominio para a Evolution API (ex: api.openorion.art.br): \e[0m" && read -r url_evolution
     echo ""
 
     ## Limpa o terminal
@@ -7051,11 +7049,11 @@ while true; do
     echo -e "\e[33mDominio da Evolution API:\e[97m $url_evolution\e[0m"
     echo ""
 
-    ## Pergunta se as respostas estáão corretas
-    read -p "As respostas estáão corretas? (Y/N): " confirmacao
+    ## Pergunta se as respostas estão corretas
+    read -p "As respostas estão corretas? (Y/N): " confirmacao
     if [ "$confirmacao" = "Y" ] || [ "$confirmacao" = "y" ]; then
 
-        ## Digitou Y para confirmar que as informações estáão corretas
+        ## Digitou Y para confirmar que as informações estão corretas
 
         ## Limpar o terminal
         clear
@@ -7067,7 +7065,7 @@ while true; do
         break
     else
 
-        ## Digitou N para dizer que as informações não estáão corretas.
+        ## Digitou N para dizer que as informações não estão corretas.
 
         ## Limpar o terminal
         clear
@@ -7170,7 +7168,7 @@ services:
       - REDIS_ENABLED=false ## Colocar true se quiser usar | Não recomendado
       - REDIS_URI=redis://redis:6379
 
-    ## 💾 Ativar o Cache Redis (Em testáes)
+    ## 💾 Ativar o Cache Redis (Em testes)
       - CACHE_REDIS_ENABLED=false
       - CACHE_REDIS_URI=redis://redis:6379
       - CACHE_REDIS_PREFIX_KEY=evolution${1:+_$1}
@@ -7181,14 +7179,14 @@ services:
 
     ## 🤖 Novas variáveis para o Typebot
       - TYPEBOT_KEEP_OPEN=true
-      - TYPEBOT_API_VERSION=latestá
+      - TYPEBOT_API_VERSION=latest
 
     ## 💬 Novas variáveis para o Chatwoot
       - CHATWOOT_MESSAGE_DELETE=true
       - CHATWOOT_MESSAGE_READ=true
 
     ## 📨 Importar mensagens para o Chatwoot | Descomente para usar
-    ## Se estáiver usando Chatwoot do Nestáãor mude o a parte "chatwoot" para "chatwoot_nestáãor"
+    ## Se estiver usando Chatwoot do Nestor mude o a parte "chatwoot" para "chatwoot_nestor"
       #- CHATWOOT_IMPORT_DATABASE_CONNECTION_URI=postgresql://postgres:$senha_do_postgres@postgres:5432/chatwoot?sslmode=disable
       #- CHATWOOT_IMPORT_DATABASE_PLACEHOLDER_MEDIA_MESSAGE=false ## true = Importar mídia | false = Não importar mídia 
 
@@ -7268,7 +7266,7 @@ if [ $? -eq 0 ]; then
     echo "1/10 - [ OK ] - Criando Stack"
 else
     echo "1/10 - [ OFF ] - Criando Stack"
-    echo "Não foi possível criar a stack da Evolution API"
+    echo "Não foi possivel criar a stack da Evolution API"
 fi
 STACK_NAME="evolution_v1${1:+_$1}"
 stack_editavel # > /dev/null 2>&1
@@ -7278,7 +7276,7 @@ stack_editavel # > /dev/null 2>&1
 #    echo "2/2 - [ OK ] - Deploy Stack"
 #else
 #    echo "2/2 - [ OFF ] - Deploy Stack"
-#    echo "Não foi possível subir a stack da Evolution API"
+#    echo "Não foi possivel subir a stack da Evolution API"
 #fi
 
 sleep 10
@@ -7290,7 +7288,7 @@ sleep 1
 
 pull evoapicloud/evolution-api:v1.8.5
 
-## Usa o serviço wait_evolution para verificar se o serviço estáa online
+## Usa o serviço wait_evolution para verificar se o serviço esta online
 wait_stack "evolution_v1${1:+_$1}_evolution_openorion${1:+_$1}"
 
 telemetria "Evolution API (v1)" "finalizado"
@@ -7363,12 +7361,12 @@ nome_evolution
 ## Mostra mensagem para preencher informações
 preencha_as_info
 
-## Inicia um Loop até os dados estáarem certos
+## Inicia um Loop até os dados estarem certos
 while true; do
 
     ##Pergunta o Dominio para aplicação
     echo -e "\e[97mPasso$amarelo 1/1\e[0m"
-    echo -en "\e[33mDigite o Dominio para a Evolution API (ex: api.seudominio.com): \e[0m" && read -r url_evolution
+    echo -en "\e[33mDigite o Dominio para a Evolution API (ex: api.openorion.art.br): \e[0m" && read -r url_evolution
     echo ""
 
     ## Limpa o terminal
@@ -7384,11 +7382,11 @@ while true; do
     echo -e "\e[33mDominio da Evolution API:\e[97m $url_evolution\e[0m"
     echo ""
 
-    ## Pergunta se as respostas estáão corretas
-    read -p "As respostas estáão corretas? (Y/N): " confirmacao
+    ## Pergunta se as respostas estão corretas
+    read -p "As respostas estão corretas? (Y/N): " confirmacao
     if [ "$confirmacao" = "Y" ] || [ "$confirmacao" = "y" ]; then
 
-        ## Digitou Y para confirmar que as informações estáão corretas
+        ## Digitou Y para confirmar que as informações estão corretas
 
         ## Limpar o terminal
         clear
@@ -7400,7 +7398,7 @@ while true; do
         break
     else
 
-        ## Digitou N para dizer que as informações não estáão corretas.
+        ## Digitou N para dizer que as informações não estão corretas.
 
         ## Limpar o terminal
         clear
@@ -7518,7 +7516,7 @@ services:
       
     ## 💬 Integração com Typebot
       - TYPEBOT_ENABLED=true
-      - TYPEBOT_API_VERSION=latestá
+      - TYPEBOT_API_VERSION=latest
       
     ## 🗣️ Integração com Chatwoot
       - CHATWOOT_ENABLED=true
@@ -7663,7 +7661,7 @@ services:
 ## --------------------------- ORION --------------------------- ##
 
   evolution${1:+_$1}_v2_redis:
-    image: redis:latestá  ## Versão do Redis
+    image: redis:latest  ## Versão do Redis
     command: [
         "redis-server",
         "--appendonly",
@@ -7710,7 +7708,7 @@ if [ $? -eq 0 ]; then
     echo "1/10 - [ OK ] - Criando Stack"
 else
     echo "1/10 - [ OFF ] - Criando Stack"
-    echo "Não foi possível criar a stack da Evolution API"
+    echo "Não foi possivel criar a stack da Evolution API"
 fi
 STACK_NAME="evolution_v2${1:+_$1}"
 stack_editavel # > /dev/null 2>&1
@@ -7720,7 +7718,7 @@ stack_editavel # > /dev/null 2>&1
 #    echo "2/2 - [ OK ] - Deploy Stack"
 #else
 #    echo "2/2 - [ OFF ] - Deploy Stack"
-#    echo "Não foi possível subir a stack da Evolution API"
+#    echo "Não foi possivel subir a stack da Evolution API"
 #fi
 
 sleep 10
@@ -7730,7 +7728,7 @@ echo -e "\e[97m• VERIFICANDO SERVIÇO \e[33m[4/4]\e[0m"
 echo ""
 sleep 1
 
-## Usa o serviço wait_evolution para verificar se o serviço estáa online
+## Usa o serviço wait_evolution para verificar se o serviço esta online
 wait_stack "evolution_v2${1:+_$1}"
 
 telemetria "Evolution API" "finalizado"
@@ -7803,17 +7801,17 @@ nome_minio
 ## Mostra mensagem para preencher informações
 preencha_as_info
 
-## Inicia um Loop até os dados estáarem certos
+## Inicia um Loop até os dados estarem certos
 while true; do
     
     ##Pergunta o Dominio do Minio
     echo -e "\e[97mPasso$amarelo 1/5\e[0m"
-    echo -en "\e[33mDigite o Dominio para o Painel do MinIO (ex: minio.seudominio.com): \e[0m" && read -r url_minio
+    echo -en "\e[33mDigite o Dominio para o Painel do MinIO (ex: minio.openorion.art.br): \e[0m" && read -r url_minio
     echo ""
     
     ##Pergunta o Dominio para o S3 do Minio
     echo -e "\e[97mPasso$amarelo 2/5\e[0m"
-    echo -en "\e[33mDigite o Dominio para a API S3 do Minio(ex: s3.seudominio.com): \e[0m" && read -r url_s3
+    echo -en "\e[33mDigite o Dominio para a API S3 do Minio(ex: s3.openorion.art.br): \e[0m" && read -r url_s3
     echo ""
     
     ##Pergunta o Usuario para o Minio
@@ -7836,12 +7834,12 @@ while true; do
     echo -en "\e[33mDigite o numero da versão que deseja instalar (1 ou 2): \e[0m" && read -r minio_version_op
     echo ""
     if [ "$minio_version_op" = "1" ]; then
-        minio_version="latestá"
+        minio_version="latest"
     elif [ "$minio_version_op" = "2" ]; then
         minio_version="RELEASE.2024-01-13T07-53-03Z-cpuv1"
     else
-        echo -e "\e[31mOpção inválida. Usando versão 'latestá' por padrão.\e[0m"
-        minio_version="latestá"
+        echo -e "\e[31mOpção inválida. Usando versão 'latest' por padrão.\e[0m"
+        minio_version="latest"
     fi
 
     ## Limpa o terminal
@@ -7873,11 +7871,11 @@ while true; do
     echo -e "\e[33mVersão do MinIO:\e[97m $minio_version\e[0m"
     echo ""
     
-    ## Pergunta se as respostas estáão corretas
-    read -p "As respostas estáão corretas? (Y/N): " confirmacao
+    ## Pergunta se as respostas estão corretas
+    read -p "As respostas estão corretas? (Y/N): " confirmacao
     if [ "$confirmacao" = "Y" ] || [ "$confirmacao" = "y" ]; then
 
-        ## Digitou Y para confirmar que as informações estáão corretas
+        ## Digitou Y para confirmar que as informações estão corretas
 
         ## Limpar o terminal
         clear
@@ -7889,7 +7887,7 @@ while true; do
         break
     else
 
-        ## Digitou N para dizer que as informações não estáão corretas.
+        ## Digitou N para dizer que as informações não estão corretas.
 
         ## Limpar o terminal
         clear
@@ -7942,7 +7940,7 @@ services:
 
     ## 🌐 URL do MinIO
       - MINIO_BROWSER_REDIRECT_URL=https://$url_minio ## Url do minio
-      - MINIO_SERVER_URL=https://$url_s3 ## Url do s3 | Comente estáa linha caso tiver erro ao fazer login
+      - MINIO_SERVER_URL=https://$url_s3 ## Url do s3 | Comente esta linha caso tiver erro ao fazer login
 
     ## 📍 Região
       - MINIO_REGION_NAME=eu-south
@@ -7986,7 +7984,7 @@ if [ $? -eq 0 ]; then
     echo "1/10 - [ OK ] - Criando Stack"
 else
     echo "1/10 - [ OFF ] - Criando Stack"
-    echo "Não foi possível criar a stack do MinIO"
+    echo "Não foi possivel criar a stack do MinIO"
 fi
 sleep 1
 STACK_NAME="minio${1:+_$1}"
@@ -7997,7 +7995,7 @@ stack_editavel # > /dev/null 2>&1
 #    echo "2/2 - [ OK ] - Deploy Stack"
 #else
 #    echo "2/2 - [ OFF ] - Deploy Stack"
-#    echo "Não foi possível subir a stack do Minio"
+#    echo "Não foi possivel subir a stack do Minio"
 #fi
 
 ## Mensagem de Passo
@@ -8008,7 +8006,7 @@ sleep 1
 ## Baixando imagens:
 pull quay.io/minio/minio:$minio_version
 
-## Usa o serviço wait_minio para verificar se o serviço estáa online
+## Usa o serviço wait_minio para verificar se o serviço esta online
 wait_stack minio${1:+_$1}_minio${1:+_$1}
 
 telemetria MinIO finalizado
@@ -8087,33 +8085,33 @@ nome_typebot
 ## Mostra mensagem para preencher informações
 preencha_as_info
 
-## Inicia um Loop até os dados estáarem certos
+## Inicia um Loop até os dados estarem certos
 while true; do
 
     ##Pergunta o Dominio do Builder
     echo -e "\e[97mPasso$amarelo 1/7\e[0m"
-    echo -en "\e[33mDigite o Dominio para o Builder do Typebot (ex: typebot.seudominio.com): \e[0m" && read -r url_typebot
+    echo -en "\e[33mDigite o Dominio para o Builder do Typebot (ex: typebot.openorion.art.br): \e[0m" && read -r url_typebot
     echo ""
 
     ##Pergunta o Dominio do Viewer
     echo -e "\e[97mPasso$amarelo 2/7\e[0m"
-    echo -en "\e[33mDigite o Dominio para o Viewer do Typebot (ex: viewer.seudominio.com): \e[0m" && read -r url_viewer
+    echo -en "\e[33mDigite o Dominio para o Viewer do Typebot (ex: viewer.openorion.art.br): \e[0m" && read -r url_viewer
     echo ""
 
     ##Pergunta o Email SMTP
     echo -e "\e[97mPasso$amarelo 3/7\e[0m"
-    echo -en "\e[33mDigite o Email para SMTP (ex: admin@seudominio.com): \e[0m" && read -r email_typebot
+    echo -en "\e[33mDigite o Email para SMTP (ex: contato@openorion.art.br): \e[0m" && read -r email_typebot
     echo ""
 
     ##Pergunta o usuário do Email SMTP
     echo -e "\e[97mPasso$amarelo 4/7\e[0m"
     echo -e "$amarelo--> Caso não tiver um usuario do email, use o proprio email abaixo"
-    echo -en "\e[33mDigite o Usuário para SMTP (ex: openorion ou admin@seudominio.com): \e[0m" && read -r usuario_email_typebot
+    echo -en "\e[33mDigite o Usuário para SMTP (ex: openorion ou contato@openorion.art.br): \e[0m" && read -r usuario_email_typebot
     echo ""
     
     ## Pergunta a senha do SMTP
     echo -e "\e[97mPasso$amarelo 5/7\e[0m"
-    echo -e "$amarelo--> Sem caracteres especiais: \!#$ | Se estáiver usando gmail use a senha de app"
+    echo -e "$amarelo--> Sem caracteres especiais: \!#$ | Se estiver usando gmail use a senha de app"
     echo -en "\e[33mDigite a Senha SMTP do Email (ex: @Senha123_): \e[0m" && read -r senha_email_typebot
     echo ""
 
@@ -8175,11 +8173,11 @@ while true; do
     echo -e "\e[33mSecure SMTP do Email:\e[97m $smtp_secure_typebot\e[0m"
     echo ""
 
-    ## Pergunta se as respostas estáão corretas
-    read -p "As respostas estáão corretas? (Y/N): " confirmacao
+    ## Pergunta se as respostas estão corretas
+    read -p "As respostas estão corretas? (Y/N): " confirmacao
     if [ "$confirmacao" = "Y" ] || [ "$confirmacao" = "y" ]; then
 
-        ## Digitou Y para confirmar que as informações estáão corretas
+        ## Digitou Y para confirmar que as informações estão corretas
 
         ## Limpar o terminal
         clear
@@ -8191,7 +8189,7 @@ while true; do
         break
     else
 
-        ## Digitou N para dizer que as informações não estáão corretas.
+        ## Digitou N para dizer que as informações não estão corretas.
 
         ## Limpar o terminal
         clear
@@ -8269,7 +8267,7 @@ services:
 ## --------------------------- ORION --------------------------- ##
 
   typebot${1:+_$1}_builder:
-    image: baptistearno/typebot-builder:latestá ## Versão do Builder do Typebot
+    image: baptistearno/typebot-builder:latest ## Versão do Builder do Typebot
 
     networks:
       - $nome_rede_interna ## Nome da rede interna
@@ -8341,7 +8339,7 @@ services:
 ## --------------------------- ORION --------------------------- ##
 
   typebot${1:+_$1}_viewer:
-    image: baptistearno/typebot-viewer:latestá ## Versão do Viewer do Typebot
+    image: baptistearno/typebot-viewer:latest ## Versão do Viewer do Typebot
 
     networks:
       - $nome_rede_interna ## Nome da rede interna
@@ -8421,7 +8419,7 @@ if [ $? -eq 0 ]; then
     echo "1/10 - [ OK ] - Criando Stack"
 else
     echo "1/10 - [ OFF ] - Criando Stack"
-    echo "Não foi possível criar a stack do Typebot"
+    echo "Não foi possivel criar a stack do Typebot"
 fi
 STACK_NAME="typebot${1:+_$1}"
 stack_editavel # > /dev/null 2>&1
@@ -8431,7 +8429,7 @@ stack_editavel # > /dev/null 2>&1
 #    echo "2/2 - [ OK ] - Deploy Stack"
 #else
 #    echo "2/2 - [ OFF ] - Deploy Stack"
-#    echo "Não foi possível subir a stack do Typebot"
+#    echo "Não foi possivel subir a stack do Typebot"
 #fi
 
 ## Mensagem de Passo
@@ -8440,9 +8438,9 @@ echo ""
 sleep 1
 
 ## Baixando imagens:
-pull baptistearno/typebot-builder:latestá baptistearno/typebot-viewer:latestá
+pull baptistearno/typebot-builder:latest baptistearno/typebot-viewer:latest
 
-## Usa o serviço wait_typebot para verificar se o serviço estáa online
+## Usa o serviço wait_typebot para verificar se o serviço esta online
 wait_stack typebot${1:+_$1}_typebot${1:+_$1}_builder typebot${1:+_$1}_typebot${1:+_$1}_viewer
 
 telemetria Typebot finalizado
@@ -8514,33 +8512,33 @@ nome_n8n
 ## Mostra mensagem para preencher informações
 preencha_as_info
 
-## Inicia um Loop até os dados estáarem certos
+## Inicia um Loop até os dados estarem certos
 while true; do
 
     ##Pergunta o Dominio do N8N
     echo -e "\e[97mPasso$amarelo 1/7\e[0m"
-    echo -en "\e[33mDigite o dominio para o N8N (ex: n8n.seudominio.com): \e[0m" && read -r url_editorn8n
+    echo -en "\e[33mDigite o dominio para o N8N (ex: n8n.openorion.art.br): \e[0m" && read -r url_editorn8n
     echo ""
     
     ##Pergunta o Dominio do Webhook
     echo -e "\e[97mPasso$amarelo 2/7\e[0m"
-    echo -en "\e[33mDigite o dominio para o Webhook do N8N (ex: webhook.seudominio.com): \e[0m" && read -r url_webhookn8n
+    echo -en "\e[33mDigite o dominio para o Webhook do N8N (ex: webhook.openorion.art.br): \e[0m" && read -r url_webhookn8n
     echo ""
 
     ##Pergunta o Email SMTP
     echo -e "\e[97mPasso$amarelo 3/7\e[0m"
-    echo -en "\e[33mDigite o Email para SMTP (ex: admin@seudominio.com): \e[0m" && read -r email_smtp_n8n
+    echo -en "\e[33mDigite o Email para SMTP (ex: contato@openorion.art.br): \e[0m" && read -r email_smtp_n8n
     echo ""
 
     ##Pergunta o usuário do Email SMTP
     echo -e "\e[97mPasso$amarelo 4/7\e[0m"
     echo -e "$amarelo--> Caso não tiver um usuario do email, use o proprio email abaixo"
-    echo -en "\e[33mDigite o Usuário para SMTP (ex: openorion ou admin@seudominio.com): \e[0m" && read -r usuario_smtp_n8n
+    echo -en "\e[33mDigite o Usuário para SMTP (ex: openorion ou contato@openorion.art.br): \e[0m" && read -r usuario_smtp_n8n
     echo ""
     
     ## Pergunta a senha do SMTP
     echo -e "\e[97mPasso$amarelo 5/7\e[0m"
-    echo -e "$amarelo--> Sem caracteres especiais: \!#$ | Se estáiver usando gmail use a senha de app"
+    echo -e "$amarelo--> Sem caracteres especiais: \!#$ | Se estiver usando gmail use a senha de app"
     echo -en "\e[33mDigite a Senha SMTP do Email (ex: @Senha123_): \e[0m" && read -r senha_smtp_n8n
     echo ""
 
@@ -8612,10 +8610,10 @@ while true; do
     echo -e "\e[33mSecure SMTP do Email:\e[97m $smtp_secure_smtp_n8n\e[0m"
     echo ""
     
-    read -p "As respostas estáão corretas? (Y/N): " confirmacao
+    read -p "As respostas estão corretas? (Y/N): " confirmacao
     if [ "$confirmacao" = "Y" ] || [ "$confirmacao" = "y" ]; then
 
-        ## Digitou Y para confirmar que as informações estáão corretas
+        ## Digitou Y para confirmar que as informações estão corretas
 
         ## Limpar o terminal
         clear
@@ -8627,7 +8625,7 @@ while true; do
         break
     else
 
-        ## Digitou N para dizer que as informações não estáão corretas.
+        ## Digitou N para dizer que as informações não estão corretas.
 
         ## Limpar o terminal
         clear
@@ -8687,7 +8685,7 @@ services:
 ## --------------------------- ORION --------------------------- ##
 
   n8n${1:+_$1}_editor:
-    image: n8nio/n8n:latestá ## Versão do N8N
+    image: n8nio/n8n:latest ## Versão do N8N
     command: start
 
     networks:
@@ -8790,7 +8788,7 @@ services:
 ## --------------------------- ORION --------------------------- ##
 
   n8n${1:+_$1}_webhook:
-    image: n8nio/n8n:latestá ## Versão do N8N
+    image: n8nio/n8n:latest ## Versão do N8N
     command: webhook
 
     networks:
@@ -8893,7 +8891,7 @@ services:
 ## --------------------------- ORION --------------------------- ##
 
   n8n${1:+_$1}_worker:
-    image: n8nio/n8n:latestá ## Versão do N8N
+    image: n8nio/n8n:latest ## Versão do N8N
     command: worker --concurrency=10
 
     networks:
@@ -8987,7 +8985,7 @@ services:
 ## --------------------------- ORION --------------------------- ##
 
   n8n${1:+_$1}_redis:
-    image: redis:latestá  ## Versão do Redis
+    image: redis:latest  ## Versão do Redis
     command: [
         "redis-server",
         "--appendonly",
@@ -9031,7 +9029,7 @@ if [ $? -eq 0 ]; then
     echo "1/10 - [ OK ] - Criando Stack"
 else
     echo "1/10 - [ OFF ] - Criando Stack"
-    echo "Não foi possível criar a stack do N8N"
+    echo "Não foi possivel criar a stack do N8N"
 fi
 STACK_NAME="n8n${1:+_$1}"
 stack_editavel # > /dev/null 2>&1
@@ -9040,7 +9038,7 @@ stack_editavel # > /dev/null 2>&1
 #    echo "2/2 - [ OK ] - Deploy Stack"
 #else
 #    echo "2/2 - [ OFF ] - Deploy Stack"
-#    echo "Não foi possível subir a stack do N8N"
+#    echo "Não foi possivel subir a stack do N8N"
 #fi
 
 ## Mensagem de Passo
@@ -9049,9 +9047,9 @@ echo ""
 sleep 1
 
 ## Baixando imagens:
-pull redis:latestá n8nio/n8n:latestá
+pull redis:latest n8nio/n8n:latest
 
-## Usa o serviço wait_n8n para verificar se o serviço estáa online
+## Usa o serviço wait_n8n para verificar se o serviço esta online
 wait_stack n8n${1:+_$1}_n8n${1:+_$1}_redis n8n${1:+_$1}_n8n${1:+_$1}_editor n8n${1:+_$1}_n8n${1:+_$1}_webhook n8n${1:+_$1}_n8n${1:+_$1}_worker
 
 telemetria N8N finalizado
@@ -9129,12 +9127,12 @@ nome_flowise
 ## Mostra mensagem para preencher informações
 preencha_as_info
 
-## Inicia um Loop até os dados estáarem certos
+## Inicia um Loop até os dados estarem certos
 while true; do
 
     ##Pergunta o Dominio para a ferramenta
     echo -e "\e[97mPasso$amarelo 1/1\e[0m"
-    echo -en "\e[33mDigite o dominio para o Flowise (ex: flowise.seudominio.com): \e[0m" && read -r url_flowise
+    echo -en "\e[33mDigite o dominio para o Flowise (ex: flowise.openorion.art.br): \e[0m" && read -r url_flowise
     echo ""
     
     ## Limpa o terminal
@@ -9151,11 +9149,11 @@ while true; do
     echo ""
   
     
-    ## Pergunta se as respostas estáão corretas
-    read -p "As respostas estáão corretas? (Y/N): " confirmacao
+    ## Pergunta se as respostas estão corretas
+    read -p "As respostas estão corretas? (Y/N): " confirmacao
     if [ "$confirmacao" = "Y" ] || [ "$confirmacao" = "y" ]; then
 
-        ## Digitou Y para confirmar que as informações estáão corretas
+        ## Digitou Y para confirmar que as informações estão corretas
 
         ## Limpar o terminal
         clear
@@ -9167,7 +9165,7 @@ while true; do
         break
     else
 
-        ## Digitou N para dizer que as informações não estáão corretas.
+        ## Digitou N para dizer que as informações não estão corretas.
 
         ## Limpar o terminal
         clear
@@ -9225,7 +9223,7 @@ services:
 ## --------------------------- ORION --------------------------- ##
 
   flowise${1:+_$1}:
-    image: flowiseai/flowise:latestá ## Versão do Flowise
+    image: flowiseai/flowise:latest ## Versão do Flowise
 
     volumes:
      - flowise${1:+_$1}_data:/root/.flowise
@@ -9305,7 +9303,7 @@ if [ $? -eq 0 ]; then
     echo "1/10 - [ OK ] - Criando Stack"
 else
     echo "1/10 - [ OFF ] - Criando Stack"
-    echo "Não foi possível criar a stack do Flowise"
+    echo "Não foi possivel criar a stack do Flowise"
 fi
 STACK_NAME="flowise${1:+_$1}"
 stack_editavel # > /dev/null 2>&1
@@ -9314,7 +9312,7 @@ stack_editavel # > /dev/null 2>&1
 #    echo "2/2 - [ OK ] - Deploy Stack"
 #else
 #    echo "2/2 - [ OFF ] - Deploy Stack"
-#    echo "Não foi possível Subir a stack do Flowise"
+#    echo "Não foi possivel Subir a stack do Flowise"
 #fi
 
 ## Mensagem de Passo
@@ -9323,9 +9321,9 @@ echo ""
 sleep 1
 
 ## Baixando imagens:
-pull flowiseai/flowise:latestá
+pull flowiseai/flowise:latest
 
-## Usa o serviço wait_flowise para verificar se o serviço estáa online
+## Usa o serviço wait_flowise para verificar se o serviço esta online
 wait_stack flowise${1:+_$1}_flowise${1:+_$1}
 
 telemetria Flowise finalizado
@@ -9394,17 +9392,17 @@ nome_pgAdmin_4
 ## Mostra mensagem para preencher informações
 preencha_as_info
 
-## Inicia um Loop até os dados estáarem certos
+## Inicia um Loop até os dados estarem certos
 while true; do
 
     ##Pergunta o Dominio para a ferramenta
     echo -e "\e[97mPasso$amarelo 1/3\e[0m"
-    echo -en "\e[33mDigite o dominio para o PgAdmin 4 (ex: pgadmin.seudominio.com): \e[0m" && read -r url_PgAdmin_4
+    echo -en "\e[33mDigite o dominio para o PgAdmin 4 (ex: pgadmin.openorion.art.br): \e[0m" && read -r url_PgAdmin_4
     echo ""
     
     ##Pergunta o Email para a ferramenta
     echo -e "\e[97mPasso$amarelo 2/3\e[0m"
-    echo -en "\e[33mDigite um email para o PgAdmin 4 (ex: admin@seudominio.com): \e[0m" && read -r user_PgAdmin_4
+    echo -en "\e[33mDigite um email para o PgAdmin 4 (ex: contato@openorion.art.br): \e[0m" && read -r user_PgAdmin_4
     echo ""
     
     ##Pergunta a Senha para a ferramenta
@@ -9435,11 +9433,11 @@ while true; do
     echo -e "\e[33mSenha:\e[97m $pass_PgAdmin_4\e[0m"
     echo ""
     
-    ## Pergunta se as respostas estáão corretas
-    read -p "As respostas estáão corretas? (Y/N): " confirmacao
+    ## Pergunta se as respostas estão corretas
+    read -p "As respostas estão corretas? (Y/N): " confirmacao
     if [ "$confirmacao" = "Y" ] || [ "$confirmacao" = "y" ]; then
 
-        ## Digitou Y para confirmar que as informações estáão corretas
+        ## Digitou Y para confirmar que as informações estão corretas
 
         ## Limpar o terminal
         clear
@@ -9451,7 +9449,7 @@ while true; do
         break
     else
 
-        ## Digitou N para dizer que as informações não estáão corretas.
+        ## Digitou N para dizer que as informações não estão corretas.
 
         ## Limpar o terminal
         clear
@@ -9488,7 +9486,7 @@ services:
 ## --------------------------- ORION --------------------------- ##
 
   pgadmin${1:+_$1}:
-    image: dpage/pgadmin4:latestá ## Versão do PgAdmin 4
+    image: dpage/pgadmin4:latest ## Versão do PgAdmin 4
 
     volumes:
       - pgadmin${1:+_$1}_data:/var/lib/pgadmin
@@ -9535,7 +9533,7 @@ if [ $? -eq 0 ]; then
     echo "1/10 - [ OK ] - Criando Stack"
 else
     echo "1/10 - [ OFF ] - Criando Stack"
-    echo "Não foi possível criar a stack do PgAdmin 4"
+    echo "Não foi possivel criar a stack do PgAdmin 4"
 fi
 STACK_NAME="pgadmin${1:+_$1}"
 stack_editavel # > /dev/null 2>&1
@@ -9544,7 +9542,7 @@ stack_editavel # > /dev/null 2>&1
 #    echo "2/2 - [ OK ] - Deploy Stack"
 #else
 #    echo "2/2 - [ OFF ] - Deploy Stack"
-#    echo "Não foi possível Subir a stack do PgAdmin 4"
+#    echo "Não foi possivel Subir a stack do PgAdmin 4"
 #fi
 
 ## Mensagem de Passo
@@ -9553,9 +9551,9 @@ echo ""
 sleep 1
 
 ## Baixando imagens:
-pull dpage/pgadmin4:latestá
+pull dpage/pgadmin4:latest
 
-## Usa o serviço wait_pgadmin_4 para verificar se o serviço estáa online
+## Usa o serviço wait_pgadmin_4 para verificar se o serviço esta online
 wait_stack pgadmin${1:+_$1}_pgadmin${1:+_$1}
 
 telemetria "PgAdmin 4" "finalizado"
@@ -9626,17 +9624,17 @@ nome_nocobase
 ## Mostra mensagem para preencher informações
 preencha_as_info
 
-## Inicia um Loop até os dados estáarem certos
+## Inicia um Loop até os dados estarem certos
 while true; do
 
     ##Pergunta o Dominio para a ferramenta
     echo -e "\e[97mPasso$amarelo 1/4\e[0m"
-    echo -en "\e[33mDigite o dominio para o Nocobase (ex: nocobase.seudominio.com): \e[0m" && read -r url_nocobase
+    echo -en "\e[33mDigite o dominio para o Nocobase (ex: nocobase.openorion.art.br): \e[0m" && read -r url_nocobase
     echo ""
     
     ##Pergunta o Email para a ferramenta
     echo -e "\e[97mPasso$amarelo 2/4\e[0m"
-    echo -en "\e[33mDigite um email para o Nocobase (ex: admin@seudominio.com): \e[0m" && read -r mail_nocobase
+    echo -en "\e[33mDigite um email para o Nocobase (ex: contato@openorion.art.br): \e[0m" && read -r mail_nocobase
     echo ""
     
     ##Pergunta um Usuario para a ferramenta
@@ -9676,11 +9674,11 @@ while true; do
     echo -e "\e[33mSenha:\e[97m $pass_nocobase\e[0m"
     echo ""
     
-    ## Pergunta se as respostas estáão corretas
-    read -p "As respostas estáão corretas? (Y/N): " confirmacao
+    ## Pergunta se as respostas estão corretas
+    read -p "As respostas estão corretas? (Y/N): " confirmacao
     if [ "$confirmacao" = "Y" ] || [ "$confirmacao" = "y" ]; then
 
-        ## Digitou Y para confirmar que as informações estáão corretas
+        ## Digitou Y para confirmar que as informações estão corretas
 
         ## Limpar o terminal
         clear
@@ -9692,7 +9690,7 @@ while true; do
         break
     else
 
-        ## Digitou N para dizer que as informações não estáão corretas.
+        ## Digitou N para dizer que as informações não estão corretas.
 
         ## Limpar o terminal
         clear
@@ -9753,7 +9751,7 @@ services:
 ## --------------------------- ORION --------------------------- ##
 
   nocobase${1:+_$1}:
-    image: nocobase/nocobase:latestá ## Versão do Nocobase
+    image: nocobase/nocobase:latest ## Versão do Nocobase
 
     volumes:
       - nocobase${1:+_$1}_storage:/app/nocobase/storage
@@ -9818,7 +9816,7 @@ if [ $? -eq 0 ]; then
     echo "1/10 - [ OK ] - Criando Stack"
 else
     echo "1/10 - [ OFF ] - Criando Stack"
-    echo "Não foi possível criar a stack do Nocobase"
+    echo "Não foi possivel criar a stack do Nocobase"
 fi
 STACK_NAME="nocobase${1:+_$1}"
 stack_editavel # > /dev/null 2>&1
@@ -9827,7 +9825,7 @@ stack_editavel # > /dev/null 2>&1
 #    echo "2/2 - [ OK ] - Deploy Stack"
 #else
 #    echo "2/2 - [ OFF ] - Deploy Stack"
-#    echo "Não foi possível Subir a stack do Nocobase"
+#    echo "Não foi possivel Subir a stack do Nocobase"
 #fi
 
 ## Mensagem de Passo
@@ -9836,9 +9834,9 @@ echo ""
 sleep 1
 
 ## Baixando imagens:
-pull nocobase/nocobase:latestá
+pull nocobase/nocobase:latest
 
-## Usa o serviço wait_stack "nocobase" para verificar se o serviço estáa online
+## Usa o serviço wait_stack "nocobase" para verificar se o serviço esta online
 wait_stack nocobase${1:+_$1}_nocobase${1:+_$1}
 
 telemetria Nocobase finalizado
@@ -9911,12 +9909,12 @@ nome_botpress
 ## Mostra mensagem para preencher informações
 preencha_as_info
 
-## Inicia um Loop até os dados estáarem certos
+## Inicia um Loop até os dados estarem certos
 while true; do
 
     ##Pergunta o Dominio para a ferramenta
     echo -e "\e[97mPasso$amarelo 1/1\e[0m"
-    echo -en "\e[33mDigite o dominio para o Botpress (ex: botpress.seudominio.com): \e[0m" && read -r url_botpress
+    echo -en "\e[33mDigite o dominio para o Botpress (ex: botpress.openorion.art.br): \e[0m" && read -r url_botpress
     echo ""
     
     ## Limpa o terminal
@@ -9932,11 +9930,11 @@ while true; do
     echo -e "\e[33mDominio do Botpress:\e[97m $url_botpress\e[0m"
     echo ""
     
-    ## Pergunta se as respostas estáão corretas
-    read -p "As respostas estáão corretas? (Y/N): " confirmacao
+    ## Pergunta se as respostas estão corretas
+    read -p "As respostas estão corretas? (Y/N): " confirmacao
     if [ "$confirmacao" = "Y" ] || [ "$confirmacao" = "y" ]; then
 
-        ## Digitou Y para confirmar que as informações estáão corretas
+        ## Digitou Y para confirmar que as informações estão corretas
 
         ## Limpar o terminal
         clear
@@ -9948,7 +9946,7 @@ while true; do
         break
     else
 
-        ## Digitou N para dizer que as informações não estáão corretas.
+        ## Digitou N para dizer que as informações não estão corretas.
 
         ## Limpar o terminal
         clear
@@ -10005,7 +10003,7 @@ services:
 ## --------------------------- ORION --------------------------- ##
 
   botpress${1:+_$1}_app:
-    image: botpress/server:latestá
+    image: botpress/server:latest
 
     volumes:
       - botpress${1:+_$1}_data:/botpress/data
@@ -10048,7 +10046,7 @@ services:
 ## --------------------------- ORION --------------------------- ##
 
   botpress${1:+_$1}_redis:
-    image: redis:latestá  ## Versão do Redis
+    image: redis:latest  ## Versão do Redis
     command: [
         "redis-server",
         "--appendonly",
@@ -10095,7 +10093,7 @@ if [ $? -eq 0 ]; then
     echo "1/10 - [ OK ] - Criando Stack"
 else
     echo "1/10 - [ OFF ] - Criando Stack"
-    echo "Não foi possível criar a stack do Botpress"
+    echo "Não foi possivel criar a stack do Botpress"
 fi
 STACK_NAME="botpress${1:+_$1}"
 stack_editavel # > /dev/null 2>&1
@@ -10104,7 +10102,7 @@ stack_editavel # > /dev/null 2>&1
 #    echo "2/2 - [ OK ] - Deploy Stack"
 #else
 #    echo "2/2 - [ OFF ] - Deploy Stack"
-#    echo "Não foi possível Subir a stack do Botpress"
+#    echo "Não foi possivel Subir a stack do Botpress"
 #fi
 
 ## Mensagem de Passo
@@ -10113,9 +10111,9 @@ echo ""
 sleep 1
 
 ## Baixando imagens:
-pull redis:latestá botpress/server:latestá
+pull redis:latest botpress/server:latest
 
-## Usa o serviço wait_botpress para verificar se o serviço estáa online
+## Usa o serviço wait_botpress para verificar se o serviço esta online
 wait_stack botpress${1:+_$1}_botpress${1:+_$1}_redis botpress${1:+_$1}_botpress${1:+_$1}_app
 
 telemetria Botpress finalizado
@@ -10189,12 +10187,12 @@ nome_wordpress
 ## Mostra mensagem para preencher informações
 preencha_as_info
 
-## Inicia um Loop até os dados estáarem certos
+## Inicia um Loop até os dados estarem certos
 while true; do
 
     ## Pergunta o Dominio para a ferramenta
     echo -e "\e[97mPasso$amarelo 1/2\e[0m"
-    echo -en "\e[33mDigite o dominio para o Wordpress (ex: seudominio.com ou loja.seudominio.com): \e[0m" && read -r url_wordpress
+    echo -en "\e[33mDigite o dominio para o Wordpress (ex: openorion.art.br ou loja.openorion.art.br): \e[0m" && read -r url_wordpress
     echo ""
     
     ## Pergunta o nome do site
@@ -10221,11 +10219,11 @@ while true; do
     echo ""
     
 
-    ## Pergunta se as respostas estáão corretas
-    read -p "As respostas estáão corretas? (Y/N): " confirmacao
+    ## Pergunta se as respostas estão corretas
+    read -p "As respostas estão corretas? (Y/N): " confirmacao
     if [ "$confirmacao" = "Y" ] || [ "$confirmacao" = "y" ]; then
 
-        ## Digitou Y para confirmar que as informações estáão corretas
+        ## Digitou Y para confirmar que as informações estão corretas
 
         ## Limpar o terminal
         clear
@@ -10237,7 +10235,7 @@ while true; do
         break
     else
 
-        ## Digitou N para dizer que as informações não estáão corretas.
+        ## Digitou N para dizer que as informações não estão corretas.
 
         ## Limpar o terminal
         clear
@@ -10295,7 +10293,7 @@ services:
 ## --------------------------- ORION --------------------------- ##
 
   wordpress_$nome_site_wordpress:
-    image: wordpress:latestá ## Versão do Wordpress
+    image: wordpress:latest ## Versão do Wordpress
 
     volumes:
       - wordpress_$nome_site_wordpress:/var/www/html
@@ -10341,7 +10339,7 @@ services:
 ## --------------------------- ORION --------------------------- ##
 
   wordpress_${nome_site_wordpress}_redis:
-    image: redis:latestá  ## Versão do Redis
+    image: redis:latest  ## Versão do Redis
     command: [
         "redis-server",
         "--appendonly",
@@ -10391,7 +10389,7 @@ if [ $? -eq 0 ]; then
     echo "1/10 - [ OK ] - Criando Stack"
 else
     echo "1/10 - [ OFF ] - Criando Stack"
-    echo "Não foi possível criar a stack do Wordpress"
+    echo "Não foi possivel criar a stack do Wordpress"
 fi
 STACK_NAME="wordpress_$nome_site_wordpress"
 stack_editavel # > /dev/null 2>&1
@@ -10400,7 +10398,7 @@ stack_editavel # > /dev/null 2>&1
 #    echo "2/2 - [ OK ] - Deploy Stack"
 #else
 #    echo "2/2 - [ OFF ] - Deploy Stack"
-#    echo "Não foi possível Subir a stack do Wordpress"
+#    echo "Não foi possivel Subir a stack do Wordpress"
 #fi
 
 ## Mensagem de Passo
@@ -10409,9 +10407,9 @@ echo ""
 sleep 1
 
 ## Baixando imagens:
-pull redis:latestá wordpress:latestá
+pull redis:latest wordpress:latest
 
-## Usa o serviço wait_wordpress para verificar se o serviço estáa online
+## Usa o serviço wait_wordpress para verificar se o serviço esta online
 wait_stack "wordpress_$nome_site_wordpress"
 
 ## Mensagem de Passo
@@ -10422,7 +10420,7 @@ sleep 1
 
 ## Validação de variáveis obrigatórias
 if [ -z "$nome_site_wordpress" ]; then
-    echo "ERRO: Variável 'nome_site_wordpress' não estáá definida!"
+    echo "ERRO: Variável 'nome_site_wordpress' não está definida!"
     exit 1
 fi
 
@@ -10523,7 +10521,7 @@ echo -e "\e[97m• VERIFICANDO SERVIÇO \e[33m[6/6]\e[0m"
 echo ""
 sleep 1
 
-## Usa o serviço wait_wordpress para verificar se o serviço estáa online
+## Usa o serviço wait_wordpress para verificar se o serviço esta online
 wait_stack "wordpress_$nome_site_wordpress"
 
 docker container prune -f > /dev/null 2>&1
@@ -10599,27 +10597,27 @@ nome_baserow
 ## Mostra mensagem para preencher informações
 preencha_as_info
 
-## Inicia um Loop até os dados estáarem certos
+## Inicia um Loop até os dados estarem certos
 while true; do
 
     ##Pergunta o Dominio para a ferramenta
     echo -e "\e[97mPasso$amarelo 1/6\e[0m"
-    echo -en "\e[33mDigite o dominio para o Baserow (ex: baserow.seudominio.com): \e[0m" && read -r url_baserow
+    echo -en "\e[33mDigite o dominio para o Baserow (ex: baserow.openorion.art.br): \e[0m" && read -r url_baserow
     echo ""
 
     ##Pergunta o Dominio para a ferramenta
     echo -e "\e[97mPasso$amarelo 2/6\e[0m"
-    echo -en "\e[33mDigite o Email para SMTP (ex: admin@seudominio.com): \e[0m" && read -r mail_baserow
+    echo -en "\e[33mDigite o Email para SMTP (ex: contato@openorion.art.br): \e[0m" && read -r mail_baserow
     echo ""
 
     ##Pergunta o Dominio para a ferramenta
     echo -e "\e[97mPasso$amarelo 3/6\e[0m"
-    echo -en "\e[33mDigite o Usuário para SMTP (ex: openorion ou admin@seudominio.com): \e[0m" && read -r user_baserow
+    echo -en "\e[33mDigite o Usuário para SMTP (ex: openorion ou contato@openorion.art.br): \e[0m" && read -r user_baserow
     echo ""
 
     ##Pergunta o Dominio para a ferramenta
     echo -e "\e[97mPasso$amarelo 4/6\e[0m"
-    echo -e "$amarelo--> Sem caracteres especiais: \!#$ | Se estáiver usando gmail use a senha de app"
+    echo -e "$amarelo--> Sem caracteres especiais: \!#$ | Se estiver usando gmail use a senha de app"
     echo -en "\e[33mDigite a Senha SMTP do Email (ex: @Senha123_): \e[0m" && read -r pass_baserow
     echo ""
 
@@ -10675,11 +10673,11 @@ while true; do
     echo -e "\e[33mPorta do SMTP:\e[97m $porta_baserow\e[0m"
     echo ""
     
-     ## Pergunta se as respostas estáão corretas
-    read -p "As respostas estáão corretas? (Y/N): " confirmacao
+     ## Pergunta se as respostas estão corretas
+    read -p "As respostas estão corretas? (Y/N): " confirmacao
     if [ "$confirmacao" = "Y" ] || [ "$confirmacao" = "y" ]; then
 
-        ## Digitou Y para confirmar que as informações estáão corretas
+        ## Digitou Y para confirmar que as informações estão corretas
 
         ## Limpar o terminal
         clear
@@ -10691,7 +10689,7 @@ while true; do
         break
     else
 
-        ## Digitou N para dizer que as informações não estáão corretas.
+        ## Digitou N para dizer que as informações não estão corretas.
 
         ## Limpar o terminal
         clear
@@ -10731,7 +10729,7 @@ services:
 ## --------------------------- ORION --------------------------- ##
 
   baserow${1:+_$1}_app:
-    image: baserow/baserow:latestá
+    image: baserow/baserow:latest
 
     volumes:
       - baserow${1:+_$1}_data:/baserow/data
@@ -10807,7 +10805,7 @@ services:
 ## --------------------------- ORION --------------------------- ##
 
   baserow${1:+_$1}_redis:
-    image: redis:latestá  ## Versão do Redis
+    image: redis:latest  ## Versão do Redis
     command: [
         "redis-server",
         "--appendonly",
@@ -10850,7 +10848,7 @@ if [ $? -eq 0 ]; then
     echo "1/10 - [ OK ] - Criando Stack"
 else
     echo "1/10 - [ OFF ] - Criando Stack"
-    echo "Não foi possível criar a stack do Baserow"
+    echo "Não foi possivel criar a stack do Baserow"
 fi
 
 STACK_NAME="baserow${1:+_$1}"
@@ -10862,9 +10860,9 @@ echo ""
 sleep 1
 
 ## Baixando imagens:
-pull redis:latestá baserow/baserow:latestá
+pull redis:latest baserow/baserow:latest
 
-## Usa o serviço wait_baserow para verificar se o serviço estáa online
+## Usa o serviço wait_baserow para verificar se o serviço esta online
 wait_stack baserow${1:+_$1}_baserow${1:+_$1}_redis baserow${1:+_$1}_baserow${1:+_$1}_app
 
 telemetria Baserow finalizado
@@ -10938,7 +10936,7 @@ nome_mongodb
 ## Mostra mensagem para preencher informações
 preencha_as_info
 
-## Inicia um Loop até os dados estáarem certos
+## Inicia um Loop até os dados estarem certos
 while true; do
 
     ## Pergunta o nome de usuario
@@ -10967,11 +10965,11 @@ while true; do
     echo -e "\e[33mSenha gerada:\e[97m $pass_mongo\e[0m"
     echo ""
     
-    ## Pergunta se as respostas estáão corretas
-    read -p "As respostas estáão corretas? (Y/N): " confirmacao
+    ## Pergunta se as respostas estão corretas
+    read -p "As respostas estão corretas? (Y/N): " confirmacao
     if [ "$confirmacao" = "Y" ] || [ "$confirmacao" = "y" ]; then
 
-        ## Digitou Y para confirmar que as informações estáão corretas
+        ## Digitou Y para confirmar que as informações estão corretas
 
         ## Limpar o terminal
         clear
@@ -10983,7 +10981,7 @@ while true; do
         break
     else
 
-        ## Digitou N para dizer que as informações não estáão corretas.
+        ## Digitou N para dizer que as informações não estão corretas.
 
         ## Limpar o terminal
         clear
@@ -11020,7 +11018,7 @@ services:
 ## --------------------------- ORION --------------------------- ##
 
   mongodb${1:+_$1}:
-    image: mongo:latestá
+    image: mongo:latest
     command: mongod --port 27017
 
     volumes:
@@ -11071,7 +11069,7 @@ if [ $? -eq 0 ]; then
     echo "1/10 - [ OK ] - Criando Stack"
 else
     echo "1/10 - [ OFF ] - Criando Stack"
-    echo "Não foi possível criar a stack do MongoDB"
+    echo "Não foi possivel criar a stack do MongoDB"
 fi
 STACK_NAME="mongodb${1:+_$1}"
 stack_editavel # > /dev/null 2>&1
@@ -11080,7 +11078,7 @@ stack_editavel # > /dev/null 2>&1
 #    echo "2/2 - [ OK ] - Deploy Stack"
 #else
 #    echo "2/2 - [ OFF ] - Deploy Stack"
-#    echo "Não foi possível Subir a stack do MongoDB"
+#    echo "Não foi possivel Subir a stack do MongoDB"
 #fi
 
 ## Mensagem de Passo
@@ -11089,9 +11087,9 @@ echo ""
 sleep 1
 
 ## Baixando imagens:
-pull mongo:latestá
+pull mongo:latest
 
-## Usa o serviço wait_stack "mongodb" para verificar se o serviço estáa online
+## Usa o serviço wait_stack "mongodb" para verificar se o serviço esta online
 wait_stack mongodb${1:+_$1}_mongodb${1:+_$1}
 
 telemetria MongoDB finalizado
@@ -11166,12 +11164,12 @@ nome_rabbitmq
 ## Mostra mensagem para preencher informações
 preencha_as_info
 
-## Inicia um Loop até os dados estáarem certos
+## Inicia um Loop até os dados estarem certos
 while true; do
 
     ## Pergunta o Dominio do RabbitMq
     echo -e "\e[97mPasso$amarelo 1/2\e[0m"
-    echo -en "\e[33mDigite o dominio para o RabbitMQ (ex: rabbitmq.seudominio.com): \e[0m" && read -r url_rabbitmq
+    echo -en "\e[33mDigite o dominio para o RabbitMQ (ex: rabbitmq.openorion.art.br): \e[0m" && read -r url_rabbitmq
     echo ""
     
     echo -e "\e[97mPasso$amarelo 2/2\e[0m"
@@ -11203,11 +11201,11 @@ while true; do
     echo -e "\e[33mSenha:\e[97m $pass_rabbitmq\e[0m"
     echo ""
     
-    ## Pergunta se as respostas estáão corretas
-    read -p "As respostas estáão corretas? (Y/N): " confirmacao
+    ## Pergunta se as respostas estão corretas
+    read -p "As respostas estão corretas? (Y/N): " confirmacao
     if [ "$confirmacao" = "Y" ] || [ "$confirmacao" = "y" ]; then
 
-        ## Digitou Y para confirmar que as informações estáão corretas
+        ## Digitou Y para confirmar que as informações estão corretas
 
         ## Limpar o terminal
         clear
@@ -11219,7 +11217,7 @@ while true; do
         break
     else
 
-        ## Digitou N para dizer que as informações não estáão corretas.
+        ## Digitou N para dizer que as informações não estão corretas.
 
         ## Limpar o terminal
         clear
@@ -11313,7 +11311,7 @@ if [ $? -eq 0 ]; then
     echo "1/10 - [ OK ] - Criando Stack"
 else
     echo "1/10 - [ OFF ] - Criando Stack"
-    echo "Não foi possível criar a stack do RabbitMQ"
+    echo "Não foi possivel criar a stack do RabbitMQ"
 fi
 STACK_NAME="rabbitmq${1:+_$1}"
 stack_editavel # > /dev/null 2>&1
@@ -11322,7 +11320,7 @@ stack_editavel # > /dev/null 2>&1
 #    echo "2/2 - [ OK ] - Deploy Stack"
 #else
 #    echo "2/2 - [ OFF ] - Deploy Stack"
-#    echo "Não foi possível Subir a stack do RabbitMQ"
+#    echo "Não foi possivel Subir a stack do RabbitMQ"
 #fi
 
 ## Mensagem de Passo
@@ -11333,7 +11331,7 @@ sleep 1
 ## Baixando imagens:
 pull rabbitmq:management
 
-## Usa o serviço wait_stack "pgadmin_4" para verificar se o serviço estáa online
+## Usa o serviço wait_stack "pgadmin_4" para verificar se o serviço esta online
 wait_stack rabbitmq${1:+_$1}_rabbitmq${1:+_$1}
 
 telemetria RabbitMQ finalizado
@@ -11411,12 +11409,12 @@ nome_uptimekuma
 ## Mostra mensagem para preencher informações
 preencha_as_info
 
-## Inicia um Loop até os dados estáarem certos
+## Inicia um Loop até os dados estarem certos
 while true; do
 
     ## Pergunta o Dominio do uptime kuma
     echo -e "\e[97mPasso$amarelo 1/1\e[0m"
-    echo -en "\e[33mDigite o dominio para o Uptime Kuma (ex: uptimekuma.seudominio.com): \e[0m" && read -r url_uptimekuma
+    echo -en "\e[33mDigite o dominio para o Uptime Kuma (ex: uptimekuma.openorion.art.br): \e[0m" && read -r url_uptimekuma
     echo ""
     
     ## Limpa o terminal
@@ -11432,11 +11430,11 @@ while true; do
     echo -e "\e[33mDominio do Uptime Kuma:\e[97m $url_uptimekuma\e[0m"
     echo ""
     
-    ## Pergunta se as respostas estáão corretas
-    read -p "As respostas estáão corretas? (Y/N): " confirmacao
+    ## Pergunta se as respostas estão corretas
+    read -p "As respostas estão corretas? (Y/N): " confirmacao
     if [ "$confirmacao" = "Y" ] || [ "$confirmacao" = "y" ]; then
 
-        ## Digitou Y para confirmar que as informações estáão corretas
+        ## Digitou Y para confirmar que as informações estão corretas
 
         ## Limpar o terminal
         clear
@@ -11448,7 +11446,7 @@ while true; do
         break
     else
 
-        ## Digitou N para dizer que as informações não estáão corretas.
+        ## Digitou N para dizer que as informações não estão corretas.
 
         ## Limpar o terminal
         clear
@@ -11483,7 +11481,7 @@ services:
 ## --------------------------- ORION --------------------------- ##
 
   uptimekuma${1:+_$1}:
-    image: louislam/uptime-kuma:latestá
+    image: louislam/uptime-kuma:latest
 
     volumes:
       - uptimekuma${1:+_$1}:/app/data
@@ -11529,7 +11527,7 @@ if [ $? -eq 0 ]; then
     echo "1/10 - [ OK ] - Criando Stack"
 else
     echo "1/10 - [ OFF ] - Criando Stack"
-    echo "Não foi possível criar a stack do Uptime Kuma"
+    echo "Não foi possivel criar a stack do Uptime Kuma"
 fi
 STACK_NAME="uptimekuma${1:+_$1}"
 stack_editavel # > /dev/null 2>&1
@@ -11538,7 +11536,7 @@ stack_editavel # > /dev/null 2>&1
 #    echo "2/2 - [ OK ] - Deploy Stack"
 #else
 #    echo "2/2 - [ OFF ] - Deploy Stack"
-#    echo "Não foi possível Subir a stack do Uptime Kuma"
+#    echo "Não foi possivel Subir a stack do Uptime Kuma"
 #fi
 
 ## Mensagem de Passo
@@ -11547,9 +11545,9 @@ echo ""
 sleep 1
 
 ## Baixando imagens:
-pull louislam/uptime-kuma:latestá
+pull louislam/uptime-kuma:latest
 
-## Usa o serviço wait_stack "uptimekuma" para verificar se o serviço estáa online
+## Usa o serviço wait_stack "uptimekuma" para verificar se o serviço esta online
 wait_stack uptimekuma${1:+_$1}_uptimekuma${1:+_$1}
 
 telemetria "Uptime Kuma" "finalizado"
@@ -11624,28 +11622,28 @@ nome_calcom
 ## Mostra mensagem para preencher informações
 preencha_as_info
 
-## Inicia um Loop até os dados estáarem certos
+## Inicia um Loop até os dados estarem certos
 while true; do
 
     ## Pergunta o Dominio da ferramenta
     echo -e "\e[97mPasso$amarelo 1/6\e[0m"
-    echo -en "\e[33mDigite o dominio para o Cal (ex: calcom.seudominio.com): \e[0m" && read -r url_calcom
+    echo -en "\e[33mDigite o dominio para o Cal (ex: calcom.openorion.art.br): \e[0m" && read -r url_calcom
     echo ""
     
     ## Pergunta o email SMTP
     echo -e "\e[97mPasso$amarelo 2/6\e[0m"
-    echo -en "\e[33mDigite o Email para SMTP (ex: admin@seudominio.com): \e[0m" && read -r email_calcom
+    echo -en "\e[33mDigite o Email para SMTP (ex: contato@openorion.art.br): \e[0m" && read -r email_calcom
     echo ""
 
     ## Pergunta o Ususario SMTP
     echo -e "\e[97mPasso$amarelo 3/6\e[0m"
     echo -e "$amarelo--> Caso não tiver um usuario do email, use o proprio email abaixo"
-    echo -en "\e[33mDigite o Usuario para SMTP (ex: openorion ou admin@seudominio.com): \e[0m" && read -r user_calcom
+    echo -en "\e[33mDigite o Usuario para SMTP (ex: openorion ou contato@openorion.art.br): \e[0m" && read -r user_calcom
     echo ""
     
     ## Pergunta a senha do SMTP
     echo -e "\e[97mPasso$amarelo 4/6\e[0m"
-    echo -e "$amarelo--> Sem caracteres especiais: \!#$ | Se estáiver usando gmail use a senha de app"
+    echo -e "$amarelo--> Sem caracteres especiais: \!#$ | Se estiver usando gmail use a senha de app"
     echo -en "\e[33mDigite a Senha SMTP do Email (ex: @Senha123_): \e[0m" && read -r senha_email_calcom
     echo ""
     
@@ -11692,11 +11690,11 @@ while true; do
     echo -e "\e[33mPorta SMTP:\e[97m $porta_smtp_calcom\e[0m"
     echo ""
     
-    ## Pergunta se as respostas estáão corretas
-    read -p "As respostas estáão corretas? (Y/N): " confirmacao
+    ## Pergunta se as respostas estão corretas
+    read -p "As respostas estão corretas? (Y/N): " confirmacao
     if [ "$confirmacao" = "Y" ] || [ "$confirmacao" = "y" ]; then
 
-        ## Digitou Y para confirmar que as informações estáão corretas
+        ## Digitou Y para confirmar que as informações estão corretas
 
         ## Limpar o terminal
         clear
@@ -11708,7 +11706,7 @@ while true; do
         break
     else
 
-        ## Digitou N para dizer que as informações não estáão corretas.
+        ## Digitou N para dizer que as informações não estão corretas.
 
         ## Limpar o terminal
         clear
@@ -11766,7 +11764,7 @@ services:
 ## --------------------------- ORION --------------------------- ##
 
   calcom${1:+_$1}_app:
-    image: calcom/cal.com:latestá
+    image: calcom/cal.com:latest
 
     networks:
       - $nome_rede_interna
@@ -11842,7 +11840,7 @@ if [ $? -eq 0 ]; then
     echo "1/10 - [ OK ] - Criando Stack"
 else
     echo "1/10 - [ OFF ] - Criando Stack"
-    echo "Não foi possível criar a stack do CalCom"
+    echo "Não foi possivel criar a stack do CalCom"
 fi
 STACK_NAME="calcom${1:+_$1}"
 stack_editavel # > /dev/null 2>&1
@@ -11853,7 +11851,7 @@ telemetria Calcom finalizado
 #    echo "2/2 - [ OK ] - Deploy Stack"
 #else
 #    echo "2/2 - [ OFF ] - Deploy Stack"
-#    echo "Não foi possível subir a stack do CalCom"
+#    echo "Não foi possivel subir a stack do CalCom"
 #fi
 
 ## Mensagem de Passo
@@ -11864,7 +11862,7 @@ sleep 1
 ## Baixando imagens:
 pull calcom/cal.com:v4.7.8
 
-## Usa o serviço wait_stack "calcom" para verificar se o serviço estáa online
+## Usa o serviço wait_stack "calcom" para verificar se o serviço esta online
 wait_stack calcom${1:+_$1}_calcom${1:+_$1}
 
 cd dados_vps
@@ -11935,12 +11933,12 @@ nome_mautic
 ## Mostra mensagem para preencher informações
 preencha_as_info
 
-## Inicia um Loop até os dados estáarem certos
+## Inicia um Loop até os dados estarem certos
 while true; do
 
     ## Pergunta o Dominio da ferramenta
     echo -e "\e[97mPasso$amarelo 1/1\e[0m"
-    echo -en "\e[33mDigite o Dominio para o Mautic (ex: mautic.seudominio.com): \e[0m" && read -r url_mautic
+    echo -en "\e[33mDigite o Dominio para o Mautic (ex: mautic.openorion.art.br): \e[0m" && read -r url_mautic
     echo ""
     
     ## Limpa o terminal
@@ -11956,11 +11954,11 @@ while true; do
     echo -e "\e[33mDominio do Mautic:\e[97m $url_mautic\e[0m"
     echo ""
 
-    ## Pergunta se as respostas estáão corretas
-    read -p "As respostas estáão corretas? (Y/N): " confirmacao
+    ## Pergunta se as respostas estão corretas
+    read -p "As respostas estão corretas? (Y/N): " confirmacao
     if [ "$confirmacao" = "Y" ] || [ "$confirmacao" = "y" ]; then
 
-        ## Digitou Y para confirmar que as informações estáão corretas
+        ## Digitou Y para confirmar que as informações estão corretas
 
         ## Limpar o terminal
         clear
@@ -11972,7 +11970,7 @@ while true; do
         break
     else
 
-        ## Digitou N para dizer que as informações não estáão corretas.
+        ## Digitou N para dizer que as informações não estão corretas.
 
         ## Limpar o terminal
         clear
@@ -12194,7 +12192,7 @@ if [ $? -eq 0 ]; then
     echo "1/10 - [ OK ] - Criando Stack"
 else
     echo "1/10 - [ OFF ] - Criando Stack"
-    echo "Não foi possível criar a stack do Mautic"
+    echo "Não foi possivel criar a stack do Mautic"
 fi
 STACK_NAME="mautic${1:+_$1}"
 stack_editavel # > /dev/null 2>&1
@@ -12203,7 +12201,7 @@ stack_editavel # > /dev/null 2>&1
 #    echo "2/2 - [ OK ] - Deploy Stack"
 #else
 #    echo "2/2 - [ OFF ] - Deploy Stack"
-#    echo "Não foi possível subir a stack do Mautic"
+#    echo "Não foi possivel subir a stack do Mautic"
 #fi
 
 ## Mensagem de Passo
@@ -12214,7 +12212,7 @@ sleep 1
 ## Baixando imagens:
 pull mautic/mautic:5.2.8-apache
 
-## Usa o serviço wait_stack "mautic" para verificar se o serviço estáa online
+## Usa o serviço wait_stack "mautic" para verificar se o serviço esta online
 wait_stack mautic${1:+_$1}_mautic_web${1:+_$1} mautic${1:+_$1}_mautic_worker${1:+_$1} mautic${1:+_$1}_mautic_cron${1:+_$1}
 
 telemetria Mautic finalizado
@@ -12292,12 +12290,12 @@ nome_appsmith
 ## Mostra mensagem para preencher informações
 preencha_as_info
 
-## Inicia um Loop até os dados estáarem certos
+## Inicia um Loop até os dados estarem certos
 while true; do
 
     ## Pergunta o Dominio da ferramenta
     echo -e "\e[97mPasso$amarelo 1/1\e[0m"
-    echo -en "\e[33mDigite o dominio para o Appsmith (ex: appsmith.seudominio.com): \e[0m" && read -r url_appsmith
+    echo -en "\e[33mDigite o dominio para o Appsmith (ex: appsmith.openorion.art.br): \e[0m" && read -r url_appsmith
     echo ""
     
     ## Limpa o terminal
@@ -12313,11 +12311,11 @@ while true; do
     echo -e "\e[33mDominio do Appsmith\e[97m $url_appsmith\e[0m"
     echo ""
     
-    ## Pergunta se as respostas estáão corretas
-    read -p "As respostas estáão corretas? (Y/N): " confirmacao
+    ## Pergunta se as respostas estão corretas
+    read -p "As respostas estão corretas? (Y/N): " confirmacao
     if [ "$confirmacao" = "Y" ] || [ "$confirmacao" = "y" ]; then
 
-        ## Digitou Y para confirmar que as informações estáão corretas
+        ## Digitou Y para confirmar que as informações estão corretas
 
         ## Limpar o terminal
         clear
@@ -12329,7 +12327,7 @@ while true; do
         break
     else
 
-        ## Digitou N para dizer que as informações não estáão corretas.
+        ## Digitou N para dizer que as informações não estão corretas.
 
         ## Limpar o terminal
         clear
@@ -12367,7 +12365,7 @@ services:
 ## --------------------------- ORION --------------------------- ##
 
   appsmith${1:+_$1}:
-    image: appsmith/appsmith-ee:latestá
+    image: appsmith/appsmith-ee:latest
 
     volumes:
       - appsmith${1:+_$1}_data:/appsmith-stacks
@@ -12421,7 +12419,7 @@ if [ $? -eq 0 ]; then
     echo "1/10 - [ OK ] - Criando Stack"
 else
     echo "1/10 - [ OFF ] - Criando Stack"
-    echo "Não foi possível criar a stack do Appsmith"
+    echo "Não foi possivel criar a stack do Appsmith"
 fi
 STACK_NAME="appsmith${1:+_$1}"
 stack_editavel # > /dev/null 2>&1
@@ -12430,7 +12428,7 @@ stack_editavel # > /dev/null 2>&1
 #    echo "2/2 - [ OK ] - Deploy Stack"
 #else
 #    echo "2/2 - [ OFF ] - Deploy Stack"
-#    echo "Não foi possível Subir a stack do Appsmith"
+#    echo "Não foi possivel Subir a stack do Appsmith"
 #fi
 
 
@@ -12440,9 +12438,9 @@ echo ""
 sleep 1
 
 ## Baixando imagens:
-pull appsmith/appsmith-ee:latestá
+pull appsmith/appsmith-ee:latest
 
-## Usa o serviço wait_stack "nocobase" para verificar se o serviço estáa online
+## Usa o serviço wait_stack "nocobase" para verificar se o serviço esta online
 wait_stack appsmith${1:+_$1}_appsmith${1:+_$1}
 
 telemetria Appsmith finalizado
@@ -12514,18 +12512,18 @@ nome_qdrant
 ## Mostra mensagem para preencher informações
 preencha_as_info
 
-## Inicia um Loop até os dados estáarem certos
+## Inicia um Loop até os dados estarem certos
 while true; do
 
     ## Pergunta o Dominio da ferramenta
     read -r ip _ <<<$(hostname -I)
     echo -e "\e[97mPasso$amarelo 1/2\e[0m"
-    echo -en "\e[33mDigite dominio para o Qdrant (ex: qdrant.seudominio.com): \e[0m" && read -r url_qdrant
+    echo -en "\e[33mDigite dominio para o Qdrant (ex: qdrant.openorion.art.br): \e[0m" && read -r url_qdrant
     echo ""
     
     ## Pergunta quandos nodes deseja
     echo -e "\e[97mPasso$amarelo 2/2\e[0m"
-    echo -en "\e[33mDigite quantos Nodes vocêê deseja (recomendado: 5, minimo: 1): \e[0m" && read -r nodes_qdrant
+    echo -en "\e[33mDigite quantos Nodes você deseja (recomendado: 5, minimo: 1): \e[0m" && read -r nodes_qdrant
     echo ""
 
     key_qdrant=$(openssl rand -hex 16)
@@ -12551,11 +12549,11 @@ while true; do
     echo -e "\e[33mApikey:\e[97m $key_qdrant\e[0m"
     echo ""
     
-    ## Pergunta se as respostas estáão corretas
-    read -p "As respostas estáão corretas? (Y/N): " confirmacao
+    ## Pergunta se as respostas estão corretas
+    read -p "As respostas estão corretas? (Y/N): " confirmacao
     if [ "$confirmacao" = "Y" ] || [ "$confirmacao" = "y" ]; then
 
-        ## Digitou Y para confirmar que as informações estáão corretas
+        ## Digitou Y para confirmar que as informações estão corretas
 
         ## Limpar o terminal
         clear
@@ -12567,7 +12565,7 @@ while true; do
         break
     else
 
-        ## Digitou N para dizer que as informações não estáão corretas.
+        ## Digitou N para dizer que as informações não estão corretas.
 
         ## Limpar o terminal
         clear
@@ -12629,12 +12627,12 @@ for ((i=0; i< $nodes_qdrant; i++)); do
 ## --------------------------- ORION --------------------------- ##
 
   $node_name:
-    image: qdrant/qdrant:latestá ## Versão do Qdrant
+    image: qdrant/qdrant:latest ## Versão do Qdrant
 EOL
   else
     cat <<EOL >> $filename
   $node_name:
-    image: qdrant/qdrant:latestá ## Versão do Qdrant
+    image: qdrant/qdrant:latest ## Versão do Qdrant
 EOL
   fi
 
@@ -12738,7 +12736,7 @@ if [ $? -eq 0 ]; then
     echo "1/10 - [ OK ] - Criando Stack"
 else
     echo "1/10 - [ OFF ] - Criando Stack"
-    echo "Não foi possível criar a stack do Qdrant"
+    echo "Não foi possivel criar a stack do Qdrant"
 fi
 
 STACK_NAME="qdrant${1:+_$1}"
@@ -12748,7 +12746,7 @@ stack_editavel # > /dev/null 2>&1
 #    echo "2/2 - [ OK ] - Deploy Stack"
 #else
 #    echo "2/2 - [ OFF ] - Deploy Stack"
-#    echo "Não foi possível Subir a stack do Qdrant"
+#    echo "Não foi possivel Subir a stack do Qdrant"
 #fi
 
 ## Mensagem de Passo
@@ -12756,7 +12754,7 @@ echo -e "\e[97m• VERIFICANDO SERVIÇO \e[33m[3/3]\e[0m"
 echo ""
 sleep 1
 
-## Usa o serviço wait_stack "qdrant" para verificar se o serviço estáa online
+## Usa o serviço wait_stack "qdrant" para verificar se o serviço esta online
 wait_stack $containers_qdrant
 
 telemetria QDrant finalizado
@@ -12768,7 +12766,7 @@ cat > dados_qdrant <<EOL
 
 Dashboard do Qdrant: https://$url_qdrant/dashboard
 
-Restá Url: https://$url_qdrant
+Rest Url: https://$url_qdrant
 
 Apikey: $key_qdrant
 EOL
@@ -12792,7 +12790,7 @@ echo ""
 echo -e "\e[33mDashboard:\e[97m https://$url_qdrant/dashboard\e[0m"
 echo ""
 
-echo -e "\e[33mRestá Url:\e[97m https://$url_qdrant\e[0m"
+echo -e "\e[33mRest Url:\e[97m https://$url_qdrant\e[0m"
 echo ""
 
 echo -e "\e[33mApikey:\e[97m $key_qdrant\e[0m"
@@ -12828,12 +12826,12 @@ nome_woofedcrm
 ## Mostra mensagem para preencher informações
 preencha_as_info
 
-## Inicia um Loop até os dados estáarem certos    
+## Inicia um Loop até os dados estarem certos    
 while true; do
 
     ## Pergunta o Dominio da ferramenta
     echo -e "\e[97mPasso$amarelo 1/3\e[0m"
-    echo -en "\e[33mDigite o Dominio para o WoofedCRM (ex: woofedcrm.seudominio.com): \e[0m" && read -r url_woofed
+    echo -en "\e[33mDigite o Dominio para o WoofedCRM (ex: woofedcrm.openorion.art.br): \e[0m" && read -r url_woofed
     echo ""
 
     ## Pergunta o nome do Usuario do Motor
@@ -12869,11 +12867,11 @@ while true; do
     echo -e "\e[33mSenha MOTOR:\e[97m $senha_email_woofed\e[0m"
     echo ""
 
-    ## Pergunta se as respostas estáão corretas
-    read -p "As respostas estáão corretas? (Y/N): " confirmacao
+    ## Pergunta se as respostas estão corretas
+    read -p "As respostas estão corretas? (Y/N): " confirmacao
     if [ "$confirmacao" = "Y" ] || [ "$confirmacao" = "y" ]; then
 
-        ## Digitou Y para confirmar que as informações estáão corretas
+        ## Digitou Y para confirmar que as informações estão corretas
 
         ## Limpar o terminal
         clear
@@ -12885,7 +12883,7 @@ while true; do
         break
     else
 
-        ## Digitou N para dizer que as informações não estáão corretas.
+        ## Digitou N para dizer que as informações não estão corretas.
 
         ## Limpar o terminal
         clear
@@ -12937,9 +12935,11 @@ encryption_key_woofed=$(openssl rand -hex 32)
 
 # Verifica se o arquivo evolution.yaml existe
 if [ -f "/root/evolution_v1.yaml" ]; then
-    # Extrai os valores do arquivo evolution.yaml e formata no estáilo desejado
-    EVOLUTION_API_ENDPOINT="- EVOLUTION_API_ENDPOINT=$(grep -oP '(?<=- SERVER_URL=)[^#]*' /root/evolution.yaml | sed 's/ //g')"
-    EVOLUTION_API_ENDPOINT_TOKEN="- EVOLUTION_API_ENDPOINT_TOKEN=$(grep -oP '(?<=- AUTHENTICATION_API_KEY=)[^#]*' /root/evolution.yaml | sed 's/ //g')"
+    # Extrai os valores do arquivo evolution.yaml e formata no estilo desejado
+    _evo_ep=$(grep 'SERVER_URL=' /root/evolution.yaml | awk -F'SERVER_URL=' '{print $2}' | awk -F'#' '{print $1}' | tr -d ' ')
+    EVOLUTION_API_ENDPOINT="- EVOLUTION_API_ENDPOINT=$_evo_ep"
+    _evo_tok=$(grep 'AUTHENTICATION_API_KEY=' /root/evolution.yaml | awk -F'AUTHENTICATION_API_KEY=' '{print $2}' | awk -F'#' '{print $1}' | tr -d ' ')
+    EVOLUTION_API_ENDPOINT_TOKEN="- EVOLUTION_API_ENDPOINT_TOKEN=$_evo_tok"
 else
     # Define os valores padrão se o arquivo não existir
     EVOLUTION_API_ENDPOINT="#- EVOLUTION_API_ENDPOINT="
@@ -12954,7 +12954,7 @@ services:
 ## --------------------------- ORION --------------------------- ##
 
   woofedcrm${1:+_$1}_web:
-    image: douglara/woofedcrm:latestá
+    image: douglara/woofedcrm:latest
     command: bash -c "bundle exec rails db:prepare && bundle exec puma -C config/puma.rb"
 
     volumes:
@@ -13022,13 +13022,13 @@ services:
         - traefik.http.routers.woofedcrm${1:+_$1}.service=woofedcrm${1:+_$1}
         - traefik.http.services.woofedcrm${1:+_$1}.loadbalancer.server.port=3000 
         - traefik.http.services.woofedcrm${1:+_$1}.loadbalancer.passHostHeader=true 
-        - traefik.http.middlewares.sslheader.headers.customrequestáheaders.X-Forwarded-Proto=https
+        - traefik.http.middlewares.sslheader.headers.customrequestheaders.X-Forwarded-Proto=https
         - traefik.http.routers.woofedcrm${1:+_$1}.middlewares=sslheader
 
 ## --------------------------- ORION --------------------------- ##
 
   woofedcrm${1:+_$1}_sidekiq:
-    image: douglara/woofedcrm:latestá
+    image: douglara/woofedcrm:latest
     command: bundle exec sidekiq -C config/sidekiq.yml
 
     volumes:
@@ -13091,7 +13091,7 @@ services:
 ## --------------------------- ORION --------------------------- ##
 
   woofedcrm${1:+_$1}_job:
-    image: douglara/woofedcrm:latestá
+    image: douglara/woofedcrm:latest
     command: bundle exec good_job
 
     volumes:
@@ -13154,7 +13154,7 @@ services:
 ## --------------------------- ORION --------------------------- ##
 
   woofedcrm${1:+_$1}_redis:
-    image: redis:latestá  ## Versão do Redis
+    image: redis:latest  ## Versão do Redis
     command: [
         "redis-server",
         "--appendonly",
@@ -13201,7 +13201,7 @@ if [ $? -eq 0 ]; then
     echo "1/10 - [ OK ] - Criando Stack"
 else
     echo "1/10 - [ OFF ] - Criando Stack"
-    echo "Não foi possível criar a stack do WoofedCRM"
+    echo "Não foi possivel criar a stack do WoofedCRM"
 fi
 STACK_NAME="woofedcrm${1:+_$1}"
 stack_editavel # > /dev/null 2>&1
@@ -13210,7 +13210,7 @@ stack_editavel # > /dev/null 2>&1
 #    echo "2/2 - [ OK ] - Deploy Stack"
 #else
 #    echo "2/2 - [ OFF ] - Deploy Stack"
-#    echo "Não foi possível Subir a stack do WoofedCRM"
+#    echo "Não foi possivel Subir a stack do WoofedCRM"
 #fi
 
 ## Mensagem de Passo
@@ -13220,9 +13220,9 @@ echo ""
 sleep 1
 
 ## Baixando imagens:
-pull douglara/woofedcrm:latestá
+pull douglara/woofedcrm:latest
 
-## Usa o serviço wait_stack "woofedcrm" para verificar se o serviço estáa online
+## Usa o serviço wait_stack "woofedcrm" para verificar se o serviço esta online
 wait_stack woofedcrm${1:+_$1}_woofedcrm${1:+_$1}_web woofedcrm${1:+_$1}_woofedcrm${1:+_$1}_sidekiq woofedcrm${1:+_$1}_woofedcrm${1:+_$1}_job
 
 telemetria WoofedCRM finalizado
@@ -13275,7 +13275,7 @@ echo -e "\e[97m• VERIFICANDO SERVIÇO \e[33m[6/6]\e[0m"
 echo ""
 sleep 1
 
-## Usa o serviço wait_stack "woofedcrm" para verificar se o serviço estáa online
+## Usa o serviço wait_stack "woofedcrm" para verificar se o serviço esta online
 wait_stack woofedcrm${1:+_$1}_woofedcrm${1:+_$1}_web woofedcrm${1:+_$1}_woofedcrm${1:+_$1}_sidekiq woofedcrm${1:+_$1}_woofedcrm${1:+_$1}_job
 
 cd dados_vps
@@ -13360,28 +13360,28 @@ nome_formbricks
 ## Mostra mensagem para preencher informações
 preencha_as_info
 
-## Inicia um Loop até os dados estáarem certos
+## Inicia um Loop até os dados estarem certos
 while true; do
 
     ## Pergunta o Dominio da ferramenta
     echo -e "\e[97mPasso$amarelo 1/6\e[0m"
-    echo -en "\e[33mDigite o Dominio para o Formbricks (ex: formbricks.seudominio.com): \e[0m" && read -r url_formbricks
+    echo -en "\e[33mDigite o Dominio para o Formbricks (ex: formbricks.openorion.art.br): \e[0m" && read -r url_formbricks
     echo ""
     
     ## Pergunta o Email SMTP
     echo -e "\e[97mPasso$amarelo 2/6\e[0m"
-    echo -en "\e[33mDigite um Email para o SMTP (ex: admin@seudominio.com): \e[0m" && read -r email_formbricks
+    echo -en "\e[33mDigite um Email para o SMTP (ex: contato@openorion.art.br): \e[0m" && read -r email_formbricks
     echo ""
 
     ## Pergunta o User SMTP
     echo -e "\e[97mPasso$amarelo 3/6\e[0m"
     echo -e "$amarelo--> Caso não tiver um usuario do email, use o proprio email abaixo"
-    echo -en "\e[33mDigite o Usuario do SMTP (ex: openorion ou admin@seudominio.com): \e[0m" && read -r user_smtp_formbricks
+    echo -en "\e[33mDigite o Usuario do SMTP (ex: openorion ou contato@openorion.art.br): \e[0m" && read -r user_smtp_formbricks
     echo ""
     
     ## Pergunta a Senha SMTP
     echo -e "\e[97mPasso$amarelo 4/6\e[0m"
-    echo -e "$amarelo--> Sem caracteres especiais: \!#$ | Se estáiver usando gmail use a senha de app"
+    echo -e "$amarelo--> Sem caracteres especiais: \!#$ | Se estiver usando gmail use a senha de app"
     echo -en "\e[33mDigite a Senha SMTP do email (ex: @Senha123_): \e[0m" && read -r senha_formbricks
     echo ""
     
@@ -13434,11 +13434,11 @@ while true; do
     echo -e "\e[33mPorta SMTP:\e[97m $porta_formbricks\e[0m"
     echo ""
     
-    ## Pergunta se as respostas estáão corretas
-    read -p "As respostas estáão corretas? (Y/N): " confirmacao
+    ## Pergunta se as respostas estão corretas
+    read -p "As respostas estão corretas? (Y/N): " confirmacao
     if [ "$confirmacao" = "Y" ] || [ "$confirmacao" = "y" ]; then
 
-        ## Digitou Y para confirmar que as informações estáão corretas
+        ## Digitou Y para confirmar que as informações estão corretas
 
         ## Limpar o terminal
         clear
@@ -13450,7 +13450,7 @@ while true; do
         break
     else
 
-        ## Digitou N para dizer que as informações não estáão corretas.
+        ## Digitou N para dizer que as informações não estão corretas.
 
         ## Limpar o terminal
         clear
@@ -13559,7 +13559,7 @@ services:
       - DATABASE_URL=postgresql://postgres:$senha_pgvector@pgvector:5432/formbricks${1:+_$1}?schema=public
 
       ## Licença Enterprise ou Self-hosting
-      ## Solicitar licenta Self-hosting --> https://seudominio.com/formbricks_licence/ <-- ##
+      ## Solicitar licenta Self-hosting --> https://openorion.art.br/formbricks_licence/ <-- ##
       - ENTERPRISE_LICENSE_KEY=
 
       ## Keys aleatórias 32 caracteres
@@ -13649,14 +13649,14 @@ services:
           memory: 2048M
       labels:
         - traefik.enable=true
-        - traefik.http.routers.formbricks${1:+_$1}_app.rule=Host(\`$url_formbricks\`)
+        - traefik.http.routers.formbricks${1:+_$1}_app.rule=Host(\\`$url_formbricks\\`)
         - traefik.http.services.formbricks${1:+_$1}_app.loadbalancer.server.port=3000
         - traefik.http.routers.formbricks${1:+_$1}_app.service=formbricks${1:+_$1}_app
         - traefik.http.routers.formbricks${1:+_$1}_app.tls.certresolver=letsencryptresolver
         - traefik.http.routers.formbricks${1:+_$1}_app.entrypoints=websecure
         - traefik.http.routers.formbricks${1:+_$1}_app.tls=true
         ## v5: /api/v3/feedbackRecords/token é servido pelo APP (prioridade alta)
-        - traefik.http.routers.feedback-records-token${1:+-$1}.rule=Host(\`$url_formbricks\`) && Path(\`/api/v3/feedbackRecords/token\`)
+        - traefik.http.routers.feedback-records-token${1:+-$1}.rule=Host(\\`$url_formbricks\\`) && Path(\\`/api/v3/feedbackRecords/token\\`)
         - traefik.http.routers.feedback-records-token${1:+-$1}.entrypoints=websecure
         - traefik.http.routers.feedback-records-token${1:+-$1}.tls=true
         - traefik.http.routers.feedback-records-token${1:+-$1}.tls.certresolver=letsencryptresolver
@@ -13666,7 +13666,7 @@ services:
 ## --------------------------- ORION --------------------------- ##
 
   formbricks${1:+_$1}_redis:
-    image: redis:latestá  ## Versão do Redis
+    image: redis:latest  ## Versão do Redis
     command: [
         "redis-server",
         "--appendonly",
@@ -13721,7 +13721,7 @@ services:
       - /opt/formbricks${1:+_$1}/cube/schema:/cube/conf/model:ro
 
     healthcheck:
-      testá: ["CMD", "node", "-e", "require('http').get('http://127.0.0.1:4000/readyz', (res) => { res.resume(); process.exit(res.statusCode === 200 ? 0 : 1); }).on('error', () => process.exit(1));"]
+      test: ["CMD", "node", "-e", "require('http').get('http://127.0.0.1:4000/readyz', (res) => { res.resume(); process.exit(res.statusCode === 200 ? 0 : 1); }).on('error', () => process.exit(1));"]
       interval: 10s
       timeout: 5s
       retries: 12
@@ -13752,7 +13752,7 @@ services:
     deploy:
       mode: replicated
       replicas: 1
-      restáart_policy:
+      restart_policy:
         condition: on-failure
         delay: 15s
         max_attempts: 30
@@ -13795,7 +13795,7 @@ services:
         - traefik.enable=true
         - traefik.http.services.feedback-records-hub${1:+-$1}.loadbalancer.server.port=8080
         # /api/v3/feedbackRecords -> reescreve para /v1/feedback-records
-        - traefik.http.routers.feedback-records-v3${1:+-$1}.rule=Host(\`$url_formbricks\`) && PathPrefix(\`/api/v3/feedbackRecords\`)
+        - traefik.http.routers.feedback-records-v3${1:+-$1}.rule=Host(\\`$url_formbricks\\`) && PathPrefix(\\`/api/v3/feedbackRecords\\`)
         - traefik.http.routers.feedback-records-v3${1:+-$1}.entrypoints=websecure
         - traefik.http.routers.feedback-records-v3${1:+-$1}.tls=true
         - traefik.http.routers.feedback-records-v3${1:+-$1}.tls.certresolver=letsencryptresolver
@@ -13803,7 +13803,7 @@ services:
         - traefik.http.routers.feedback-records-v3${1:+-$1}.priority=100
         - traefik.http.routers.feedback-records-v3${1:+-$1}.middlewares=feedback-records-auth${1:+-$1},feedback-records-v3-rewrite${1:+-$1},feedback-records-hub-headers${1:+-$1}
         # /v1/feedback-records (SDK)
-        - traefik.http.routers.feedback-records-sdk${1:+-$1}.rule=Host(\`$url_formbricks\`) && PathPrefix(\`/v1/feedback-records\`)
+        - traefik.http.routers.feedback-records-sdk${1:+-$1}.rule=Host(\\`$url_formbricks\\`) && PathPrefix(\\`/v1/feedback-records\\`)
         - traefik.http.routers.feedback-records-sdk${1:+-$1}.entrypoints=websecure
         - traefik.http.routers.feedback-records-sdk${1:+-$1}.tls=true
         - traefik.http.routers.feedback-records-sdk${1:+-$1}.tls.certresolver=letsencryptresolver
@@ -13814,14 +13814,14 @@ services:
         - traefik.http.middlewares.feedback-records-auth${1:+-$1}.forwardauth.address=http://formbricks${1:+_$1}_app:3000/api/traefik-auth/feedback-records
         - traefik.http.middlewares.feedback-records-auth${1:+-$1}.forwardauth.forwardbody=true
         - traefik.http.middlewares.feedback-records-auth${1:+-$1}.forwardauth.maxbodysize=1048576
-        - traefik.http.middlewares.feedback-records-auth${1:+-$1}.forwardauth.preserverequestámethod=true
+        - traefik.http.middlewares.feedback-records-auth${1:+-$1}.forwardauth.preserverequestmethod=true
         # Middleware rewrite v3 -> v1 (\$\${1} vira \${1} no deploy)
         - traefik.http.middlewares.feedback-records-v3-rewrite${1:+-$1}.replacepathregex.regex=^/api/v3/feedbackRecords(.*)
         - traefik.http.middlewares.feedback-records-v3-rewrite${1:+-$1}.replacepathregex.replacement=/v1/feedback-records\$\${1}
         # Middleware injeta a chave do Hub e limpa headers do cliente
-        - traefik.http.middlewares.feedback-records-hub-headers${1:+-$1}.headers.customrequestáheaders.Authorization=Bearer $hub_key_form
-        - traefik.http.middlewares.feedback-records-hub-headers${1:+-$1}.headers.customrequestáheaders.X-API-Key=
-        - traefik.http.middlewares.feedback-records-hub-headers${1:+-$1}.headers.customrequestáheaders.Cookie=
+        - traefik.http.middlewares.feedback-records-hub-headers${1:+-$1}.headers.customrequestheaders.Authorization=Bearer $hub_key_form
+        - traefik.http.middlewares.feedback-records-hub-headers${1:+-$1}.headers.customrequestheaders.X-API-Key=
+        - traefik.http.middlewares.feedback-records-hub-headers${1:+-$1}.headers.customrequestheaders.Cookie=
 
 ## --------------------------- ORION --------------------------- ##
 
@@ -13842,7 +13842,7 @@ if [ $? -eq 0 ]; then
     echo "1/10 - [ OK ] - Criando Stack"
 else
     echo "1/10 - [ OFF ] - Criando Stack"
-    echo "Não foi possível criar a stack do Formbricks"
+    echo "Não foi possivel criar a stack do Formbricks"
 fi
 STACK_NAME="formbricks${1:+_$1}"
 stack_editavel # > /dev/null 2>&1
@@ -13851,7 +13851,7 @@ stack_editavel # > /dev/null 2>&1
 #    echo "2/2 - [ OK ] - Deploy Stack"
 #else
 #    echo "2/2 - [ OFF ] - Deploy Stack"
-#    echo "Não foi possível subir a stack do Formbricks"
+#    echo "Não foi possivel subir a stack do Formbricks"
 #fi
 
 ## Mensagem de Passo
@@ -13860,9 +13860,9 @@ echo ""
 sleep 1
 
 ## Baixando imagens:
-pull redis:latestá ghcr.io/formbricks/formbricks:5.3.4 cubejs/cube:v1.6.6 ghcr.io/formbricks/hub:0.8.4
+pull redis:latest ghcr.io/formbricks/formbricks:5.3.4 cubejs/cube:v1.6.6 ghcr.io/formbricks/hub:0.8.4
 
-## Usa o serviço wait_stack "formbricks" para verificar se o serviço estáa online
+## Usa o serviço wait_stack "formbricks" para verificar se o serviço esta online
 wait_stack formbricks${1:+_$1}_formbricks${1:+_$1}_redis formbricks${1:+_$1}_formbricks${1:+_$1}_app formbricks${1:+_$1}_formbricks${1:+_$1}_hub
 wait_30_sec
 telemetria Formbricks finalizado
@@ -13936,12 +13936,12 @@ nome_nocodb
 ## Mostra mensagem para preencher informações
 preencha_as_info
 
-## Inicia um Loop até os dados estáarem certos
+## Inicia um Loop até os dados estarem certos
 while true; do
 
     ##Pergunta o Dominio para a ferramenta
     echo -e "\e[97mPasso$amarelo 1/1\e[0m"
-    echo -en "\e[33mDigite o dominio para o NocoDB (ex: nocodb.seudominio.com): \e[0m" && read -r url_nocodb
+    echo -en "\e[33mDigite o dominio para o NocoDB (ex: nocodb.openorion.art.br): \e[0m" && read -r url_nocodb
     echo ""
     
     ## Limpa o terminal
@@ -13957,11 +13957,11 @@ while true; do
     echo -e "\e[33mDominio para o NocoDB:\e[97m $url_nocodb\e[0m"
     echo ""
     
-     ## Pergunta se as respostas estáão corretas
-    read -p "As respostas estáão corretas? (Y/N): " confirmacao
+     ## Pergunta se as respostas estão corretas
+    read -p "As respostas estão corretas? (Y/N): " confirmacao
     if [ "$confirmacao" = "Y" ] || [ "$confirmacao" = "y" ]; then
 
-        ## Digitou Y para confirmar que as informações estáão corretas
+        ## Digitou Y para confirmar que as informações estão corretas
 
         ## Limpar o terminal
         clear
@@ -13973,7 +13973,7 @@ while true; do
         break
     else
 
-        ## Digitou N para dizer que as informações não estáão corretas.
+        ## Digitou N para dizer que as informações não estão corretas.
 
         ## Limpar o terminal
         clear
@@ -14032,7 +14032,7 @@ services:
 ## --------------------------- ORION --------------------------- ##
 
   nocodb${1:+_$1}_app: 
-    image: nocodb/nocodb:latestá
+    image: nocodb/nocodb:latest
 
     volumes: 
       - nocodb${1:+_$1}_data:/usr/app/data
@@ -14085,7 +14085,7 @@ services:
 ## --------------------------- ORION --------------------------- ##
 
   nocodb${1:+_$1}_redis:
-    image: redis:latestá  ## Versão do Redis
+    image: redis:latest  ## Versão do Redis
     command: [
         "redis-server",
         "--appendonly",
@@ -14132,7 +14132,7 @@ if [ $? -eq 0 ]; then
     echo "1/10 - [ OK ] - Criando Stack"
 else
     echo "1/10 - [ OFF ] - Criando Stack"
-    echo "Não foi possível criar a stack do NocoDB"
+    echo "Não foi possivel criar a stack do NocoDB"
 fi
 STACK_NAME="nocodb${1:+_$1}"
 stack_editavel # > /dev/null 2>&1
@@ -14141,7 +14141,7 @@ stack_editavel # > /dev/null 2>&1
 #    echo "2/2 - [ OK ] - Deploy Stack"
 #else
 #    echo "2/2 - [ OFF ] - Deploy Stack"
-#    echo "Não foi possível Subir a stack do NocoDB"
+#    echo "Não foi possivel Subir a stack do NocoDB"
 #fi
 
 ## Mensagem de Passo
@@ -14150,9 +14150,9 @@ echo ""
 sleep 1
 
 ## Baixando imagens:
-pull nocodb/nocodb:latestá
+pull nocodb/nocodb:latest
 
-## Usa o serviço wait_nocodb para verificar se o serviço estáa online
+## Usa o serviço wait_nocodb para verificar se o serviço esta online
 wait_stack nocodb${1:+_$1}_nocodb${1:+_$1}
 
 telemetria NocoDB finalizado
@@ -14225,12 +14225,12 @@ nome_langfuse
 ## Mostra mensagem para preencher informações
 preencha_as_info
 
-## Inicia um Loop até os dados estáarem certos
+## Inicia um Loop até os dados estarem certos
 while true; do
 
     ##Pergunta o Dominio para a ferramenta
     echo -e "\e[97mPasso$amarelo 1/1\e[0m"
-    echo -en "\e[33mDigite o dominio para o Langfuse (ex: langfuse.seudominio.com): \e[0m" && read -r url_langfuse
+    echo -en "\e[33mDigite o dominio para o Langfuse (ex: langfuse.openorion.art.br): \e[0m" && read -r url_langfuse
     echo ""
     
     ## Limpa o terminal
@@ -14264,11 +14264,11 @@ while true; do
     echo -e "\e[33mSenha do ClickHouse:\e[97m $SENHA_CLICKHOUSE\e[0m"
     echo ""
     
-     ## Pergunta se as respostas estáão corretas
-    read -p "As respostas estáão corretas? (Y/N): " confirmacao
+     ## Pergunta se as respostas estão corretas
+    read -p "As respostas estão corretas? (Y/N): " confirmacao
     if [ "$confirmacao" = "Y" ] || [ "$confirmacao" = "y" ]; then
 
-        ## Digitou Y para confirmar que as informações estáão corretas
+        ## Digitou Y para confirmar que as informações estão corretas
 
         ## Limpar o terminal
         clear
@@ -14280,7 +14280,7 @@ while true; do
         break
     else
 
-        ## Digitou N para dizer que as informações não estáão corretas.
+        ## Digitou N para dizer que as informações não estão corretas.
 
         ## Limpar o terminal
         clear
@@ -14374,7 +14374,7 @@ services:
 ## --------------------------- ORION --------------------------- ##
 
   langfuse${1:+_$1}_app:
-    image: langfuse/langfuse:latestá
+    image: langfuse/langfuse:latest
 
     networks:
      - $nome_rede_interna ## Rede interna
@@ -14454,7 +14454,7 @@ services:
 ## --------------------------- ORION --------------------------- ##
 
   langfuse${1:+_$1}_worker:
-    image: langfuse/langfuse-worker:latestá
+    image: langfuse/langfuse-worker:latest
 
     networks:
      - $nome_rede_interna ## Rede interna
@@ -14526,7 +14526,7 @@ services:
 ## --------------------------- ORION --------------------------- ##
 
   langfuse${1:+_$1}_redis:
-    image: redis:latestá  ## Versão do Redis
+    image: redis:latest  ## Versão do Redis
     command: [
         "redis-server",
         "--appendonly",
@@ -14570,7 +14570,7 @@ if [ $? -eq 0 ]; then
     echo "1/10 - [ OK ] - Criando Stack"
 else
     echo "1/10 - [ OFF ] - Criando Stack"
-    echo "Não foi possível criar a stack do langfuse"
+    echo "Não foi possivel criar a stack do langfuse"
 fi
 STACK_NAME="langfuse${1:+_$1}"
 stack_editavel # > /dev/null 2>&1
@@ -14579,7 +14579,7 @@ stack_editavel # > /dev/null 2>&1
 #    echo "2/2 - [ OK ] - Deploy Stack"
 #else
 #    echo "2/2 - [ OFF ] - Deploy Stack"
-#    echo "Não foi possível Subir a stack do langfuse"
+#    echo "Não foi possivel Subir a stack do langfuse"
 #fi
 
 ## Mensagem de Passo
@@ -14588,9 +14588,9 @@ echo ""
 sleep 1
 
 ## Baixando imagens:
-pull redis:latestá langfuse/langfuse-worker:latestá langfuse/langfuse:latestá
+pull redis:latest langfuse/langfuse-worker:latest langfuse/langfuse:latest
 
-## Usa o serviço wait_langfuse para verificar se o serviço estáa online
+## Usa o serviço wait_langfuse para verificar se o serviço esta online
 wait_stack langfuse${1:+_$1}_langfuse${1:+_$1}_redis langfuse${1:+_$1}_langfuse${1:+_$1}_worker langfuse${1:+_$1}_langfuse${1:+_$1}_app
 
 telemetria Langfuse finalizado
@@ -14663,12 +14663,12 @@ nome_metabase
 ## Mostra mensagem para preencher informações
 preencha_as_info
 
-## Inicia um Loop até os dados estáarem certos
+## Inicia um Loop até os dados estarem certos
 while true; do
 
     ##Pergunta o Dominio para a ferramenta
     echo -e "\e[97mPasso$amarelo 1/1\e[0m"
-    echo -en "\e[33mDigite o dominio para o Metabase (ex: metabase.seudominio.com): \e[0m" && read -r url_metabase
+    echo -en "\e[33mDigite o dominio para o Metabase (ex: metabase.openorion.art.br): \e[0m" && read -r url_metabase
     echo ""
     
     ## Limpa o terminal
@@ -14684,11 +14684,11 @@ while true; do
     echo -e "\e[33mDominio para o metabase:\e[97m $url_metabase\e[0m"
     echo ""
     
-     ## Pergunta se as respostas estáão corretas
-    read -p "As respostas estáão corretas? (Y/N): " confirmacao
+     ## Pergunta se as respostas estão corretas
+    read -p "As respostas estão corretas? (Y/N): " confirmacao
     if [ "$confirmacao" = "Y" ] || [ "$confirmacao" = "y" ]; then
 
-        ## Digitou Y para confirmar que as informações estáão corretas
+        ## Digitou Y para confirmar que as informações estão corretas
 
         ## Limpar o terminal
         clear
@@ -14700,7 +14700,7 @@ while true; do
         break
     else
 
-        ## Digitou N para dizer que as informações não estáão corretas.
+        ## Digitou N para dizer que as informações não estão corretas.
 
         ## Limpar o terminal
         clear
@@ -14762,7 +14762,7 @@ services:
 ## --------------------------- ORION --------------------------- ##
 
   metabase${1:+_$1}:
-    image: metabase/metabase:latestá
+    image: metabase/metabase:latest
 
     volumes:
       - metabase${1:+_$1}_data:/metabase3-data
@@ -14818,7 +14818,7 @@ if [ $? -eq 0 ]; then
     echo "1/10 - [ OK ] - Criando Stack"
 else
     echo "1/10 - [ OFF ] - Criando Stack"
-    echo "Não foi possível criar a stack do metabase"
+    echo "Não foi possivel criar a stack do metabase"
 fi
 STACK_NAME="metabase${1:+_$1}"
 stack_editavel # > /dev/null 2>&1
@@ -14827,7 +14827,7 @@ stack_editavel # > /dev/null 2>&1
 #    echo "2/2 - [ OK ] - Deploy Stack"
 #else
 #    echo "2/2 - [ OFF ] - Deploy Stack"
-#    echo "Não foi possível Subir a stack do metabase"
+#    echo "Não foi possivel Subir a stack do metabase"
 #fi
 
 ## Mensagem de Passo
@@ -14836,9 +14836,9 @@ echo ""
 sleep 1
 
 ## Baixando imagens:
-pull metabase/metabase:latestá
+pull metabase/metabase:latest
 
-## Usa o serviço wait_stack "metabase" para verificar se o serviço estáa online
+## Usa o serviço wait_stack "metabase" para verificar se o serviço esta online
 wait_stack metabase${1:+_$1}_metabase${1:+_$1}
 
 telemetria MetaBase finalizado
@@ -14910,12 +14910,12 @@ nome_odoo
 ## Mostra mensagem para preencher informações
 preencha_as_info
 
-## Inicia um Loop até os dados estáarem certos
+## Inicia um Loop até os dados estarem certos
 while true; do
 
     ##Pergunta o Dominio para a ferramenta
     echo -e "\e[97mPasso$amarelo 1/2\e[0m"
-    echo -en "\e[33mDigite o dominio para o Odoo (ex: odoo.seudominio.com): \e[0m" && read -r url_odoo
+    echo -en "\e[33mDigite o dominio para o Odoo (ex: odoo.openorion.art.br): \e[0m" && read -r url_odoo
     echo ""
 
     ##Pergunta o Dominio para a ferramenta
@@ -14956,11 +14956,11 @@ while true; do
     echo -e "\e[33mVersão do Odoo:\e[97m $odoo_version_selected\e[0m"
     echo ""
     
-     ## Pergunta se as respostas estáão corretas
-    read -p "As respostas estáão corretas? (Y/N): " confirmacao
+     ## Pergunta se as respostas estão corretas
+    read -p "As respostas estão corretas? (Y/N): " confirmacao
     if [ "$confirmacao" = "Y" ] || [ "$confirmacao" = "y" ]; then
 
-        ## Digitou Y para confirmar que as informações estáão corretas
+        ## Digitou Y para confirmar que as informações estão corretas
 
         ## Limpar o terminal
         clear
@@ -14972,7 +14972,7 @@ while true; do
         break
     else
 
-        ## Digitou N para dizer que as informações não estáão corretas.
+        ## Digitou N para dizer que as informações não estão corretas.
 
         ## Limpar o terminal
         clear
@@ -15091,7 +15091,7 @@ if [ $? -eq 0 ]; then
     echo "1/10 - [ OK ] - Criando Stack"
 else
     echo "1/10 - [ OFF ] - Criando Stack"
-    echo "Não foi possível criar a stack do odoo"
+    echo "Não foi possivel criar a stack do odoo"
 fi
 STACK_NAME="odoo${1:+_$1}"
 stack_editavel # > /dev/null 2>&1
@@ -15100,7 +15100,7 @@ stack_editavel # > /dev/null 2>&1
 #    echo "2/2 - [ OK ] - Deploy Stack"
 #else
 #    echo "2/2 - [ OFF ] - Deploy Stack"
-#    echo "Não foi possível Subir a stack do Odoo"
+#    echo "Não foi possivel Subir a stack do Odoo"
 #fi
 
 ## Mensagem de Passo
@@ -15111,7 +15111,7 @@ sleep 1
 ## Baixando imagens:
 pull postgres:15 odoo:$odoo_version_selected
 
-## Usa o serviço wait_odoo para verificar se o serviço estáa online
+## Usa o serviço wait_odoo para verificar se o serviço esta online
 wait_stack odoo${1:+_$1}_odoo${1:+_$1}_app odoo${1:+_$1}_odoo${1:+_$1}_db
 
 telemetria Odoo finalizado
@@ -15184,7 +15184,7 @@ requisitar_outra_instalacao
 ##         ╚═╝  ╚═══╝╚══════╝╚══════╝   ╚═╝    ╚═════╝ ╚═╝  ╚═╝
                                                     
                                                                
-ferramenta_chatwoot_nestáãor() {
+ferramenta_chatwoot_nestor() {
 
 ## Verifica os recursos
 recursos 2 2 && continue || return
@@ -15196,17 +15196,17 @@ clear
 dados
 
 ## Mostra o nome da aplicação
-nome_chatwoot_nestáãor
+nome_chatwoot_nestor
 
 ## Mostra mensagem para preencher informações
 preencha_as_info
 
-## Inicia um Loop até os dados estáarem certos
+## Inicia um Loop até os dados estarem certos
 while true; do
 
     ##Pergunta o Dominio para aplicação
     echo -e "\e[97mPasso$amarelo 1/6\e[0m"
-    echo -en "\e[33mDigite o Dominio para o Chatwoot (ex: chatwoot.seudominio.com): \e[0m" && read -r url_chatwoot
+    echo -en "\e[33mDigite o Dominio para o Chatwoot (ex: chatwoot.openorion.art.br): \e[0m" && read -r url_chatwoot
     echo ""
     
     ## Pega o nome do dominio para ser o nome da empresa
@@ -15214,7 +15214,7 @@ while true; do
     
     ## Pergunta o email SMTP
     echo -e "\e[97mPasso$amarelo 2/6\e[0m"
-    echo -en "\e[33mDigite o Email para SMTP (ex: admin@seudominio.com): \e[0m" && read -r email_admin_chatwoot
+    echo -en "\e[33mDigite o Email para SMTP (ex: contato@openorion.art.br): \e[0m" && read -r email_admin_chatwoot
     echo ""
 
     ## Define o dominio SMTP com o dominio do email
@@ -15223,12 +15223,12 @@ while true; do
     ##Pergunta o usuário do Email SMTP
     echo -e "\e[97mPasso$amarelo 3/6\e[0m"
     echo -e "$amarelo--> Caso não tiver um usuario do email, use o proprio email abaixo"
-    echo -en "\e[33mDigite o Usuário para SMTP (ex: openorion ou admin@seudominio.com): \e[0m" && read -r user_smtp_chatwoot
+    echo -en "\e[33mDigite o Usuário para SMTP (ex: openorion ou contato@openorion.art.br): \e[0m" && read -r user_smtp_chatwoot
     echo ""
     
     ## Pergunta a senha do SMTP
     echo -e "\e[97mPasso$amarelo 4/6\e[0m"
-    echo -e "$amarelo--> Sem caracteres especiais: \!#$ | Se estáiver usando gmail use a senha de app"
+    echo -e "$amarelo--> Sem caracteres especiais: \!#$ | Se estiver usando gmail use a senha de app"
     echo -en "\e[33mDigite a Senha SMTP do Email (ex: @Senha123_): \e[0m" && read -r senha_email_chatwoot
     echo ""
     
@@ -15252,7 +15252,7 @@ while true; do
     clear
     
     ## Mostra o nome da aplicação
-    nome_chatwoot_nestáãor
+    nome_chatwoot_nestor
     
     ## Mostra mensagem para verificar as informações
     conferindo_as_info
@@ -15286,11 +15286,11 @@ while true; do
     echo ""
     echo ""
 
-    ## Pergunta se as respostas estáão corretas
-    read -p "As respostas estáão corretas? (Y/N): " confirmacao
+    ## Pergunta se as respostas estão corretas
+    read -p "As respostas estão corretas? (Y/N): " confirmacao
     if [ "$confirmacao" = "Y" ] || [ "$confirmacao" = "y" ]; then
 
-        ## Digitou Y para confirmar que as informações estáão corretas
+        ## Digitou Y para confirmar que as informações estão corretas
 
         ## Limpar o terminal
         clear
@@ -15302,13 +15302,13 @@ while true; do
         break
     else
 
-        ## Digitou N para dizer que as informações não estáão corretas.
+        ## Digitou N para dizer que as informações não estão corretas.
 
         ## Limpar o terminal
         clear
 
         ## Mostra o nome da ferramenta
-        nome_chatwoot_nestáãor
+        nome_chatwoot_nestor
 
         ## Mostra mensagem para preencher informações
         preencha_as_info
@@ -15323,7 +15323,7 @@ echo -e "\e[97m• INICIANDO A INSTALAÇÃO DO CHATWOOT NESTOR \e[33m[1/7]\e[0m"
 echo ""
 sleep 1
 
-telemetria "Chatwoot Nestáãor" "iniciado"
+telemetria "Chatwoot Nestor" "iniciado"
 
 ## Ativa a função dados para pegar os dados da vps
 dados
@@ -15342,13 +15342,13 @@ if [ $? -eq 0 ]; then
     echo "1/3 - [ OK ] - Postgres já instalado"
     pegar_senha_pgvector > /dev/null 2>&1
     echo "2/3 - [ OK ] - Copiando senha do Postgres"
-    criar_banco_pgvector_da_stack "chatwoot_nestáãor${1:+_$1}"
+    criar_banco_pgvector_da_stack "chatwoot_nestor${1:+_$1}"
     echo "3/3 - [ OK ] - Criando banco de dados"
     echo ""
 else
     ferramenta_pgvector
     pegar_senha_pgvector > /dev/null 2>&1
-    criar_banco_pgvector_da_stack "chatwoot_nestáãor${1:+_$1}"
+    criar_banco_pgvector_da_stack "chatwoot_nestor${1:+_$1}"
 fi
 
 ## Verifica/instala o Redis
@@ -15365,38 +15365,38 @@ echo -e "\e[97m• INSTALANDO CHATWOOT NESTOR \e[33m[4/7]\e[0m"
 echo ""
 sleep 1
 
-## Nestáe passo vamos estáar criando a Stack yaml do Chatwoot na pasta /root/
+## Neste passo vamos estar criando a Stack yaml do Chatwoot na pasta /root/
 ## Isso possibilitará que o usuario consiga edita-lo posteriormente
 
-## Depois vamos instalar o Chatwoot e verificar se estáa tudo certo.
+## Depois vamos instalar o Chatwoot e verificar se esta tudo certo.
 
 ## Criando key aleatória
 encryption_key=$(openssl rand -hex 16)
 
-## Criando a stack chatwoot_nestáãor.yaml
-cat > chatwoot_nestáãor${1:+_$1}.yaml <<EOL
+## Criando a stack chatwoot_nestor.yaml
+cat > chatwoot_nestor${1:+_$1}.yaml <<EOL
 version: "3.7"
 services:
 
 ## --------------------------- ORION --------------------------- ##
 
-   chatwoot_nestáãor${1:+_$1}_app:
-    image: sendingtk/chatwoot:latestá ## Versão do Chatwoot Nestáãor
+   chatwoot_nestor${1:+_$1}_app:
+    image: sendingtk/chatwoot:latest ## Versão do Chatwoot Nestor
     command: bundle exec rails s -p 3000 -b 0.0.0.0
     entrypoint: docker/entrypoints/rails.sh
 
     volumes:
-      - chatwoot_nestáãor${1:+_$1}_storage:/app/storage ## Arquivos de conversa
-      - chatwoot_nestáãor${1:+_$1}_public:/app/public ## Arquivos de logos
-      - chatwoot_nestáãor${1:+_$1}_mailer:/app/app/views/devise/mailer ## Arquivos de email
-      - chatwoot_nestáãor${1:+_$1}_mailers:/app/app/views/mailers ## Arquivos de emails
+      - chatwoot_nestor${1:+_$1}_storage:/app/storage ## Arquivos de conversa
+      - chatwoot_nestor${1:+_$1}_public:/app/public ## Arquivos de logos
+      - chatwoot_nestor${1:+_$1}_mailer:/app/app/views/devise/mailer ## Arquivos de email
+      - chatwoot_nestor${1:+_$1}_mailers:/app/app/views/mailers ## Arquivos de emails
 
     networks:
       - $nome_rede_interna ## Nome da rede interna
     
     environment:
       ## Qualquer Url com # no final
-      - CHATWOOT_HUB_URL=https://seudominio.com/setup#
+      - CHATWOOT_HUB_URL=https://openorion.art.br/setup#
 
       ## Nome da Empresa
       - INSTALLATION_NAME=$nome_empresa_chatwoot
@@ -15419,17 +15419,17 @@ services:
 
       ## Dados do Redis
       - REDIS_URL=redis://redis:6379
-      - REDIS_PREFIX=chatwoot_nestáãor${1:+_$1}_
+      - REDIS_PREFIX=chatwoot_nestor${1:+_$1}_
 
       ## Dados do Postgres
       - POSTGRES_HOST=pgvector
       - POSTGRES_USERNAME=postgres
       - POSTGRES_PASSWORD=$senha_pgvector ## Senha do postgres
-      - POSTGRES_DATABASE=chatwoot_nestáãor${1:+_$1}
+      - POSTGRES_DATABASE=chatwoot_nestor${1:+_$1}
 
       ## Armazenamento
       - ACTIVE_STORAGE_SERVICE=local ## use s3_compatible para MinIO
-      #- STORAGE_BUCKET_NAME=chatwoot_nestáãor${1:+_$1}
+      #- STORAGE_BUCKET_NAME=chatwoot_nestor${1:+_$1}
       #- STORAGE_ACCESS_KEY_ID=ACCESS_KEY_MINIO
       #- STORAGE_SECRET_ACCESS_KEY=SECRET_KEY_MINIO
       #- STORAGE_REGION=eu-south
@@ -15476,34 +15476,34 @@ services:
           memory: 1024M
       labels:
         - traefik.enable=true
-        - traefik.http.routers.chatwoot_nestáãor${1:+_$1}_app.rule=Host(\`$url_chatwoot\`)
-        - traefik.http.routers.chatwoot_nestáãor${1:+_$1}_app.entrypoints=websecure
-        - traefik.http.routers.chatwoot_nestáãor${1:+_$1}_app.tls.certresolver=letsencryptresolver
-        - traefik.http.routers.chatwoot_nestáãor${1:+_$1}_app.priority=1
-        - traefik.http.routers.chatwoot_nestáãor${1:+_$1}_app.service=chatwoot_nestáãor${1:+_$1}_app
-        - traefik.http.services.chatwoot_nestáãor${1:+_$1}_app.loadbalancer.server.port=3000 
-        - traefik.http.services.chatwoot_nestáãor${1:+_$1}_app.loadbalancer.passHostHeader=true 
-        - traefik.http.middlewares.sslheader.headers.customrequestáheaders.X-Forwarded-Proto=https
-        - traefik.http.routers.chatwoot_nestáãor${1:+_$1}_app.middlewares=sslheader
+        - traefik.http.routers.chatwoot_nestor${1:+_$1}_app.rule=Host(\`$url_chatwoot\`)
+        - traefik.http.routers.chatwoot_nestor${1:+_$1}_app.entrypoints=websecure
+        - traefik.http.routers.chatwoot_nestor${1:+_$1}_app.tls.certresolver=letsencryptresolver
+        - traefik.http.routers.chatwoot_nestor${1:+_$1}_app.priority=1
+        - traefik.http.routers.chatwoot_nestor${1:+_$1}_app.service=chatwoot_nestor${1:+_$1}_app
+        - traefik.http.services.chatwoot_nestor${1:+_$1}_app.loadbalancer.server.port=3000 
+        - traefik.http.services.chatwoot_nestor${1:+_$1}_app.loadbalancer.passHostHeader=true 
+        - traefik.http.middlewares.sslheader.headers.customrequestheaders.X-Forwarded-Proto=https
+        - traefik.http.routers.chatwoot_nestor${1:+_$1}_app.middlewares=sslheader
 
 ## --------------------------- ORION --------------------------- ##
 
-   chatwoot_nestáãor${1:+_$1}_sidekiq:
-    image: sendingtk/chatwoot:latestá ## Versão do Chatwoot Nestáãor
+   chatwoot_nestor${1:+_$1}_sidekiq:
+    image: sendingtk/chatwoot:latest ## Versão do Chatwoot Nestor
     command: bundle exec sidekiq -C config/sidekiq.yml
 
     volumes:
-      - chatwoot_nestáãor${1:+_$1}_storage:/app/storage ## Arquivos de conversa
-      - chatwoot_nestáãor${1:+_$1}_public:/app/public ## Arquivos de logos
-      - chatwoot_nestáãor${1:+_$1}_mailer:/app/app/views/devise/mailer ## Arquivos de email
-      - chatwoot_nestáãor${1:+_$1}_mailers:/app/app/views/mailers ## Arquivos de emails
+      - chatwoot_nestor${1:+_$1}_storage:/app/storage ## Arquivos de conversa
+      - chatwoot_nestor${1:+_$1}_public:/app/public ## Arquivos de logos
+      - chatwoot_nestor${1:+_$1}_mailer:/app/app/views/devise/mailer ## Arquivos de email
+      - chatwoot_nestor${1:+_$1}_mailers:/app/app/views/mailers ## Arquivos de emails
 
     networks:
       - $nome_rede_interna ## Nome da rede interna
 
     environment:
       ## Qualquer Url com # no final
-      - CHATWOOT_HUB_URL=https://seudominio.com/setup#
+      - CHATWOOT_HUB_URL=https://openorion.art.br/setup#
 
       ## Nome da Empresa
       - INSTALLATION_NAME=$nome_empresa_chatwoot
@@ -15526,17 +15526,17 @@ services:
 
       ## Dados do Redis
       - REDIS_URL=redis://redis:6379
-      - REDIS_PREFIX=chatwoot_nestáãor${1:+_$1}_
+      - REDIS_PREFIX=chatwoot_nestor${1:+_$1}_
 
       ## Dados do Postgres
       - POSTGRES_HOST=pgvector
       - POSTGRES_USERNAME=postgres
       - POSTGRES_PASSWORD=$senha_pgvector ## Senha do postgres
-      - POSTGRES_DATABASE=chatwoot_nestáãor${1:+_$1}
+      - POSTGRES_DATABASE=chatwoot_nestor${1:+_$1}
 
       ## Armazenamento
       - ACTIVE_STORAGE_SERVICE=local ## use s3_compatible para MinIO
-      #- STORAGE_BUCKET_NAME=chatwoot_nestáãor${1:+_$1}
+      #- STORAGE_BUCKET_NAME=chatwoot_nestor${1:+_$1}
       #- STORAGE_ACCESS_KEY_ID=ACCESS_KEY_MINIO
       #- STORAGE_SECRET_ACCESS_KEY=SECRET_KEY_MINIO
       #- STORAGE_REGION=eu-south
@@ -15585,18 +15585,18 @@ services:
 ## --------------------------- ORION --------------------------- ##
 
 volumes:
-  chatwoot_nestáãor${1:+_$1}_storage:
+  chatwoot_nestor${1:+_$1}_storage:
     external: true
-    name: chatwoot_nestáãor${1:+_$1}_storage
-  chatwoot_nestáãor${1:+_$1}_public:
+    name: chatwoot_nestor${1:+_$1}_storage
+  chatwoot_nestor${1:+_$1}_public:
     external: true
-    name: chatwoot_nestáãor${1:+_$1}_public
-  chatwoot_nestáãor${1:+_$1}_mailer:
+    name: chatwoot_nestor${1:+_$1}_public
+  chatwoot_nestor${1:+_$1}_mailer:
     external: true
-    name: chatwoot_nestáãor${1:+_$1}_mailer
-  chatwoot_nestáãor${1:+_$1}_mailers:
+    name: chatwoot_nestor${1:+_$1}_mailer
+  chatwoot_nestor${1:+_$1}_mailers:
     external: true
-    name: chatwoot_nestáãor${1:+_$1}_mailers
+    name: chatwoot_nestor${1:+_$1}_mailers
 
 networks:
   $nome_rede_interna: ## Nome da rede interna
@@ -15607,17 +15607,17 @@ if [ $? -eq 0 ]; then
     echo "1/10 - [ OK ] - Criando Stack"
 else
     echo "1/10 - [ OFF ] - Criando Stack"
-    echo "Não foi possível criar a stack do Chatwoot"
+    echo "Não foi possivel criar a stack do Chatwoot"
 fi
-STACK_NAME="chatwoot_nestáãor${1:+_$1}"
+STACK_NAME="chatwoot_nestor${1:+_$1}"
 stack_editavel #> /dev/null 2>&1
 
-#docker stack deploy --prune --resolve-image always -c chatwoot_nestáãor.yaml chatwoot > /dev/null 2>&1
+#docker stack deploy --prune --resolve-image always -c chatwoot_nestor.yaml chatwoot > /dev/null 2>&1
 #if [ $? -eq 0 ]; then
 #    echo "2/2 - [ OK ] - Deploy Stack"
 #else
 #    echo "2/2 - [ OFF ] - Deploy Stack"
-#    echo "Não foi possível subir a stack do Chatwoot"
+#    echo "Não foi possivel subir a stack do Chatwoot"
 #fi
 
 ## Mensagem de Passo
@@ -15626,22 +15626,22 @@ echo ""
 sleep 1
 
 ## Baixando imagens:
-pull sendingtk/chatwoot:latestá
+pull sendingtk/chatwoot:latest
 
-## Usa o serviço wait_chatwoot para verificar se o serviço estáa online
-wait_stack chatwoot_nestáãor${1:+_$1}_chatwoot_nestáãor${1:+_$1}_app chatwoot_nestáãor${1:+_$1}_chatwoot_nestáãor${1:+_$1}_sidekiq
+## Usa o serviço wait_chatwoot para verificar se o serviço esta online
+wait_stack chatwoot_nestor${1:+_$1}_chatwoot_nestor${1:+_$1}_app chatwoot_nestor${1:+_$1}_chatwoot_nestor${1:+_$1}_sidekiq
 
-telemetria "Chatwoot Nestáãor" "finalizado"
+telemetria "Chatwoot Nestor" "finalizado"
 ## Mensagem de Passo
 echo -e "\e[97m• MIGRANDO BANCO DE DADOS \e[33m[6/7]\e[0m"
 echo ""
 sleep 1
 
-## Aqui vamos estáar migrando o banco de dados usando o comando "bundle exec rails db:chatwoot_prepare"
+## Aqui vamos estar migrando o banco de dados usando o comando "bundle exec rails db:chatwoot_prepare"
 
-## Basicamente vocêe poderia entrar no banco de dados do chatwoot e executar o comando por lá tambem
+## Basicamente voce poderia entrar no banco de dados do chatwoot e executar o comando por lá tambem
 
-container_name="chatwoot_nestáãor${1:+_$1}_chatwoot_nestáãor${1:+_$1}_app"
+container_name="chatwoot_nestor${1:+_$1}_chatwoot_nestor${1:+_$1}_app"
 
 max_wait_time=1200
 
@@ -15668,7 +15668,7 @@ if [ $? -eq 0 ]; then
     echo "1/1 - [ OK ] - Executando no container: bundle exec rails db:chatwoot_prepare"
 else
     echo "1/1 - [ OFF ] - Executando no container: bundle exec rails db:chatwoot_prepare"
-    echo "Não foi possível migrar o banco de dados"
+    echo "Não foi possivel migrar o banco de dados"
 fi
 
 echo ""
@@ -15683,7 +15683,7 @@ wait_for_pgvector
 CONTAINER_ID_NESTOR=$(docker ps -q --filter "name=pgvector_pgvector")
 
 docker exec -i $CONTAINER_ID_NESTOR psql -U postgres <<EOF > /dev/null 2>&1
-\c chatwoot_nestáãor${1:+_$1};
+\c chatwoot_nestor${1:+_$1};
 update installation_configs set locked = false;
 \q
 EOF
@@ -15691,7 +15691,7 @@ if [ $? -eq 0 ]; then
     echo "1/1 - [ OK ] - Desbloqueando tabela installation_configs no postgres"
 else
     echo "1/1 - [ OFF ] - Desbloqueando tabela installation_configs no postgres"
-    echo "Não foi possível liberar as funções do super_admin"
+    echo "Não foi possivel liberar as funções do super_admin"
 fi
 
 echo ""
@@ -15699,7 +15699,7 @@ echo ""
 ## Salvando informações da instalação dentro de /dados_vps/
 cd dados_vps
 
-cat > dados_chatwoot_nestáãor${1:+_$1} <<EOL
+cat > dados_chatwoot_nestor${1:+_$1} <<EOL
 [ CHATWOOT NESTOR ]
 
 Dominio do Chatwoot: https://$url_chatwoot
@@ -15764,12 +15764,12 @@ nome_unoapi
 ## Mostra mensagem para preencher informações
 preencha_as_info
 
-## Inicia um Loop até os dados estáarem certos
+## Inicia um Loop até os dados estarem certos
 while true; do
 
     ##Pergunta o Dominio da UnoApi
     echo -e "\e[97mPasso$amarelo 1/1\e[0m"
-    echo -en "\e[33mDigite o Dominio para a Uno API (ex: unoapi.seudominio.com): \e[0m" && read -r url_unoapi
+    echo -en "\e[33mDigite o Dominio para a Uno API (ex: unoapi.openorion.art.br): \e[0m" && read -r url_unoapi
     echo ""
 
     ## Limpa o terminal
@@ -15784,11 +15784,11 @@ while true; do
     echo -e "\e[33mDominio da Uno API:\e[97m $url_unoapi\e[0m"
     echo ""
 
-    ## Pergunta se as respostas estáão corretas
-    read -p "As respostas estáão corretas? (Y/N): " confirmacao
+    ## Pergunta se as respostas estão corretas
+    read -p "As respostas estão corretas? (Y/N): " confirmacao
     if [ "$confirmacao" = "Y" ] || [ "$confirmacao" = "y" ]; then
 
-        ## Digitou Y para confirmar que as informações estáão corretas
+        ## Digitou Y para confirmar que as informações estão corretas
 
         ## Limpar o terminal
         clear
@@ -15800,7 +15800,7 @@ while true; do
         break
     else
 
-        ## Digitou N para dizer que as informações não estáão corretas.
+        ## Digitou N para dizer que as informações não estão corretas.
 
         ## Limpar o terminal
         clear
@@ -15872,7 +15872,7 @@ services:
 ## --------------------------- ORION --------------------------- ##
 
   unoapi${1:+_$1}_api:
-    image: clairton/unoapi-cloud:latestá
+    image: clairton/unoapi-cloud:latest
     entrypoint: yarn cloud
 
     volumes:
@@ -15939,7 +15939,7 @@ services:
 ## --------------------------- ORION --------------------------- ##
 
   unoapi${1:+_$1}_redis:
-    image: redis:latestá  ## Versão do Redis
+    image: redis:latest  ## Versão do Redis
     command: [
         "redis-server",
         "--appendonly",
@@ -15986,7 +15986,7 @@ if [ $? -eq 0 ]; then
     echo "1/10 - [ OK ] - Criando Stack"
 else
     echo "1/10 - [ OFF ] - Criando Stack"
-    echo "Não foi possível criar a stack do Uno API"
+    echo "Não foi possivel criar a stack do Uno API"
 fi
 STACK_NAME="unoapi${1:+_$1}"
 stack_editavel # > /dev/null 2>&1
@@ -15995,7 +15995,7 @@ stack_editavel # > /dev/null 2>&1
 #    echo "2/2 - [ OK ] - Deploy Stack"
 #else
 #    echo "2/2 - [ OFF ] - Deploy Stack"
-#    echo "Não foi possível subir a stack do Uno API"
+#    echo "Não foi possivel subir a stack do Uno API"
 #fi
 
 ## Mensagem de Passo
@@ -16004,9 +16004,9 @@ echo ""
 sleep 1
 
 ## Baixando imagens:
-pull redis:latestá clairton/unoapi-cloud:latestá
+pull redis:latest clairton/unoapi-cloud:latest
 
-## Usa o serviço wait_unoapi para verificar se o serviço estáa online
+## Usa o serviço wait_unoapi para verificar se o serviço esta online
 wait_stack unoapi${1:+_$1}_unoapi${1:+_$1}_redis unoapi${1:+_$1}_unoapi${1:+_$1}_api
 
 telemetria "Uno API" "finalizado"
@@ -16080,32 +16080,32 @@ nome_n8n_quepasa
 ## Mostra mensagem para preencher informações
 preencha_as_info
 
-## Inicia um Loop até os dados estáarem certos
+## Inicia um Loop até os dados estarem certos
 while true; do
 
     ##Pergunta o Dominio do N8N
     echo -e "\e[97mPasso$amarelo 1/8\e[0m"
-    echo -en "\e[33mDigite o dominio para o N8N (ex: n8n.seudominio.com): \e[0m" && read -r url_editorn8n
+    echo -en "\e[33mDigite o dominio para o N8N (ex: n8n.openorion.art.br): \e[0m" && read -r url_editorn8n
     echo ""
     
     ##Pergunta o Dominio do Webhook
     echo -e "\e[97mPasso$amarelo 2/8\e[0m"
-    echo -en "\e[33mDigite o dominio para o Webhook do N8N (ex: webhook.seudominio.com): \e[0m" && read -r url_webhookn8n
+    echo -en "\e[33mDigite o dominio para o Webhook do N8N (ex: webhook.openorion.art.br): \e[0m" && read -r url_webhookn8n
     echo ""
 
     ##Pergunta Dominio do Chatwoot
     echo -e "\e[97mPasso$amarelo 3/8\e[0m"
-    echo -en "\e[33mDigite o dominio do Chatwoot (ex: chatwoot.seudominio.com): \e[0m" && read -r dominio_chatwoot
+    echo -en "\e[33mDigite o dominio do Chatwoot (ex: chatwoot.openorion.art.br): \e[0m" && read -r dominio_chatwoot
     echo ""
 
     ##Pergunta Dominio do Quepasa
     echo -e "\e[97mPasso$amarelo 4/8\e[0m"
-    echo -en "\e[33mDigite o dominio do Quepasa (ex: quepasa.seudominio.com): \e[0m" && read -r dominio_quepasa
+    echo -en "\e[33mDigite o dominio do Quepasa (ex: quepasa.openorion.art.br): \e[0m" && read -r dominio_quepasa
     echo ""
 
     ##Pergunta Email do Quepasa
     echo -e "\e[97mPasso$amarelo 5/8\e[0m"
-    echo -en "\e[33mDigite o email do Quepasa (ex: admin@seudominio.com): \e[0m" && read -r email_quepasa
+    echo -en "\e[33mDigite o email do Quepasa (ex: contato@openorion.art.br): \e[0m" && read -r email_quepasa
     echo ""
 
      ## Nome usuario padrão para criação do qrcode (utoken)
@@ -16163,10 +16163,10 @@ while true; do
     echo -e "\e[33mToken User Padrão:\e[97m $user_padrao_id\e[0m"
     echo ""
 
-    read -p "As respostas estáão corretas? (Y/N): " confirmacao
+    read -p "As respostas estão corretas? (Y/N): " confirmacao
     if [ "$confirmacao" = "Y" ] || [ "$confirmacao" = "y" ]; then
 
-        ## Digitou Y para confirmar que as informações estáão corretas
+        ## Digitou Y para confirmar que as informações estão corretas
 
         ## Limpar o terminal
         clear
@@ -16178,7 +16178,7 @@ while true; do
         break
     else
 
-        ## Digitou N para dizer que as informações não estáão corretas.
+        ## Digitou N para dizer que as informações não estão corretas.
 
         ## Limpar o terminal
         clear
@@ -16252,7 +16252,7 @@ services:
 ## --------------------------- ORION --------------------------- ##
 
   n8n_quepasa${1:+_$1}_editor:
-    image: deividms/n8n-quepasa:latestá ## Versão do N8N
+    image: deividms/n8n-quepasa:latest ## Versão do N8N
     command: start
 
     networks:
@@ -16366,7 +16366,7 @@ services:
 ## --------------------------- ORION --------------------------- ##
 
   n8n_quepasa${1:+_$1}_webhook:
-    image: deividms/n8n-quepasa:latestá ## Versão do N8N
+    image: deividms/n8n-quepasa:latest ## Versão do N8N
     command: webhook
 
     networks:
@@ -16480,7 +16480,7 @@ services:
 ## --------------------------- ORION --------------------------- ##
 
   n8n_quepasa${1:+_$1}_worker:
-    image: deividms/n8n-quepasa:latestá ## Versão do N8N
+    image: deividms/n8n-quepasa:latest ## Versão do N8N
     command: worker --concurrency=10
 
     networks:
@@ -16594,7 +16594,7 @@ if [ $? -eq 0 ]; then
     echo "1/10 - [ OK ] - Criando Stack"
 else
     echo "1/10 - [ OFF ] - Criando Stack"
-    echo "Não foi possível criar a stack do N8N Quepasa"
+    echo "Não foi possivel criar a stack do N8N Quepasa"
 fi
 STACK_NAME="n8n_quepasa${1:+_$1}"
 stack_editavel # > /dev/null 2>&1
@@ -16603,7 +16603,7 @@ stack_editavel # > /dev/null 2>&1
 #    echo "2/2 - [ OK ] - Deploy Stack"
 #else
 #    echo "2/2 - [ OFF ] - Deploy Stack"
-#    echo "Não foi possível subir a stack do N8N Quepasa"
+#    echo "Não foi possivel subir a stack do N8N Quepasa"
 #fi
 
 ## Mensagem de Passo
@@ -16612,9 +16612,9 @@ echo ""
 sleep 1
 
 ## Baixando imagens:
-pull deividms/n8n-quepasa:latestá
+pull deividms/n8n-quepasa:latest
 
-## Usa o serviço wait_n8n para verificar se o serviço estáa online
+## Usa o serviço wait_n8n para verificar se o serviço esta online
 wait_stack n8n_quepasa${1:+_$1}_n8n_quepasa${1:+_$1}_editor n8n_quepasa${1:+_$1}_n8n_quepasa${1:+_$1}_webhook n8n_quepasa${1:+_$1}_n8n_quepasa${1:+_$1}_worker
 
 telemetria "N8N & Quepasa" "finalizado"
@@ -16689,12 +16689,12 @@ nome_quepasa
 ## Mostra mensagem para preencher informações
 preencha_as_info
 
-## Inicia um Loop até os dados estáarem certos
+## Inicia um Loop até os dados estarem certos
 while true; do
 
     ##Pergunta o Dominio para a ferramenta
     echo -e "\e[97mPasso$amarelo 1/1\e[0m"
-    echo -en "\e[33mDigite o dominio para o Quepasa (ex: quepasa.seudominio.com): \e[0m" && read -r url_quepasa
+    echo -en "\e[33mDigite o dominio para o Quepasa (ex: quepasa.openorion.art.br): \e[0m" && read -r url_quepasa
     echo ""
     
     ## Limpa o terminal
@@ -16710,11 +16710,11 @@ while true; do
     echo -e "\e[33mDominio do Quepasa:\e[97m $url_quepasa\e[0m"
     echo ""
     
-    ## Pergunta se as respostas estáão corretas
-    read -p "As respostas estáão corretas? (Y/N): " confirmacao
+    ## Pergunta se as respostas estão corretas
+    read -p "As respostas estão corretas? (Y/N): " confirmacao
     if [ "$confirmacao" = "Y" ] || [ "$confirmacao" = "y" ]; then
 
-        ## Digitou Y para confirmar que as informações estáão corretas
+        ## Digitou Y para confirmar que as informações estão corretas
 
         ## Limpar o terminal
         clear
@@ -16726,7 +16726,7 @@ while true; do
         break
     else
 
-        ## Digitou N para dizer que as informações não estáão corretas.
+        ## Digitou N para dizer que as informações não estão corretas.
 
         ## Limpar o terminal
         clear
@@ -16790,7 +16790,7 @@ services:
 ## --------------------------- ORION --------------------------- ##
 
   quepasa${1:+_$1}:
-    image: codeleaks/quepasa:latestá ## Imagem/versão do Quepasa
+    image: codeleaks/quepasa:latest ## Imagem/versão do Quepasa
       
     volumes:
       - quepasa${1:+_$1}_volume:/opt/quepasa
@@ -16890,7 +16890,7 @@ if [ $? -eq 0 ]; then
     echo "1/10 - [ OK ] - Criando Stack"
 else
     echo "1/10 - [ OFF ] - Criando Stack"
-    echo "Não foi possível criar a stack do Quepasa"
+    echo "Não foi possivel criar a stack do Quepasa"
 fi
 STACK_NAME="quepasa${1:+_$1}"
 stack_editavel # > /dev/null 2>&1
@@ -16899,7 +16899,7 @@ stack_editavel # > /dev/null 2>&1
 #    echo "2/2 - [ OK ] - Deploy Stack"
 #else
 #    echo "2/2 - [ OFF ] - Deploy Stack"
-#    echo "Não foi possível Subir a stack do Quepasa"
+#    echo "Não foi possivel Subir a stack do Quepasa"
 #fi
 
 ## Mensagem de Passo
@@ -16908,9 +16908,9 @@ echo ""
 sleep 1
 
 ## Baixando imagens:
-pull deividms/quepasa:latestá
+pull deividms/quepasa:latest
 
-## Usa o serviço wait_quepasa para verificar se o serviço estáa online
+## Usa o serviço wait_quepasa para verificar se o serviço esta online
 wait_stack quepasa${1:+_$1}_quepasa${1:+_$1}
 
 telemetria Quepasa finalizado
@@ -16988,28 +16988,28 @@ nome_docuseal
 ## Mostra mensagem para preencher informações
 preencha_as_info
 
-## Inicia um Loop até os dados estáarem certos
+## Inicia um Loop até os dados estarem certos
 while true; do
 
     ##Pergunta o Dominio para a ferramenta
     echo -e "\e[97mPasso$amarelo 1/6\e[0m"
-    echo -en "\e[33mDigite o dominio para o Docuseal (ex: docuseal.seudominio.com): \e[0m" && read -r url_docuseal
+    echo -en "\e[33mDigite o dominio para o Docuseal (ex: docuseal.openorion.art.br): \e[0m" && read -r url_docuseal
     echo ""
 
     ##Pergunta o Dominio para a ferramenta
     echo -e "\e[97mPasso$amarelo 2/6\e[0m"
-    echo -en "\e[33mDigite a Email SMTP (ex: admin@seudominio.com): \e[0m" && read -r email_smtp_docuseal
+    echo -en "\e[33mDigite a Email SMTP (ex: contato@openorion.art.br): \e[0m" && read -r email_smtp_docuseal
     echo ""
 
     ##Pergunta o usuário do Email SMTP
     echo -e "\e[97mPasso$amarelo 3/6\e[0m"
     echo -e "$amarelo--> Caso não tiver um usuario do email, use o proprio email abaixo"
-    echo -en "\e[33mDigite o Usuário para SMTP (ex: openorion ou admin@seudominio.com): \e[0m" && read -r user_smtp_docuseal
+    echo -en "\e[33mDigite o Usuário para SMTP (ex: openorion ou contato@openorion.art.br): \e[0m" && read -r user_smtp_docuseal
     echo ""
 
     ##Pergunta o Dominio para a ferramenta
     echo -e "\e[97mPasso$amarelo 4/6\e[0m"
-    echo -e "$amarelo--> Sem caracteres especiais: \!#$ | Se estáiver usando gmail use a senha de app"
+    echo -e "$amarelo--> Sem caracteres especiais: \!#$ | Se estiver usando gmail use a senha de app"
     echo -en "\e[33mDigite a Senha SMTP (ex: @Senha123_): \e[0m" && read -r senha_smtp_docuseal
     echo ""
 
@@ -17056,11 +17056,11 @@ while true; do
     echo -e "\e[33mPorta SMTP:\e[97m $porta_smtp_docuseal\e[0m"
     echo ""
     
-    ## Pergunta se as respostas estáão corretas
-    read -p "As respostas estáão corretas? (Y/N): " confirmacao
+    ## Pergunta se as respostas estão corretas
+    read -p "As respostas estão corretas? (Y/N): " confirmacao
     if [ "$confirmacao" = "Y" ] || [ "$confirmacao" = "y" ]; then
 
-        ## Digitou Y para confirmar que as informações estáão corretas
+        ## Digitou Y para confirmar que as informações estão corretas
 
         ## Limpar o terminal
         clear
@@ -17072,7 +17072,7 @@ while true; do
         break
     else
 
-        ## Digitou N para dizer que as informações não estáão corretas.
+        ## Digitou N para dizer que as informações não estão corretas.
 
         ## Limpar o terminal
         clear
@@ -17136,7 +17136,7 @@ services:
 ## --------------------------- ORION --------------------------- ##
 
   docuseal${1:+_$1}:
-    image: docuseal/docuseal:latestá
+    image: docuseal/docuseal:latest
 
     volumes:
       - docuseal${1:+_$1}_data:/data
@@ -17200,7 +17200,7 @@ if [ $? -eq 0 ]; then
     echo "1/10 - [ OK ] - Criando Stack"
 else
     echo "1/10 - [ OFF ] - Criando Stack"
-    echo "Não foi possível criar a stack do docuseal"
+    echo "Não foi possivel criar a stack do docuseal"
 fi
 STACK_NAME="docuseal${1:+_$1}"
 stack_editavel # > /dev/null 2>&1
@@ -17209,7 +17209,7 @@ stack_editavel # > /dev/null 2>&1
 #    echo "2/2 - [ OK ] - Deploy Stack"
 #else
 #    echo "2/2 - [ OFF ] - Deploy Stack"
-#    echo "Não foi possível Subir a stack do docuseal"
+#    echo "Não foi possivel Subir a stack do docuseal"
 #fi
 
 ## Mensagem de Passo
@@ -17218,9 +17218,9 @@ echo ""
 sleep 1
 
 ## Baixando imagens:
-pull docuseal/docuseal:latestá
+pull docuseal/docuseal:latest
 
-## Usa o serviço wait_docuseal para verificar se o serviço estáa online
+## Usa o serviço wait_docuseal para verificar se o serviço esta online
 wait_stack docuseal${1:+_$1}_docuseal${1:+_$1}
 
 telemetria Docuseal finalizado
@@ -17293,27 +17293,27 @@ nome_monitor
 ## Mostra mensagem para preencher informações
 preencha_as_info
 
-## Inicia um Loop até os dados estáarem certos
+## Inicia um Loop até os dados estarem certos
 while true; do
 
     ##Pergunta o Dominio para aplicação
     echo -e "\e[97mPasso$amarelo 1/4\e[0m"
-    echo -en "\e[33mDigite o Dominio para o Grafana (ex: grafana.seudominio.com): \e[0m" && read -r url_grafana
+    echo -en "\e[33mDigite o Dominio para o Grafana (ex: grafana.openorion.art.br): \e[0m" && read -r url_grafana
     echo ""
 
     ##Pergunta o Dominio para aplicação
     echo -e "\e[97mPasso$amarelo 2/4\e[0m"
-    echo -en "\e[33mDigite o Dominio para o Prometheus (ex: prometheus.seudominio.com): \e[0m" && read -r url_prometheus
+    echo -en "\e[33mDigite o Dominio para o Prometheus (ex: prometheus.openorion.art.br): \e[0m" && read -r url_prometheus
     echo ""
 
     ##Pergunta o Dominio para aplicação
     echo -e "\e[97mPasso$amarelo 3/4\e[0m"
-    echo -en "\e[33mDigite o Dominio para o cAdvisor (ex: cadvisor.seudominio.com): \e[0m" && read -r url_cadvisor
+    echo -en "\e[33mDigite o Dominio para o cAdvisor (ex: cadvisor.openorion.art.br): \e[0m" && read -r url_cadvisor
     echo ""
 
     ##Pergunta o Dominio para aplicação
     echo -e "\e[97mPasso$amarelo 4/4\e[0m"
-    echo -en "\e[33mDigite o Dominio para o NodeExporter (ex: node.seudominio.com): \e[0m" && read -r url_nodeexporter
+    echo -en "\e[33mDigite o Dominio para o NodeExporter (ex: node.openorion.art.br): \e[0m" && read -r url_nodeexporter
     echo ""
 
     ## Limpa o terminal
@@ -17341,11 +17341,11 @@ while true; do
     echo -e "\e[33mDominio do NodeExporter:\e[97m $url_nodeexporter\e[0m"
     echo ""
 
-    ## Pergunta se as respostas estáão corretas
-    read -p "As respostas estáão corretas? (Y/N): " confirmacao
+    ## Pergunta se as respostas estão corretas
+    read -p "As respostas estão corretas? (Y/N): " confirmacao
     if [ "$confirmacao" = "Y" ] || [ "$confirmacao" = "y" ]; then
 
-        ## Digitou Y para confirmar que as informações estáão corretas
+        ## Digitou Y para confirmar que as informações estão corretas
 
         ## Limpar o terminal
         clear
@@ -17357,7 +17357,7 @@ while true; do
         break
     else
 
-        ## Digitou N para dizer que as informações não estáão corretas.
+        ## Digitou N para dizer que as informações não estão corretas.
 
         ## Limpar o terminal
         clear
@@ -17426,7 +17426,7 @@ if [ $? -eq 0 ]; then
     echo "1/4 - [ OK ] - Criando datasource.yml"
 else
     echo "1/4 - [ OFF ] - Criando datasource.ym"
-    echo "Não foi possível criar o datasource"
+    echo "Não foi possivel criar o datasource"
 fi
 
 
@@ -17435,7 +17435,7 @@ if [ $? -eq 0 ]; then
     echo "2/6 - [ OK ] - Movendo datasource.yml para o diretório /opt/monitor-orion/grafana/"
 else
     echo "2/6 - [ OFF ] - Movendo datasource.yml para o diretório /opt/monitor-orion/grafana/"
-    echo "Não foi possível copiar o datasource para o diretório opt"
+    echo "Não foi possivel copiar o datasource para o diretório opt"
 fi
 
 cp /root/datasource.yml /opt/monitor-orion/grafana/provisioning/datasources/
@@ -17443,7 +17443,7 @@ if [ $? -eq 0 ]; then
     echo "3/6 - [ OK ] - Movendo datasource.yml para o diretório /opt/monitor-orion/grafana/provisioning/datasources/"
 else
     echo "3/6 - [ OFF ] - Movendo datasource.yml para o diretório /opt/monitor-orion/grafana/provisioning/datasources/"
-    echo "Não foi possível copiar o datasource para o diretório opt"
+    echo "Não foi possivel copiar o datasource para o diretório opt"
 fi
 
 rm /root/datasource.yml
@@ -17451,7 +17451,7 @@ if [ $? -eq 0 ]; then
     echo "4/6 - [ OK ] - Removendo datasource.yml do /root/"
 else
     echo "4/6 - [ OFF ] - Removendo datasource.yml do /root/"
-    echo "Não foi possível deletar o datasource para o diretório opt"
+    echo "Não foi possivel deletar o datasource para o diretório opt"
 fi
 
 cd
@@ -17471,7 +17471,7 @@ alerting:
     api_version: v2
 scrape_configs:
 - job_name: prometheus
-  honor_timestáamps: true
+  honor_timestamps: true
   scrape_interval: 15s
   scrape_timeout: 10s
   metrics_path: /metrics
@@ -17484,7 +17484,7 @@ if [ $? -eq 0 ]; then
     echo "5/6 - [ OK ] - Criando arquivo prometheus.yml"
 else
     echo "5/6 - [ OFF ] - Criando arquivo prometheus.yml"
-    echo "Não foi possível criar o prometheus"
+    echo "Não foi possivel criar o prometheus"
 fi
 
 mv /root/prometheus.yml /opt/monitor-orion/prometheus/
@@ -17492,7 +17492,7 @@ if [ $? -eq 0 ]; then
     echo "6/6 - [ OK ] - Movendo arquivo prometheus.yml para /opt/monitor-orion/prometheus/"
 else
     echo "6/6 - [ OFF ] - Movendo arquivo prometheus.yml para /opt/monitor-orion/prometheus/"
-    echo "Não foi possível copiar o datasource para o diretório opt"
+    echo "Não foi possivel copiar o datasource para o diretório opt"
 fi
 
 cd
@@ -17514,7 +17514,7 @@ services:
 ## --------------------------- ORION --------------------------- ##
 
   prometheus:
-    image: prom/prometheus:latestá
+    image: prom/prometheus:latest
 
     volumes:
       - /opt/monitor-orion/prometheus/prometheus.yml:/etc/prometheus/prometheus.yml
@@ -17544,7 +17544,7 @@ services:
 ## --------------------------- ORION --------------------------- ##
 
   grafana:
-    image: grafana/grafana:latestá
+    image: grafana/grafana:latest
 
     volumes:
       - /opt/monitor-orion/grafana/grafana.ini:/etc/grafana/grafana.ini
@@ -17579,8 +17579,8 @@ services:
 ## --------------------------- ORION --------------------------- ##
 
   node-exporter:
-    image: prom/node-exporter:latestá
-    restáart: unless-stopped
+    image: prom/node-exporter:latest
+    restart: unless-stopped
 
     networks:
       - $nome_rede_interna
@@ -17608,7 +17608,7 @@ services:
 
   cadvisor:
     image: gcr.io/cadvisor/cadvisor
-    restáart: unless-stopped
+    restart: unless-stopped
 
     volumes:
       - /:/rootfs:ro
@@ -17650,7 +17650,7 @@ if [ $? -eq 0 ]; then
     echo "1/10 - [ OK ] - Criando Stack"
 else
     echo "1/10 - [ OFF ] - Criando Stack"
-    echo "Não foi possível criar a stack do Monitor"
+    echo "Não foi possivel criar a stack do Monitor"
 fi
 STACK_NAME="monitor"
 stack_editavel # > /dev/null 2>&1
@@ -17659,7 +17659,7 @@ stack_editavel # > /dev/null 2>&1
 #    echo "2/2 - [ OK ] - Deploy Stack"
 #else
 #    echo "2/2 - [ OFF ] - Deploy Stack"
-#    echo "Não foi possível subir a stack do Monitor"
+#    echo "Não foi possivel subir a stack do Monitor"
 #fi
 
 echo ""
@@ -17671,9 +17671,9 @@ echo ""
 sleep 1
 
 ## Baixando imagens:
-pull prom/prometheus:latestá grafana/grafana:latestá prom/node-exporter:latestá gcr.io/cadvisor/cadvisor
+pull prom/prometheus:latest grafana/grafana:latest prom/node-exporter:latest gcr.io/cadvisor/cadvisor
 
-## Usa o serviço wait_monitor para verificar se o serviço estáa online
+## Usa o serviço wait_monitor para verificar se o serviço esta online
 wait_stack monitor_prometheus monitor_grafana monitor_node-exporter monitor_cadvisor
 
 telemetria Grafana finalizado
@@ -17716,7 +17716,7 @@ echo -e "\e[97mUsuario Grafana:\e[33m admin\e[0m"
 echo ""
 
 echo -e "\e[97mSenha Grafana:\e[33m admin\e[0m"
-echo -e "\e[97mDepois do primeiro login, será solicitado que vocêê altere a senha.\e[0m"
+echo -e "\e[97mDepois do primeiro login, será solicitado que você altere a senha.\e[0m"
 echo ""
 
 echo -e "\e[97mDominio Prometheus:\e[33m https://$url_prometheus\e[0m"
@@ -17758,23 +17758,23 @@ nome_dify
 ## Mostra mensagem para preencher informações
 preencha_as_info
 
-## Inicia um Loop até os dados estáarem certos
+## Inicia um Loop até os dados estarem certos
 while true; do
 
     ##Pergunta o Dominio do Dify AI
     echo -e "\e[97mPasso$amarelo 1/2\e[0m"
-    echo -en "\e[33mDigite o dominio para o Dify AI (ex: dify.seudominio.com): \e[0m" && read -r url_dify
+    echo -en "\e[33mDigite o dominio para o Dify AI (ex: dify.openorion.art.br): \e[0m" && read -r url_dify
     echo ""
 
     ##Pergunta o Dominio do Dify AI
     echo -e "\e[97mPasso$amarelo 2/2\e[0m"
-    echo -en "\e[33mDigite o dominio para o API do Dify AI (ex: api-dify.seudominio.com): \e[0m" && read -r url_dify_api
+    echo -en "\e[33mDigite o dominio para o API do Dify AI (ex: api-dify.openorion.art.br): \e[0m" && read -r url_dify_api
     echo ""
 
     ##Pergunta o Dominio do Qdrant
     #read -r ip _ <<<$(hostname -I)
     #echo -e "\e[97mPasso$amarelo 2/10\e[0m"
-    #echo -en "\e[33mDigite o dominio do Qdrant (ex: http://$ip  ou http://qdrant.seudominio.com): \e[0m" && read -r url_quedrant
+    #echo -en "\e[33mDigite o dominio do Qdrant (ex: http://$ip  ou http://qdrant.openorion.art.br): \e[0m" && read -r url_quedrant
     #echo ""
 
     ##Pergunta a Api Key do Qdrant
@@ -17785,19 +17785,19 @@ while true; do
 
    ###Pergunta o Email SMTP
    #echo -e "\e[97mPasso$amarelo 3/7\e[0m"
-   #echo -en "\e[33mDigite o Email para SMTP (ex: admin@seudominio.com): \e[0m" && read -r email_dify
+   #echo -en "\e[33mDigite o Email para SMTP (ex: contato@openorion.art.br): \e[0m" && read -r email_dify
    #echo ""
     
 
     ###Pergunta o usuário do Email SMTP
     #echo -e "\e[97mPasso$amarelo 4/7\e[0m"
     #echo -e "$amarelo--> Caso não tiver um usuario do email, use o proprio email abaixo"
-    #echo -en "\e[33mDigite o Usuário para SMTP (ex: openorion ou admin@seudominio.com): \e[0m" && read -r user_email_dify
+    #echo -en "\e[33mDigite o Usuário para SMTP (ex: openorion ou contato@openorion.art.br): \e[0m" && read -r user_email_dify
     #echo ""
 #
     ### Pergunta a senha do SMTP
     #echo -e "\e[97mPasso$amarelo 5/7\e[0m"
-    #echo -e "$amarelo--> Sem caracteres especiais: \!#$ | Se estáiver usando gmail use a senha de app"
+    #echo -e "$amarelo--> Sem caracteres especiais: \!#$ | Se estiver usando gmail use a senha de app"
     #echo -en "\e[33mDigite a Senha SMTP do Email (ex: @Senha123_): \e[0m" && read -r senha_email_dify
     #echo ""
 #
@@ -17856,11 +17856,11 @@ while true; do
     #echo -e "\e[33mPorta SMTP do Email:\e[97m $porta_smtp_dify\e[0m"
     #echo ""
 
-    ## Pergunta se as respostas estáão corretas
-    read -p "As respostas estáão corretas? (Y/N): " confirmacao
+    ## Pergunta se as respostas estão corretas
+    read -p "As respostas estão corretas? (Y/N): " confirmacao
     if [ "$confirmacao" = "Y" ] || [ "$confirmacao" = "y" ]; then
 
-        ## Digitou Y para confirmar que as informações estáão corretas
+        ## Digitou Y para confirmar que as informações estão corretas
 
         ## Limpar o terminal
         clear
@@ -17872,7 +17872,7 @@ while true; do
         break
     else
 
-        ## Digitou N para dizer que as informações não estáão corretas.
+        ## Digitou N para dizer que as informações não estão corretas.
 
         ## Limpar o terminal
         clear
@@ -17959,7 +17959,7 @@ services:
 ## --------------------------- ORION --------------------------- ##
 
   dify${1:+_$1}_api:
-    image: langgenius/dify-api:latestá
+    image: langgenius/dify-api:latest
 
     volumes:
       - dify${1:+_$1}_storage:/app/api/storage
@@ -18135,7 +18135,7 @@ services:
 ## --------------------------- ORION --------------------------- ##
 
   dify${1:+_$1}_worker:
-    image: langgenius/dify-api:latestá
+    image: langgenius/dify-api:latest
 
     volumes:
       - dify${1:+_$1}_storage:/app/api/storage
@@ -18285,7 +18285,7 @@ services:
 ## --------------------------- ORION --------------------------- ##
 
   dify${1:+_$1}_worker_beat:
-    image: langgenius/dify-api:latestá
+    image: langgenius/dify-api:latest
 
     networks:
       - $nome_rede_interna
@@ -18424,7 +18424,7 @@ services:
 ## --------------------------- ORION --------------------------- ##
 
   dify${1:+_$1}_web:
-    image: langgenius/dify-web:latestá
+    image: langgenius/dify-web:latest
 
     networks:
       - $nome_rede_interna
@@ -18492,7 +18492,7 @@ services:
 ## --------------------------- ORION --------------------------- ##
 
   dify${1:+_$1}_redis:
-    image: redis:latestá
+    image: redis:latest
     command: [
         "redis-server",
         "--appendonly",
@@ -18525,7 +18525,7 @@ services:
 ## --------------------------- ORION --------------------------- ##
 
   dify${1:+_$1}_weaviate:
-    image: semitechnologies/weaviate:latestá
+    image: semitechnologies/weaviate:latest
 
     volumes:
       - dify${1:+_$1}_weaviate_data:/var/lib/weaviate
@@ -18563,7 +18563,7 @@ services:
 ## --------------------------- ORION --------------------------- ##
 
   dify${1:+_$1}_sandbox:
-    image: langgenius/dify-sandbox:latestá
+    image: langgenius/dify-sandbox:latest
 
     volumes:
       - dify${1:+_$1}_sandbox_dependencies:/dependencies
@@ -18601,7 +18601,7 @@ services:
 ## --------------------------- ORION --------------------------- ##
 
   dify${1:+_$1}_plugin_daemon:
-    image: langgenius/dify-plugin-daemon:latestá-local
+    image: langgenius/dify-plugin-daemon:latest-local
 
     volumes:
       - dify${1:+_$1}_plugin_daemon:/app/storage
@@ -18769,7 +18769,7 @@ services:
 ## --------------------------- ORION --------------------------- ##
 
   dify${1:+_$1}_ssrf_proxy:
-    image: ubuntu/squid:latestá
+    image: ubuntu/squid:latest
 
     networks:
       - $nome_rede_interna
@@ -18833,7 +18833,7 @@ if [ $? -eq 0 ]; then
     echo "1/10 - [ OK ] - Criando Stack"
 else
     echo "1/10 - [ OFF ] - Criando Stack"
-    echo "Não foi possível criar a stack do Dify Ai"
+    echo "Não foi possivel criar a stack do Dify Ai"
 fi
 STACK_NAME="dify${1:+_$1}"
 stack_editavel # > /dev/null 2>&1
@@ -18842,7 +18842,7 @@ stack_editavel # > /dev/null 2>&1
 #    echo "2/2 - [ OK ] - Deploy Stack"
 #else
 #    echo "2/2 - [ OFF ] - Deploy Stack"
-#    echo "Não foi possível subir a stack do Dify Ai"
+#    echo "Não foi possivel subir a stack do Dify Ai"
 #fi
 
 ## Mensagem de Passo
@@ -18851,9 +18851,9 @@ echo ""
 sleep 1
 
 ## Baixando imagens:
-pull redis:latestá ubuntu/squid:latestá langgenius/dify-api:latestá langgenius/dify-web:latestá semitechnologies/weaviate:latestá langgenius/dify-sandbox:0.2.12 langgenius/dify-plugin-daemon:latestá-local
+pull redis:latest ubuntu/squid:latest langgenius/dify-api:latest langgenius/dify-web:latest semitechnologies/weaviate:latest langgenius/dify-sandbox:0.2.12 langgenius/dify-plugin-daemon:latest-local
 
-## Usa o serviço wait_dify para verificar se o serviço estáa online
+## Usa o serviço wait_dify para verificar se o serviço esta online
 wait_stack  dify${1:+_$1}_dify${1:+_$1}_api dify${1:+_$1}_dify${1:+_$1}_worker dify${1:+_$1}_dify${1:+_$1}_worker_beat dify${1:+_$1}_dify${1:+_$1}_web dify${1:+_$1}_dify${1:+_$1}_redis dify${1:+_$1}_dify${1:+_$1}_weaviate dify${1:+_$1}_dify${1:+_$1}_sandbox dify${1:+_$1}_dify${1:+_$1}_plugin_daemon dify${1:+_$1}_dify${1:+_$1}_ssrf_proxy
 
 telemetria Dify finalizado
@@ -18925,17 +18925,17 @@ nome_ollama
 ## Mostra mensagem para preencher informações
 preencha_as_info
 
-## Inicia um Loop até os dados estáarem certos
+## Inicia um Loop até os dados estarem certos
 while true; do
 
     ##Pergunta o Dominio para a ferramenta
     echo -e "\e[97mPasso$amarelo 1/2\e[0m"
-    echo -en "\e[33mDigite o dominio para o WebUI Ollama (ex: ollama.seudominio.com): \e[0m" && read -r url_ollama
+    echo -en "\e[33mDigite o dominio para o WebUI Ollama (ex: ollama.openorion.art.br): \e[0m" && read -r url_ollama
     echo ""
 
     ##Pergunta o Dominio para a ferramenta
     echo -e "\e[97mPasso$amarelo 2/2\e[0m"
-    echo -en "\e[33mDigite o dominio para a API Ollama (ex: apiollama.seudominio.com): \e[0m" && read -r url_apiollama
+    echo -en "\e[33mDigite o dominio para a API Ollama (ex: apiollama.openorion.art.br): \e[0m" && read -r url_apiollama
     echo ""
     
     ## Limpa o terminal
@@ -18955,11 +18955,11 @@ while true; do
     echo -e "\e[33mDominio para a API do Ollama:\e[97m $url_apiollama\e[0m"
     echo ""
     
-     ## Pergunta se as respostas estáão corretas
-    read -p "As respostas estáão corretas? (Y/N): " confirmacao
+     ## Pergunta se as respostas estão corretas
+    read -p "As respostas estão corretas? (Y/N): " confirmacao
     if [ "$confirmacao" = "Y" ] || [ "$confirmacao" = "y" ]; then
 
-        ## Digitou Y para confirmar que as informações estáão corretas
+        ## Digitou Y para confirmar que as informações estão corretas
 
         ## Limpar o terminal
         clear
@@ -18971,7 +18971,7 @@ while true; do
         break
     else
 
-        ## Digitou N para dizer que as informações não estáão corretas.
+        ## Digitou N para dizer que as informações não estão corretas.
 
         ## Limpar o terminal
         clear
@@ -19010,7 +19010,7 @@ services:
 ## --------------------------- ORION --------------------------- ##
 
   ollama${1:+_$1}:
-    image: ollama/ollama:latestá
+    image: ollama/ollama:latest
 
     volumes:
       - ollama${1:+_$1}_data:/root/.ollama
@@ -19097,7 +19097,7 @@ if [ $? -eq 0 ]; then
     echo "1/10 - [ OK ] - Criando Stack"
 else
     echo "1/10 - [ OFF ] - Criando Stack"
-    echo "Não foi possível criar a stack do Ollama"
+    echo "Não foi possivel criar a stack do Ollama"
 fi
 STACK_NAME="ollama${1:+_$1}"
 stack_editavel # > /dev/null 2>&1
@@ -19106,7 +19106,7 @@ stack_editavel # > /dev/null 2>&1
 #    echo "2/2 - [ OK ] - Deploy Stack"
 #else
 #    echo "2/2 - [ OFF ] - Deploy Stack"
-#    echo "Não foi possível Subir a stack do Ollama"
+#    echo "Não foi possivel Subir a stack do Ollama"
 #fi
 
 ## Mensagem de Passo
@@ -19115,9 +19115,9 @@ echo ""
 sleep 1
 
 ## Baixando imagens:
-pull ollama/ollama:latestá ghcr.io/open-webui/open-webui:main
+pull ollama/ollama:latest ghcr.io/open-webui/open-webui:main
 
-## Usa o serviço wait_nocodb para verificar se o serviço estáa online
+## Usa o serviço wait_nocodb para verificar se o serviço esta online
 wait_stack ollama${1:+_$1}_openwebui${1:+_$1} ollama${1:+_$1}_ollama${1:+_$1}
 
 telemetria Ollama finalizado
@@ -19185,17 +19185,17 @@ nome_affine
 ## Mostra mensagem para preencher informações
 preencha_as_info
 
-## Inicia um Loop até os dados estáarem certos
+## Inicia um Loop até os dados estarem certos
 while true; do
 
     ##Pergunta o Dominio para a ferramenta
     echo -e "\e[97mPasso$amarelo 1/3\e[0m"
-    echo -en "\e[33mDigite o dominio para o Affine (ex: affine.seudominio.com): \e[0m" && read -r url_affine
+    echo -en "\e[33mDigite o dominio para o Affine (ex: affine.openorion.art.br): \e[0m" && read -r url_affine
     echo ""
 
     ##Pergunta o Dominio para a ferramenta
     echo -e "\e[97mPasso$amarelo 2/3\e[0m"
-    echo -en "\e[33mDigite o Email de Admin (ex: admin@seudominio.com): \e[0m" && read -r email_affine
+    echo -en "\e[33mDigite o Email de Admin (ex: contato@openorion.art.br): \e[0m" && read -r email_affine
     echo ""
 
     ##Pergunta o Dominio para a ferramenta
@@ -19225,11 +19225,11 @@ while true; do
     echo -e "\e[33mSenha de Admin:\e[97m $senha_affine\e[0m"
     echo ""
     
-    ## Pergunta se as respostas estáão corretas
-    read -p "As respostas estáão corretas? (Y/N): " confirmacao
+    ## Pergunta se as respostas estão corretas
+    read -p "As respostas estão corretas? (Y/N): " confirmacao
     if [ "$confirmacao" = "Y" ] || [ "$confirmacao" = "y" ]; then
 
-        ## Digitou Y para confirmar que as informações estáão corretas
+        ## Digitou Y para confirmar que as informações estão corretas
 
         ## Limpar o terminal
         clear
@@ -19241,7 +19241,7 @@ while true; do
         break
     else
 
-        ## Digitou N para dizer que as informações não estáão corretas.
+        ## Digitou N para dizer que as informações não estão corretas.
 
         ## Limpar o terminal
         clear
@@ -19417,7 +19417,7 @@ services:
       - COPILOT_ENABLED=false
     
     deploy:
-      restáart_policy:
+      restart_policy:
         condition: none
       placement:
         constraints:
@@ -19430,7 +19430,7 @@ services:
 ## --------------------------- ORION --------------------------- ##
 
   affine${1:+_$1}_redis:
-    image: redis:latestá  ## Versão do Redis
+    image: redis:latest  ## Versão do Redis
     command: [
         "redis-server",
         "--appendonly",
@@ -19480,7 +19480,7 @@ if [ $? -eq 0 ]; then
     echo "1/10 - [ OK ] - Criando Stack"
 else
     echo "1/10 - [ OFF ] - Criando Stack"
-    echo "Não foi possível criar a stack do Affine"
+    echo "Não foi possivel criar a stack do Affine"
 fi
 STACK_NAME="affine${1:+_$1}"
 stack_editavel # > /dev/null 2>&1
@@ -19489,7 +19489,7 @@ stack_editavel # > /dev/null 2>&1
 #    echo "2/2 - [ OK ] - Deploy Stack"
 #else
 #    echo "2/2 - [ OFF ] - Deploy Stack"
-#    echo "Não foi possível Subir a stack do Affine"
+#    echo "Não foi possivel Subir a stack do Affine"
 #fi
 
 ## Mensagem de Passo
@@ -19500,7 +19500,7 @@ sleep 1
 ## Baixando imagens:
 pull ghcr.io/toeverything/affine:stable
 
-## Usa o serviço wait_stack "affine" para verificar se o serviço estáa online
+## Usa o serviço wait_stack "affine" para verificar se o serviço esta online
 wait_stack affine${1:+_$1}_affine${1:+_$1}_redis affine${1:+_$1}_affine${1:+_$1}_app
 
 telemetria Affine finalizado
@@ -19574,17 +19574,17 @@ nome_directus
 ## Mostra mensagem para preencher informações
 preencha_as_info
 
-## Inicia um Loop até os dados estáarem certos
+## Inicia um Loop até os dados estarem certos
 while true; do
 
     ##Pergunta o Dominio para a ferramenta
     echo -e "\e[97mPasso$amarelo 1/7\e[0m"
-    echo -en "\e[33mDigite o dominio para o Directus (ex: directus.seudominio.com): \e[0m" && read -r url_directus
+    echo -en "\e[33mDigite o dominio para o Directus (ex: directus.openorion.art.br): \e[0m" && read -r url_directus
     echo ""
 
      ##Pergunta o Dominio para a ferramenta
     echo -e "\e[97mPasso$amarelo 2/7\e[0m"
-    echo -en "\e[33mDigite a Email de Admin (ex: admin@seudominio.com): \e[0m" && read -r email_directus
+    echo -en "\e[33mDigite a Email de Admin (ex: contato@openorion.art.br): \e[0m" && read -r email_directus
     echo ""
 
     ##Pergunta o Dominio para a ferramenta
@@ -19595,12 +19595,12 @@ while true; do
 
     ##Pergunta o Dominio para a ferramenta
     echo -e "\e[97mPasso$amarelo 4/7\e[0m"
-    echo -en "\e[33mDigite a Email SMTP (ex: admin@seudominio.com): \e[0m" && read -r email_smtp_directus
+    echo -en "\e[33mDigite a Email SMTP (ex: contato@openorion.art.br): \e[0m" && read -r email_smtp_directus
     echo ""
 
     ##Pergunta o Dominio para a ferramenta
     echo -e "\e[97mPasso$amarelo 5/7\e[0m"
-    echo -e "$amarelo--> Sem caracteres especiais: \!#$ | Se estáiver usando gmail use a senha de app"
+    echo -e "$amarelo--> Sem caracteres especiais: \!#$ | Se estiver usando gmail use a senha de app"
     echo -en "\e[33mDigite a Senha SMTP (ex: @Senha123_): \e[0m" && read -r senha_smtp_directus
     echo ""
 
@@ -19658,11 +19658,11 @@ while true; do
     ssl_smtp_directus=false
     fi
     
-    ## Pergunta se as respostas estáão corretas
-    read -p "As respostas estáão corretas? (Y/N): " confirmacao
+    ## Pergunta se as respostas estão corretas
+    read -p "As respostas estão corretas? (Y/N): " confirmacao
     if [ "$confirmacao" = "Y" ] || [ "$confirmacao" = "y" ]; then
 
-        ## Digitou Y para confirmar que as informações estáão corretas
+        ## Digitou Y para confirmar que as informações estão corretas
 
         ## Limpar o terminal
         clear
@@ -19674,7 +19674,7 @@ while true; do
         break
     else
 
-        ## Digitou N para dizer que as informações não estáão corretas.
+        ## Digitou N para dizer que as informações não estão corretas.
 
         ## Limpar o terminal
         clear
@@ -19752,7 +19752,7 @@ services:
 ## --------------------------- ORION --------------------------- ##
 
   directus${1:+_$1}_app:
-    image: directus/directus:latestá
+    image: directus/directus:latest
 
     volumes:
       - directus${1:+_$1}_uploads:/directus/uploads
@@ -19820,7 +19820,7 @@ services:
 ## --------------------------- ORION --------------------------- ##
 
   directus${1:+_$1}_redis:
-    image: redis:latestá  ## Versão do Redis
+    image: redis:latest  ## Versão do Redis
     command: [
         "redis-server",
         "--appendonly",
@@ -19871,7 +19871,7 @@ if [ $? -eq 0 ]; then
     echo "1/10 - [ OK ] - Criando Stack"
 else
     echo "1/10 - [ OFF ] - Criando Stack"
-    echo "Não foi possível criar a stack do directus"
+    echo "Não foi possivel criar a stack do directus"
 fi
 STACK_NAME="directus${1:+_$1}"
 stack_editavel # > /dev/null 2>&1
@@ -19880,7 +19880,7 @@ stack_editavel # > /dev/null 2>&1
 #    echo "2/2 - [ OK ] - Deploy Stack"
 #else
 #    echo "2/2 - [ OFF ] - Deploy Stack"
-#    echo "Não foi possível Subir a stack do directus"
+#    echo "Não foi possivel Subir a stack do directus"
 #fi
 
 ## Mensagem de Passo
@@ -19889,9 +19889,9 @@ echo ""
 sleep 1
 
 ## Baixando imagens:
-pull redis:latestá directus/directus:latestá
+pull redis:latest directus/directus:latest
 
-## Usa o serviço wait_tack "directus" para verificar se o serviço estáa online
+## Usa o serviço wait_tack "directus" para verificar se o serviço esta online
 wait_stack directus${1:+_$1}_directus${1:+_$1}_redis directus${1:+_$1}_directus${1:+_$1}_app
 
 telemetria Directus finalizado
@@ -19964,28 +19964,28 @@ nome_vaultwarden
 ## Mostra mensagem para preencher informações
 preencha_as_info
 
-## Inicia um Loop até os dados estáarem certos
+## Inicia um Loop até os dados estarem certos
 while true; do
 
     ## Pergunta o Dominio da ferramenta
     echo -e "\e[97mPasso$amarelo 1/6\e[0m"
-    echo -en "\e[33mDigite o Dominio para o VaultWarden (ex: vaultwarden.seudominio.com): \e[0m" && read -r url_vaultwarden
+    echo -en "\e[33mDigite o Dominio para o VaultWarden (ex: vaultwarden.openorion.art.br): \e[0m" && read -r url_vaultwarden
     echo ""
     
     ## Pergunta o Email SMTP
     echo -e "\e[97mPasso$amarelo 2/6\e[0m"
-    echo -en "\e[33mDigite um Email para o SMTP (ex: admin@seudominio.com): \e[0m" && read -r email_vaultwarden
+    echo -en "\e[33mDigite um Email para o SMTP (ex: contato@openorion.art.br): \e[0m" && read -r email_vaultwarden
     echo ""
 
     ## Pergunta o usuário do Email SMTP
     echo -e "\e[97mPasso$amarelo 3/6\e[0m"
     echo -e "$amarelo--> Caso não tiver um usuario do email, use o proprio email abaixo"
-    echo -en "\e[33mDigite o Usuário para SMTP (ex: openorion ou admin@seudominio.com): \e[0m" && read -r user_smtp_vaultwarden
+    echo -en "\e[33mDigite o Usuário para SMTP (ex: openorion ou contato@openorion.art.br): \e[0m" && read -r user_smtp_vaultwarden
     echo ""
     
     ## Pergunta a Senha SMTP
     echo -e "\e[97mPasso$amarelo 4/6\e[0m"
-    echo -e "$amarelo--> Sem caracteres especiais: \!#$ | Se estáiver usando gmail use a senha de app"
+    echo -e "$amarelo--> Sem caracteres especiais: \!#$ | Se estiver usando gmail use a senha de app"
     echo -en "\e[33mDigite a Senha SMTP do email (ex: @Senha123_): \e[0m" && read -r senha_vaultwarden
     echo ""
     
@@ -20038,11 +20038,11 @@ while true; do
     echo -e "\e[33mPorta SMTP:\e[97m $porta_vaultwarden\e[0m"
     echo ""
     
-    ## Pergunta se as respostas estáão corretas
-    read -p "As respostas estáão corretas? (Y/N): " confirmacao
+    ## Pergunta se as respostas estão corretas
+    read -p "As respostas estão corretas? (Y/N): " confirmacao
     if [ "$confirmacao" = "Y" ] || [ "$confirmacao" = "y" ]; then
 
-        ## Digitou Y para confirmar que as informações estáão corretas
+        ## Digitou Y para confirmar que as informações estão corretas
 
         ## Limpar o terminal
         clear
@@ -20054,7 +20054,7 @@ while true; do
         break
     else
 
-        ## Digitou N para dizer que as informações não estáão corretas.
+        ## Digitou N para dizer que as informações não estão corretas.
 
         ## Limpar o terminal
         clear
@@ -20120,7 +20120,7 @@ services:
 ## --------------------------- ORION --------------------------- ##
 
   vaultwarden${1:+_$1}:
-    image: vaultwarden/server:latestá
+    image: vaultwarden/server:latest
 
     volumes:
       - vaultwarden${1:+_$1}_data:/data
@@ -20192,7 +20192,7 @@ if [ $? -eq 0 ]; then
     echo "1/10 - [ OK ] - Criando Stack"
 else
     echo "1/10 - [ OFF ] - Criando Stack"
-    echo "Não foi possível criar a stack do vaultwarden"
+    echo "Não foi possivel criar a stack do vaultwarden"
 fi
 STACK_NAME="vaultwarden${1:+_$1}"
 stack_editavel # > /dev/null 2>&1
@@ -20201,7 +20201,7 @@ stack_editavel # > /dev/null 2>&1
 #    echo "2/2 - [ OK ] - Deploy Stack"
 #else
 #    echo "2/2 - [ OFF ] - Deploy Stack"
-#    echo "Não foi possível subir a stack do vaultwarden"
+#    echo "Não foi possivel subir a stack do vaultwarden"
 #fi
 
 ## Mensagem de Passo
@@ -20210,9 +20210,9 @@ echo ""
 sleep 1
 
 ## Baixando imagens:
-pull vaultwarden/server:latestá
+pull vaultwarden/server:latest
 
-## Usa o serviço wait_vaultwarden para verificar se o serviço estáa online
+## Usa o serviço wait_vaultwarden para verificar se o serviço esta online
 wait_stack vaultwarden${1:+_$1}_vaultwarden${1:+_$1}
 
 telemetria VaultWarden finalizado
@@ -20289,12 +20289,12 @@ nome_nextcloud
 ## Mostra mensagem para preencher informações
 preencha_as_info
 
-## Inicia um Loop até os dados estáarem certos
+## Inicia um Loop até os dados estarem certos
 while true; do
 
     ##Pergunta o Dominio para a ferramenta
     echo -e "\e[97mPasso$amarelo 1/3\e[0m"
-    echo -en "\e[33mDigite o dominio para o NextCloud (ex: nextcloud.seudominio.com): \e[0m" && read -r url_nextcloud
+    echo -en "\e[33mDigite o dominio para o NextCloud (ex: nextcloud.openorion.art.br): \e[0m" && read -r url_nextcloud
     echo ""
 
     ##Pergunta o Dominio para a ferramenta
@@ -20331,11 +20331,11 @@ while true; do
     echo -e "\e[33mSenha do NextCloud:\e[97m $pass_nextcloud\e[0m"
     echo ""
     
-    ## Pergunta se as respostas estáão corretas
-    read -p "As respostas estáão corretas? (Y/N): " confirmacao
+    ## Pergunta se as respostas estão corretas
+    read -p "As respostas estão corretas? (Y/N): " confirmacao
     if [ "$confirmacao" = "Y" ] || [ "$confirmacao" = "y" ]; then
 
-        ## Digitou Y para confirmar que as informações estáão corretas
+        ## Digitou Y para confirmar que as informações estão corretas
 
         ## Limpar o terminal
         clear
@@ -20347,7 +20347,7 @@ while true; do
         break
     else
 
-        ## Digitou N para dizer que as informações não estáão corretas.
+        ## Digitou N para dizer que as informações não estão corretas.
 
         ## Limpar o terminal
         clear
@@ -20407,7 +20407,7 @@ services:
 ## --------------------------- ORION --------------------------- ##
 
   nextcloud${1:+_$1}_app:
-    image: nextcloud:latestá
+    image: nextcloud:latest
 
     volumes:
       - nextcloud${1:+_$1}_data:/var/www/html
@@ -20458,7 +20458,7 @@ services:
 ## --------------------------- ORION --------------------------- ##
 
   nextcloud${1:+_$1}_cron:
-    image: nextcloud:latestá
+    image: nextcloud:latest
     entrypoint: /cron.sh
 
     volumes:
@@ -20474,7 +20474,7 @@ services:
 ## --------------------------- ORION --------------------------- ##
 
   nextcloud${1:+_$1}_redis:
-    image: redis:latestá  ## Versão do Redis
+    image: redis:latest  ## Versão do Redis
     command: [
         "redis-server",
         "--appendonly",
@@ -20521,7 +20521,7 @@ if [ $? -eq 0 ]; then
     echo "1/10 - [ OK ] - Criando Stack"
 else
     echo "1/10 - [ OFF ] - Criando Stack"
-    echo "Não foi possível criar a stack do nextcloud"
+    echo "Não foi possivel criar a stack do nextcloud"
 fi
 STACK_NAME="nextcloud${1:+_$1}"
 stack_editavel # > /dev/null 2>&1
@@ -20530,7 +20530,7 @@ stack_editavel # > /dev/null 2>&1
 #    echo "2/2 - [ OK ] - Deploy Stack"
 #else
 #    echo "2/2 - [ OFF ] - Deploy Stack"
-#    echo "Não foi possível Subir a stack do nextcloud"
+#    echo "Não foi possivel Subir a stack do nextcloud"
 #fi
 
 ## Mensagem de Passo
@@ -20539,10 +20539,10 @@ echo ""
 sleep 1
 
 ## Baixando imagens:
-pull nextcloud:latestá
+pull nextcloud:latest
 
 
-## Usa o serviço wait_nextcloud para verificar se o serviço estáa online
+## Usa o serviço wait_nextcloud para verificar se o serviço esta online
 wait_stack nextcloud${1:+_$1}_nextcloud${1:+_$1}_redis nextcloud${1:+_$1}_nextcloud${1:+_$1}_app nextcloud${1:+_$1}_nextcloud${1:+_$1}_cron
 
 telemetria NextCloud finalizado
@@ -20627,12 +20627,12 @@ nome_strapi
 ## Mostra mensagem para preencher informações
 preencha_as_info
 
-## Inicia um Loop até os dados estáarem certos
+## Inicia um Loop até os dados estarem certos
 while true; do
 
     ##Pergunta o Dominio para a ferramenta
     echo -e "\e[97mPasso$amarelo 1/1\e[0m"
-    echo -en "\e[33mDigite o dominio para o Strapi (ex: strapi.seudominio.com): \e[0m" && read -r url_strapi
+    echo -en "\e[33mDigite o dominio para o Strapi (ex: strapi.openorion.art.br): \e[0m" && read -r url_strapi
     echo ""
     
     ## Limpa o terminal
@@ -20648,11 +20648,11 @@ while true; do
     echo -e "\e[33mDominio para o strapi:\e[97m $url_strapi\e[0m"
     echo ""
     
-     ## Pergunta se as respostas estáão corretas
-    read -p "As respostas estáão corretas? (Y/N): " confirmacao
+     ## Pergunta se as respostas estão corretas
+    read -p "As respostas estão corretas? (Y/N): " confirmacao
     if [ "$confirmacao" = "Y" ] || [ "$confirmacao" = "y" ]; then
 
-        ## Digitou Y para confirmar que as informações estáão corretas
+        ## Digitou Y para confirmar que as informações estão corretas
 
         ## Limpar o terminal
         clear
@@ -20664,7 +20664,7 @@ while true; do
         break
     else
 
-        ## Digitou N para dizer que as informações não estáão corretas.
+        ## Digitou N para dizer que as informações não estão corretas.
 
         ## Limpar o terminal
         clear
@@ -20735,7 +20735,7 @@ services:
 ## --------------------------- ORION --------------------------- ##
 
   strapi${1:+_$1}:
-    image: strapi/strapi:latestá
+    image: strapi/strapi:latest
 
     volumes:
       - strapi${1:+_$1}_data:/srv/app
@@ -20792,7 +20792,7 @@ if [ $? -eq 0 ]; then
     echo "1/10 - [ OK ] - Criando Stack"
 else
     echo "1/10 - [ OFF ] - Criando Stack"
-    echo "Não foi possível criar a stack do Strapi"
+    echo "Não foi possivel criar a stack do Strapi"
 fi
 STACK_NAME="strapi${1:+_$1}"
 stack_editavel # > /dev/null 2>&1
@@ -20801,7 +20801,7 @@ stack_editavel # > /dev/null 2>&1
 #    echo "2/2 - [ OK ] - Deploy Stack"
 #else
 #    echo "2/2 - [ OFF ] - Deploy Stack"
-#    echo "Não foi possível Subir a stack do Strapi"
+#    echo "Não foi possivel Subir a stack do Strapi"
 #fi
 
 ## Mensagem de Passo
@@ -20810,9 +20810,9 @@ echo ""
 sleep 1
 
 ## Baixando imagens:
-pull strapi/strapi:latestá
+pull strapi/strapi:latest
 
-## Usa o serviço wait_stack "strapi" para verificar se o serviço estáa online
+## Usa o serviço wait_stack "strapi" para verificar se o serviço esta online
 wait_stack strapi${1:+_$1}_strapi${1:+_$1}
 
 wait_30_sec
@@ -20894,12 +20894,12 @@ nome_phpmyadmin
 ## Mostra mensagem para preencher informações
 preencha_as_info
 
-## Inicia um Loop até os dados estáarem certos
+## Inicia um Loop até os dados estarem certos
 while true; do
 
     ##Pergunta o Dominio para a ferramenta
     echo -e "\e[97mPasso$amarelo 1/2\e[0m"
-    echo -en "\e[33mDigite o dominio para o PhpMyAdmin (ex: phpmyadmin.seudominio.com): \e[0m" && read -r url_phpmyadmin
+    echo -en "\e[33mDigite o dominio para o PhpMyAdmin (ex: phpmyadmin.openorion.art.br): \e[0m" && read -r url_phpmyadmin
     echo ""
 
     ##Pergunta o Dominio para a ferramenta
@@ -20950,11 +20950,11 @@ while true; do
     #echo -e "\e[33mSenha MYSQL:\e[97m $pass_phpmyadmin\e[0m"
     #echo ""
     
-     ## Pergunta se as respostas estáão corretas
-    read -p "As respostas estáão corretas? (Y/N): " confirmacao
+     ## Pergunta se as respostas estão corretas
+    read -p "As respostas estão corretas? (Y/N): " confirmacao
     if [ "$confirmacao" = "Y" ] || [ "$confirmacao" = "y" ]; then
 
-        ## Digitou Y para confirmar que as informações estáão corretas
+        ## Digitou Y para confirmar que as informações estão corretas
 
         ## Limpar o terminal
         clear
@@ -20966,7 +20966,7 @@ while true; do
         break
     else
 
-        ## Digitou N para dizer que as informações não estáão corretas.
+        ## Digitou N para dizer que as informações não estão corretas.
 
         ## Limpar o terminal
         clear
@@ -21003,7 +21003,7 @@ services:
 ## --------------------------- ORION --------------------------- ##
 
   phpmyadmin${1:+_$1}:
-    image: phpmyadmin/phpmyadmin:latestá
+    image: phpmyadmin/phpmyadmin:latest
     command: ["apache2-foreground"]
 
     networks:
@@ -21051,7 +21051,7 @@ if [ $? -eq 0 ]; then
     echo "1/10 - [ OK ] - Criando Stack"
 else
     echo "1/10 - [ OFF ] - Criando Stack"
-    echo "Não foi possível criar a stack do phpmyadmin"
+    echo "Não foi possivel criar a stack do phpmyadmin"
 fi
 STACK_NAME="phpmyadmin${1:+_$1}"
 stack_editavel # > /dev/null 2>&1
@@ -21060,7 +21060,7 @@ stack_editavel # > /dev/null 2>&1
 #    echo "2/2 - [ OK ] - Deploy Stack"
 #else
 #    echo "2/2 - [ OFF ] - Deploy Stack"
-#    echo "Não foi possível Subir a stack do phpmyadmin"
+#    echo "Não foi possivel Subir a stack do phpmyadmin"
 #fi
 
 ## Mensagem de Passo
@@ -21069,9 +21069,9 @@ echo ""
 sleep 1
 
 ## Baixando imagens:
-pull phpmyadmin/phpmyadmin:latestá
+pull phpmyadmin/phpmyadmin:latest
 
-## Usa o serviço wait_stack "phpmyadmin" para verificar se o serviço estáa online
+## Usa o serviço wait_stack "phpmyadmin" para verificar se o serviço esta online
 wait_stack phpmyadmin${1:+_$1}_phpmyadmin${1:+_$1}
 
 telemetria PhpMyAdmin finalizado
@@ -21147,7 +21147,7 @@ preencha_as_info
 generate_jwt_tokens() {
     # Verificar a disponibilidade dos comandos necessários e instalá-los se necessário
     if ! command -v openssl &> /dev/null; then
-        echo "O comando 'openssl' não estáá disponível. Tentando instalar..."
+        echo "O comando 'openssl' não está disponível. Tentando instalar..."
         if [[ "$(uname)" == "Darwin" ]]; then
             # macOS
             brew install openssl
@@ -21170,7 +21170,7 @@ generate_jwt_tokens() {
     fi
 
     if ! command -v jq &> /dev/null; then
-        echo "O comando 'jq' não estáá disponível. Tentando instalar..."
+        echo "O comando 'jq' não está disponível. Tentando instalar..."
         if [[ "$(uname)" == "Darwin" ]]; then
             # macOS
             brew install jq
@@ -21233,7 +21233,7 @@ generate_jwt_tokens() {
 # Chamar a função e armazenar o retorno em uma variável
 result=$(generate_jwt_tokens)
 
-# Verificar se o resultado estáá vazio
+# Verificar se o resultado está vazio
 if [[ -z "$result" ]]; then
     echo "A função retornou um resultado vazio. Verifique a configuração do ambiente e as dependências."
     exit 1
@@ -21243,12 +21243,12 @@ fi
 read secret token_service_key token_anon_key <<< "$result"
 
 
-## Inicia um Loop até os dados estáarem certos
+## Inicia um Loop até os dados estarem certos
 while true; do
 
     ##Pergunta o Dominio do Builder
     echo -e "\e[97mPasso$amarelo 1/3\e[0m"
-    echo -en "\e[33mDigite o Dominio para o Supabase (ex: supabase.seudominio.com): \e[0m" && read -r url_supabase
+    echo -en "\e[33mDigite o Dominio para o Supabase (ex: supabase.openorion.art.br): \e[0m" && read -r url_supabase
     echo ""
 
     ##Pergunta o Dominio do Viewer
@@ -21264,18 +21264,18 @@ while true; do
 
     ###Pergunta o Email SMTP
     #echo -e "\e[97mPasso$amarelo 4/10\e[0m"
-    #echo -en "\e[33mDigite o Email para SMTP (ex: admin@seudominio.com): \e[0m" && read -r email_supabase
+    #echo -en "\e[33mDigite o Email para SMTP (ex: contato@openorion.art.br): \e[0m" && read -r email_supabase
     #echo ""
 
     ##Pergunta o usuário do Email SMTP
     #echo -e "\e[97mPasso$amarelo 5/10\e[0m"
     #echo -e "$amarelo--> Caso não tiver um usuario do email, use o proprio email abaixo"
-    #echo -en "\e[33mDigite o Usuário para SMTP (ex: openorion ou admin@seudominio.com): \e[0m" && read -r usuario_email_supabase
+    #echo -en "\e[33mDigite o Usuário para SMTP (ex: openorion ou contato@openorion.art.br): \e[0m" && read -r usuario_email_supabase
     #echo ""
     
     ## Pergunta a senha do SMTP
     #echo -e "\e[97mPasso$amarelo 6/10\e[0m"
-    #echo -e "$amarelo--> Sem caracteres especiais: \!#$ | Se estáiver usando gmail use a senha de app"
+    #echo -e "$amarelo--> Sem caracteres especiais: \!#$ | Se estiver usando gmail use a senha de app"
     #echo -en "\e[33mDigite a Senha SMTP do Email (ex: @Senha123_): \e[0m" && read -r senha_email_supabase
     #echo ""
 
@@ -21362,11 +21362,11 @@ while true; do
     echo -e "\e[33mService Key:\e[97m $SERVICE_KEY\e[0m"
     echo ""
 
-    ## Pergunta se as respostas estáão corretas
-    read -p "As respostas estáão corretas? (Y/N): " confirmacao
+    ## Pergunta se as respostas estão corretas
+    read -p "As respostas estão corretas? (Y/N): " confirmacao
     if [ "$confirmacao" = "Y" ] || [ "$confirmacao" = "y" ]; then
 
-        ## Digitou Y para confirmar que as informações estáão corretas
+        ## Digitou Y para confirmar que as informações estão corretas
 
         ## Limpar o terminal
         clear
@@ -21378,7 +21378,7 @@ while true; do
         break
     else
 
-        ## Digitou N para dizer que as informações não estáão corretas.
+        ## Digitou N para dizer que as informações não estão corretas.
 
         ## Limpar o terminal
         clear
@@ -21417,7 +21417,7 @@ if [ $? -eq 0 ]; then
     echo "1/3 - [ OK ] - Baixando Repositório do Supabase"
 else
     echo "1/3 - [ OFF ] - Baixando Repositório do Supabase"
-    echo "Não foi possível Baixar."
+    echo "Não foi possivel Baixar."
 fi
 cd supabase
 git checkout 3f6f8aa906f67dbc7674759e6b2560703e8c5201 > /dev/null 2>&1
@@ -21550,14 +21550,14 @@ services:
             - anon
 
   ## Secure REST routes
-  - name: restá-v1
-    _comment: 'PostgREST: /restá/v1/* -> http://supabase${1:+_$1}_restá:3000/*'
-    url: http://supabase${1:+_$1}_restá:3000/
+  - name: rest-v1
+    _comment: 'PostgREST: /rest/v1/* -> http://supabase${1:+_$1}_rest:3000/*'
+    url: http://supabase${1:+_$1}_rest:3000/
     routes:
-      - name: restá-v1-all
+      - name: rest-v1-all
         strip_path: true
         paths:
-          - /restá/v1/
+          - /rest/v1/
     plugins:
       - name: cors
       - name: key-auth
@@ -21572,8 +21572,8 @@ services:
 
   ## Secure GraphQL routes
   - name: graphql-v1
-    _comment: 'PostgREST: /graphql/v1/* -> http://supabase${1:+_$1}_restá:3000/rpc/graphql'
-    url: http://supabase${1:+_$1}_restá:3000/rpc/graphql
+    _comment: 'PostgREST: /graphql/v1/* -> http://supabase${1:+_$1}_rest:3000/rpc/graphql'
+    url: http://supabase${1:+_$1}_rest:3000/rpc/graphql
     routes:
       - name: graphql-v1-all
         strip_path: true
@@ -21584,7 +21584,7 @@ services:
       - name: key-auth
         config:
           hide_credentials: true
-      - name: requestá-transformer
+      - name: request-transformer
         config:
           add:
             headers:
@@ -21617,12 +21617,12 @@ services:
           allow:
             - admin
             - anon
-  - name: realtime-v1-restá
+  - name: realtime-v1-rest
     _comment: 'Realtime: /realtime/v1/* -> ws://supabase${1:+_$1}_realtime:4000/socket/*'
     url: http://supabase${1:+_$1}_realtime:4000/api
     protocol: http
     routes:
-      - name: realtime-v1-restá
+      - name: realtime-v1-rest
         strip_path: true
         paths:
           - /realtime/v1/api
@@ -21700,7 +21700,7 @@ services:
         paths:
           - /api/mcp
     plugins:
-      - name: requestá-termination
+      - name: request-termination
         config:
           status_code: 403
           message: "Access is forbidden."
@@ -21858,7 +21858,7 @@ services:
       - KONG_DNS_ORDER=LAST,A,CNAME
 
     ## 🧩 Configuração de Plugins
-      - KONG_PLUGINS=requestá-transformer,cors,key-auth,acl,basic-auth,requestá-termination,ip-restáriction
+      - KONG_PLUGINS=request-transformer,cors,key-auth,acl,basic-auth,request-termination,ip-restriction
 
     ## 📦 Configurações de Buffers do NGINX
       - KONG_NGINX_PROXY_PROXY_BUFFER_SIZE=160k
@@ -21949,11 +21949,11 @@ services:
 
 ## --------------------------- ORION --------------------------- ##
 
-  supabase${1:+_$1}_restá:
-    image: postgrestá/postgrestá:v13.0.7
+  supabase${1:+_$1}_rest:
+    image: postgrest/postgrest:v13.0.7
     command:
       [
-        "postgrestá"
+        "postgrest"
       ]
     
     networks:
@@ -22037,7 +22037,7 @@ services:
     ## 🔑 Configuração do PostgREST e JWT
       - ANON_KEY=$ANON_KEY
       - SERVICE_KEY=$SERVICE_KEY
-      - POSTGREST_URL=http://supabase${1:+_$1}_restá:3000
+      - POSTGREST_URL=http://supabase${1:+_$1}_rest:3000
       - PGRST_JWT_SECRET=$JWT_Key
       - DATABASE_URL=postgres://supabase_storage_admin:$Senha_Postgres@supabase${1:+_$1}_db:5432/postgres
 
@@ -22348,7 +22348,7 @@ if [ $? -eq 0 ]; then
     echo "1/10 - [ OK ] - Criando Stack"
 else
     echo "1/10 - [ OFF ] - Criando Stack"
-    echo "Não foi possível criar a stack do supabase"
+    echo "Não foi possivel criar a stack do supabase"
 fi
 STACK_NAME="supabase${1:+_$1}"
 stack_editavel # > /dev/null 2>&1
@@ -22357,7 +22357,7 @@ stack_editavel # > /dev/null 2>&1
 #    echo "2/2 - [ OK ] - Deploy Stack"
 #else
 #    echo "2/2 - [ OFF ] - Deploy Stack"
-#    echo "Não foi possível subir a stack do supabase"
+#    echo "Não foi possivel subir a stack do supabase"
 #fi
 
 ## Mensagem de Passo
@@ -22366,10 +22366,10 @@ echo ""
 sleep 1
 
 ## Baixando imagens:
-pull supabase/studio:2025.11.10-sha-5291fe3 kong:2.8.1 supabase/gotrue:v2.182.1 postgrestá/postgrestá:v13.0.7 supabase/realtime:v2.63.0 supabase/storage-api:v1.29.0 darthsim/imgproxy:v3.8.0 supabase/postgres-meta:v0.93.1 supabase/edge-runtime:v1.69.23 supabase/logflare:1.22.6 supabase/postgres:15.8.1.085 timberio/vector:0.28.1-alpine supabase/supavisor:2.7.4 
+pull supabase/studio:2025.11.10-sha-5291fe3 kong:2.8.1 supabase/gotrue:v2.182.1 postgrest/postgrest:v13.0.7 supabase/realtime:v2.63.0 supabase/storage-api:v1.29.0 darthsim/imgproxy:v3.8.0 supabase/postgres-meta:v0.93.1 supabase/edge-runtime:v1.69.23 supabase/logflare:1.22.6 supabase/postgres:15.8.1.085 timberio/vector:0.28.1-alpine supabase/supavisor:2.7.4 
 
-## Usa o serviço wait_stack "supabase" para verificar se o serviço estáa online
-wait_stack supabase${1:+_$1}_supabase${1:+_$1}_db supabase${1:+_$1}_supabase${1:+_$1}_vector supabase${1:+_$1}_supabase${1:+_$1}_analytics supabase${1:+_$1}_supabase${1:+_$1}_meta supabase${1:+_$1}_supabase${1:+_$1}_restá supabase${1:+_$1}_supabase${1:+_$1}_auth supabase${1:+_$1}_supabase${1:+_$1}_realtime supabase${1:+_$1}_supabase${1:+_$1}_storage supabase${1:+_$1}_supabase${1:+_$1}_imgproxy supabase${1:+_$1}_supabase${1:+_$1}_kong supabase${1:+_$1}_supabase${1:+_$1}_functions supabase${1:+_$1}_supabase${1:+_$1}_supavisor supabase${1:+_$1}_supabase${1:+_$1}_studio 
+## Usa o serviço wait_stack "supabase" para verificar se o serviço esta online
+wait_stack supabase${1:+_$1}_supabase${1:+_$1}_db supabase${1:+_$1}_supabase${1:+_$1}_vector supabase${1:+_$1}_supabase${1:+_$1}_analytics supabase${1:+_$1}_supabase${1:+_$1}_meta supabase${1:+_$1}_supabase${1:+_$1}_rest supabase${1:+_$1}_supabase${1:+_$1}_auth supabase${1:+_$1}_supabase${1:+_$1}_realtime supabase${1:+_$1}_supabase${1:+_$1}_storage supabase${1:+_$1}_supabase${1:+_$1}_imgproxy supabase${1:+_$1}_supabase${1:+_$1}_kong supabase${1:+_$1}_supabase${1:+_$1}_functions supabase${1:+_$1}_supabase${1:+_$1}_supavisor supabase${1:+_$1}_supabase${1:+_$1}_studio 
 telemetria Supabase finalizado
 
 cd dados_vps
@@ -22476,12 +22476,12 @@ nome_ntfy
 ## Mostra mensagem para preencher informações
 preencha_as_info
 
-## Inicia um Loop até os dados estáarem certos
+## Inicia um Loop até os dados estarem certos
 while true; do
 
     ##Pergunta o Dominio para aplicação
     echo -e "\e[97mPasso$amarelo 1/3\e[0m"
-    echo -en "\e[33mDigite o Dominio para o Ntfy (ex: ntfy.seudominio.com): \e[0m" && read -r url_ntfy
+    echo -en "\e[33mDigite o Dominio para o Ntfy (ex: ntfy.openorion.art.br): \e[0m" && read -r url_ntfy
     echo ""
 
     ##Pergunta o Dominio para aplicação
@@ -22515,11 +22515,11 @@ while true; do
     echo -e "\e[33mSenha do Ntfy:\e[97m $pass_ntfy\e[0m"
     echo ""
 
-    ## Pergunta se as respostas estáão corretas
-    read -p "As respostas estáão corretas? (Y/N): " confirmacao
+    ## Pergunta se as respostas estão corretas
+    read -p "As respostas estão corretas? (Y/N): " confirmacao
     if [ "$confirmacao" = "Y" ] || [ "$confirmacao" = "y" ]; then
 
-        ## Digitou Y para confirmar que as informações estáão corretas
+        ## Digitou Y para confirmar que as informações estão corretas
 
         ## Limpar o terminal
         clear
@@ -22531,7 +22531,7 @@ while true; do
         break
     else
 
-        ## Digitou N para dizer que as informações não estáão corretas.
+        ## Digitou N para dizer que as informações não estão corretas.
 
         ## Limpar o terminal
         clear
@@ -22576,7 +22576,7 @@ services:
 ## --------------------------- ORION --------------------------- ##
 
   ntfy${1:+_$1}:
-    image: binwiederhier/ntfy:latestá
+    image: binwiederhier/ntfy:latest
     command:
       - serve
 
@@ -22631,7 +22631,7 @@ if [ $? -eq 0 ]; then
     echo "1/10 - [ OK ] - Criando Stack"
 else
     echo "1/10 - [ OFF ] - Criando Stack"
-    echo "Não foi possível criar a stack da Ntfy"
+    echo "Não foi possivel criar a stack da Ntfy"
 fi
 STACK_NAME="ntfy${1:+_$1}"
 stack_editavel # > /dev/null 2>&1
@@ -22641,7 +22641,7 @@ stack_editavel # > /dev/null 2>&1
 #    echo "2/2 - [ OK ] - Deploy Stack"
 #else
 #    echo "2/2 - [ OFF ] - Deploy Stack"
-#    echo "Não foi possível subir a stack da Ntfy"
+#    echo "Não foi possivel subir a stack da Ntfy"
 #fi
 
 sleep 10
@@ -22652,9 +22652,9 @@ echo ""
 sleep 1
 
 ## Baixando imagens:
-pull binwiederhier/ntfy:latestá
+pull binwiederhier/ntfy:latest
 
-## Usa o serviço wait_ntfy para verificar se o serviço estáa online
+## Usa o serviço wait_ntfy para verificar se o serviço esta online
 wait_stack ntfy${1:+_$1}_ntfy${1:+_$1}
 
 telemetria Ntfy finalizado
@@ -22731,17 +22731,17 @@ nome_lowcoder
 ## Mostra mensagem para preencher informações
 preencha_as_info
 
-## Inicia um Loop até os dados estáarem certos
+## Inicia um Loop até os dados estarem certos
 while true; do
 
     ##Pergunta o Dominio para aplicação
     echo -e "\e[97mPasso$amarelo 1/6\e[0m"
-    echo -en "\e[33mDigite o Dominio para o Lowcoder (ex: lowcoder.seudominio.com): \e[0m" && read -r url_lowcoder
+    echo -en "\e[33mDigite o Dominio para o Lowcoder (ex: lowcoder.openorion.art.br): \e[0m" && read -r url_lowcoder
     echo ""
 
     ##Pergunta o Dominio para aplicação
     echo -e "\e[97mPasso$amarelo 2/8\e[0m"
-    echo -en "\e[33mDigite um email para o Super Admin (ex: admin@seudominio.com): \e[0m" && read -r email_super_admin_lowcoder
+    echo -en "\e[33mDigite um email para o Super Admin (ex: contato@openorion.art.br): \e[0m" && read -r email_super_admin_lowcoder
     echo ""
 
     ##Pergunta o Dominio para aplicação
@@ -22751,18 +22751,18 @@ while true; do
 
     ## Pergunta o email SMTP
     echo -e "\e[97mPasso$amarelo 4/8\e[0m"
-    echo -en "\e[33mDigite o Email para SMTP (ex: admin@seudominio.com): \e[0m" && read -r email_smtp_lowcoder
+    echo -en "\e[33mDigite o Email para SMTP (ex: contato@openorion.art.br): \e[0m" && read -r email_smtp_lowcoder
     echo ""
 
     ## Pergunta o Ususario SMTP
     echo -e "\e[97mPasso$amarelo 5/8\e[0m"
     echo -e "$amarelo--> Caso não tiver um usuario do email, use o proprio email abaixo"
-    echo -en "\e[33mDigite o Usuario para SMTP (ex: openorion ou admin@seudominio.com): \e[0m" && read -r user_smtp_lowcoder
+    echo -en "\e[33mDigite o Usuario para SMTP (ex: openorion ou contato@openorion.art.br): \e[0m" && read -r user_smtp_lowcoder
     echo ""
     
     ## Pergunta a senha do SMTP
     echo -e "\e[97mPasso$amarelo 6/8\e[0m"
-    echo -e "$amarelo--> Sem caracteres especiais: \!#$ | Se estáiver usando gmail use a senha de app"
+    echo -e "$amarelo--> Sem caracteres especiais: \!#$ | Se estiver usando gmail use a senha de app"
     echo -en "\e[33mDigite a Senha SMTP do Email (ex: @Senha123_): \e[0m" && read -r senha_smtp_lowcoder
     echo ""
     
@@ -22836,11 +22836,11 @@ while true; do
     smtp_secure_lowcoder_startls=true
     fi
 
-    ## Pergunta se as respostas estáão corretas
-    read -p "As respostas estáão corretas? (Y/N): " confirmacao
+    ## Pergunta se as respostas estão corretas
+    read -p "As respostas estão corretas? (Y/N): " confirmacao
     if [ "$confirmacao" = "Y" ] || [ "$confirmacao" = "y" ]; then
 
-        ## Digitou Y para confirmar que as informações estáão corretas
+        ## Digitou Y para confirmar que as informações estão corretas
 
         ## Limpar o terminal
         clear
@@ -22852,7 +22852,7 @@ while true; do
         break
     else
 
-        ## Digitou N para dizer que as informações não estáão corretas.
+        ## Digitou N para dizer que as informações não estão corretas.
 
         ## Limpar o terminal
         clear
@@ -22900,7 +22900,7 @@ services:
 ## --------------------------- ORION --------------------------- ##
 
   lowcoder${1:+_$1}_api:
-    image: lowcoderorg/lowcoder-ce-api-service:latestá
+    image: lowcoderorg/lowcoder-ce-api-service:latest
 
     networks:
       - $nome_rede_interna
@@ -22979,7 +22979,7 @@ services:
 ## --------------------------- ORION --------------------------- ##
 
   lowcoder${1:+_$1}_node:
-    image: lowcoderorg/lowcoder-ce-node-service:latestá
+    image: lowcoderorg/lowcoder-ce-node-service:latest
 
     networks:
       - $nome_rede_interna
@@ -23006,7 +23006,7 @@ services:
 ## --------------------------- ORION --------------------------- ##
 
   lowcoder${1:+_$1}_frontend:
-    image: lowcoderorg/lowcoder-ce-frontend:latestá
+    image: lowcoderorg/lowcoder-ce-frontend:latest
 
     volumes:
      - lowcoder${1:+_$1}_assets:/lowcoder/assets
@@ -23049,7 +23049,7 @@ services:
 ## --------------------------- ORION --------------------------- ##
 
   lowcoder${1:+-$1}-redis:
-    image: redis:latestá  ## Versão do Redis
+    image: redis:latest  ## Versão do Redis
     command: [
         "redis-server",
         "--appendonly",
@@ -23096,7 +23096,7 @@ if [ $? -eq 0 ]; then
     echo "1/10 - [ OK ] - Criando Stack"
 else
     echo "1/10 - [ OFF ] - Criando Stack"
-    echo "Não foi possível criar a stack da Lowcoder"
+    echo "Não foi possivel criar a stack da Lowcoder"
 fi
 STACK_NAME="lowcoder${1:+_$1}"
 stack_editavel # > /dev/null 2>&1
@@ -23106,7 +23106,7 @@ stack_editavel # > /dev/null 2>&1
 #    echo "2/2 - [ OK ] - Deploy Stack"
 #else
 #    echo "2/2 - [ OFF ] - Deploy Stack"
-#    echo "Não foi possível subir a stack da lowcoder"
+#    echo "Não foi possivel subir a stack da lowcoder"
 #fi
 
 sleep 10
@@ -23117,9 +23117,9 @@ echo ""
 sleep 1
 
 ## Baixando imagens:
-pull redis:latestá lowcoderorg/lowcoder-ce-api-service:latestá lowcoderorg/lowcoder-ce-node-service:latestá lowcoderorg/lowcoder-ce-frontend:latestá
+pull redis:latest lowcoderorg/lowcoder-ce-api-service:latest lowcoderorg/lowcoder-ce-node-service:latest lowcoderorg/lowcoder-ce-frontend:latest
 
-## Usa o serviço wait_stack "lowcoder" para verificar se o serviço estáa online
+## Usa o serviço wait_stack "lowcoder" para verificar se o serviço esta online
 wait_stack lowcoder${1:+_$1}_lowcoder${1:+-$1}-redis lowcoder${1:+_$1}_lowcoder${1:+_$1}_api lowcoder${1:+_$1}_lowcoder${1:+_$1}_node lowcoder${1:+_$1}_lowcoder${1:+_$1}_frontend
 
 telemetria LowCoder finalizado
@@ -23193,12 +23193,12 @@ nome_langflow
 ## Mostra mensagem para preencher informações
 preencha_as_info
 
-## Inicia um Loop até os dados estáarem certos
+## Inicia um Loop até os dados estarem certos
 while true; do
 
     ##Pergunta o Dominio do Builder
     echo -e "\e[97mPasso$amarelo 1/3\e[0m"
-    echo -en "\e[33mDigite o Dominio para LangFlow (ex: langflow.seudominio.com): \e[0m" && read -r url_langflow
+    echo -en "\e[33mDigite o Dominio para LangFlow (ex: langflow.openorion.art.br): \e[0m" && read -r url_langflow
     echo ""
 
     ##Pergunta o Usuario para a ferramenta
@@ -23234,11 +23234,11 @@ while true; do
     echo -e "\e[33mSenha:\e[97m $pass_langflow\e[0m"
     echo ""
 
-    ## Pergunta se as respostas estáão corretas
-    read -p "As respostas estáão corretas? (Y/N): " confirmacao
+    ## Pergunta se as respostas estão corretas
+    read -p "As respostas estão corretas? (Y/N): " confirmacao
     if [ "$confirmacao" = "Y" ] || [ "$confirmacao" = "y" ]; then
 
-        ## Digitou Y para confirmar que as informações estáão corretas
+        ## Digitou Y para confirmar que as informações estão corretas
 
         ## Limpar o terminal
         clear
@@ -23250,7 +23250,7 @@ while true; do
         break
     else
 
-        ## Digitou N para dizer que as informações não estáão corretas.
+        ## Digitou N para dizer que as informações não estão corretas.
 
         ## Limpar o terminal
         clear
@@ -23314,7 +23314,7 @@ services:
 ## --------------------------- ORION --------------------------- ##
 
   langflow${1:+_$1}_app:
-    image: langflowai/langflow:latestá
+    image: langflowai/langflow:latest
 
     volumes:
       - langflow${1:+_$1}_data:/app/langflow
@@ -23375,7 +23375,7 @@ services:
 ## --------------------------- ORION --------------------------- ##
 
   langflow${1:+_$1}_redis:
-    image: redis:latestá  ## Versão do Redis
+    image: redis:latest  ## Versão do Redis
     command: [
         "redis-server",
         "--appendonly",
@@ -23422,7 +23422,7 @@ if [ $? -eq 0 ]; then
     echo "1/10 - [ OK ] - Criando Stack"
 else
     echo "1/10 - [ OFF ] - Criando Stack"
-    echo "Não foi possível criar a stack do langflow"
+    echo "Não foi possivel criar a stack do langflow"
 fi
 STACK_NAME="langflow${1:+_$1}"
 stack_editavel # > /dev/null 2>&1
@@ -23432,7 +23432,7 @@ stack_editavel # > /dev/null 2>&1
 #    echo "2/2 - [ OK ] - Deploy Stack"
 #else
 #    echo "2/2 - [ OFF ] - Deploy Stack"
-#    echo "Não foi possível subir a stack do langflow"
+#    echo "Não foi possivel subir a stack do langflow"
 #fi
 
 ## Mensagem de Passo
@@ -23441,7 +23441,7 @@ echo ""
 sleep 1
 
 ## Baixando imagens:
-pull redis:latestá langflowai/langflow:latestá
+pull redis:latest langflowai/langflow:latest
 
 sleep 5
 
@@ -23451,7 +23451,7 @@ chown -R 1000:0 /var/lib/docker/volumes/langflow${1:+_$1}_data/_data
 ## Ajustar as "PERMISSÕES" do diretório
 chmod -R 755 /var/lib/docker/volumes/langflow${1:+_$1}_data/_data
 
-## Usa o serviço wait_stack "langflow" para verificar se o serviço estáa online
+## Usa o serviço wait_stack "langflow" para verificar se o serviço esta online
 wait_stack langflow${1:+_$1}_langflow${1:+_$1}_redis langflow${1:+_$1}_langflow${1:+_$1}
 
 telemetria Langflow finalizado
@@ -23523,12 +23523,12 @@ nome_openproject
 ## Mostra mensagem para preencher informações
 preencha_as_info
 
-## Inicia um Loop até os dados estáarem certos
+## Inicia um Loop até os dados estarem certos
 while true; do
 
     ##Pergunta o Dominio para a ferramenta
     echo -e "\e[97mPasso$amarelo 1/1\e[0m"
-    echo -en "\e[33mDigite o dominio para o OpenProject (ex: openproject.seudominio.com): \e[0m" && read -r url_openproject
+    echo -en "\e[33mDigite o dominio para o OpenProject (ex: openproject.openorion.art.br): \e[0m" && read -r url_openproject
     echo ""
 
     ## Limpa o terminal
@@ -23544,11 +23544,11 @@ while true; do
     echo -e "\e[33mDominio do OpenProject:\e[97m $url_openproject\e[0m"
     echo ""
 
-    ## Pergunta se as respostas estáão corretas
-    read -p "As respostas estáão corretas? (Y/N): " confirmacao
+    ## Pergunta se as respostas estão corretas
+    read -p "As respostas estão corretas? (Y/N): " confirmacao
     if [ "$confirmacao" = "Y" ] || [ "$confirmacao" = "y" ]; then
 
-        ## Digitou Y para confirmar que as informações estáão corretas
+        ## Digitou Y para confirmar que as informações estão corretas
 
         ## Limpar o terminal
         clear
@@ -23560,7 +23560,7 @@ while true; do
         break
     else
 
-        ## Digitou N para dizer que as informações não estáão corretas.
+        ## Digitou N para dizer que as informações não estão corretas.
 
         ## Limpar o terminal
         clear
@@ -23632,7 +23632,7 @@ services:
       - OPENPROJECT_DEFAULT__LANGUAGE=pt-BR
 
     ## ✉️ Dados SMTP
-    ## Deixei comentado pois a environment da senha não estáa funcionando como o esperado
+    ## Deixei comentado pois a environment da senha não esta funcionando como o esperado
       #- OPENPROJECT_EMAIL__DELIVERY__METHOD=smtp
       #- OPENPROJECT_MAIL__FROM=email@dominio.com
       #- OPENPROJECT_SMTP__USER__NAME=Usuario_do_Email
@@ -23704,7 +23704,7 @@ services:
 ## --------------------------- ORION --------------------------- ##
 
   openproject${1:+_$1}_redis:
-    image: redis:latestá  ## Versão do Redis
+    image: redis:latest  ## Versão do Redis
     command: [
         "redis-server",
         "--appendonly",
@@ -23757,7 +23757,7 @@ if [ $? -eq 0 ]; then
     echo "1/10 - [ OK ] - Criando Stack"
 else
     echo "1/10 - [ OFF ] - Criando Stack"
-    echo "Não foi possível criar a stack do OpenProject"
+    echo "Não foi possivel criar a stack do OpenProject"
 fi
 STACK_NAME="openproject${1:+_$1}"
 stack_editavel # > /dev/null 2>&1
@@ -23766,7 +23766,7 @@ stack_editavel # > /dev/null 2>&1
 #    echo "2/2 - [ OK ] - Deploy Stack"
 #else
 #    echo "2/2 - [ OFF ] - Deploy Stack"
-#    echo "Não foi possível Subir a stack do openproject"
+#    echo "Não foi possivel Subir a stack do openproject"
 #fi
 
 ## Mensagem de Passo
@@ -23775,9 +23775,9 @@ echo ""
 sleep 1
 
 ## Baixando imagens:
-pull postgres:17 redis:latestá openproject/openproject:16
+pull postgres:17 redis:latest openproject/openproject:16
 
-## Usa o serviço wait_stack "openproject" para verificar se o serviço estáa online
+## Usa o serviço wait_stack "openproject" para verificar se o serviço esta online
 wait_stack openproject${1:+_$1}_openproject${1:+_$1}_db openproject${1:+_$1}_openproject${1:+_$1}_redis openproject${1:+_$1}_openproject${1:+_$1}_app
 
 wait_30_sec
@@ -23852,12 +23852,12 @@ nome_zep
 ## Mostra mensagem para preencher informações
 preencha_as_info
 
-## Inicia um Loop até os dados estáarem certos    
+## Inicia um Loop até os dados estarem certos    
 while true; do
 
     ## Pergunta o Dominio da ferramenta
     echo -e "\e[97mPasso$amarelo 1/4\e[0m"
-    echo -en "\e[33mDigite o Dominio para o Zep (ex: zep.seudominio.com): \e[0m" && read -r url_zep
+    echo -en "\e[33mDigite o Dominio para o Zep (ex: zep.openorion.art.br): \e[0m" && read -r url_zep
     echo ""
 
     ##Pergunta o Dominio para aplicação
@@ -23908,11 +23908,11 @@ while true; do
     echo -e "\e[33mApiKey do Zep:\e[97m $apikey_zep\e[0m"
     echo ""
 
-    ## Pergunta se as respostas estáão corretas
-    read -p "As respostas estáão corretas? (Y/N): " confirmacao
+    ## Pergunta se as respostas estão corretas
+    read -p "As respostas estão corretas? (Y/N): " confirmacao
     if [ "$confirmacao" = "Y" ] || [ "$confirmacao" = "y" ]; then
 
-        ## Digitou Y para confirmar que as informações estáão corretas
+        ## Digitou Y para confirmar que as informações estão corretas
 
         ## Limpar o terminal
         clear
@@ -23924,7 +23924,7 @@ while true; do
         break
     else
 
-        ## Digitou N para dizer que as informações não estáão corretas.
+        ## Digitou N para dizer que as informações não estão corretas.
 
         ## Limpar o terminal
         clear
@@ -23961,7 +23961,7 @@ if [ $? -eq 0 ]; then
     echo "1/1 - [ OK ] - Baixando Repositório do Zep"
 else
     echo "1/1 - [ OFF ] - Baixando Repositório do Zep"
-    echo "Não foi possível Baixar."
+    echo "Não foi possivel Baixar."
 fi
 
 mv openorion/Extras/Zep /root/zep${1:+_$1}
@@ -24009,7 +24009,7 @@ services:
 ## --------------------------- ORION --------------------------- ##
 
   zep${1:+_$1}_nlp:
-    image: ghcr.io/getzep/zep-nlp-server:latestá
+    image: ghcr.io/getzep/zep-nlp-server:latest
 
     networks:
       - $nome_rede_interna
@@ -24024,7 +24024,7 @@ services:
 ## --------------------------- ORION --------------------------- ##
 
   zep${1:+_$1}_app:
-    image: ghcr.io/getzep/zep:latestá
+    image: ghcr.io/getzep/zep:latest
 
     volumes:
       - /root/zep${1:+_$1}/config.yaml:/app/config.yaml
@@ -24097,7 +24097,7 @@ if [ $? -eq 0 ]; then
     echo "1/10 - [ OK ] - Criando Stack"
 else
     echo "1/10 - [ OFF ] - Criando Stack"
-    echo "Não foi possível criar a stack do Zep"
+    echo "Não foi possivel criar a stack do Zep"
 fi
 STACK_NAME="zep${1:+_$1}"
 stack_editavel # > /dev/null 2>&1
@@ -24106,7 +24106,7 @@ stack_editavel # > /dev/null 2>&1
 #    echo "2/2 - [ OK ] - Deploy Stack"
 #else
 #    echo "2/2 - [ OFF ] - Deploy Stack"
-#    echo "Não foi possível Subir a stack do zep"
+#    echo "Não foi possivel Subir a stack do zep"
 #fi
 
 ## Mensagem de Passo
@@ -24114,9 +24114,9 @@ echo -e "\e[97m• VERIFICANDO SERVIÇO \e[33m[4/4]\e[0m"
 echo ""
 
 ## Baixando imagens:
-pull ghcr.io/getzep/zep-nlp-server:latestá ghcr.io/getzep/zep:latestá
+pull ghcr.io/getzep/zep-nlp-server:latest ghcr.io/getzep/zep:latest
 
-## Usa o serviço wait_zep para verificar se o serviço estáa online
+## Usa o serviço wait_zep para verificar se o serviço esta online
 wait_stack zep${1:+_$1}_zep${1:+_$1}_nlp zep${1:+_$1}_zep${1:+_$1}_app
 
 telemetria Zep finalizado
@@ -24195,12 +24195,12 @@ nome_humhub
 ## Mostra mensagem para preencher informações
 preencha_as_info
 
-## Inicia um Loop até os dados estáarem certos
+## Inicia um Loop até os dados estarem certos
 while true; do
 
     ## Pergunta o Dominio da ferramenta
     echo -e "\e[97mPasso$amarelo 1/10\e[0m"
-    echo -en "\e[33mDigite o Dominio para o HumHub (ex: humhub.seudominio.com): \e[0m" && read -r url_humhub
+    echo -en "\e[33mDigite o Dominio para o HumHub (ex: humhub.openorion.art.br): \e[0m" && read -r url_humhub
     echo ""
 
     ## Pergunta o usuario da ferramenta
@@ -24228,7 +24228,7 @@ while true; do
 
     ## Pergunta o email da ferramenta
     echo -e "\e[97mPasso$amarelo 4/10\e[0m"
-    echo -en "\e[33mDigite o Email do Admin: (ex: admin@seudominio.com): \e[0m" && read -r email_humhub
+    echo -en "\e[33mDigite o Email do Admin: (ex: contato@openorion.art.br): \e[0m" && read -r email_humhub
     echo ""
     
     ## Pergunta o senha da ferramenta
@@ -24239,18 +24239,18 @@ while true; do
 
     ## Pergunta o Email SMTP
     echo -e "\e[97mPasso$amarelo 6/10\e[0m"
-    echo -en "\e[33mDigite um Email para o SMTP (ex: admin@seudominio.com): \e[0m" && read -r email_smtp_humhub
+    echo -en "\e[33mDigite um Email para o SMTP (ex: contato@openorion.art.br): \e[0m" && read -r email_smtp_humhub
     echo ""
 
     ## Pergunta o User SMTP
     echo -e "\e[97mPasso$amarelo 7/10\e[0m"
     echo -e "$amarelo--> Caso não tiver um usuario do email, use o proprio email abaixo"
-    echo -en "\e[33mDigite o Usuario do SMTP (ex: openorion ou admin@seudominio.com): \e[0m" && read -r user_smtp_humhub
+    echo -en "\e[33mDigite o Usuario do SMTP (ex: openorion ou contato@openorion.art.br): \e[0m" && read -r user_smtp_humhub
     echo ""
     
     ## Pergunta a Senha SMTP
     echo -e "\e[97mPasso$amarelo 8/10\e[0m"
-    echo -e "$amarelo--> Sem caracteres especiais: \!#$ | Se estáiver usando gmail use a senha de app"
+    echo -e "$amarelo--> Sem caracteres especiais: \!#$ | Se estiver usando gmail use a senha de app"
     echo -en "\e[33mDigite a Senha SMTP do email (ex: @Senha123_): \e[0m" && read -r senha_smtp_humhub
     echo ""
     
@@ -24318,11 +24318,11 @@ while true; do
     echo -e "\e[33mPorta SMTP:\e[97m $porta_smtp_humhub\e[0m"
     echo ""
 
-    ## Pergunta se as respostas estáão corretas
-    read -p "As respostas estáão corretas? (Y/N): " confirmacao
+    ## Pergunta se as respostas estão corretas
+    read -p "As respostas estão corretas? (Y/N): " confirmacao
     if [ "$confirmacao" = "Y" ] || [ "$confirmacao" = "y" ]; then
 
-        ## Digitou Y para confirmar que as informações estáão corretas
+        ## Digitou Y para confirmar que as informações estão corretas
 
         ## Limpar o terminal
         clear
@@ -24334,7 +24334,7 @@ while true; do
         break
     else
 
-        ## Digitou N para dizer que as informações não estáão corretas.
+        ## Digitou N para dizer que as informações não estão corretas.
 
         ## Limpar o terminal
         clear
@@ -24391,7 +24391,7 @@ services:
 ## --------------------------- ORION --------------------------- ##
 
   humhub${1:+_$1}_app:
-    image: mriedmann/humhub:latestá
+    image: mriedmann/humhub:latest
 
     volumes:
       - humhub${1:+_$1}_data:/var/www/localhost/htdocs/protected/modules
@@ -24457,7 +24457,7 @@ services:
 ## --------------------------- ORION --------------------------- ##
 
   humhub${1:+_$1}_redis:
-    image: redis:latestá  ## Versão do Redis
+    image: redis:latest  ## Versão do Redis
     command: [
         "redis-server",
         "--appendonly",
@@ -24513,7 +24513,7 @@ if [ $? -eq 0 ]; then
     echo "1/10 - [ OK ] - Criando Stack"
 else
     echo "1/10 - [ OFF ] - Criando Stack"
-    echo "Não foi possível criar a stack do HumHub"
+    echo "Não foi possivel criar a stack do HumHub"
 fi
 STACK_NAME="humhub${1:+_$1}"
 stack_editavel # > /dev/null 2>&1
@@ -24522,7 +24522,7 @@ stack_editavel # > /dev/null 2>&1
 #    echo "2/2 - [ OK ] - Deploy Stack"
 #else
 #    echo "2/2 - [ OFF ] - Deploy Stack"
-#    echo "Não foi possível subir a stack do humhub"
+#    echo "Não foi possivel subir a stack do humhub"
 #fi
 
 ## Mensagem de Passo
@@ -24531,9 +24531,9 @@ echo ""
 sleep 1
 
 ## Baixando imagens:
-pull redis:latestá mriedmann/humhub:latestá
+pull redis:latest mriedmann/humhub:latest
 
-## Usa o serviço wait_calcom para verificar se o serviço estáa online
+## Usa o serviço wait_calcom para verificar se o serviço esta online
 wait_stack humhub${1:+_$1}_humhub${1:+_$1}_redis humhub${1:+_$1}_humhub${1:+_$1}_app
 
 telemetria HumHub finalizado
@@ -24620,12 +24620,12 @@ nome_yourls
 ## Mostra mensagem para preencher informações
 preencha_as_info
 
-## Inicia um Loop até os dados estáarem certos
+## Inicia um Loop até os dados estarem certos
 while true; do
 
     ##Pergunta o Dominio para a ferramenta
     echo -e "\e[97mPasso$amarelo 1/3\e[0m"
-    echo -en "\e[33mDigite o dominio para o Yourls (ex: yourls.seudominio.com): \e[0m" && read -r url_yourls
+    echo -en "\e[33mDigite o dominio para o Yourls (ex: yourls.openorion.art.br): \e[0m" && read -r url_yourls
     echo ""
     
     ##Pergunta o Dominio para a ferramenta
@@ -24658,11 +24658,11 @@ while true; do
     echo -e "\e[33mSenha:\e[97m $pass_yourls\e[0m"
     echo ""
     
-    ## Pergunta se as respostas estáão corretas
-    read -p "As respostas estáão corretas? (Y/N): " confirmacao
+    ## Pergunta se as respostas estão corretas
+    read -p "As respostas estão corretas? (Y/N): " confirmacao
     if [ "$confirmacao" = "Y" ] || [ "$confirmacao" = "y" ]; then
 
-        ## Digitou Y para confirmar que as informações estáão corretas
+        ## Digitou Y para confirmar que as informações estão corretas
 
         ## Limpar o terminal
         clear
@@ -24674,7 +24674,7 @@ while true; do
         break
     else
 
-        ## Digitou N para dizer que as informações não estáão corretas.
+        ## Digitou N para dizer que as informações não estão corretas.
 
         ## Limpar o terminal
         clear
@@ -24731,7 +24731,7 @@ services:
 ## --------------------------- ORION --------------------------- ##
 
   yourls${1:+_$1}:
-    image: yourls:latestá
+    image: yourls:latest
 
     networks:
       - $nome_rede_interna ## Nome da rede interna
@@ -24775,7 +24775,7 @@ if [ $? -eq 0 ]; then
     echo "1/10 - [ OK ] - Criando Stack"
 else
     echo "1/10 - [ OFF ] - Criando Stack"
-    echo "Não foi possível criar a stack do Yourls"
+    echo "Não foi possivel criar a stack do Yourls"
 fi
 STACK_NAME="yourls${1:+_$1}"
 stack_editavel # > /dev/null 2>&1
@@ -24784,7 +24784,7 @@ stack_editavel # > /dev/null 2>&1
 #    echo "2/2 - [ OK ] - Deploy Stack"
 #else
 #    echo "2/2 - [ OFF ] - Deploy Stack"
-#    echo "Não foi possível Subir a stack do yourls"
+#    echo "Não foi possivel Subir a stack do yourls"
 #fi
 
 ## Mensagem de Passo
@@ -24793,9 +24793,9 @@ echo ""
 sleep 1
 
 ## Baixando imagens:
-pull yourls:latestá
+pull yourls:latest
 
-## Usa o serviço wait_stack "yourls" para verificar se o serviço estáa online
+## Usa o serviço wait_stack "yourls" para verificar se o serviço esta online
 wait_stack yourls${1:+_$1}_yourls${1:+_$1}
 
 telemetria Yourls finalizado
@@ -24869,28 +24869,28 @@ nome_twentycrm
 ## Mostra mensagem para preencher informações
 preencha_as_info
 
-## Inicia um Loop até os dados estáarem certos
+## Inicia um Loop até os dados estarem certos
 while true; do
 
     ##Pergunta o Dominio para a ferramenta
     echo -e "\e[97mPasso$amarelo 1/6\e[0m"
-    echo -en "\e[33mDigite o dominio para o TwentyCRM (ex: twentycrm.seudominio.com): \e[0m" && read -r url_twentycrm
+    echo -en "\e[33mDigite o dominio para o TwentyCRM (ex: twentycrm.openorion.art.br): \e[0m" && read -r url_twentycrm
     echo ""
 
     ## Pergunta o email SMTP
     echo -e "\e[97mPasso$amarelo 2/6\e[0m"
-    echo -en "\e[33mDigite o Email para SMTP (ex: admin@seudominio.com): \e[0m" && read -r email_smtp_twentycrm
+    echo -en "\e[33mDigite o Email para SMTP (ex: contato@openorion.art.br): \e[0m" && read -r email_smtp_twentycrm
     echo ""
 
     ##Pergunta o usuário do Email SMTP
     echo -e "\e[97mPasso$amarelo 3/6\e[0m"
     echo -e "$amarelo--> Caso não tiver um usuario do email, use o proprio email abaixo"
-    echo -en "\e[33mDigite o Usuário para SMTP (ex: openorion ou admin@seudominio.com): \e[0m" && read -r user_smtp_twentycrm
+    echo -en "\e[33mDigite o Usuário para SMTP (ex: openorion ou contato@openorion.art.br): \e[0m" && read -r user_smtp_twentycrm
     echo ""
     
     ## Pergunta a senha do SMTP
     echo -e "\e[97mPasso$amarelo 4/6\e[0m"
-    echo -e "$amarelo--> Sem caracteres especiais: \!#$ | Se estáiver usando gmail use a senha de app"
+    echo -e "$amarelo--> Sem caracteres especiais: \!#$ | Se estiver usando gmail use a senha de app"
     echo -en "\e[33mDigite a Senha SMTP do Email (ex: @Senha123_): \e[0m" && read -r pass_smtp_twentycrm
     echo ""
     
@@ -24936,11 +24936,11 @@ while true; do
     echo -e "\e[33mPorta SMTP:\e[97m $porta_smtp_twentycrm\e[0m"
     echo ""
 
-    ## Pergunta se as respostas estáão corretas
-    read -p "As respostas estáão corretas? (Y/N): " confirmacao
+    ## Pergunta se as respostas estão corretas
+    read -p "As respostas estão corretas? (Y/N): " confirmacao
     if [ "$confirmacao" = "Y" ] || [ "$confirmacao" = "y" ]; then
 
-        ## Digitou Y para confirmar que as informações estáão corretas
+        ## Digitou Y para confirmar que as informações estão corretas
 
         ## Limpar o terminal
         clear
@@ -24952,7 +24952,7 @@ while true; do
         break
     else
 
-        ## Digitou N para dizer que as informações não estáão corretas.
+        ## Digitou N para dizer que as informações não estão corretas.
 
         ## Limpar o terminal
         clear
@@ -24995,7 +24995,7 @@ services:
 ## --------------------------- ORION --------------------------- ##
 
   twentycrm${1:+_$1}_server:
-    image: twentycrm/twenty:latestá
+    image: twentycrm/twenty:latest
 
     volumes:
       - twentycrm${1:+_$1}_data:/app/packages/twenty-server/.local-storage
@@ -25043,7 +25043,7 @@ services:
 ## --------------------------- ORION --------------------------- ##
 
   twentycrm${1:+_$1}_worker:
-    image: twentycrm/twenty:latestá
+    image: twentycrm/twenty:latest
     command: ["yarn", "worker:prod"]
 
     networks:
@@ -25081,7 +25081,7 @@ services:
 ## --------------------------- ORION --------------------------- ##
 
   twentycrm${1:+_$1}_db:
-    image: twentycrm/twenty-postgres-spilo:latestá
+    image: twentycrm/twenty-postgres-spilo:latest
 
     volumes:
       - twentycrm${1:+_$1}_db:/home/postgres/pgdata
@@ -25111,7 +25111,7 @@ services:
 ## --------------------------- ORION --------------------------- ##
 
   twentycrm${1:+_$1}_redis:
-    image: redis:latestá  ## Versão do Redis
+    image: redis:latest  ## Versão do Redis
     command: [
         "redis-server",
         "--appendonly",
@@ -25164,7 +25164,7 @@ if [ $? -eq 0 ]; then
     echo "1/10 - [ OK ] - Criando Stack"
 else
     echo "1/10 - [ OFF ] - Criando Stack"
-    echo "Não foi possível criar a stack do twentycrm"
+    echo "Não foi possivel criar a stack do twentycrm"
 fi
 STACK_NAME="twentycrm${1:+_$1}"
 stack_editavel # > /dev/null 2>&1
@@ -25173,7 +25173,7 @@ stack_editavel # > /dev/null 2>&1
 #    echo "2/2 - [ OK ] - Deploy Stack"
 #else
 #    echo "2/2 - [ OFF ] - Deploy Stack"
-#    echo "Não foi possível Subir a stack do twentycrm"
+#    echo "Não foi possivel Subir a stack do twentycrm"
 #fi
 
 ## Mensagem de Passo
@@ -25182,13 +25182,13 @@ echo ""
 sleep 1
 
 ## Baixando imagens:
-pull twentycrm/twenty:latestá twentycrm/twenty-postgres-spilo:latestá
+pull twentycrm/twenty:latest twentycrm/twenty-postgres-spilo:latest
 
 ##sleep 5
 
 ##docker exec -t "$(docker ps -q --filter "name=twentycrm${1:+_$1}_twentycrm${1:+_$1}_db")" psql -U postgres -c "CREATE DATABASE twentycrm${1:+_$1};"
 
-## Usa o serviço wait_stack "twentycrm" para verificar se o serviço estáa online
+## Usa o serviço wait_stack "twentycrm" para verificar se o serviço esta online
 wait_stack twentycrm${1:+_$1}_twentycrm${1:+_$1}_server twentycrm${1:+_$1}_twentycrm${1:+_$1}_worker twentycrm${1:+_$1}_twentycrm${1:+_$1}_db
 wait_30_sec
 sudo chmod -R 755 /var/lib/docker/volumes/twentycrm${1:+_$1}_docker
@@ -25269,12 +25269,12 @@ nome_mattermost
 ## Mostra mensagem para preencher informações
 preencha_as_info
 
-## Inicia um Loop até os dados estáarem certos
+## Inicia um Loop até os dados estarem certos
 while true; do
 
     ##Pergunta o Dominio para a ferramenta
     echo -e "\e[97mPasso$amarelo 1/1\e[0m"
-    echo -en "\e[33mDigite o dominio para o Mattermost (ex: mattermost.seudominio.com): \e[0m" && read -r url_mattermost
+    echo -en "\e[33mDigite o dominio para o Mattermost (ex: mattermost.openorion.art.br): \e[0m" && read -r url_mattermost
     echo ""
     
     ## Limpa o terminal
@@ -25290,11 +25290,11 @@ while true; do
     echo -e "\e[33mDominio do Mattermost:\e[97m $url_mattermost\e[0m"
     echo ""
     
-    ## Pergunta se as respostas estáão corretas
-    read -p "As respostas estáão corretas? (Y/N): " confirmacao
+    ## Pergunta se as respostas estão corretas
+    read -p "As respostas estão corretas? (Y/N): " confirmacao
     if [ "$confirmacao" = "Y" ] || [ "$confirmacao" = "y" ]; then
 
-        ## Digitou Y para confirmar que as informações estáão corretas
+        ## Digitou Y para confirmar que as informações estão corretas
 
         ## Limpar o terminal
         clear
@@ -25306,7 +25306,7 @@ while true; do
         break
     else
 
-        ## Digitou N para dizer que as informações não estáão corretas.
+        ## Digitou N para dizer que as informações não estão corretas.
 
         ## Limpar o terminal
         clear
@@ -25363,7 +25363,7 @@ services:
 ## --------------------------- ORION --------------------------- ##
 
   mattermost${1:+_$1}:
-    image: mattermost/mattermost-team-edition:latestá
+    image: mattermost/mattermost-team-edition:latest
 
     volumes:
       - mattermost${1:+_$1}_data:/mattermost/data
@@ -25401,7 +25401,7 @@ services:
         - traefik.http.routers.mattermost${1:+_$1}.service=mattermost${1:+_$1}
         - traefik.http.services.mattermost${1:+_$1}.loadbalancer.server.port=8065
         - traefik.http.services.mattermost${1:+_$1}.loadbalancer.passHostHeader=true
-        - traefik.http.middlewares.sslheader.headers.customrequestáheaders.X-Forwarded-Proto=https
+        - traefik.http.middlewares.sslheader.headers.customrequestheaders.X-Forwarded-Proto=https
         - traefik.http.routers.mattermost${1:+_$1}.middlewares=sslheader
 
 ## --------------------------- ORION --------------------------- ##
@@ -25432,7 +25432,7 @@ if [ $? -eq 0 ]; then
     echo "1/10 - [ OK ] - Criando Stack"
 else
     echo "1/10 - [ OFF ] - Criando Stack"
-    echo "Não foi possível criar a stack do mattermost"
+    echo "Não foi possivel criar a stack do mattermost"
 fi
 STACK_NAME="mattermost${1:+_$1}"
 stack_editavel # > /dev/null 2>&1
@@ -25441,7 +25441,7 @@ stack_editavel # > /dev/null 2>&1
 #    echo "2/2 - [ OK ] - Deploy Stack"
 #else
 #    echo "2/2 - [ OFF ] - Deploy Stack"
-#    echo "Não foi possível Subir a stack do mattermost"
+#    echo "Não foi possivel Subir a stack do mattermost"
 #fi
 
 ## Mensagem de Passo
@@ -25450,9 +25450,9 @@ echo ""
 sleep 1
 
 ## Baixando imagens:
-pull mattermost/mattermost-team-edition:latestá
+pull mattermost/mattermost-team-edition:latest
 
-## Usa o serviço wait_stack "mattermost" para verificar se o serviço estáa online
+## Usa o serviço wait_stack "mattermost" para verificar se o serviço esta online
 wait_stack mattermost${1:+_$1}_mattermost${1:+_$1}
 
 telemetria Mattermost finalizado
@@ -25524,12 +25524,12 @@ nome_outline
 ## Mostra mensagem para preencher informações
 preencha_as_info
 
-## Inicia um Loop até os dados estáarem certos
+## Inicia um Loop até os dados estarem certos
 while true; do
 
     ##Pergunta o Dominio para a ferramenta
     echo -e "\e[97mPasso$amarelo 1/8\e[0m"
-    echo -en "\e[33mDigite o dominio para o Outline (ex: outline.seudominio.com): \e[0m" && read -r url_outline
+    echo -en "\e[33mDigite o dominio para o Outline (ex: outline.openorion.art.br): \e[0m" && read -r url_outline
     echo ""
 
     ##Pergunta o Dominio para a ferramenta
@@ -25546,18 +25546,18 @@ while true; do
 
     ##Pergunta o Email SMTP
     echo -e "\e[97mPasso$amarelo 4/8\e[0m"
-    echo -en "\e[33mDigite o Email para SMTP (ex: admin@seudominio.com): \e[0m" && read -r email_outline
+    echo -en "\e[33mDigite o Email para SMTP (ex: contato@openorion.art.br): \e[0m" && read -r email_outline
     echo ""
 
     ##Pergunta o usuário do Email SMTP
     echo -e "\e[97mPasso$amarelo 5/8\e[0m"
     echo -e "$amarelo--> Caso não tiver um usuario do email, use o proprio email abaixo"
-    echo -en "\e[33mDigite o Usuário para SMTP (ex: openorion ou admin@seudominio.com): \e[0m" && read -r usuario_email_outline
+    echo -en "\e[33mDigite o Usuário para SMTP (ex: openorion ou contato@openorion.art.br): \e[0m" && read -r usuario_email_outline
     echo ""
     
     ## Pergunta a senha do SMTP
     echo -e "\e[97mPasso$amarelo 6/8\e[0m"
-    echo -e "$amarelo--> Sem caracteres especiais: \!#$ | Se estáiver usando gmail use a senha de app"
+    echo -e "$amarelo--> Sem caracteres especiais: \!#$ | Se estiver usando gmail use a senha de app"
     echo -en "\e[33mDigite a Senha SMTP do Email (ex: @Senha123_): \e[0m" && read -r senha_email_outline
     echo ""
 
@@ -25620,11 +25620,11 @@ while true; do
     echo ""
     
     
-    ## Pergunta se as respostas estáão corretas
-    read -p "As respostas estáão corretas? (Y/N): " confirmacao
+    ## Pergunta se as respostas estão corretas
+    read -p "As respostas estão corretas? (Y/N): " confirmacao
     if [ "$confirmacao" = "Y" ] || [ "$confirmacao" = "y" ]; then
 
-        ## Digitou Y para confirmar que as informações estáão corretas
+        ## Digitou Y para confirmar que as informações estão corretas
 
         ## Limpar o terminal
         clear
@@ -25636,7 +25636,7 @@ while true; do
         break
     else
 
-        ## Digitou N para dizer que as informações não estáão corretas.
+        ## Digitou N para dizer que as informações não estão corretas.
 
         ## Limpar o terminal
         clear
@@ -25695,7 +25695,7 @@ services:
 ## --------------------------- ORION --------------------------- ##
 
   outline${1:+_$1}_app:
-    image: outlinewiki/outline:latestá
+    image: outlinewiki/outline:latest
 
     volumes:
       - outline${1:+_$1}_uploads:/var/lib/outline/uploads
@@ -25773,7 +25773,7 @@ services:
 ## --------------------------- ORION --------------------------- ##
 
   outline${1:+_$1}_redis:
-    image: redis:latestá  ## Versão do Redis
+    image: redis:latest  ## Versão do Redis
     command: [
         "redis-server",
         "--appendonly",
@@ -25820,7 +25820,7 @@ if [ $? -eq 0 ]; then
     echo "1/10 - [ OK ] - Criando Stack"
 else
     echo "1/10 - [ OFF ] - Criando Stack"
-    echo "Não foi possível criar a stack do Outline"
+    echo "Não foi possivel criar a stack do Outline"
 fi
 STACK_NAME="outline${1:+_$1}"
 stack_editavel # > /dev/null 2>&1
@@ -25829,7 +25829,7 @@ stack_editavel # > /dev/null 2>&1
 #    echo "2/2 - [ OK ] - Deploy Stack"
 #else
 #    echo "2/2 - [ OFF ] - Deploy Stack"
-#    echo "Não foi possível Subir a stack do outline"
+#    echo "Não foi possivel Subir a stack do outline"
 #fi
 
 ## Mensagem de Passo
@@ -25838,9 +25838,9 @@ echo ""
 sleep 1
 
 ## Baixando imagens:
-pull redis:latestá outlinewiki/outline:latestá
+pull redis:latest outlinewiki/outline:latest
 
-## Usa o serviço wait_stack "outline" para verificar se o serviço estáa online
+## Usa o serviço wait_stack "outline" para verificar se o serviço esta online
 wait_stack outline${1:+_$1}_outline${1:+_$1}_redis outline${1:+_$1}_outline${1:+_$1}_app
 
 telemetria Outline finalizado
@@ -25912,12 +25912,12 @@ nome_focalboard
 ## Mostra mensagem para preencher informações
 preencha_as_info
 
-## Inicia um Loop até os dados estáarem certos
+## Inicia um Loop até os dados estarem certos
 while true; do
 
     ##Pergunta o Dominio para a ferramenta
     echo -e "\e[97mPasso$amarelo 1/1\e[0m"
-    echo -en "\e[33mDigite o dominio para o FocalBoard (ex: focalboard.seudominio.com): \e[0m" && read -r url_focalboard
+    echo -en "\e[33mDigite o dominio para o FocalBoard (ex: focalboard.openorion.art.br): \e[0m" && read -r url_focalboard
     echo ""
     
     ## Limpa o terminal
@@ -25933,11 +25933,11 @@ while true; do
     echo -e "\e[33mDominio do FocalBoard:\e[97m $url_focalboard\e[0m"
     echo ""
     
-    ## Pergunta se as respostas estáão corretas
-    read -p "As respostas estáão corretas? (Y/N): " confirmacao
+    ## Pergunta se as respostas estão corretas
+    read -p "As respostas estão corretas? (Y/N): " confirmacao
     if [ "$confirmacao" = "Y" ] || [ "$confirmacao" = "y" ]; then
 
-        ## Digitou Y para confirmar que as informações estáão corretas
+        ## Digitou Y para confirmar que as informações estão corretas
 
         ## Limpar o terminal
         clear
@@ -25949,7 +25949,7 @@ while true; do
         break
     else
 
-        ## Digitou N para dizer que as informações não estáão corretas.
+        ## Digitou N para dizer que as informações não estão corretas.
 
         ## Limpar o terminal
         clear
@@ -25986,7 +25986,7 @@ services:
 ## --------------------------- ORION --------------------------- ##
 
   focalboard${1:+_$1}:
-    image: mattermost/focalboard:latestá
+    image: mattermost/focalboard:latest
 
     volumes:
       - focalboard${1:+_$1}_data:/opt/focalboard/data
@@ -26033,7 +26033,7 @@ if [ $? -eq 0 ]; then
     echo "1/10 - [ OK ] - Criando Stack"
 else
     echo "1/10 - [ OFF ] - Criando Stack"
-    echo "Não foi possível criar a stack do focalboard"
+    echo "Não foi possivel criar a stack do focalboard"
 fi
 STACK_NAME="focalboard${1:+_$1}"
 stack_editavel # > /dev/null 2>&1
@@ -26042,7 +26042,7 @@ stack_editavel # > /dev/null 2>&1
 #    echo "2/2 - [ OK ] - Deploy Stack"
 #else
 #    echo "2/2 - [ OFF ] - Deploy Stack"
-#    echo "Não foi possível Subir a stack do focalboard"
+#    echo "Não foi possivel Subir a stack do focalboard"
 #fi
 
 ## Mensagem de Passo
@@ -26051,9 +26051,9 @@ echo ""
 sleep 1
 
 ## Baixando imagens:
-pull mattermost/focalboard:latestá
+pull mattermost/focalboard:latest
 
-## Usa o serviço wait_focalboard para verificar se o serviço estáa online
+## Usa o serviço wait_focalboard para verificar se o serviço esta online
 wait_stack focalboard${1:+_$1}_focalboard${1:+_$1}
 
 telemetria Focalboard finalizado
@@ -26125,12 +26125,12 @@ nome_glpi
 ## Mostra mensagem para preencher informações
 preencha_as_info
 
-## Inicia um Loop até os dados estáarem certos
+## Inicia um Loop até os dados estarem certos
 while true; do
 
     ##Pergunta o Dominio para a ferramenta
     echo -e "\e[97mPasso$amarelo 1/1\e[0m"
-    echo -en "\e[33mDigite o dominio para o GLPI (ex: glpi.seudominio.com): \e[0m" && read -r url_glpi
+    echo -en "\e[33mDigite o dominio para o GLPI (ex: glpi.openorion.art.br): \e[0m" && read -r url_glpi
     echo ""
     
     ## Limpa o terminal
@@ -26146,11 +26146,11 @@ while true; do
     echo -e "\e[33mDominio do GLPI:\e[97m $url_glpi\e[0m"
     echo ""
     
-    ## Pergunta se as respostas estáão corretas
-    read -p "As respostas estáão corretas? (Y/N): " confirmacao
+    ## Pergunta se as respostas estão corretas
+    read -p "As respostas estão corretas? (Y/N): " confirmacao
     if [ "$confirmacao" = "Y" ] || [ "$confirmacao" = "y" ]; then
 
-        ## Digitou Y para confirmar que as informações estáão corretas
+        ## Digitou Y para confirmar que as informações estão corretas
 
         ## Limpar o terminal
         clear
@@ -26162,7 +26162,7 @@ while true; do
         break
     else
 
-        ## Digitou N para dizer que as informações não estáão corretas.
+        ## Digitou N para dizer que as informações não estão corretas.
 
         ## Limpar o terminal
         clear
@@ -26219,7 +26219,7 @@ services:
 ## --------------------------- ORION --------------------------- ##
 
   glpi${1:+_$1}:
-    image: diouxx/glpi:latestá
+    image: diouxx/glpi:latest
 
     volumes:
       - /etc/timezone:/etc/timezone:ro
@@ -26268,7 +26268,7 @@ if [ $? -eq 0 ]; then
     echo "1/10 - [ OK ] - Criando Stack"
 else
     echo "1/10 - [ OFF ] - Criando Stack"
-    echo "Não foi possível criar a stack do GLPI"
+    echo "Não foi possivel criar a stack do GLPI"
 fi
 STACK_NAME="glpi${1:+_$1}"
 stack_editavel # > /dev/null 2>&1
@@ -26277,7 +26277,7 @@ stack_editavel # > /dev/null 2>&1
 #    echo "2/2 - [ OK ] - Deploy Stack"
 #else
 #    echo "2/2 - [ OFF ] - Deploy Stack"
-#    echo "Não foi possível Subir a stack do glpi"
+#    echo "Não foi possivel Subir a stack do glpi"
 #fi
 
 ## Mensagem de Passo
@@ -26286,9 +26286,9 @@ echo ""
 sleep 1
 
 ## Baixando imagens:
-pull diouxx/glpi:latestá
+pull diouxx/glpi:latest
 
-## Usa o serviço wait_stack "glpi" para verificar se o serviço estáa online
+## Usa o serviço wait_stack "glpi" para verificar se o serviço esta online
 wait_stack glpi${1:+_$1}_glpi${1:+_$1}
 
 telemetria GLPI finalizado
@@ -26372,12 +26372,12 @@ nome_anythingllm
 ## Mostra mensagem para preencher informações
 preencha_as_info
 
-## Inicia um Loop até os dados estáarem certos
+## Inicia um Loop até os dados estarem certos
 while true; do
 
     ##Pergunta o Dominio para a ferramenta
     echo -e "\e[97mPasso$amarelo 1/1\e[0m"
-    echo -en "\e[33mDigite o dominio para o Anything LLM (ex: anythingllm.seudominio.com): \e[0m" && read -r url_anythingllm
+    echo -en "\e[33mDigite o dominio para o Anything LLM (ex: anythingllm.openorion.art.br): \e[0m" && read -r url_anythingllm
     echo ""
     
     ## Limpa o terminal
@@ -26393,11 +26393,11 @@ while true; do
     echo -e "\e[33mDominio do Anything LLM:\e[97m $url_anythingllm\e[0m"
     echo ""
     
-    ## Pergunta se as respostas estáão corretas
-    read -p "As respostas estáão corretas? (Y/N): " confirmacao
+    ## Pergunta se as respostas estão corretas
+    read -p "As respostas estão corretas? (Y/N): " confirmacao
     if [ "$confirmacao" = "Y" ] || [ "$confirmacao" = "y" ]; then
 
-        ## Digitou Y para confirmar que as informações estáão corretas
+        ## Digitou Y para confirmar que as informações estão corretas
 
         ## Limpar o terminal
         clear
@@ -26409,7 +26409,7 @@ while true; do
         break
     else
 
-        ## Digitou N para dizer que as informações não estáão corretas.
+        ## Digitou N para dizer que as informações não estão corretas.
 
         ## Limpar o terminal
         clear
@@ -26469,7 +26469,7 @@ services:
 ## --------------------------- ORION --------------------------- ##
 
   anythingllm${1:+_$1}:
-    image: mintplexlabs/anythingllm:latestá
+    image: mintplexlabs/anythingllm:latest
 
     volumes:
       - anythingllm${1:+_$1}_storage:/app/server/storage
@@ -26531,7 +26531,7 @@ if [ $? -eq 0 ]; then
     echo "1/10 - [ OK ] - Criando Stack"
 else
     echo "1/10 - [ OFF ] - Criando Stack"
-    echo "Não foi possível criar a stack do anythingllm"
+    echo "Não foi possivel criar a stack do anythingllm"
 fi
 STACK_NAME="anythingllm${1:+_$1}"
 stack_editavel # > /dev/null 2>&1
@@ -26540,7 +26540,7 @@ stack_editavel # > /dev/null 2>&1
 #    echo "2/2 - [ OK ] - Deploy Stack"
 #else
 #    echo "2/2 - [ OFF ] - Deploy Stack"
-#    echo "Não foi possível Subir a stack do anythingllm"
+#    echo "Não foi possivel Subir a stack do anythingllm"
 #fi
 
 ## Mensagem de Passo
@@ -26549,9 +26549,9 @@ echo ""
 sleep 1
 
 ## Baixando imagens:
-pull mintplexlabs/anythingllm:latestá
+pull mintplexlabs/anythingllm:latest
 
-## Usa o serviço wait_stack "anythingllm" para verificar se o serviço estáa online
+## Usa o serviço wait_stack "anythingllm" para verificar se o serviço esta online
 wait_stack anythingllm${1:+_$1}_anythingllm${1:+_$1}
 
 telemetria AnythingLLM finalizado
@@ -26624,12 +26624,12 @@ nome_excalidraw
 ## Mostra mensagem para preencher informações
 preencha_as_info
 
-## Inicia um Loop até os dados estáarem certos
+## Inicia um Loop até os dados estarem certos
 while true; do
 
     ##Pergunta o Dominio para a ferramenta
     echo -e "\e[97mPasso$amarelo 1/1\e[0m"
-    echo -en "\e[33mDigite o dominio para o Excalidraw (ex: excalidraw.seudominio.com): \e[0m" && read -r url_excalidraw
+    echo -en "\e[33mDigite o dominio para o Excalidraw (ex: excalidraw.openorion.art.br): \e[0m" && read -r url_excalidraw
     echo ""
     
     ## Limpa o terminal
@@ -26645,11 +26645,11 @@ while true; do
     echo -e "\e[33mDominio do Excalidraw:\e[97m $url_excalidraw\e[0m"
     echo ""
     
-    ## Pergunta se as respostas estáão corretas
-    read -p "As respostas estáão corretas? (Y/N): " confirmacao
+    ## Pergunta se as respostas estão corretas
+    read -p "As respostas estão corretas? (Y/N): " confirmacao
     if [ "$confirmacao" = "Y" ] || [ "$confirmacao" = "y" ]; then
 
-        ## Digitou Y para confirmar que as informações estáão corretas
+        ## Digitou Y para confirmar que as informações estão corretas
 
         ## Limpar o terminal
         clear
@@ -26661,7 +26661,7 @@ while true; do
         break
     else
 
-        ## Digitou N para dizer que as informações não estáão corretas.
+        ## Digitou N para dizer que as informações não estão corretas.
 
         ## Limpar o terminal
         clear
@@ -26698,7 +26698,7 @@ services:
 ## --------------------------- ORION --------------------------- ##
 
   excalidraw${1:+_$1}:
-    image: excalidraw/excalidraw:latestá
+    image: excalidraw/excalidraw:latest
 
     volumes:
       - excalidraw${1:+_$1}_data:/data
@@ -26746,7 +26746,7 @@ if [ $? -eq 0 ]; then
     echo "1/10 - [ OK ] - Criando Stack"
 else
     echo "1/10 - [ OFF ] - Criando Stack"
-    echo "Não foi possível criar a stack do excalidraw"
+    echo "Não foi possivel criar a stack do excalidraw"
 fi
 STACK_NAME="excalidraw${1:+_$1}"
 stack_editavel # > /dev/null 2>&1
@@ -26755,7 +26755,7 @@ stack_editavel # > /dev/null 2>&1
 #    echo "2/2 - [ OK ] - Deploy Stack"
 #else
 #    echo "2/2 - [ OFF ] - Deploy Stack"
-#    echo "Não foi possível Subir a stack do excalidraw"
+#    echo "Não foi possivel Subir a stack do excalidraw"
 #fi
 
 ## Mensagem de Passo
@@ -26764,9 +26764,9 @@ echo ""
 sleep 1
 
 ## Baixando imagens:
-pull excalidraw/excalidraw:latestá
+pull excalidraw/excalidraw:latest
 
-## Usa o serviço wait_stack "excalidraw" para verificar se o serviço estáa online
+## Usa o serviço wait_stack "excalidraw" para verificar se o serviço esta online
 wait_stack excalidraw${1:+_$1}_excalidraw${1:+_$1}
 
 telemetria Excalidraw finalizado
@@ -26845,12 +26845,12 @@ nome_easyappointments
 ## Mostra mensagem para preencher informações
 preencha_as_info
 
-## Inicia um Loop até os dados estáarem certos
+## Inicia um Loop até os dados estarem certos
 while true; do
 
     ##Pergunta o Dominio para a ferramenta
     echo -e "\e[97mPasso$amarelo 1/1\e[0m"
-    echo -en "\e[33mDigite o dominio para o Easy!Appointments (ex: easyappointments.seudominio.com): \e[0m" && read -r url_easyappointments
+    echo -en "\e[33mDigite o dominio para o Easy!Appointments (ex: easyappointments.openorion.art.br): \e[0m" && read -r url_easyappointments
     echo ""
     
     ## Limpa o terminal
@@ -26866,11 +26866,11 @@ while true; do
     echo -e "\e[33mDominio do Easy!Appointments:\e[97m $url_easyappointments\e[0m"
     echo ""
     
-    ## Pergunta se as respostas estáão corretas
-    read -p "As respostas estáão corretas? (Y/N): " confirmacao
+    ## Pergunta se as respostas estão corretas
+    read -p "As respostas estão corretas? (Y/N): " confirmacao
     if [ "$confirmacao" = "Y" ] || [ "$confirmacao" = "y" ]; then
 
-        ## Digitou Y para confirmar que as informações estáão corretas
+        ## Digitou Y para confirmar que as informações estão corretas
 
         ## Limpar o terminal
         clear
@@ -26882,7 +26882,7 @@ while true; do
         break
     else
 
-        ## Digitou N para dizer que as informações não estáão corretas.
+        ## Digitou N para dizer que as informações não estão corretas.
 
         ## Limpar o terminal
         clear
@@ -26942,7 +26942,7 @@ EOL
 # Cria o diretório, se ainda não existir
 mkdir -p /root/easyappointments${1:+_$1} > /dev/null 2>&1
 
-# Move o arquivo para o diretório de destáino
+# Move o arquivo para o diretório de destino
 sudo mv apache-custom.conf /root/easyappointments${1:+_$1}/apache-custom.conf
 
 ## Criando a stack
@@ -26953,7 +26953,7 @@ services:
 ## --------------------------- ORION --------------------------- ##
 
   easyapointments${1:+_$1}:
-    image: alextselegidis/easyappointments:latestá
+    image: alextselegidis/easyappointments:latest
 
     volumes:
       - easyapointments${1:+_$1}_data:/var/www/html
@@ -27018,7 +27018,7 @@ if [ $? -eq 0 ]; then
     echo "1/10 - [ OK ] - Criando Stack"
 else
     echo "1/10 - [ OFF ] - Criando Stack"
-    echo "Não foi possível criar a stack do Easy!Appointments"
+    echo "Não foi possivel criar a stack do Easy!Appointments"
 fi
 STACK_NAME="easyappointments${1:+_$1}"
 stack_editavel # > /dev/null 2>&1
@@ -27027,7 +27027,7 @@ stack_editavel # > /dev/null 2>&1
 #    echo "2/2 - [ OK ] - Deploy Stack"
 #else
 #    echo "2/2 - [ OFF ] - Deploy Stack"
-#    echo "Não foi possível Subir a stack do easyappointments"
+#    echo "Não foi possivel Subir a stack do easyappointments"
 #fi
 
 ## Mensagem de Passo
@@ -27036,9 +27036,9 @@ echo ""
 sleep 1
 
 ## Baixando imagens:
-pull alextselegidis/easyappointments:latestá
+pull alextselegidis/easyappointments:latest
 
-## Usa o serviço wait_stack "easyappointments" para verificar se o serviço estáa online
+## Usa o serviço wait_stack "easyappointments" para verificar se o serviço esta online
 wait_stack easyappointments${1:+_$1}_easyapointments${1:+_$1}
 
 telemetria Easy!Appointments finalizado
@@ -27111,28 +27111,28 @@ nome_documenso
 ## Mostra mensagem para preencher informações
 preencha_as_info
 
-## Inicia um Loop até os dados estáarem certos
+## Inicia um Loop até os dados estarem certos
 while true; do
 
     ##Pergunta o Dominio do Builder
     echo -e "\e[97mPasso$amarelo 1/6\e[0m"
-    echo -en "\e[33mDigite o Dominio para o Builder do Documenso (ex: documenso.seudominio.com): \e[0m" && read -r url_documenso
+    echo -en "\e[33mDigite o Dominio para o Builder do Documenso (ex: documenso.openorion.art.br): \e[0m" && read -r url_documenso
     echo ""
 
     ##Pergunta o Email SMTP
     echo -e "\e[97mPasso$amarelo 2/6\e[0m"
-    echo -en "\e[33mDigite o Email para SMTP (ex: admin@seudominio.com): \e[0m" && read -r email_documenso
+    echo -en "\e[33mDigite o Email para SMTP (ex: contato@openorion.art.br): \e[0m" && read -r email_documenso
     echo ""
 
     ##Pergunta o usuário do Email SMTP
     echo -e "\e[97mPasso$amarelo 3/6\e[0m"
     echo -e "$amarelo--> Caso não tiver um usuario do email, use o proprio email abaixo"
-    echo -en "\e[33mDigite o Usuário para SMTP (ex: openorion ou admin@seudominio.com): \e[0m" && read -r usuario_email_documenso
+    echo -en "\e[33mDigite o Usuário para SMTP (ex: openorion ou contato@openorion.art.br): \e[0m" && read -r usuario_email_documenso
     echo ""
     
     ## Pergunta a senha do SMTP
     echo -e "\e[97mPasso$amarelo 4/6\e[0m"
-    echo -e "$amarelo--> Sem caracteres especiais: \!#$ | Se estáiver usando gmail use a senha de app"
+    echo -e "$amarelo--> Sem caracteres especiais: \!#$ | Se estiver usando gmail use a senha de app"
     echo -en "\e[33mDigite a Senha SMTP do Email (ex: @Senha123_): \e[0m" && read -r senha_email_documenso
     echo ""
 
@@ -27190,11 +27190,11 @@ while true; do
     echo -e "\e[33mSecure SMTP do Email:\e[97m $smtp_secure_documenso\e[0m"
     echo ""
 
-    ## Pergunta se as respostas estáão corretas
-    read -p "As respostas estáão corretas? (Y/N): " confirmacao
+    ## Pergunta se as respostas estão corretas
+    read -p "As respostas estão corretas? (Y/N): " confirmacao
     if [ "$confirmacao" = "Y" ] || [ "$confirmacao" = "y" ]; then
 
-        ## Digitou Y para confirmar que as informações estáão corretas
+        ## Digitou Y para confirmar que as informações estão corretas
 
         ## Limpar o terminal
         clear
@@ -27206,7 +27206,7 @@ while true; do
         break
     else
 
-        ## Digitou N para dizer que as informações não estáão corretas.
+        ## Digitou N para dizer que as informações não estão corretas.
 
         ## Limpar o terminal
         clear
@@ -27288,7 +27288,7 @@ services:
 ## --------------------------- ORION --------------------------- ##
 
   documenso${1:+_$1}:
-    image: documenso/documenso:latestá
+    image: documenso/documenso:latest
 
     volumes:
       - documenso${1:+_$1}_cert:/opt/documenso/cert.p12
@@ -27301,7 +27301,7 @@ services:
       - PORT=3000
       - NEXTAUTH_URL=https://$url_documenso
       - NEXT_PUBLIC_WEBAPP_URL=https://$url_documenso
-      - NEXT_PUBLIC_MARKETING_URL=https://seudominio.com
+      - NEXT_PUBLIC_MARKETING_URL=https://openorion.art.br
 
     ## 🔑 Secret Keys
       - NEXTAUTH_SECRET=$key_documenso1
@@ -27375,7 +27375,7 @@ if [ $? -eq 0 ]; then
     echo "1/10 - [ OK ] - Criando Stack"
 else
     echo "1/10 - [ OFF ] - Criando Stack"
-    echo "Não foi possível criar a stack do documenso"
+    echo "Não foi possivel criar a stack do documenso"
 fi
 STACK_NAME="documenso${1:+_$1}"
 stack_editavel # > /dev/null 2>&1
@@ -27385,7 +27385,7 @@ stack_editavel # > /dev/null 2>&1
 #    echo "2/2 - [ OK ] - Deploy Stack"
 #else
 #    echo "2/2 - [ OFF ] - Deploy Stack"
-#    echo "Não foi possível subir a stack do documenso"
+#    echo "Não foi possivel subir a stack do documenso"
 #fi
 
 ## Mensagem de Passo
@@ -27394,9 +27394,9 @@ echo ""
 sleep 1
 
 ## Baixando imagens:
-pull documenso/documenso:latestá
+pull documenso/documenso:latest
 
-## Usa o serviço wait_stack "documenso" para verificar se o serviço estáa online
+## Usa o serviço wait_stack "documenso" para verificar se o serviço esta online
 wait_stack documenso${1:+_$1}_documenso${1:+_$1}
 
 telemetria Documenso finalizado
@@ -27469,12 +27469,12 @@ requisitar_outra_instalacao
 ### Mostra mensagem para preencher informações
 #preencha_as_info
 #
-### Inicia um Loop até os dados estáarem certos
+### Inicia um Loop até os dados estarem certos
 #while true; do
 #
 #    ##Pergunta o Dominio para a ferramenta
 #    echo -e "\e[97mPasso$amarelo 1/10\e[0m"
-#    echo -en "\e[33mDigite o dominio para o Moodle (ex: moodle.seudominio.com): \e[0m" && read -r url_moodle
+#    echo -en "\e[33mDigite o dominio para o Moodle (ex: moodle.openorion.art.br): \e[0m" && read -r url_moodle
 #    echo ""
 #
 #    ##Pergunta o Dominio para a ferramenta
@@ -27496,23 +27496,23 @@ requisitar_outra_instalacao
 #    ##Pergunta o Dominio para a ferramenta
 #    echo -e "\e[97mPasso$amarelo 5/10\e[0m"
 #    echo -e "$amarelo--> Sem caracteres especiais: \!#$"
-#    echo -en "\e[33mDigite um Email para o Usuario (ex: admin@seudominio.com): \e[0m" && read -r mail_moodle
+#    echo -en "\e[33mDigite um Email para o Usuario (ex: contato@openorion.art.br): \e[0m" && read -r mail_moodle
 #    echo ""
 #
 #    ##Pergunta o Email SMTP
 #    echo -e "\e[97mPasso$amarelo 6/10\e[0m"
-#    echo -en "\e[33mDigite o Email para SMTP (ex: admin@seudominio.com): \e[0m" && read -r email_smtp_moodle
+#    echo -en "\e[33mDigite o Email para SMTP (ex: contato@openorion.art.br): \e[0m" && read -r email_smtp_moodle
 #    echo ""
 #
 #    ##Pergunta o usuário do Email SMTP
 #    echo -e "\e[97mPasso$amarelo 7/10\e[0m"
 #    echo -e "$amarelo--> Caso não tiver um usuario do email, use o proprio email abaixo"
-#    echo -en "\e[33mDigite o Usuário para SMTP (ex: openorion ou admin@seudominio.com): \e[0m" && read -r usuario_smtp_moodle
+#    echo -en "\e[33mDigite o Usuário para SMTP (ex: openorion ou contato@openorion.art.br): \e[0m" && read -r usuario_smtp_moodle
 #    echo ""
 #    
 #    ## Pergunta a senha do SMTP
 #    echo -e "\e[97mPasso$amarelo 8/10\e[0m"
-#    echo -e "$amarelo--> Sem caracteres especiais: \!#$ | Se estáiver usando gmail use a senha de app"
+#    echo -e "$amarelo--> Sem caracteres especiais: \!#$ | Se estiver usando gmail use a senha de app"
 #    echo -en "\e[33mDigite a Senha SMTP do Email (ex: @Senha123_): \e[0m" && read -r senha_smtp_moodle
 #    echo ""
 #
@@ -27583,11 +27583,11 @@ requisitar_outra_instalacao
 #    echo -e "\e[33mPorta SMTP:\e[97m $porta_smtp_moodle\e[0m"
 #    echo ""
 #    
-#    ## Pergunta se as respostas estáão corretas
-#    read -p "As respostas estáão corretas? (Y/N): " confirmacao
+#    ## Pergunta se as respostas estão corretas
+#    read -p "As respostas estão corretas? (Y/N): " confirmacao
 #    if [ "$confirmacao" = "Y" ] || [ "$confirmacao" = "y" ]; then
 #
-#        ## Digitou Y para confirmar que as informações estáão corretas
+#        ## Digitou Y para confirmar que as informações estão corretas
 #
 #        ## Limpar o terminal
 #        clear
@@ -27599,7 +27599,7 @@ requisitar_outra_instalacao
 #        break
 #    else
 #
-#        ## Digitou N para dizer que as informações não estáão corretas.
+#        ## Digitou N para dizer que as informações não estão corretas.
 #
 #        ## Limpar o terminal
 #        clear
@@ -27637,7 +27637,7 @@ requisitar_outra_instalacao
 ### --------------------------- ORION --------------------------- ##
 #
 #  moodle${1:+_$1}_app:
-#    image: moodlehq/moodleapp:latestá
+#    image: moodlehq/moodleapp:latest
 #
 #    volumes:
 #      - moodle${1:+_$1}_data:/bitnami/moodle
@@ -27696,7 +27696,7 @@ requisitar_outra_instalacao
 ### --------------------------- ORION --------------------------- ##
 #
 #  moodle${1:+_$1}_mariadb:
-#    image: mariadb:latestá
+#    image: mariadb:latest
 #
 #    volumes:
 #      - moodle${1:+_$1}_mariadb_data:/bitnami/mariadb
@@ -27747,7 +27747,7 @@ requisitar_outra_instalacao
 #    echo "1/10 - [ OK ] - Criando Stack"
 #else
 #    echo "1/10 - [ OFF ] - Criando Stack"
-#    echo "Não foi possível criar a stack do Moodle"
+#    echo "Não foi possivel criar a stack do Moodle"
 #fi
 #STACK_NAME="moodle${1:+_$1}"
 #stack_editavel # > /dev/null 2>&1
@@ -27756,7 +27756,7 @@ requisitar_outra_instalacao
 ##    echo "2/2 - [ OK ] - Deploy Stack"
 ##else
 ##    echo "2/2 - [ OFF ] - Deploy Stack"
-##    echo "Não foi possível Subir a stack do moodle"
+##    echo "Não foi possivel Subir a stack do moodle"
 ##fi
 #
 ### Mensagem de Passo
@@ -27765,9 +27765,9 @@ requisitar_outra_instalacao
 #sleep 1
 #
 ### Baixando imagens:
-#pull moodlehq/moodleapp:latestá mariadb:latestá
+#pull moodlehq/moodleapp:latest mariadb:latest
 #
-### Usa o serviço wait_stack "moodle" para verificar se o serviço estáa online
+### Usa o serviço wait_stack "moodle" para verificar se o serviço esta online
 #wait_stack moodle${1:+_$1}_moodle${1:+_$1}_app moodle${1:+_$1}_moodle${1:+_$1}_mariadb
 #sleep 120
 #
@@ -27847,28 +27847,28 @@ nome_tooljet
 ## Mostra mensagem para preencher informações
 preencha_as_info
 
-## Inicia um Loop até os dados estáarem certos
+## Inicia um Loop até os dados estarem certos
 while true; do
 
     ##Pergunta o Dominio para aplicação
     echo -e "\e[97mPasso$amarelo 1/6\e[0m"
-    echo -en "\e[33mDigite o Dominio para a ToolJet (ex: tooljet.seudominio.com): \e[0m" && read -r url_tooljet
+    echo -en "\e[33mDigite o Dominio para a ToolJet (ex: tooljet.openorion.art.br): \e[0m" && read -r url_tooljet
     echo ""
 
     ##Pergunta o Email SMTP
     echo -e "\e[97mPasso$amarelo 2/6\e[0m"
-    echo -en "\e[33mDigite o Email para SMTP (ex: admin@seudominio.com): \e[0m" && read -r email_smtp_tooljet
+    echo -en "\e[33mDigite o Email para SMTP (ex: contato@openorion.art.br): \e[0m" && read -r email_smtp_tooljet
     echo ""
 
     ##Pergunta o usuário do Email SMTP
     echo -e "\e[97mPasso$amarelo 3/6\e[0m"
     echo -e "$amarelo--> Caso não tiver um usuario do email, use o proprio email abaixo"
-    echo -en "\e[33mDigite o Usuário para SMTP (ex: openorion ou admin@seudominio.com): \e[0m" && read -r usuario_smtp_tooljet
+    echo -en "\e[33mDigite o Usuário para SMTP (ex: openorion ou contato@openorion.art.br): \e[0m" && read -r usuario_smtp_tooljet
     echo ""
     
     ## Pergunta a senha do SMTP
     echo -e "\e[97mPasso$amarelo 4/6\e[0m"
-    echo -e "$amarelo--> Sem caracteres especiais: \!#$ | Se estáiver usando gmail use a senha de app"
+    echo -e "$amarelo--> Sem caracteres especiais: \!#$ | Se estiver usando gmail use a senha de app"
     echo -en "\e[33mDigite a Senha SMTP do Email (ex: @Senha123_): \e[0m" && read -r senha_smtp_tooljet
     echo ""
 
@@ -27915,11 +27915,11 @@ while true; do
     echo -e "\e[33mPorta SMTP:\e[97m $porta_smtp_tooljet\e[0m"
     echo ""
 
-    ## Pergunta se as respostas estáão corretas
-    read -p "As respostas estáão corretas? (Y/N): " confirmacao
+    ## Pergunta se as respostas estão corretas
+    read -p "As respostas estão corretas? (Y/N): " confirmacao
     if [ "$confirmacao" = "Y" ] || [ "$confirmacao" = "y" ]; then
 
-        ## Digitou Y para confirmar que as informações estáão corretas
+        ## Digitou Y para confirmar que as informações estão corretas
 
         ## Limpar o terminal
         clear
@@ -27931,7 +27931,7 @@ while true; do
         break
     else
 
-        ## Digitou N para dizer que as informações não estáão corretas.
+        ## Digitou N para dizer que as informações não estão corretas.
 
         ## Limpar o terminal
         clear
@@ -28001,7 +28001,7 @@ services:
 ## --------------------------- ORION --------------------------- ##
 
   tooljet${1:+_$1}_app:
-    image: tooljet/tooljet:ee-lts-latestá
+    image: tooljet/tooljet:ee-lts-latest
     command: npm run start:prod
 
     networks:
@@ -28035,7 +28035,7 @@ services:
       - TOOLJET_DB_PASS=$senha_postgres
 
     ## 📡 Configuração do PostgREST
-      - PGRST_HOST=tooljet_postgrestá${1:+_$1}
+      - PGRST_HOST=tooljet_postgrest${1:+_$1}
       - PGRST_JWT_SECRET=$jwt_key
 
     ## 🚀 Configuração do Redis
@@ -28083,8 +28083,8 @@ services:
 
 ## --------------------------- ORION --------------------------- ##
 
-  tooljet${1:+_$1}_postgrestá:
-    image: postgrestá/postgrestá:v12.0.2
+  tooljet${1:+_$1}_postgrest:
+    image: postgrest/postgrest:v12.0.2
 
     networks:
       - $nome_rede_interna ## Nome da rede interna
@@ -28111,7 +28111,7 @@ services:
 ## --------------------------- ORION --------------------------- ##
 
   tooljet${1:+_$1}_chroma:
-    image: chromadb/chroma:latestá
+    image: chromadb/chroma:latest
 
     volumes:
       - tooljet_chromadb${1:+_$1}:/chroma
@@ -28136,7 +28136,7 @@ services:
 ## --------------------------- ORION --------------------------- ##
 
   tooljet${1:+_$1}_redis:
-    image: redis:latestá  ## Versão do Redis
+    image: redis:latest  ## Versão do Redis
     command: [
         "redis-server",
         "--appendonly",
@@ -28183,7 +28183,7 @@ if [ $? -eq 0 ]; then
     echo "1/10 - [ OK ] - Criando Stack"
 else
     echo "1/10 - [ OFF ] - Criando Stack"
-    echo "Não foi possível criar a stack da TOOLJET"
+    echo "Não foi possivel criar a stack da TOOLJET"
 fi
 STACK_NAME="tooljet${1:+_$1}"
 stack_editavel # > /dev/null 2>&1
@@ -28193,7 +28193,7 @@ stack_editavel # > /dev/null 2>&1
 #    echo "2/2 - [ OK ] - Deploy Stack"
 #else
 #    echo "2/2 - [ OFF ] - Deploy Stack"
-#    echo "Não foi possível subir a stack da tooljet"
+#    echo "Não foi possivel subir a stack da tooljet"
 #fi
 
 sleep 10
@@ -28204,10 +28204,10 @@ echo ""
 sleep 1
 
 ## Baixando imagens:
-pull redis:latestá tooljet/tooljet:ee-lts-latestá postgrestá/postgrestá:v12.0.2 chromadb/chroma:latestá
+pull redis:latest tooljet/tooljet:ee-lts-latest postgrest/postgrest:v12.0.2 chromadb/chroma:latest
 
-## Usa o serviço wait_stack "tooljet" para verificar se o serviço estáa online
-wait_stack tooljet${1:+_$1}_tooljet${1:+_$1}_redis tooljet${1:+_$1}_tooljet${1:+_$1}_app tooljet${1:+_$1}_tooljet${1:+_$1}_postgrestá tooljet${1:+_$1}_tooljet${1:+_$1}_chroma
+## Usa o serviço wait_stack "tooljet" para verificar se o serviço esta online
+wait_stack tooljet${1:+_$1}_tooljet${1:+_$1}_redis tooljet${1:+_$1}_tooljet${1:+_$1}_app tooljet${1:+_$1}_tooljet${1:+_$1}_postgrest tooljet${1:+_$1}_tooljet${1:+_$1}_chroma
 
 telemetria ToolJet finalizado
 
@@ -28282,12 +28282,12 @@ nome_stirlingpdf
 ## Mostra mensagem para preencher informações
 preencha_as_info
 
-## Inicia um Loop até os dados estáarem certos
+## Inicia um Loop até os dados estarem certos
 while true; do
 
     ##Pergunta o Dominio para a ferramenta
     echo -e "\e[97mPasso$amarelo 1/3\e[0m"
-    echo -en "\e[33mDigite o dominio para o Stirling PDF (ex: stirlingpdf.seudominio.com): \e[0m" && read -r url_stirlingpdf
+    echo -en "\e[33mDigite o dominio para o Stirling PDF (ex: stirlingpdf.openorion.art.br): \e[0m" && read -r url_stirlingpdf
     echo ""
 
     ##Pergunta o Dominio para a ferramenta
@@ -28321,11 +28321,11 @@ while true; do
     echo -e "\e[33mDescrição do App:\e[97m $desc_stirlingpdf\e[0m"
     echo ""
     
-    ## Pergunta se as respostas estáão corretas
-    read -p "As respostas estáão corretas? (Y/N): " confirmacao
+    ## Pergunta se as respostas estão corretas
+    read -p "As respostas estão corretas? (Y/N): " confirmacao
     if [ "$confirmacao" = "Y" ] || [ "$confirmacao" = "y" ]; then
 
-        ## Digitou Y para confirmar que as informações estáão corretas
+        ## Digitou Y para confirmar que as informações estão corretas
 
         ## Limpar o terminal
         clear
@@ -28337,7 +28337,7 @@ while true; do
         break
     else
 
-        ## Digitou N para dizer que as informações não estáão corretas.
+        ## Digitou N para dizer que as informações não estão corretas.
 
         ## Limpar o terminal
         clear
@@ -28375,7 +28375,7 @@ services:
 ## --------------------------- ORION --------------------------- ##
 
   stirlingpdf${1:+_$1}_backend:
-    image: stirlingtools/stirling-pdf:latestá ## Versão da aplicação
+    image: stirlingtools/stirling-pdf:latest ## Versão da aplicação
     
     volumes:
       - stirlingpdf${1:+_$1}_backend_data:/usr/share/tessdata
@@ -28447,7 +28447,7 @@ services:
 ## --------------------------- ORION --------------------------- ##
 
   stirlingpdf${1:+_$1}_frontend:
-    image: stirlingtools/stirling-pdf:latestá ## Versão do frontend
+    image: stirlingtools/stirling-pdf:latest ## Versão do frontend
     
     volumes:
       - stirlingpdf${1:+_$1}_frontend_data:/usr/share/nginx/html
@@ -28511,7 +28511,7 @@ if [ $? -eq 0 ]; then
     echo "1/10 - [ OK ] - Criando Stack"
 else
     echo "1/10 - [ OFF ] - Criando Stack"
-    echo "Não foi possível criar a stack do stirlingpdf"
+    echo "Não foi possivel criar a stack do stirlingpdf"
 fi
 STACK_NAME="stirlingpdf${1:+_$1}"
 stack_editavel # > /dev/null 2>&1
@@ -28520,7 +28520,7 @@ stack_editavel # > /dev/null 2>&1
 #    echo "2/2 - [ OK ] - Deploy Stack"
 #else
 #    echo "2/2 - [ OFF ] - Deploy Stack"
-#    echo "Não foi possível Subir a stack do stirlingpdf"
+#    echo "Não foi possivel Subir a stack do stirlingpdf"
 #fi
 
 ## Mensagem de Passo
@@ -28529,9 +28529,9 @@ echo ""
 sleep 1
 
 ## Baixando imagens:
-pull stirlingtools/stirling-pdf:latestá
+pull stirlingtools/stirling-pdf:latest
 
-## Usa o serviço wait_stirlingpdf para verificar se o serviço estáa online
+## Usa o serviço wait_stirlingpdf para verificar se o serviço esta online
 wait_stack stirlingpdf${1:+_$1}_stirlingpdf${1:+_$1}_backend stirlingpdf${1:+_$1}_stirlingpdf${1:+_$1}_frontend
 
 telemetria StirlingPDF finalizado
@@ -28605,12 +28605,12 @@ nome_clickhouse
 ## Mostra mensagem para preencher informações
 preencha_as_info
 
-## Inicia um Loop até os dados estáarem certos
+## Inicia um Loop até os dados estarem certos
 while true; do
 
     ##Pergunta o Dominio para a ferramenta
     echo -e "\e[97mPasso$amarelo 1/3\e[0m"
-    echo -en "\e[33mDigite o dominio para o ClickHouse (ex: clickhouse.seudominio.com): \e[0m" && read -r url_clickhouse
+    echo -en "\e[33mDigite o dominio para o ClickHouse (ex: clickhouse.openorion.art.br): \e[0m" && read -r url_clickhouse
     echo ""
 
     ##Pergunta o Dominio para a ferramenta
@@ -28644,11 +28644,11 @@ while true; do
     echo -e "\e[33mSenha:\e[97m $pass_clickhouse\e[0m"
     echo ""
     
-    ## Pergunta se as respostas estáão corretas
-    read -p "As respostas estáão corretas? (Y/N): " confirmacao
+    ## Pergunta se as respostas estão corretas
+    read -p "As respostas estão corretas? (Y/N): " confirmacao
     if [ "$confirmacao" = "Y" ] || [ "$confirmacao" = "y" ]; then
 
-        ## Digitou Y para confirmar que as informações estáão corretas
+        ## Digitou Y para confirmar que as informações estão corretas
 
         ## Limpar o terminal
         clear
@@ -28660,7 +28660,7 @@ while true; do
         break
     else
 
-        ## Digitou N para dizer que as informações não estáão corretas.
+        ## Digitou N para dizer que as informações não estão corretas.
 
         ## Limpar o terminal
         clear
@@ -28753,7 +28753,7 @@ if [ $? -eq 0 ]; then
     echo "1/10 - [ OK ] - Criando Stack"
 else
     echo "1/10 - [ OFF ] - Criando Stack"
-    echo "Não foi possível criar a stack do clickhouse"
+    echo "Não foi possivel criar a stack do clickhouse"
 fi
 STACK_NAME="clickhouse${1:+_$1}"
 stack_editavel # > /dev/null 2>&1
@@ -28762,7 +28762,7 @@ stack_editavel # > /dev/null 2>&1
 #    echo "2/2 - [ OK ] - Deploy Stack"
 #else
 #    echo "2/2 - [ OFF ] - Deploy Stack"
-#    echo "Não foi possível Subir a stack do clickhouse"
+#    echo "Não foi possivel Subir a stack do clickhouse"
 #fi
 
 ## Mensagem de Passo
@@ -28773,7 +28773,7 @@ sleep 1
 ## Baixando imagens:
 pull clickhouse/clickhouse-server:23.8.8.20-alpine
 
-## Usa o serviço wait_clickhouse para verificar se o serviço estáa online
+## Usa o serviço wait_clickhouse para verificar se o serviço esta online
 wait_stack clickhouse${1:+_$1}_clickhouse${1:+_$1}
 
 telemetria ClickHouse finalizado
@@ -28852,12 +28852,12 @@ nome_redisinsight
 ## Mostra mensagem para preencher informações
 preencha_as_info
 
-## Inicia um Loop até os dados estáarem certos
+## Inicia um Loop até os dados estarem certos
 while true; do
 
     ##Pergunta o Dominio para a ferramenta
     echo -e "\e[97mPasso$amarelo 1/3\e[0m"
-    echo -en "\e[33mDigite o dominio para o RedisInsight (ex: redisinsight.seudominio.com): \e[0m" && read -r url_redisinsight
+    echo -en "\e[33mDigite o dominio para o RedisInsight (ex: redisinsight.openorion.art.br): \e[0m" && read -r url_redisinsight
     echo ""
 
     ##Pergunta o Dominio para a ferramenta
@@ -28891,11 +28891,11 @@ while true; do
     echo -e "\e[33mSenha:\e[97m $pass_redisinsight\e[0m"
     echo ""
     
-    ## Pergunta se as respostas estáão corretas
-    read -p "As respostas estáão corretas? (Y/N): " confirmacao
+    ## Pergunta se as respostas estão corretas
+    read -p "As respostas estão corretas? (Y/N): " confirmacao
     if [ "$confirmacao" = "Y" ] || [ "$confirmacao" = "y" ]; then
 
-        ## Digitou Y para confirmar que as informações estáão corretas
+        ## Digitou Y para confirmar que as informações estão corretas
 
         ## Limpar o terminal
         clear
@@ -28907,7 +28907,7 @@ while true; do
         break
     else
 
-        ## Digitou N para dizer que as informações não estáão corretas.
+        ## Digitou N para dizer que as informações não estão corretas.
 
         ## Limpar o terminal
         clear
@@ -28947,7 +28947,7 @@ services:
 ## --------------------------- ORION --------------------------- ##
 
   redisinsight${1:+_$1}:
-    image: redislabs/redisinsight:latestá
+    image: redislabs/redisinsight:latest
 
     volumes:
       - redisinsight${1:+_$1}_data:/db
@@ -29009,7 +29009,7 @@ if [ $? -eq 0 ]; then
     echo "1/10 - [ OK ] - Criando Stack"
 else
     echo "1/10 - [ OFF ] - Criando Stack"
-    echo "Não foi possível criar a stack do RedisInsight"
+    echo "Não foi possivel criar a stack do RedisInsight"
 fi
 STACK_NAME="redisinsight${1:+_$1}"
 stack_editavel # > /dev/null 2>&1
@@ -29018,7 +29018,7 @@ stack_editavel # > /dev/null 2>&1
 #    echo "2/2 - [ OK ] - Deploy Stack"
 #else
 #    echo "2/2 - [ OFF ] - Deploy Stack"
-#    echo "Não foi possível Subir a stack do redisinsight"
+#    echo "Não foi possivel Subir a stack do redisinsight"
 #fi
 
 ## Mensagem de Passo
@@ -29027,9 +29027,9 @@ echo ""
 sleep 1
 
 ## Baixando imagens:
-pull redislabs/redisinsight:latestá
+pull redislabs/redisinsight:latest
 
-## Usa o serviço wait_redisinsight para verificar se o serviço estáa online
+## Usa o serviço wait_redisinsight para verificar se o serviço esta online
 wait_stack redisinsight${1:+_$1}_redisinsight${1:+_$1}
 
 telemetria RedisInsight finalizado
@@ -29104,12 +29104,12 @@ nome_traccar
 ## Mostra mensagem para preencher informações
 preencha_as_info
 
-## Inicia um Loop até os dados estáarem certos
+## Inicia um Loop até os dados estarem certos
 while true; do
 
     ##Pergunta o Dominio para a ferramenta
     echo -e "\e[97mPasso$amarelo 1/1\e[0m"
-    echo -en "\e[33mDigite o dominio para o Traccar (ex: traccar.seudominio.com): \e[0m" && read -r url_traccar
+    echo -en "\e[33mDigite o dominio para o Traccar (ex: traccar.openorion.art.br): \e[0m" && read -r url_traccar
     echo ""
     
     ## Limpa o terminal
@@ -29125,11 +29125,11 @@ while true; do
     echo -e "\e[33mDominio do Traccar:\e[97m $url_traccar\e[0m"
     echo ""
     
-    ## Pergunta se as respostas estáão corretas
-    read -p "As respostas estáão corretas? (Y/N): " confirmacao
+    ## Pergunta se as respostas estão corretas
+    read -p "As respostas estão corretas? (Y/N): " confirmacao
     if [ "$confirmacao" = "Y" ] || [ "$confirmacao" = "y" ]; then
 
-        ## Digitou Y para confirmar que as informações estáão corretas
+        ## Digitou Y para confirmar que as informações estão corretas
 
         ## Limpar o terminal
         clear
@@ -29141,7 +29141,7 @@ while true; do
         break
     else
 
-        ## Digitou N para dizer que as informações não estáão corretas.
+        ## Digitou N para dizer que as informações não estão corretas.
 
         ## Limpar o terminal
         clear
@@ -29204,7 +29204,7 @@ services:
 ## --------------------------- ORION --------------------------- ##
 
   traccar${1:+_$1}:
-    image: traccar/traccar:latestá
+    image: traccar/traccar:latest
     
     volumes:
       - /opt/traccar${1:+_$1}/logs:/opt/traccar${1:+_$1}/logs:rw
@@ -29285,7 +29285,7 @@ if [ $? -eq 0 ]; then
     echo "1/10 - [ OK ] - Criando Stack"
 else
     echo "1/10 - [ OFF ] - Criando Stack"
-    echo "Não foi possível criar a stack do traccar"
+    echo "Não foi possivel criar a stack do traccar"
 fi
 STACK_NAME="traccar${1:+_$1}"
 stack_editavel # > /dev/null 2>&1
@@ -29294,7 +29294,7 @@ stack_editavel # > /dev/null 2>&1
 #    echo "2/2 - [ OK ] - Deploy Stack"
 #else
 #    echo "2/2 - [ OFF ] - Deploy Stack"
-#    echo "Não foi possível Subir a stack do traccar"
+#    echo "Não foi possivel Subir a stack do traccar"
 #fi
 
 ## Mensagem de Passo
@@ -29303,9 +29303,9 @@ echo ""
 sleep 1
 
 ## Baixando imagens:
-pull traccar/traccar:latestá mysql:8.0
+pull traccar/traccar:latest mysql:8.0
 
-## Usa o serviço wait_traccar para verificar se o serviço estáa online
+## Usa o serviço wait_traccar para verificar se o serviço esta online
 wait_stack traccar${1:+_$1}_traccar${1:+_$1} traccar${1:+_$1}_traccar${1:+_$1}_db
 
 telemetria Traccar finalizado
@@ -29375,12 +29375,12 @@ nome_firecrawl
 ## Mostra mensagem para preencher informações
 preencha_as_info
 
-## Inicia um Loop até os dados estáarem certos
+## Inicia um Loop até os dados estarem certos
 while true; do
 
     ##Pergunta o Dominio para a ferramenta
     echo -e "\e[97mPasso$amarelo 1/2\e[0m"
-    echo -en "\e[33mDigite o dominio para o Firecrawl (ex: firecrawl.seudominio.com): \e[0m" && read -r url_firecrawl
+    echo -en "\e[33mDigite o dominio para o Firecrawl (ex: firecrawl.openorion.art.br): \e[0m" && read -r url_firecrawl
     echo ""
 
     ##Pergunta o Dominio para a ferramenta
@@ -29405,11 +29405,11 @@ while true; do
     echo -e "\e[33mApiKey OpenAi:\e[97m $api_firecrawl\e[0m"
     echo ""
     
-    ## Pergunta se as respostas estáão corretas
-    read -p "As respostas estáão corretas? (Y/N): " confirmacao
+    ## Pergunta se as respostas estão corretas
+    read -p "As respostas estão corretas? (Y/N): " confirmacao
     if [ "$confirmacao" = "Y" ] || [ "$confirmacao" = "y" ]; then
 
-        ## Digitou Y para confirmar que as informações estáão corretas
+        ## Digitou Y para confirmar que as informações estão corretas
 
         ## Limpar o terminal
         clear
@@ -29421,7 +29421,7 @@ while true; do
         break
     else
 
-        ## Digitou N para dizer que as informações não estáão corretas.
+        ## Digitou N para dizer que as informações não estão corretas.
 
         ## Limpar o terminal
         clear
@@ -29460,7 +29460,7 @@ services:
 ## --------------------------- ORION --------------------------- ##
 
   firecrawl${1:+_$1}_api:
-    image: ghcr.io/firecrawl/firecrawl:latestá
+    image: ghcr.io/firecrawl/firecrawl:latest
     command: [ "node", "--max-old-space-size=6144", "dist/src/index.js" ]
 
     networks:
@@ -29558,7 +29558,7 @@ services:
 ## --------------------------- ORION --------------------------- ##
 
   firecrawl${1:+_$1}_worker:
-    image: ghcr.io/firecrawl/firecrawl:latestá
+    image: ghcr.io/firecrawl/firecrawl:latest
     command: [ "node", "--max-old-space-size=3072", "dist/src/services/queue-worker.js" ]
     
     networks:
@@ -29640,7 +29640,7 @@ services:
 ## --------------------------- ORION --------------------------- ##
 
   firecrawl${1:+_$1}_playwright:
-    image: ghcr.io/firecrawl/playwright-service:latestá
+    image: ghcr.io/firecrawl/playwright-service:latest
 
     networks:
      - $nome_rede_interna ## Nome da rede interna
@@ -29670,7 +29670,7 @@ services:
 ## --------------------------- ORION --------------------------- ##
 
   firecrawl${1:+_$1}_nuq_postgres:
-    image: ghcr.io/firecrawl/nuq-postgres:latestá
+    image: ghcr.io/firecrawl/nuq-postgres:latest
 
     volumes:
       - firecrawl${1:+_$1}_postgres:/var/lib/postgresql/data
@@ -29698,7 +29698,7 @@ services:
 ## --------------------------- ORION --------------------------- ##
 
   firecrawl${1:+_$1}_redis:
-    image: redis:latestá  ## Versão do Redis
+    image: redis:latest  ## Versão do Redis
     command: [
         "redis-server",
         "--appendonly",
@@ -29745,7 +29745,7 @@ if [ $? -eq 0 ]; then
     echo "1/10 - [ OK ] - Criando Stack"
 else
     echo "1/10 - [ OFF ] - Criando Stack"
-    echo "Não foi possível criar a stack do firecrawl"
+    echo "Não foi possivel criar a stack do firecrawl"
 fi
 STACK_NAME="firecrawl${1:+_$1}"
 stack_editavel # > /dev/null 2>&1
@@ -29754,7 +29754,7 @@ stack_editavel # > /dev/null 2>&1
 #    echo "2/2 - [ OK ] - Deploy Stack"
 #else
 #    echo "2/2 - [ OFF ] - Deploy Stack"
-#    echo "Não foi possível Subir a stack do firecrawl"
+#    echo "Não foi possivel Subir a stack do firecrawl"
 #fi
 
 ## Mensagem de Passo
@@ -29763,9 +29763,9 @@ echo ""
 sleep 1
 
 ## Baixando imagens:
-pull ghcr.io/firecrawl/nuq-postgres:latestá redis:latestá  ghcr.io/firecrawl/firecrawl:latestá ghcr.io/firecrawl/playwright-service:latestá
+pull ghcr.io/firecrawl/nuq-postgres:latest redis:latest  ghcr.io/firecrawl/firecrawl:latest ghcr.io/firecrawl/playwright-service:latest
 
-## Usa o serviço wait_firecrawl para verificar se o serviço estáa online
+## Usa o serviço wait_firecrawl para verificar se o serviço esta online
 wait_stack firecrawl${1:+_$1}_firecrawl${1:+_$1}_nuq_postgres firecrawl${1:+_$1}_firecrawl${1:+_$1}_api firecrawl${1:+_$1}_firecrawl${1:+_$1}_worker firecrawl${1:+_$1}_firecrawl${1:+_$1}_playwright firecrawl${1:+_$1}_firecrawl${1:+_$1}_redis 
 
 telemetria Firecrawl finalizado
@@ -29833,12 +29833,12 @@ nome_wuzapi
 ## Mostra mensagem para preencher informações
 preencha_as_info
 
-## Inicia um Loop até os dados estáarem certos
+## Inicia um Loop até os dados estarem certos
 while true; do
 
     ##Pergunta o Dominio para a ferramenta
     echo -e "\e[97mPasso$amarelo 1/1\e[0m"
-    echo -en "\e[33mDigite o dominio para o Wuzapi (ex: wuzapi.seudominio.com): \e[0m" && read -r url_wuzapi
+    echo -en "\e[33mDigite o dominio para o Wuzapi (ex: wuzapi.openorion.art.br): \e[0m" && read -r url_wuzapi
     echo ""
     
     ## Limpa o terminal
@@ -29854,11 +29854,11 @@ while true; do
     echo -e "\e[33mDominio do wuzapi:\e[97m $url_wuzapi\e[0m"
     echo ""
     
-    ## Pergunta se as respostas estáão corretas
-    read -p "As respostas estáão corretas? (Y/N): " confirmacao
+    ## Pergunta se as respostas estão corretas
+    read -p "As respostas estão corretas? (Y/N): " confirmacao
     if [ "$confirmacao" = "Y" ] || [ "$confirmacao" = "y" ]; then
 
-        ## Digitou Y para confirmar que as informações estáão corretas
+        ## Digitou Y para confirmar que as informações estão corretas
 
         ## Limpar o terminal
         clear
@@ -29870,7 +29870,7 @@ while true; do
         break
     else
 
-        ## Digitou N para dizer que as informações não estáão corretas.
+        ## Digitou N para dizer que as informações não estão corretas.
 
         ## Limpar o terminal
         clear
@@ -29932,7 +29932,7 @@ services:
 ## --------------------------- ORION --------------------------- ##
 
  wuzapi${1:+_$1}:
-  image: asternic/wuzapi:latestá
+  image: asternic/wuzapi:latest
 
   volumes:
     - wuzapi${1:+_$1}_dbdata:/app/dbdata
@@ -30005,7 +30005,7 @@ if [ $? -eq 0 ]; then
     echo "1/10 - [ OK ] - Criando Stack"
 else
     echo "1/10 - [ OFF ] - Criando Stack"
-    echo "Não foi possível criar a stack do wuzapi"
+    echo "Não foi possivel criar a stack do wuzapi"
 fi
 STACK_NAME="wuzapi${1:+_$1}"
 stack_editavel # > /dev/null 2>&1
@@ -30014,7 +30014,7 @@ stack_editavel # > /dev/null 2>&1
 #    echo "2/2 - [ OK ] - Deploy Stack"
 #else
 #    echo "2/2 - [ OFF ] - Deploy Stack"
-#    echo "Não foi possível Subir a stack do wuzapi"
+#    echo "Não foi possivel Subir a stack do wuzapi"
 #fi
 
 ## Mensagem de Passo
@@ -30023,9 +30023,9 @@ echo ""
 sleep 1
 
 ## Baixando imagens:
-pull asternic/wuzapi:latestá
+pull asternic/wuzapi:latest
 
-## Usa o serviço wait_wuzapi para verificar se o serviço estáa online
+## Usa o serviço wait_wuzapi para verificar se o serviço esta online
 wait_stack wuzapi${1:+_$1}_wuzapi${1:+_$1}
 
 telemetria Wuzapi finalizado
@@ -30099,17 +30099,17 @@ nome_krayincrm
 ## Mostra mensagem para preencher informações
 preencha_as_info
 
-## Inicia um Loop até os dados estáarem certos
+## Inicia um Loop até os dados estarem certos
 while true; do
 
     ##Pergunta o Dominio para a ferramenta
     echo -e "\e[97mPasso$amarelo 1/6\e[0m"
-    echo -en "\e[33mDigite o dominio para o Krayin CRM (ex: krayincrm.seudominio.com): \e[0m" && read -r url_krayincrm
+    echo -en "\e[33mDigite o dominio para o Krayin CRM (ex: krayincrm.openorion.art.br): \e[0m" && read -r url_krayincrm
     echo ""
 
     ##Pergunta o Email SMTP
     echo -e "\e[97mPasso$amarelo 2/6\e[0m"
-    echo -en "\e[33mDigite o Email para SMTP (ex: admin@seudominio.com): \e[0m" && read -r email_krayincrm
+    echo -en "\e[33mDigite o Email para SMTP (ex: contato@openorion.art.br): \e[0m" && read -r email_krayincrm
     echo ""
 
     ## Sepera dominio
@@ -30118,12 +30118,12 @@ while true; do
     ##Pergunta o usuário do Email SMTP
     echo -e "\e[97mPasso$amarelo 3/6\e[0m"
     echo -e "$amarelo--> Caso não tiver um usuario do email, use o proprio email abaixo"
-    echo -en "\e[33mDigite o Usuário para SMTP (ex: openorion ou admin@seudominio.com): \e[0m" && read -r usuario_email_krayincrm
+    echo -en "\e[33mDigite o Usuário para SMTP (ex: openorion ou contato@openorion.art.br): \e[0m" && read -r usuario_email_krayincrm
     echo ""
     
     ## Pergunta a senha do SMTP
     echo -e "\e[97mPasso$amarelo 4/6\e[0m"
-    echo -e "$amarelo--> Sem caracteres especiais: \!#$ | Se estáiver usando gmail use a senha de app"
+    echo -e "$amarelo--> Sem caracteres especiais: \!#$ | Se estiver usando gmail use a senha de app"
     echo -en "\e[33mDigite a Senha SMTP do Email (ex: @Senha123_): \e[0m" && read -r senha_email_krayincrm
     echo ""
 
@@ -30181,11 +30181,11 @@ while true; do
     echo -e "\e[33mSecure SMTP do Email:\e[97m $smtp_secure_krayincrm\e[0m"
     echo ""
     
-    ## Pergunta se as respostas estáão corretas
-    read -p "As respostas estáão corretas? (Y/N): " confirmacao
+    ## Pergunta se as respostas estão corretas
+    read -p "As respostas estão corretas? (Y/N): " confirmacao
     if [ "$confirmacao" = "Y" ] || [ "$confirmacao" = "y" ]; then
 
-        ## Digitou Y para confirmar que as informações estáão corretas
+        ## Digitou Y para confirmar que as informações estão corretas
 
         ## Limpar o terminal
         clear
@@ -30197,7 +30197,7 @@ while true; do
         break
     else
 
-        ## Digitou N para dizer que as informações não estáão corretas.
+        ## Digitou N para dizer que as informações não estão corretas.
 
         ## Limpar o terminal
         clear
@@ -30303,7 +30303,7 @@ services:
     deploy:
       mode: replicated
       replicas: 1
-      restáart_policy:
+      restart_policy:
         condition: on-failure
       placement:
         constraints:
@@ -30320,13 +30320,13 @@ services:
         - traefik.http.routers.krayin${1:+_$1}_app.tls.certresolver=letsencryptresolver
         - traefik.http.routers.krayin${1:+_$1}_app.entrypoints=websecure
         - traefik.http.routers.krayin${1:+_$1}_app.tls=true
-        - traefik.http.middlewares.headers.headers.customrequestáheaders.X-Forwarded-Proto=https
+        - traefik.http.middlewares.headers.headers.customrequestheaders.X-Forwarded-Proto=https
         - traefik.http.routers.krayin.middlewares=headers
 
 ## --------------------------- ORION --------------------------- ##
 
   krayin${1:+_$1}_db:
-    image: percona/percona-server:latestá
+    image: percona/percona-server:latest
     command:
       - --character-set-server=utf8mb4
       - --collation-server=utf8mb4_general_ci
@@ -30364,7 +30364,7 @@ services:
 ## --------------------------- ORION --------------------------- ##
 
   krayin${1:+_$1}_redis:
-    image: redis:latestá
+    image: redis:latest
     command: [
         "redis-server",
         "--appendonly",
@@ -30413,7 +30413,7 @@ if [ $? -eq 0 ]; then
     echo "1/10 - [ OK ] - Criando Stack"
 else
     echo "1/10 - [ OFF ] - Criando Stack"
-    echo "Não foi possível criar a stack do krayincrm"
+    echo "Não foi possivel criar a stack do krayincrm"
 fi
 STACK_NAME="krayincrm${1:+_$1}"
 stack_editavel # > /dev/null 2>&1
@@ -30422,7 +30422,7 @@ stack_editavel # > /dev/null 2>&1
 #    echo "2/2 - [ OK ] - Deploy Stack"
 #else
 #    echo "2/2 - [ OFF ] - Deploy Stack"
-#    echo "Não foi possível Subir a stack do krayincrm"
+#    echo "Não foi possivel Subir a stack do krayincrm"
 #fi
 
 ## Mensagem de Passo
@@ -30431,9 +30431,9 @@ echo ""
 sleep 1
 
 ## Baixando imagens:
-pull percona/percona-server:latestá redis:latestá webkul/krayin:v2.1.2-https
+pull percona/percona-server:latest redis:latest webkul/krayin:v2.1.2-https
 
-## Usa o serviço wait_krayincrm para verificar se o serviço estáa online
+## Usa o serviço wait_krayincrm para verificar se o serviço esta online
 wait_stack krayincrm${1:+_$1}_krayin${1:+_$1}_db krayincrm${1:+_$1}_krayin${1:+_$1}_redis krayincrm${1:+_$1}_krayin${1:+_$1}_app 
 
 sleep 30
@@ -30458,18 +30458,18 @@ else
     echo "2/4 - [ OFF ] - Falha ao executar Seeds"
 fi
 
-docker exec -it $(docker ps --filter "name=krayincrm_krayin_app" -q) sh -c "cd laravel-crm && composer require krayin/restá-api" > /dev/null 2>&1
+docker exec -it $(docker ps --filter "name=krayincrm_krayin_app" -q) sh -c "cd laravel-crm && composer require krayin/rest-api" > /dev/null 2>&1
 if [ $? -eq 0 ]; then
-    echo "3/4 - [ OK ] - Pacote Restá-API instalado"
+    echo "3/4 - [ OK ] - Pacote Rest-API instalado"
 else
-    echo "3/4 - [ OFF ] - Falha ao instalar pacote Restá-API"
+    echo "3/4 - [ OFF ] - Falha ao instalar pacote Rest-API"
 fi
 
-docker exec -it $(docker ps --filter "name=krayincrm_krayin_app" -q) sh -c "cd laravel-crm && php artisan krayin-restá-api:install" > /dev/null 2>&1
+docker exec -it $(docker ps --filter "name=krayincrm_krayin_app" -q) sh -c "cd laravel-crm && php artisan krayin-rest-api:install" > /dev/null 2>&1
 if [ $? -eq 0 ]; then
-    echo "4/4 - [ OK ] - Restá-API configurado"
+    echo "4/4 - [ OK ] - Rest-API configurado"
 else
-    echo "4/4 - [ OFF ] - Falha ao configurar Restá-API"
+    echo "4/4 - [ OFF ] - Falha ao configurar Rest-API"
 fi
 
 telemetria "Krayin CRM" "finalizado"
@@ -30560,12 +30560,12 @@ nome_planka
 ## Mostra mensagem para preencher informações
 preencha_as_info
 
-## Inicia um Loop até os dados estáarem certos
+## Inicia um Loop até os dados estarem certos
 while true; do
 
     ##Pergunta o Dominio para a ferramenta
     echo -e "\e[97mPasso$amarelo 1/10\e[0m"
-    echo -en "\e[33mDigite o dominio para o Planka (ex: planka.seudominio.com): \e[0m" && read -r url_planka
+    echo -en "\e[33mDigite o dominio para o Planka (ex: planka.openorion.art.br): \e[0m" && read -r url_planka
     echo ""
   
     ##Pergunta o Dominio para a ferramenta
@@ -30575,7 +30575,7 @@ while true; do
 
     ##Pergunta o Dominio para a ferramenta
     echo -e "\e[97mPasso$amarelo 3/10\e[0m"
-    echo -en "\e[33mDigite o email do administrador (ex: admin@seudominio.com): \e[0m" && read -r email_adm_planka
+    echo -en "\e[33mDigite o email do administrador (ex: contato@openorion.art.br): \e[0m" && read -r email_adm_planka
     echo ""
 
     ##Pergunta o Dominio para a ferramenta
@@ -30590,18 +30590,18 @@ while true; do
 
     ##Pergunta o Email SMTP
     echo -e "\e[97mPasso$amarelo 6/10\e[0m"
-    echo -en "\e[33mDigite o Email para SMTP (ex: admin@seudominio.com): \e[0m" && read -r email_planka
+    echo -en "\e[33mDigite o Email para SMTP (ex: contato@openorion.art.br): \e[0m" && read -r email_planka
     echo ""
 
     ##Pergunta o usuário do Email SMTP
     echo -e "\e[97mPasso$amarelo 7/10\e[0m"
     echo -e "$amarelo--> Caso não tiver um usuario do email, use o proprio email abaixo"
-    echo -en "\e[33mDigite o Usuário para SMTP (ex: openorion ou admin@seudominio.com): \e[0m" && read -r usuario_email_planka
+    echo -en "\e[33mDigite o Usuário para SMTP (ex: openorion ou contato@openorion.art.br): \e[0m" && read -r usuario_email_planka
     echo ""
     
     ## Pergunta a senha do SMTP
     echo -e "\e[97mPasso$amarelo 8/10\e[0m"
-    echo -e "$amarelo--> Sem caracteres especiais: \!#$ | Se estáiver usando gmail use a senha de app"
+    echo -e "$amarelo--> Sem caracteres especiais: \!#$ | Se estiver usando gmail use a senha de app"
     echo -en "\e[33mDigite a Senha SMTP do Email (ex: @Senha123_): \e[0m" && read -r senha_email_planka
     echo ""
 
@@ -30673,11 +30673,11 @@ while true; do
     echo -e "\e[33mPorta SMTP:\e[97m $porta_smtp_planka\e[0m"
     echo ""
     
-    ## Pergunta se as respostas estáão corretas
-    read -p "As respostas estáão corretas? (Y/N): " confirmacao
+    ## Pergunta se as respostas estão corretas
+    read -p "As respostas estão corretas? (Y/N): " confirmacao
     if [ "$confirmacao" = "Y" ] || [ "$confirmacao" = "y" ]; then
 
-        ## Digitou Y para confirmar que as informações estáão corretas
+        ## Digitou Y para confirmar que as informações estão corretas
 
         ## Limpar o terminal
         clear
@@ -30689,7 +30689,7 @@ while true; do
         break
     else
 
-        ## Digitou N para dizer que as informações não estáão corretas.
+        ## Digitou N para dizer que as informações não estão corretas.
 
         ## Limpar o terminal
         clear
@@ -30748,7 +30748,7 @@ services:
 ## --------------------------- ORION --------------------------- ##
 
   planka${1:+_$1}_app:
-    image: ghcr.io/plankanban/planka:latestá
+    image: ghcr.io/plankanban/planka:latest
 
     networks:
       - $nome_rede_interna ## Nome da rede interna
@@ -30815,7 +30815,7 @@ services:
 ## --------------------------- ORION --------------------------- ##
 
   planka${1:+_$1}_redis:
-    image: redis:latestá  ## Versão do Redis
+    image: redis:latest  ## Versão do Redis
     command: [
         "redis-server",
         "--appendonly",
@@ -30868,7 +30868,7 @@ if [ $? -eq 0 ]; then
     echo "1/10 - [ OK ] - Criando Stack"
 else
     echo "1/10 - [ OFF ] - Criando Stack"
-    echo "Não foi possível criar a stack do planka"
+    echo "Não foi possivel criar a stack do planka"
 fi
 STACK_NAME="planka${1:+_$1}"
 stack_editavel # > /dev/null 2>&1
@@ -30877,7 +30877,7 @@ stack_editavel # > /dev/null 2>&1
 #    echo "2/2 - [ OK ] - Deploy Stack"
 #else
 #    echo "2/2 - [ OFF ] - Deploy Stack"
-#    echo "Não foi possível Subir a stack do planka"
+#    echo "Não foi possivel Subir a stack do planka"
 #fi
 
 ## Mensagem de Passo
@@ -30886,9 +30886,9 @@ echo ""
 sleep 1
 
 ## Baixando imagens:
-pull redis:latestá ghcr.io/plankanban/planka:latestá
+pull redis:latest ghcr.io/plankanban/planka:latest
 
-## Usa o serviço wait_planka para verificar se o serviço estáa online
+## Usa o serviço wait_planka para verificar se o serviço esta online
 wait_stack planka${1:+_$1}_planka${1:+_$1}_redis planka${1:+_$1}_planka${1:+_$1}_app
 
 telemetria Planka finalizado
@@ -30966,12 +30966,12 @@ nome_wppconnect
 ## Mostra mensagem para preencher informações
 preencha_as_info
 
-## Inicia um Loop até os dados estáarem certos
+## Inicia um Loop até os dados estarem certos
 while true; do
 
     ##Pergunta o Dominio para a ferramenta
     echo -e "\e[97mPasso$amarelo 1/1\e[0m"
-    echo -en "\e[33mDigite o dominio do WPPConnect (ex: wppconnect.seudominio.com): \e[0m" && read -r url_wppconnect
+    echo -en "\e[33mDigite o dominio do WPPConnect (ex: wppconnect.openorion.art.br): \e[0m" && read -r url_wppconnect
     echo ""
 
     ## Limpa o terminal
@@ -30988,11 +30988,11 @@ while true; do
     echo ""
 
     
-    ## Pergunta se as respostas estáão corretas
-    read -p "As respostas estáão corretas? (Y/N): " confirmacao
+    ## Pergunta se as respostas estão corretas
+    read -p "As respostas estão corretas? (Y/N): " confirmacao
     if [ "$confirmacao" = "Y" ] || [ "$confirmacao" = "y" ]; then
 
-        ## Digitou Y para confirmar que as informações estáão corretas
+        ## Digitou Y para confirmar que as informações estão corretas
 
         ## Limpar o terminal
         clear
@@ -31004,7 +31004,7 @@ while true; do
         break
     else
 
-        ## Digitou N para dizer que as informações não estáão corretas.
+        ## Digitou N para dizer que as informações não estão corretas.
 
         ## Limpar o terminal
         clear
@@ -31041,7 +31041,7 @@ services:
 ## --------------------------- ORION --------------------------- ##
 
   wppconnect${1:+_$1}_api:
-    image: wppconnect/server-cli:latestá
+    image: wppconnect/server-cli:latest
 
     volumes:
       - wppconnect${1:+_$1}_config:/usr/src/wpp-server
@@ -31081,7 +31081,7 @@ if [ $? -eq 0 ]; then
     echo "1/10 - [ OK ] - Criando Stack"
 else
     echo "1/10 - [ OFF ] - Criando Stack"
-    echo "Não foi possível criar a stack do wppconnect"
+    echo "Não foi possivel criar a stack do wppconnect"
 fi
 STACK_NAME="wppconnect${1:+_$1}"
 stack_editavel # > /dev/null 2>&1
@@ -31090,7 +31090,7 @@ stack_editavel # > /dev/null 2>&1
 #    echo "2/2 - [ OK ] - Deploy Stack"
 #else
 #    echo "2/2 - [ OFF ] - Deploy Stack"
-#    echo "Não foi possível Subir a stack do wppconnect"
+#    echo "Não foi possivel Subir a stack do wppconnect"
 #fi
 
 ## Mensagem de Passo
@@ -31099,9 +31099,9 @@ echo ""
 sleep 1
 
 ## Baixando imagens:
-pull wppconnect/server-cli:latestá
+pull wppconnect/server-cli:latest
 
-## Usa o serviço wait_wppconnect para verificar se o serviço estáa online
+## Usa o serviço wait_wppconnect para verificar se o serviço esta online
 wait_stack wppconnect${1:+_$1}_wppconnect${1:+_$1}_api
 
 telemetria WPPConnect finalizado
@@ -31168,12 +31168,12 @@ nome_browserless
 ## Mostra mensagem para preencher informações
 preencha_as_info
 
-## Inicia um Loop até os dados estáarem certos
+## Inicia um Loop até os dados estarem certos
 while true; do
 
     ##Pergunta o Dominio para a ferramenta
     echo -e "\e[97mPasso$amarelo 1/1\e[0m"
-    echo -en "\e[33mDigite o dominio para o Browserless (ex: browserless.seudominio.com): \e[0m" && read -r url_browserless
+    echo -en "\e[33mDigite o dominio para o Browserless (ex: browserless.openorion.art.br): \e[0m" && read -r url_browserless
     echo ""
   
     ## Limpa o terminal
@@ -31189,11 +31189,11 @@ while true; do
     echo -e "\e[33mDominio do Browserless:\e[97m $url_browserless\e[0m"
     echo ""
     
-    ## Pergunta se as respostas estáão corretas
-    read -p "As respostas estáão corretas? (Y/N): " confirmacao
+    ## Pergunta se as respostas estão corretas
+    read -p "As respostas estão corretas? (Y/N): " confirmacao
     if [ "$confirmacao" = "Y" ] || [ "$confirmacao" = "y" ]; then
 
-        ## Digitou Y para confirmar que as informações estáão corretas
+        ## Digitou Y para confirmar que as informações estão corretas
 
         ## Limpar o terminal
         clear
@@ -31205,7 +31205,7 @@ while true; do
         break
     else
 
-        ## Digitou N para dizer que as informações não estáão corretas.
+        ## Digitou N para dizer que as informações não estão corretas.
 
         ## Limpar o terminal
         clear
@@ -31242,7 +31242,7 @@ services:
 ## --------------------------- ORION --------------------------- ##
 
   browserless${1:+_$1}:
-    image: browserless/chrome:latestá
+    image: browserless/chrome:latest
 
     networks:
       - $nome_rede_interna ## Nome da rede interna
@@ -31289,7 +31289,7 @@ if [ $? -eq 0 ]; then
     echo "1/10 - [ OK ] - Criando Stack"
 else
     echo "1/10 - [ OFF ] - Criando Stack"
-    echo "Não foi possível criar a stack do browserless"
+    echo "Não foi possivel criar a stack do browserless"
 fi
 STACK_NAME="browserless${1:+_$1}"
 stack_editavel # > /dev/null 2>&1
@@ -31298,7 +31298,7 @@ stack_editavel # > /dev/null 2>&1
 #    echo "2/2 - [ OK ] - Deploy Stack"
 #else
 #    echo "2/2 - [ OFF ] - Deploy Stack"
-#    echo "Não foi possível Subir a stack do browserless"
+#    echo "Não foi possivel Subir a stack do browserless"
 #fi
 
 ## Mensagem de Passo
@@ -31307,9 +31307,9 @@ echo ""
 sleep 1
 
 ## Baixando imagens:
-pull browserless/chrome:latestá
+pull browserless/chrome:latest
 
-## Usa o serviço wait_browserless para verificar se o serviço estáa online
+## Usa o serviço wait_browserless para verificar se o serviço esta online
 wait_stack browserless${1:+_$1}_browserless${1:+_$1}
 
 telemetria Browserless finalizado
@@ -31372,12 +31372,12 @@ nome_frappe
 ## Mostra mensagem para preencher informações
 preencha_as_info
 
-## Inicia um Loop até os dados estáarem certos
+## Inicia um Loop até os dados estarem certos
 while true; do
 
     ##Pergunta o Dominio para a ferramenta
     echo -e "\e[97mPasso$amarelo 1/2\e[0m"
-    echo -en "\e[33mDigite o dominio para o Frappe ERPNext (ex: crm.seudominio.com): \e[0m" && read -r url_frappe
+    echo -en "\e[33mDigite o dominio para o Frappe ERPNext (ex: crm.openorion.art.br): \e[0m" && read -r url_frappe
     echo ""
 
     ##Pergunta o Dominio para a ferramenta
@@ -31402,11 +31402,11 @@ while true; do
     echo -e "\e[33mSenha do Administrador:\e[97m $senha_frappe\e[0m"
     echo ""
     
-    ## Pergunta se as respostas estáão corretas
-    read -p "As respostas estáão corretas? (Y/N): " confirmacao
+    ## Pergunta se as respostas estão corretas
+    read -p "As respostas estão corretas? (Y/N): " confirmacao
     if [ "$confirmacao" = "Y" ] || [ "$confirmacao" = "y" ]; then
 
-        ## Digitou Y para confirmar que as informações estáão corretas
+        ## Digitou Y para confirmar que as informações estão corretas
 
         ## Limpar o terminal
         clear
@@ -31418,7 +31418,7 @@ while true; do
         break
     else
 
-        ## Digitou N para dizer que as informações não estáão corretas.
+        ## Digitou N para dizer que as informações não estão corretas.
 
         ## Limpar o terminal
         clear
@@ -31629,7 +31629,7 @@ services:
 ## --------------------------- ORION --------------------------- ##
 
   erpnext${1:+_$1}_cache:
-    image: redis:latestá
+    image: redis:latest
     command: [
         "redis-server",
         "--appendonly",
@@ -31656,7 +31656,7 @@ services:
 ## --------------------------- ORION --------------------------- ##
 
   erpnext${1:+_$1}_queue:
-    image: redis:latestá
+    image: redis:latest
     command: [
         "redis-server",
         "--appendonly",
@@ -31683,7 +31683,7 @@ services:
 ## --------------------------- ORION --------------------------- ##
 
   erpnext${1:+_$1}_socketio:
-    image: redis:latestá
+    image: redis:latest
     command: [
         "redis-server",
         "--appendonly",
@@ -31738,7 +31738,7 @@ if [ $? -eq 0 ]; then
     echo "1/10 - [ OK ] - Criando Stack"
 else
     echo "1/10 - [ OFF ] - Criando Stack"
-    echo "Não foi possível criar a stack do frappe"
+    echo "Não foi possivel criar a stack do frappe"
 fi
 STACK_NAME="erpnext${1:+_$1}"
 stack_editavel # > /dev/null 2>&1
@@ -31747,7 +31747,7 @@ stack_editavel # > /dev/null 2>&1
 #    echo "2/2 - [ OK ] - Deploy Stack"
 #else
 #    echo "2/2 - [ OFF ] - Deploy Stack"
-#    echo "Não foi possível Subir a stack do frappe"
+#    echo "Não foi possivel Subir a stack do frappe"
 #fi
 
 ## Mensagem de Passo
@@ -31756,7 +31756,7 @@ echo ""
 sleep 1
 
 ## Baixando imagens:
-pull frappe/erpnext:v15.49.3 mariadb:10.6 redis:latestá
+pull frappe/erpnext:v15.49.3 mariadb:10.6 redis:latest
 
 sleep 45
 
@@ -31771,7 +31771,7 @@ echo "{
   \"domains\": [\"$url_frappe\"]
 }" > /var/lib/docker/volumes/erpnext${1:+_$1}_sites/_data/common_site_config.json
 
-## Usa o serviço wait_frappe para verificar se o serviço estáa online
+## Usa o serviço wait_frappe para verificar se o serviço esta online
 wait_stack erpnext${1:+_$1}_erpnext${1:+_$1}_frontend erpnext${1:+_$1}_erpnext${1:+_$1}_backend erpnext${1:+_$1}_erpnext${1:+_$1}_configurator erpnext${1:+_$1}_erpnext${1:+_$1}_websocket erpnext${1:+_$1}_erpnext${1:+_$1}_db erpnext${1:+_$1}_erpnext${1:+_$1}_cache erpnext${1:+_$1}_erpnext${1:+_$1}_queue erpnext${1:+_$1}_erpnext${1:+_$1}_socketio
 
 sleep 30
@@ -31852,12 +31852,12 @@ nome_bolt
 ## Mostra mensagem para preencher informações
 preencha_as_info
 
-## Inicia um Loop até os dados estáarem certos
+## Inicia um Loop até os dados estarem certos
 while true; do
 
     ##Pergunta o Dominio para a ferramenta
     echo -e "\e[97mPasso$amarelo 1/1\e[0m"
-    echo -en "\e[33mDigite o dominio para o Bolt (ex: bolt.seudominio.com): \e[0m" && read -r url_bolt
+    echo -en "\e[33mDigite o dominio para o Bolt (ex: bolt.openorion.art.br): \e[0m" && read -r url_bolt
     echo ""
 
     ## Limpa o terminal
@@ -31873,11 +31873,11 @@ while true; do
     echo -e "\e[33mDominio do Bolt:\e[97m $url_bolt\e[0m"
     echo ""
     
-    ## Pergunta se as respostas estáão corretas
-    read -p "As respostas estáão corretas? (Y/N): " confirmacao
+    ## Pergunta se as respostas estão corretas
+    read -p "As respostas estão corretas? (Y/N): " confirmacao
     if [ "$confirmacao" = "Y" ] || [ "$confirmacao" = "y" ]; then
 
-        ## Digitou Y para confirmar que as informações estáão corretas
+        ## Digitou Y para confirmar que as informações estão corretas
 
         ## Limpar o terminal
         clear
@@ -31889,7 +31889,7 @@ while true; do
         break
     else
 
-        ## Digitou N para dizer que as informações não estáão corretas.
+        ## Digitou N para dizer que as informações não estão corretas.
 
         ## Limpar o terminal
         clear
@@ -31926,7 +31926,7 @@ services:
 ## --------------------------- ORION --------------------------- ##
 
   bolt${1:+_$1}_app:
-    image: ghcr.io/stackblitz-labs/bolt.diy:latestá
+    image: ghcr.io/stackblitz-labs/bolt.diy:latest
     command: pnpm run dockerstart
 
     networks:
@@ -31988,7 +31988,7 @@ if [ $? -eq 0 ]; then
     echo "1/10 - [ OK ] - Criando Stack"
 else
     echo "1/10 - [ OFF ] - Criando Stack"
-    echo "Não foi possível criar a stack do bolt"
+    echo "Não foi possivel criar a stack do bolt"
 fi
 STACK_NAME="bolt${1:+_$1}"
 stack_editavel # > /dev/null 2>&1
@@ -31997,7 +31997,7 @@ stack_editavel # > /dev/null 2>&1
 #    echo "2/2 - [ OK ] - Deploy Stack"
 #else
 #    echo "2/2 - [ OFF ] - Deploy Stack"
-#    echo "Não foi possível Subir a stack do bolt"
+#    echo "Não foi possivel Subir a stack do bolt"
 #fi
 
 ## Mensagem de Passo
@@ -32006,9 +32006,9 @@ echo ""
 sleep 1
 
 ## Baixando imagens:
-pull ghcr.io/stackblitz-labs/bolt.diy:latestá
+pull ghcr.io/stackblitz-labs/bolt.diy:latest
 
-## Usa o serviço wait_bolt para verificar se o serviço estáa online
+## Usa o serviço wait_bolt para verificar se o serviço esta online
 wait_stack bolt${1:+_$1}_bolt${1:+_$1}_app
 
 telemetria Bolt finalizado
@@ -32070,12 +32070,12 @@ nome_wisemapping
 ## Mostra mensagem para preencher informações
 preencha_as_info
 
-## Inicia um Loop até os dados estáarem certos
+## Inicia um Loop até os dados estarem certos
 while true; do
 
     ##Pergunta o Dominio para a ferramenta
     echo -e "\e[97mPasso$amarelo 1/1\e[0m"
-    echo -en "\e[33mDigite o dominio para o WiseMapping (ex: wisemapping.seudominio.com): \e[0m" && read -r url_wisemapping
+    echo -en "\e[33mDigite o dominio para o WiseMapping (ex: wisemapping.openorion.art.br): \e[0m" && read -r url_wisemapping
     echo ""
 
     
@@ -32094,11 +32094,11 @@ while true; do
 
 
     
-    ## Pergunta se as respostas estáão corretas
-    read -p "As respostas estáão corretas? (Y/N): " confirmacao
+    ## Pergunta se as respostas estão corretas
+    read -p "As respostas estão corretas? (Y/N): " confirmacao
     if [ "$confirmacao" = "Y" ] || [ "$confirmacao" = "y" ]; then
 
-        ## Digitou Y para confirmar que as informações estáão corretas
+        ## Digitou Y para confirmar que as informações estão corretas
 
         ## Limpar o terminal
         clear
@@ -32110,7 +32110,7 @@ while true; do
         break
     else
 
-        ## Digitou N para dizer que as informações não estáão corretas.
+        ## Digitou N para dizer que as informações não estão corretas.
 
         ## Limpar o terminal
         clear
@@ -32231,7 +32231,7 @@ spring:
   mail:
     host: localhost
     port: 25
-    testá-connection: false
+    test-connection: false
 
 management:
   endpoints:
@@ -32293,7 +32293,7 @@ fi
 
 cat > nginx.conf <<EOL
 # Detect HTTPS from Traefik's X-Forwarded-Proto header
-# When behind Traefik, the connection to Nginx is HTTP, but the original requestá was HTTPS
+# When behind Traefik, the connection to Nginx is HTTP, but the original request was HTTPS
 map \$http_x_forwarded_proto \$forwarded_scheme {
   default \$scheme;
   https https;
@@ -32337,13 +32337,13 @@ server {
   }
 
   # Backend API proxy - intercept config endpoint to rewrite URLs with actual port
-  location /api/restáful/app/config {
+  location /api/restful/app/config {
     proxy_set_header X-Real-IP \$remote_addr;
     proxy_set_header X-Forwarded-For \$proxy_add_x_forwarded_for;
     proxy_set_header X-Forwarded-Proto \$final_scheme;
     proxy_set_header X-Forwarded-Host \$http_host;
     proxy_set_header X-NginX-Proxy true;
-    proxy_pass http://localhost:8080/api/restáful/app/config;
+    proxy_pass http://localhost:8080/api/restful/app/config;
     proxy_ssl_session_reuse off;
     proxy_set_header Host \$http_host;
     proxy_cache_bypass \$http_upgrade;
@@ -32375,7 +32375,7 @@ server {
     proxy_cache_bypass \$http_upgrade;
     proxy_redirect off;
     
-    # Increase timeouts for long-running requestás
+    # Increase timeouts for long-running requests
     proxy_connect_timeout 60s;
     proxy_send_timeout 60s;
     proxy_read_timeout 60s;
@@ -32412,7 +32412,7 @@ services:
 ## --------------------------- ORION --------------------------- ##
 
   wisemapping${1:+_$1}:
-    image: wisemapping/wisemapping:latestá
+    image: wisemapping/wisemapping:latest
 
     volumes:
       - wisemapping${1:+_$1}_db:/var/lib/wisemapping/db
@@ -32466,7 +32466,7 @@ if [ $? -eq 0 ]; then
     echo "1/10 - [ OK ] - Criando Stack"
 else
     echo "1/10 - [ OFF ] - Criando Stack"
-    echo "Não foi possível criar a stack do wisemapping"
+    echo "Não foi possivel criar a stack do wisemapping"
 fi
 STACK_NAME="wisemapping${1:+_$1}"
 stack_editavel # > /dev/null 2>&1
@@ -32475,7 +32475,7 @@ stack_editavel # > /dev/null 2>&1
 #    echo "2/2 - [ OK ] - Deploy Stack"
 #else
 #    echo "2/2 - [ OFF ] - Deploy Stack"
-#    echo "Não foi possível Subir a stack do wisemapping"
+#    echo "Não foi possivel Subir a stack do wisemapping"
 #fi
 
 ## Mensagem de Passo
@@ -32484,9 +32484,9 @@ echo ""
 sleep 1
 
 ## Baixando imagens:
-pull wisemapping/wisemapping:latestá
+pull wisemapping/wisemapping:latest
 
-## Usa o serviço wait_wisemapping para verificar se o serviço estáa online
+## Usa o serviço wait_wisemapping para verificar se o serviço esta online
 wait_stack wisemapping${1:+_$1}_wisemapping${1:+_$1}
 
 sleep 30
@@ -32502,7 +32502,7 @@ Dominio do WiseMapping: https://$url_wisemapping
 
 Email do usuario Admin: admin@wisemapping.org
 
-Senha do usuario Admin: testáAdmin123
+Senha do usuario Admin: testAdmin123
 EOL
 
 cd
@@ -32527,7 +32527,7 @@ echo ""
 echo -e "\e[33mEmail do usuario Admin:\e[97m admin@wisemapping.org\e[0m"
 echo ""
 
-echo -e "\e[33mSenha do usuario Admin:\e[97m testáAdmin123\e[0m"
+echo -e "\e[33mSenha do usuario Admin:\e[97m testAdmin123\e[0m"
 
 ## Creditos do instalador
 creditos_msg
@@ -32561,22 +32561,22 @@ nome_evoai
 ## Mostra mensagem para preencher informações
 preencha_as_info
 
-## Inicia um Loop até os dados estáarem certos
+## Inicia um Loop até os dados estarem certos
 while true; do
 
     ##Pergunta o Dominio para aplicação
     echo -e "\e[97mPasso$amarelo 1/9\e[0m"
-    echo -en "\e[33mDigite o Dominio para o painel da EvoAI (ex: evoai.seudominio.com): \e[0m" && read -r url_evoai_front
+    echo -en "\e[33mDigite o Dominio para o painel da EvoAI (ex: evoai.openorion.art.br): \e[0m" && read -r url_evoai_front
     echo ""
 
     ##Pergunta o Dominio para aplicação
     echo -e "\e[97mPasso$amarelo 2/9\e[0m"
-    echo -en "\e[33mDigite o Dominio para a API da EvoAI (ex: evoapi.seudominio.com): \e[0m" && read -r url_evoai_api
+    echo -en "\e[33mDigite o Dominio para a API da EvoAI (ex: evoapi.openorion.art.br): \e[0m" && read -r url_evoai_api
     echo ""
 
     ##Pergunta o Usuario para a ferramenta
     echo -e "\e[97mPasso$amarelo 3/9\e[0m"
-    echo -en "\e[33mDigite um email para o usuario admin (ex: admin@seudominio.com): \e[0m" && read -r email_evoai
+    echo -en "\e[33mDigite um email para o usuario admin (ex: contato@openorion.art.br): \e[0m" && read -r email_evoai
     echo ""
     
     ##Pergunta a Senha para a ferramenta
@@ -32588,18 +32588,18 @@ while true; do
 
     ##Pergunta o Email SMTP
     echo -e "\e[97mPasso$amarelo 5/9\e[0m"
-    echo -en "\e[33mDigite o Email para SMTP (ex: admin@seudominio.com): \e[0m" && read -r smtp_email_evoai
+    echo -en "\e[33mDigite o Email para SMTP (ex: contato@openorion.art.br): \e[0m" && read -r smtp_email_evoai
     echo ""
 
     ##Pergunta o usuário do Email SMTP
     echo -e "\e[97mPasso$amarelo 6/9\e[0m"
     echo -e "$amarelo--> Caso não tiver um usuario do email, use o proprio email abaixo"
-    echo -en "\e[33mDigite o Usuário para SMTP (ex: openorion ou admin@seudominio.com): \e[0m" && read -r smtp_user_evoai
+    echo -en "\e[33mDigite o Usuário para SMTP (ex: openorion ou contato@openorion.art.br): \e[0m" && read -r smtp_user_evoai
     echo ""
     
     ## Pergunta a senha do SMTP
     echo -e "\e[97mPasso$amarelo 7/9\e[0m"
-    echo -e "$amarelo--> Sem caracteres especiais: \!#$ | Se estáiver usando gmail use a senha de app"
+    echo -e "$amarelo--> Sem caracteres especiais: \!#$ | Se estiver usando gmail use a senha de app"
     echo -en "\e[33mDigite a Senha SMTP do Email (ex: @Senha123_): \e[0m" && read -r smtp_pass_evoai
     echo ""
 
@@ -32667,11 +32667,11 @@ while true; do
     echo -e "\e[33mPorta SMTP:\e[97m $smtp_port_evoai\e[0m"
     echo ""
 
-    ## Pergunta se as respostas estáão corretas
-    read -p "As respostas estáão corretas? (Y/N): " confirmacao
+    ## Pergunta se as respostas estão corretas
+    read -p "As respostas estão corretas? (Y/N): " confirmacao
     if [ "$confirmacao" = "Y" ] || [ "$confirmacao" = "y" ]; then
 
-        ## Digitou Y para confirmar que as informações estáão corretas
+        ## Digitou Y para confirmar que as informações estão corretas
 
         ## Limpar o terminal
         clear
@@ -32683,7 +32683,7 @@ while true; do
         break
     else
 
-        ## Digitou N para dizer que as informações não estáão corretas.
+        ## Digitou N para dizer que as informações não estão corretas.
 
         ## Limpar o terminal
         clear
@@ -32754,7 +32754,7 @@ services:
 ## --------------------------- ORION --------------------------- ##
 
   evoai${1:+_$1}_api:
-    image: evoapicloud/evo-ai:latestá ## Versão da imagem
+    image: evoapicloud/evo-ai:latest ## Versão da imagem
 
     volumes:
       - evoai${1:+_$1}_logs:/app/logs
@@ -32825,7 +32825,7 @@ services:
 ## --------------------------- ORION --------------------------- ##
 
   evoai${1:+_$1}_frontend:
-    image: evoapicloud/evo-ai-frontend:latestá ## Versão da imagem
+    image: evoapicloud/evo-ai-frontend:latest ## Versão da imagem
     
     networks:
       - $nome_rede_interna ## Nome da rede interna
@@ -32852,7 +32852,7 @@ services:
 ## --------------------------- ORION --------------------------- ##
 
   evoai${1:+_$1}_redis:
-    image: redis:latestá  ## Versão do Redis
+    image: redis:latest  ## Versão do Redis
     command: [
         "redis-server",
         "--appendonly",
@@ -32903,7 +32903,7 @@ if [ $? -eq 0 ]; then
     echo "1/10 - [ OK ] - Criando Stack"
 else
     echo "1/10 - [ OFF ] - Criando Stack"
-    echo "Não foi possível criar a stack da Evolution API"
+    echo "Não foi possivel criar a stack da Evolution API"
 fi
 STACK_NAME="evoai${1:+_$1}"
 stack_editavel # > /dev/null 2>&1
@@ -32913,7 +32913,7 @@ stack_editavel # > /dev/null 2>&1
 #    echo "2/2 - [ OK ] - Deploy Stack"
 #else
 #    echo "2/2 - [ OFF ] - Deploy Stack"
-#    echo "Não foi possível subir a stack da Evolution API"
+#    echo "Não foi possivel subir a stack da Evolution API"
 #fi
 
 sleep 10
@@ -32924,9 +32924,9 @@ echo ""
 sleep 1
 
 ## Baixando imagens:
-pull redis:latestá evoapicloud/evo-ai:latestá evoapicloud/evo-ai-frontend:latestá
+pull redis:latest evoapicloud/evo-ai:latest evoapicloud/evo-ai-frontend:latest
 
-## Usa o serviço wait_evoai para verificar se o serviço estáa online
+## Usa o serviço wait_evoai para verificar se o serviço esta online
 wait_stack evoai${1:+_$1}_evoai${1:+_$1}_redis evoai${1:+_$1}_evoai${1:+_$1}_api evoai${1:+_$1}_evoai${1:+_$1}_frontend
 
 telemetria EvoAI finalizado
@@ -33003,12 +33003,12 @@ nome_keycloak
 ## Mostra mensagem para preencher informações
 preencha_as_info
 
-## Inicia um Loop até os dados estáarem certos
+## Inicia um Loop até os dados estarem certos
 while true; do
 
     ##Pergunta o Dominio para a ferramenta
     echo -e "\e[97mPasso$amarelo 1/3\e[0m"
-    echo -en "\e[33mDigite o dominio para o Keycloak (ex: keycloak.seudominio.com): \e[0m" && read -r url_keycloak
+    echo -en "\e[33mDigite o dominio para o Keycloak (ex: keycloak.openorion.art.br): \e[0m" && read -r url_keycloak
     echo ""
 
     ##Pergunta o Dominio para a ferramenta
@@ -33042,11 +33042,11 @@ while true; do
     echo -e "\e[33mSenha:\e[97m $senha_keycloak\e[0m"
     echo ""
     
-    ## Pergunta se as respostas estáão corretas
-    read -p "As respostas estáão corretas? (Y/N): " confirmacao
+    ## Pergunta se as respostas estão corretas
+    read -p "As respostas estão corretas? (Y/N): " confirmacao
     if [ "$confirmacao" = "Y" ] || [ "$confirmacao" = "y" ]; then
 
-        ## Digitou Y para confirmar que as informações estáão corretas
+        ## Digitou Y para confirmar que as informações estão corretas
 
         ## Limpar o terminal
         clear
@@ -33058,7 +33058,7 @@ while true; do
         break
     else
 
-        ## Digitou N para dizer que as informações não estáão corretas.
+        ## Digitou N para dizer que as informações não estão corretas.
 
         ## Limpar o terminal
         clear
@@ -33116,7 +33116,7 @@ services:
 
   keycloak${1:+_$1}:
 
-    image: quay.io/keycloak/keycloak:latestá
+    image: quay.io/keycloak/keycloak:latest
     command: start
     networks:
       - $nome_rede_interna ## Nome da rede interna
@@ -33137,8 +33137,8 @@ services:
       - KC_HOSTNAME_STRICT_HTTPS=false
       - KC_HOSTNAME_STRICT_BACKCHANNEL=false
       - KC_HTTP_ENABLED=true
-      ## KC_PROXY=edge estáá deprecated na v2, removido para evitar warnings
-      ## KC_PROXY_HEADERS é obrigatório quando usando proxy reversão
+      ## KC_PROXY=edge está deprecated na v2, removido para evitar warnings
+      ## KC_PROXY_HEADERS é obrigatório quando usando proxy reverso
       - KC_PROXY_HEADERS=xforwarded
       - KC_HTTP_RELATIVE_PATH=/
       
@@ -33175,11 +33175,11 @@ services:
         - traefik.http.routers.keycloak${1:+_$1}.tls=true
         - traefik.http.routers.keycloak${1:+_$1}.service=keycloak${1:+_$1}
         - traefik.http.services.keycloak${1:+_$1}.loadbalancer.server.port=8080
-        - traefik.http.middlewares.keycloak${1:+_$1}-headers.headers.customrequestáheaders.X-Forwarded-Proto=https
-        - traefik.http.middlewares.keycloak${1:+_$1}-headers.headers.customrequestáheaders.X-Forwarded-For=
-        - traefik.http.middlewares.keycloak${1:+_$1}-headers.headers.customrequestáheaders.X-Real-IP=
-        - traefik.http.middlewares.keycloak${1:+_$1}-headers.headers.customrequestáheaders.X-Forwarded-Host=$url_keycloak
-        - traefik.http.middlewares.keycloak${1:+_$1}-headers.headers.customrequestáheaders.X-Forwarded-Port=443
+        - traefik.http.middlewares.keycloak${1:+_$1}-headers.headers.customrequestheaders.X-Forwarded-Proto=https
+        - traefik.http.middlewares.keycloak${1:+_$1}-headers.headers.customrequestheaders.X-Forwarded-For=
+        - traefik.http.middlewares.keycloak${1:+_$1}-headers.headers.customrequestheaders.X-Real-IP=
+        - traefik.http.middlewares.keycloak${1:+_$1}-headers.headers.customrequestheaders.X-Forwarded-Host=$url_keycloak
+        - traefik.http.middlewares.keycloak${1:+_$1}-headers.headers.customrequestheaders.X-Forwarded-Port=443
         - traefik.http.routers.keycloak${1:+_$1}.middlewares=keycloak${1:+_$1}-headers
 
 ## --------------------------- NETWORKS --------------------------- ##
@@ -33195,7 +33195,7 @@ if [ $? -eq 0 ]; then
     echo "1/10 - [ OK ] - Criando Stack"
 else
     echo "1/10 - [ OFF ] - Criando Stack"
-    echo "Não foi possível criar a stack do keycloak"
+    echo "Não foi possivel criar a stack do keycloak"
 fi
 STACK_NAME="keycloak${1:+_$1}"
 stack_editavel # > /dev/null 2>&1
@@ -33204,7 +33204,7 @@ stack_editavel # > /dev/null 2>&1
 #    echo "2/2 - [ OK ] - Deploy Stack"
 #else
 #    echo "2/2 - [ OFF ] - Deploy Stack"
-#    echo "Não foi possível Subir a stack do keycloak"
+#    echo "Não foi possivel Subir a stack do keycloak"
 #fi
 
 ## Mensagem de Passo
@@ -33213,9 +33213,9 @@ echo ""
 sleep 1
 
 ## Baixando imagens:
-pull quay.io/keycloak/keycloak:latestá
+pull quay.io/keycloak/keycloak:latest
 
-## Usa o serviço wait_keycloak para verificar se o serviço estáa online
+## Usa o serviço wait_keycloak para verificar se o serviço esta online
 wait_stack keycloak${1:+_$1}_keycloak${1:+_$1}
 
 telemetria Keycloak finalizado
@@ -33289,33 +33289,33 @@ nome_passbolt
 ## Mostra mensagem para preencher informações
 preencha_as_info
 
-## Inicia um Loop até os dados estáarem certos
+## Inicia um Loop até os dados estarem certos
 while true; do
 
     ##Pergunta o Dominio para aplicação
     echo -e "\e[97mPasso$amarelo 1/6\e[0m"
-    echo -en "\e[33mDigite o Dominio para o Passbolt (ex: passbolt.seudominio.com): \e[0m" && read -r url_passbolt
+    echo -en "\e[33mDigite o Dominio para o Passbolt (ex: passbolt.openorion.art.br): \e[0m" && read -r url_passbolt
     echo ""
 
     ##Pergunta o Email SMTP
     echo -e "\e[97mPasso$amarelo 2/6\e[0m"
-    echo -en "\e[33mDigite o Email do usuario Admin do Passbolt (ex: admin@seudominio.com): \e[0m" && read -r email_user_passbolt
+    echo -en "\e[33mDigite o Email do usuario Admin do Passbolt (ex: contato@openorion.art.br): \e[0m" && read -r email_user_passbolt
     echo ""
 
     ##Pergunta o Email SMTP
     echo -e "\e[97mPasso$amarelo 2/6\e[0m"
-    echo -en "\e[33mDigite o Email para SMTP (ex: admin@seudominio.com): \e[0m" && read -r smtp_email_passbolt
+    echo -en "\e[33mDigite o Email para SMTP (ex: contato@openorion.art.br): \e[0m" && read -r smtp_email_passbolt
     echo ""
 
     ##Pergunta o usuário do Email SMTP
     echo -e "\e[97mPasso$amarelo 3/6\e[0m"
     echo -e "$amarelo--> Caso não tiver um usuario do email, use o proprio email abaixo"
-    echo -en "\e[33mDigite o Usuário para SMTP (ex: openorion ou admin@seudominio.com): \e[0m" && read -r smtp_user_passbolt
+    echo -en "\e[33mDigite o Usuário para SMTP (ex: openorion ou contato@openorion.art.br): \e[0m" && read -r smtp_user_passbolt
     echo ""
     
     ## Pergunta a senha do SMTP
     echo -e "\e[97mPasso$amarelo 4/6\e[0m"
-    echo -e "$amarelo--> Sem caracteres especiais: \!#$ | Se estáiver usando gmail use a senha de app"
+    echo -e "$amarelo--> Sem caracteres especiais: \!#$ | Se estiver usando gmail use a senha de app"
     echo -en "\e[33mDigite a Senha SMTP do Email (ex: @Senha123_): \e[0m" && read -r smtp_pass_passbolt
     echo ""
 
@@ -33373,11 +33373,11 @@ while true; do
     echo -e "\e[33mPorta SMTP:\e[97m $smtp_port_passbolt\e[0m"
     echo ""
 
-    ## Pergunta se as respostas estáão corretas
-    read -p "As respostas estáão corretas? (Y/N): " confirmacao
+    ## Pergunta se as respostas estão corretas
+    read -p "As respostas estão corretas? (Y/N): " confirmacao
     if [ "$confirmacao" = "Y" ] || [ "$confirmacao" = "y" ]; then
 
-        ## Digitou Y para confirmar que as informações estáão corretas
+        ## Digitou Y para confirmar que as informações estão corretas
 
         ## Limpar o terminal
         clear
@@ -33389,7 +33389,7 @@ while true; do
         break
     else
 
-        ## Digitou N para dizer que as informações não estáão corretas.
+        ## Digitou N para dizer que as informações não estão corretas.
 
         ## Limpar o terminal
         clear
@@ -33456,7 +33456,7 @@ services:
 ## --------------------------- ORION --------------------------- ##
 
   passbolt${1:+_$1}:
-    image: passbolt/passbolt:latestá ## Versão da aplicação
+    image: passbolt/passbolt:latest ## Versão da aplicação
 
     volumes:
       - passbolt${1:+_$1}_data:/var/www/passbolt/webroot
@@ -33513,10 +33513,10 @@ services:
         - traefik.http.routers.passbolt${1:+_$1}.tls=true
         ## Mobile APP
         - traefik.http.routers.passbolt${1:+_$1}.middlewares=passbolt${1:+_$1}_mobile
-        - traefik.http.middlewares.passbolt${1:+_$1}_mobile.headers.customrequestáheaders.X-Forwarded-Proto=https
-        - traefik.http.middlewares.passbolt${1:+_$1}_mobile.headers.customrequestáheaders.X-Forwarded-Port=443
-        - traefik.http.middlewares.passbolt${1:+_$1}_mobile.headers.customrequestáheaders.X-Forwarded-Host=$url_passbolt
-        - traefik.http.middlewares.passbolt${1:+_$1}_mobile.headers.customrequestáheaders.X-Real-IP=
+        - traefik.http.middlewares.passbolt${1:+_$1}_mobile.headers.customrequestheaders.X-Forwarded-Proto=https
+        - traefik.http.middlewares.passbolt${1:+_$1}_mobile.headers.customrequestheaders.X-Forwarded-Port=443
+        - traefik.http.middlewares.passbolt${1:+_$1}_mobile.headers.customrequestheaders.X-Forwarded-Host=$url_passbolt
+        - traefik.http.middlewares.passbolt${1:+_$1}_mobile.headers.customrequestheaders.X-Real-IP=
         - traefik.http.routers.passbolt${1:+_$1}_mobile.rule=Host(\`$url_passbolt\`) && (PathPrefix(\`/auth/jwt/\`) || PathPrefix(\`/mobile/\`) || PathPrefix(\`/auth/verify\`))
         - traefik.http.routers.passbolt${1:+_$1}_mobile.entrypoints=websecure
         - traefik.http.routers.passbolt${1:+_$1}_mobile.tls=true
@@ -33550,7 +33550,7 @@ if [ $? -eq 0 ]; then
     echo "1/10 - [ OK ] - Criando Stack"
 else
     echo "1/10 - [ OFF ] - Criando Stack"
-    echo "Não foi possível criar a stack da Passbolt"
+    echo "Não foi possivel criar a stack da Passbolt"
 fi
 STACK_NAME="passbolt${1:+_$1}"
 stack_editavel # > /dev/null 2>&1
@@ -33560,7 +33560,7 @@ stack_editavel # > /dev/null 2>&1
 #    echo "2/2 - [ OK ] - Deploy Stack"
 #else
 #    echo "2/2 - [ OFF ] - Deploy Stack"
-#    echo "Não foi possível subir a stack da Passbolt"
+#    echo "Não foi possivel subir a stack da Passbolt"
 #fi
 
 sleep 10
@@ -33571,9 +33571,9 @@ echo ""
 sleep 1
 
 ## Baixando imagens:
-pull passbolt/passbolt:latestá
+pull passbolt/passbolt:latest
 
-## Usa o serviço wait_passbolt para verificar se o serviço estáa online
+## Usa o serviço wait_passbolt para verificar se o serviço esta online
 wait_stack "passbolt${1:+_$1}_passbolt${1:+_$1}"
 
 wait_30_sec
@@ -33750,12 +33750,12 @@ nome_gotenberg
 ## Mostra mensagem para preencher informações
 preencha_as_info
 
-## Inicia um Loop até os dados estáarem certos
+## Inicia um Loop até os dados estarem certos
 while true; do
 
     ##Pergunta o Dominio para a ferramenta
     echo -e "\e[97mPasso$amarelo 1/3\e[0m"
-    echo -en "\e[33mDigite o dominio para o Gotenberg (ex: gotenberg.seudominio.com): \e[0m" && read -r url_gotenberg
+    echo -en "\e[33mDigite o dominio para o Gotenberg (ex: gotenberg.openorion.art.br): \e[0m" && read -r url_gotenberg
     echo ""
 
     ##Pergunta o Dominio para a ferramenta
@@ -33789,11 +33789,11 @@ while true; do
     echo -e "\e[33mSenha para a autenticação básica:\e[97m $gotenberg_pass\e[0m"
     echo ""
     
-    ## Pergunta se as respostas estáão corretas
-    read -p "As respostas estáão corretas? (Y/N): " confirmacao
+    ## Pergunta se as respostas estão corretas
+    read -p "As respostas estão corretas? (Y/N): " confirmacao
     if [ "$confirmacao" = "Y" ] || [ "$confirmacao" = "y" ]; then
 
-        ## Digitou Y para confirmar que as informações estáão corretas
+        ## Digitou Y para confirmar que as informações estão corretas
 
         ## Limpar o terminal
         clear
@@ -33805,7 +33805,7 @@ while true; do
         break
     else
 
-        ## Digitou N para dizer que as informações não estáão corretas.
+        ## Digitou N para dizer que as informações não estão corretas.
 
         ## Limpar o terminal
         clear
@@ -33840,7 +33840,7 @@ services:
 ## --------------------------- ORION --------------------------- ##
 
   gotenberg${1:+_$1}:
-    image: gotenberg/gotenberg:latestá
+    image: gotenberg/gotenberg:latest
     command:
       - "gotenberg"
 
@@ -33902,7 +33902,7 @@ if [ $? -eq 0 ]; then
     echo "1/10 - [ OK ] - Criando Stack"
 else
     echo "1/10 - [ OFF ] - Criando Stack"
-    echo "Não foi possível criar a stack do Gotenberg"
+    echo "Não foi possivel criar a stack do Gotenberg"
 fi
 STACK_NAME="gotenberg${1:+_$1}"
 stack_editavel # > /dev/null 2>&1
@@ -33911,7 +33911,7 @@ stack_editavel # > /dev/null 2>&1
 #    echo "2/2 - [ OK ] - Deploy Stack"
 #else
 #    echo "2/2 - [ OFF ] - Deploy Stack"
-#    echo "Não foi possível Subir a stack do gotenberg"
+#    echo "Não foi possivel Subir a stack do gotenberg"
 #fi
 
 ## Mensagem de Passo
@@ -33920,9 +33920,9 @@ echo ""
 sleep 1
 
 ## Baixando imagens:
-pull gotenberg/gotenberg:latestá
+pull gotenberg/gotenberg:latest
 
-## Usa o serviço wait_gotenberg para verificar se o serviço estáa online
+## Usa o serviço wait_gotenberg para verificar se o serviço esta online
 wait_stack gotenberg${1:+_$1}_gotenberg${1:+_$1}
 
 telemetria Gotenberg finalizado
@@ -33993,12 +33993,12 @@ nome_wiki
 ## Mostra mensagem para preencher informações
 preencha_as_info
 
-## Inicia um Loop até os dados estáarem certos
+## Inicia um Loop até os dados estarem certos
 while true; do
 
     ##Pergunta o Dominio para a ferramenta
     echo -e "\e[97mPasso$amarelo 1/1\e[0m"
-    echo -en "\e[33mDigite o dominio para o Wiki.JS (ex: wiki.seudominio.com): \e[0m" && read -r url_wiki
+    echo -en "\e[33mDigite o dominio para o Wiki.JS (ex: wiki.openorion.art.br): \e[0m" && read -r url_wiki
     echo ""
     
     ## Limpa o terminal
@@ -34014,11 +34014,11 @@ while true; do
     echo -e "\e[33mDominio do Wiki:\e[97m $url_wiki\e[0m"
     echo ""
     
-    ## Pergunta se as respostas estáão corretas
-    read -p "As respostas estáão corretas? (Y/N): " confirmacao
+    ## Pergunta se as respostas estão corretas
+    read -p "As respostas estão corretas? (Y/N): " confirmacao
     if [ "$confirmacao" = "Y" ] || [ "$confirmacao" = "y" ]; then
 
-        ## Digitou Y para confirmar que as informações estáão corretas
+        ## Digitou Y para confirmar que as informações estão corretas
 
         ## Limpar o terminal
         clear
@@ -34030,7 +34030,7 @@ while true; do
         break
     else
 
-        ## Digitou N para dizer que as informações não estáão corretas.
+        ## Digitou N para dizer que as informações não estão corretas.
 
         ## Limpar o terminal
         clear
@@ -34067,7 +34067,7 @@ services:
 ## --------------------------- ORION --------------------------- ##
 
   wiki${1:+_$1}_app:
-    image: requarks/wiki:latestá ## Versão da aplicação
+    image: requarks/wiki:latest ## Versão da aplicação
 
     networks:
       - $nome_rede_interna ## Nome da rede interna
@@ -34136,7 +34136,7 @@ if [ $? -eq 0 ]; then
     echo "1/10 - [ OK ] - Criando Stack"
 else
     echo "1/10 - [ OFF ] - Criando Stack"
-    echo "Não foi possível criar a stack do wiki"
+    echo "Não foi possivel criar a stack do wiki"
 fi
 STACK_NAME="wiki${1:+_$1}"
 stack_editavel # > /dev/null 2>&1
@@ -34145,7 +34145,7 @@ stack_editavel # > /dev/null 2>&1
 #    echo "2/2 - [ OK ] - Deploy Stack"
 #else
 #    echo "2/2 - [ OFF ] - Deploy Stack"
-#    echo "Não foi possível Subir a stack do wiki"
+#    echo "Não foi possivel Subir a stack do wiki"
 #fi
 
 ## Mensagem de Passo
@@ -34154,9 +34154,9 @@ echo ""
 sleep 1
 
 ## Baixando imagens:
-pull requarks/wiki:latestá postgres:15-alpine
+pull requarks/wiki:latest postgres:15-alpine
 
-## Usa o serviço wait_wiki para verificar se o serviço estáa online
+## Usa o serviço wait_wiki para verificar se o serviço esta online
 wait_stack wiki${1:+_$1}_wiki${1:+_$1}_db wiki${1:+_$1}_wiki${1:+_$1}_app
 
 telemetria wiki finalizado
@@ -34229,12 +34229,12 @@ nome_azuracast
 ## Mostra mensagem para preencher informações
 preencha_as_info
 
-## Inicia um Loop até os dados estáarem certos
+## Inicia um Loop até os dados estarem certos
 while true; do
 
     ##Pergunta o Dominio para a ferramenta
     echo -e "\e[97mPasso$amarelo 1/1\e[0m"
-    echo -en "\e[33mDigite o dominio para o AzuraCast (ex: azuracast.seudominio.com): \e[0m" && read -r url_azuracast
+    echo -en "\e[33mDigite o dominio para o AzuraCast (ex: azuracast.openorion.art.br): \e[0m" && read -r url_azuracast
     echo ""
     
     ## Limpa o terminal
@@ -34250,11 +34250,11 @@ while true; do
     echo -e "\e[33mDominio do AzuraCast:\e[97m $url_azuracast\e[0m"
     echo ""
     
-    ## Pergunta se as respostas estáão corretas
-    read -p "As respostas estáão corretas? (Y/N): " confirmacao
+    ## Pergunta se as respostas estão corretas
+    read -p "As respostas estão corretas? (Y/N): " confirmacao
     if [ "$confirmacao" = "Y" ] || [ "$confirmacao" = "y" ]; then
 
-        ## Digitou Y para confirmar que as informações estáão corretas
+        ## Digitou Y para confirmar que as informações estão corretas
 
         ## Limpar o terminal
         clear
@@ -34266,7 +34266,7 @@ while true; do
         break
     else
 
-        ## Digitou N para dizer que as informações não estáão corretas.
+        ## Digitou N para dizer que as informações não estão corretas.
 
         ## Limpar o terminal
         clear
@@ -34303,7 +34303,7 @@ services:
 ## --------------------------- ORION --------------------------- ##
 
   azuracast${1:+_$1}_web:
-    image: ghcr.io/azuracast/azuracast:latestá
+    image: ghcr.io/azuracast/azuracast:latest
 
     volumes:
       - azuracast${1:+_$1}_station_data:/var/azuracast/stations
@@ -34373,7 +34373,7 @@ services:
 ## --------------------------- ORION --------------------------- ##
 
   azuracast${1:+_$1}_updater:
-    image: ghcr.io/azuracast/updater:latestá
+    image: ghcr.io/azuracast/updater:latest
 
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
@@ -34432,7 +34432,7 @@ if [ $? -eq 0 ]; then
     echo "1/10 - [ OK ] - Criando Stack"
 else
     echo "1/10 - [ OFF ] - Criando Stack"
-    echo "Não foi possível criar a stack do AzuraCast"
+    echo "Não foi possivel criar a stack do AzuraCast"
 fi
 STACK_NAME="azuracast${1:+_$1}"
 stack_editavel # > /dev/null 2>&1
@@ -34441,7 +34441,7 @@ stack_editavel # > /dev/null 2>&1
 #    echo "2/2 - [ OK ] - Deploy Stack"
 #else
 #    echo "2/2 - [ OFF ] - Deploy Stack"
-#    echo "Não foi possível Subir a stack do azuracast"
+#    echo "Não foi possivel Subir a stack do azuracast"
 #fi
 
 ## Mensagem de Passo
@@ -34450,9 +34450,9 @@ echo ""
 sleep 1
 
 ## Baixando imagens:
-pull ghcr.io/azuracast/azuracast:latestá ghcr.io/azuracast/updater:latestá
+pull ghcr.io/azuracast/azuracast:latest ghcr.io/azuracast/updater:latest
 
-## Usa o serviço wait_azuracast para verificar se o serviço estáa online
+## Usa o serviço wait_azuracast para verificar se o serviço esta online
 wait_stack azuracast${1:+_$1}_azuracast${1:+_$1}_web azuracast${1:+_$1}_azuracast${1:+_$1}_updater
 
 telemetria AzuraCast finalizado
@@ -34525,17 +34525,17 @@ nome_shlink
 ## Mostra mensagem para preencher informações
 preencha_as_info
 
-## Inicia um Loop até os dados estáarem certos
+## Inicia um Loop até os dados estarem certos
 while true; do
 
     ##Pergunta o Dominio para a ferramenta
     echo -e "\e[97mPasso$amarelo 1/4\e[0m"
-    echo -en "\e[33mDigite o dominio para o Painel do Shlink (ex: painel-shlink.seudominio.com): \e[0m" && read -r url_shlink
+    echo -en "\e[33mDigite o dominio para o Painel do Shlink (ex: painel-shlink.openorion.art.br): \e[0m" && read -r url_shlink
     echo ""
 
     ##Pergunta o Dominio para a ferramenta
     echo -e "\e[97mPasso$amarelo 2/4\e[0m"
-    echo -en "\e[33mDigite o dominio para a API do Shlink (ex: shlink.seudominio.com): \e[0m" && read -r url_shlink_api
+    echo -en "\e[33mDigite o dominio para a API do Shlink (ex: shlink.openorion.art.br): \e[0m" && read -r url_shlink_api
     echo ""
 
     ## Pergunta o usuario da ferramenta
@@ -34575,11 +34575,11 @@ while true; do
     echo -e "\e[33mSenha do Shlink:\e[97m $shlink_pass\e[0m"
     echo ""
     
-    ## Pergunta se as respostas estáão corretas
-    read -p "As respostas estáão corretas? (Y/N): " confirmacao
+    ## Pergunta se as respostas estão corretas
+    read -p "As respostas estão corretas? (Y/N): " confirmacao
     if [ "$confirmacao" = "Y" ] || [ "$confirmacao" = "y" ]; then
 
-        ## Digitou Y para confirmar que as informações estáão corretas
+        ## Digitou Y para confirmar que as informações estão corretas
 
         ## Limpar o terminal
         clear
@@ -34591,7 +34591,7 @@ while true; do
         break
     else
 
-        ## Digitou N para dizer que as informações não estáão corretas.
+        ## Digitou N para dizer que as informações não estão corretas.
 
         ## Limpar o terminal
         clear
@@ -34652,7 +34652,7 @@ services:
 ## --------------------------- ORION --------------------------- ##
 
   shlink${1:+_$1}_app:
-    image: shlinkio/shlink-web-client:latestá
+    image: shlinkio/shlink-web-client:latest
 
     networks:
       - $nome_rede_interna
@@ -34703,7 +34703,7 @@ services:
 ## --------------------------- ORION --------------------------- ##
 
   shlink${1:+_$1}_api:
-    image: shlinkio/shlink:latestá
+    image: shlinkio/shlink:latest
 
     volumes:
       - shlink${1:+_$1}_data:/etc/shlink
@@ -34768,7 +34768,7 @@ if [ $? -eq 0 ]; then
     echo "1/10 - [ OK ] - Criando Stack"
 else
     echo "1/10 - [ OFF ] - Criando Stack"
-    echo "Não foi possível criar a stack do shlink"
+    echo "Não foi possivel criar a stack do shlink"
 fi
 STACK_NAME="shlink${1:+_$1}"
 stack_editavel # > /dev/null 2>&1
@@ -34777,7 +34777,7 @@ stack_editavel # > /dev/null 2>&1
 #    echo "2/2 - [ OK ] - Deploy Stack"
 #else
 #    echo "2/2 - [ OFF ] - Deploy Stack"
-#    echo "Não foi possível Subir a stack do shlink"
+#    echo "Não foi possivel Subir a stack do shlink"
 #fi
 
 ## Mensagem de Passo
@@ -34786,9 +34786,9 @@ echo ""
 sleep 1
 
 ## Baixando imagens:
-pull shlinkio/shlink-web-client:latestá shlinkio/shlink:latestá
+pull shlinkio/shlink-web-client:latest shlinkio/shlink:latest
 
-## Usa o serviço wait_shlink para verificar se o serviço estáa online
+## Usa o serviço wait_shlink para verificar se o serviço esta online
 wait_stack shlink${1:+_$1}_shlink${1:+_$1}_app shlink${1:+_$1}_shlink${1:+_$1}_api
 
 telemetria shlink finalizado
@@ -34860,17 +34860,17 @@ nome_rustdesk
 ## Mostra mensagem para preencher informações
 preencha_as_info
 
-## Inicia um Loop até os dados estáarem certos
+## Inicia um Loop até os dados estarem certos
 while true; do
 
     ##Pergunta o Dominio para a ferramenta
     echo -e "\e[97mPasso$amarelo 1/2\e[0m"
-    echo -en "\e[33mDigite o dominio para o HBBS do Rustdesk (ex: hbbs-rustdesk.seudominio.com): \e[0m" && read -r url_hbbs
+    echo -en "\e[33mDigite o dominio para o HBBS do Rustdesk (ex: hbbs-rustdesk.openorion.art.br): \e[0m" && read -r url_hbbs
     echo ""
 
     ##Pergunta o Dominio para a ferramenta
     echo -e "\e[97mPasso$amarelo 2/2\e[0m"
-    echo -en "\e[33mDigite o dominio para o HBBR do Rustdesk (ex: hbbr-rustdesk.seudominio.com): \e[0m" && read -r url_hbbr
+    echo -en "\e[33mDigite o dominio para o HBBR do Rustdesk (ex: hbbr-rustdesk.openorion.art.br): \e[0m" && read -r url_hbbr
     echo ""
     
     ## Limpa o terminal
@@ -34890,11 +34890,11 @@ while true; do
     echo -e "\e[33mDominio do Servidor de Relay RustDesk:\e[97m $url_hbbr\e[0m"
     echo ""
     
-    ## Pergunta se as respostas estáão corretas
-    read -p "As respostas estáão corretas? (Y/N): " confirmacao
+    ## Pergunta se as respostas estão corretas
+    read -p "As respostas estão corretas? (Y/N): " confirmacao
     if [ "$confirmacao" = "Y" ] || [ "$confirmacao" = "y" ]; then
 
-        ## Digitou Y para confirmar que as informações estáão corretas
+        ## Digitou Y para confirmar que as informações estão corretas
 
         ## Limpar o terminal
         clear
@@ -34906,7 +34906,7 @@ while true; do
         break
     else
 
-        ## Digitou N para dizer que as informações não estáão corretas.
+        ## Digitou N para dizer que as informações não estão corretas.
 
         ## Limpar o terminal
         clear
@@ -34963,7 +34963,7 @@ services:
 ## --------------------------- ORION --------------------------- ##
 
   rustdesk${1:+_$1}_hbbs:
-    image: rustdesk/rustdesk-server:latestá
+    image: rustdesk/rustdesk-server:latest
     command: hbbs
 
     volumes:
@@ -35007,7 +35007,7 @@ services:
 ## --------------------------- ORION --------------------------- ##
 
   rustdesk${1:+_$1}_hbbr:
-    image: rustdesk/rustdesk-server:latestá
+    image: rustdesk/rustdesk-server:latest
     command: hbbr
 
     volumes:
@@ -35063,7 +35063,7 @@ if [ $? -eq 0 ]; then
     echo "1/10 - [ OK ] - Criando Stack"
 else
     echo "1/10 - [ OFF ] - Criando Stack"
-    echo "Não foi possível criar a stack do rustdesk"
+    echo "Não foi possivel criar a stack do rustdesk"
 fi
 STACK_NAME="rustdesk${1:+_$1}"
 stack_editavel # > /dev/null 2>&1
@@ -35072,7 +35072,7 @@ stack_editavel # > /dev/null 2>&1
 #    echo "2/2 - [ OK ] - Deploy Stack"
 #else
 #    echo "2/2 - [ OFF ] - Deploy Stack"
-#    echo "Não foi possível Subir a stack do rustdesk"
+#    echo "Não foi possivel Subir a stack do rustdesk"
 #fi
 
 ## Mensagem de Passo
@@ -35081,9 +35081,9 @@ echo ""
 sleep 1
 
 ## Baixando imagens:
-pull rustdesk/rustdesk-server:latestá
+pull rustdesk/rustdesk-server:latest
 
-## Usa o serviço wait_rustdesk para verificar se o serviço estáa online
+## Usa o serviço wait_rustdesk para verificar se o serviço esta online
 wait_stack rustdesk${1:+_$1}_rustdesk${1:+_$1}_hbbs rustdesk${1:+_$1}_rustdesk${1:+_$1}_hbbr
 
 telemetria RustDesk finalizado
@@ -35165,38 +35165,38 @@ nome_hoppscotch
 ## Mostra mensagem para preencher informações
 preencha_as_info
 
-## Inicia um Loop até os dados estáarem certos
+## Inicia um Loop até os dados estarem certos
 while true; do
 
     ##Pergunta o Dominio para a ferramenta
     echo -e "\e[97mPasso$amarelo 1/8\e[0m"
-    echo -en "\e[33mDigite o dominio para o Frontend do Hoppscotch (ex: hoppscotch.seudominio.com): \e[0m" && read -r url_hoppscotch_frontend
+    echo -en "\e[33mDigite o dominio para o Frontend do Hoppscotch (ex: hoppscotch.openorion.art.br): \e[0m" && read -r url_hoppscotch_frontend
     echo ""
 
     ##Pergunta o Dominio para a ferramenta
     echo -e "\e[97mPasso$amarelo 2/8\e[0m"
-    echo -en "\e[33mDigite o dominio para a API Admin do Hoppscotch (ex: admin-hoppscotch.seudominio.com): \e[0m" && read -r url_hoppscotch_admin
+    echo -en "\e[33mDigite o dominio para a API Admin do Hoppscotch (ex: admin-hoppscotch.openorion.art.br): \e[0m" && read -r url_hoppscotch_admin
     echo ""
 
     ##Pergunta o Dominio para a ferramenta
     echo -e "\e[97mPasso$amarelo 3/8\e[0m"
-    echo -en "\e[33mDigite o dominio para a API Backend do Hoppscotch (ex: backend-hoppscotch.seudominio.com): \e[0m" && read -r url_hoppscotch_backend
+    echo -en "\e[33mDigite o dominio para a API Backend do Hoppscotch (ex: backend-hoppscotch.openorion.art.br): \e[0m" && read -r url_hoppscotch_backend
     echo ""
 
     ##Pergunta o Email SMTP
     echo -e "\e[97mPasso$amarelo 4/8\e[0m"
-    echo -en "\e[33mDigite o Email para SMTP (ex: admin@seudominio.com): \e[0m" && read -r hoppscotch_smtp_email
+    echo -en "\e[33mDigite o Email para SMTP (ex: contato@openorion.art.br): \e[0m" && read -r hoppscotch_smtp_email
     echo ""
 
     ##Pergunta o usuário do Email SMTP
     echo -e "\e[97mPasso$amarelo 5/8\e[0m"
     echo -e "$amarelo--> Caso não tiver um usuario do email, use o proprio email abaixo"
-    echo -en "\e[33mDigite o Usuário para SMTP (ex: openorion ou admin@seudominio.com): \e[0m" && read -r hoppscotch_smtp_user
+    echo -en "\e[33mDigite o Usuário para SMTP (ex: openorion ou contato@openorion.art.br): \e[0m" && read -r hoppscotch_smtp_user
     echo ""
     
     ## Pergunta a senha do SMTP
     echo -e "\e[97mPasso$amarelo 6/8\e[0m"
-    echo -e "$amarelo--> Sem caracteres especiais: \!#$ | Se estáiver usando gmail use a senha de app"
+    echo -e "$amarelo--> Sem caracteres especiais: \!#$ | Se estiver usando gmail use a senha de app"
     echo -en "\e[33mDigite a Senha SMTP do Email (ex: @Senha123_): \e[0m" && read -r hoppscotch_smtp_pass
     echo ""
 
@@ -35258,11 +35258,11 @@ while true; do
     echo -e "\e[33mSSL SMTP:\e[97m $hoppscotch_smtp_secure\e[0m"
     echo ""
     
-    ## Pergunta se as respostas estáão corretas
-    read -p "As respostas estáão corretas? (Y/N): " confirmacao
+    ## Pergunta se as respostas estão corretas
+    read -p "As respostas estão corretas? (Y/N): " confirmacao
     if [ "$confirmacao" = "Y" ] || [ "$confirmacao" = "y" ]; then
 
-        ## Digitou Y para confirmar que as informações estáão corretas
+        ## Digitou Y para confirmar que as informações estão corretas
 
         ## Limpar o terminal
         clear
@@ -35274,7 +35274,7 @@ while true; do
         break
     else
 
-        ## Digitou N para dizer que as informações não estáão corretas.
+        ## Digitou N para dizer que as informações não estão corretas.
 
         ## Limpar o terminal
         clear
@@ -35335,7 +35335,7 @@ services:
 ## --------------------------- ORION --------------------------- ##
 
   hoppscotch${1:+_$1}_app:
-    image: hoppscotch/hoppscotch-frontend:latestá
+    image: hoppscotch/hoppscotch-frontend:latest
 
     networks:
       - $nome_rede_interna ## Nome da rede interna
@@ -35378,7 +35378,7 @@ services:
 ## --------------------------- ORION --------------------------- ##
 
   hoppscotch${1:+_$1}_admin:
-    image: hoppscotch/hoppscotch-admin:latestá
+    image: hoppscotch/hoppscotch-admin:latest
 
     networks:
       - $nome_rede_interna ## Nome da rede interna
@@ -35421,7 +35421,7 @@ services:
 ## --------------------------- ORION --------------------------- ##
 
   hoppscotch${1:+_$1}_backend:
-    image: hoppscotch/hoppscotch-backend:latestá
+    image: hoppscotch/hoppscotch-backend:latest
 
     networks:
       - $nome_rede_interna ## Nome da rede interna
@@ -35502,7 +35502,7 @@ services:
 ## --------------------------- ORION --------------------------- ##
 
   hoppscotch${1:+_$1}_migrate:
-    image: hoppscotch/hoppscotch-backend:latestá
+    image: hoppscotch/hoppscotch-backend:latest
     command: sh -c "sleep 30 && pnpx prisma migrate deploy"
 
     networks:
@@ -35515,7 +35515,7 @@ services:
     deploy:
       mode: replicated
       replicas: 1
-      restáart_policy:
+      restart_policy:
         condition: none
       placement:
         constraints:
@@ -35532,7 +35532,7 @@ if [ $? -eq 0 ]; then
     echo "1/10 - [ OK ] - Criando Stack"
 else
     echo "1/10 - [ OFF ] - Criando Stack"
-    echo "Não foi possível criar a stack do Hoppscotch"
+    echo "Não foi possivel criar a stack do Hoppscotch"
 fi
 STACK_NAME="hoppscotch${1:+_$1}"
 stack_editavel # > /dev/null 2>&1
@@ -35541,7 +35541,7 @@ stack_editavel # > /dev/null 2>&1
 #    echo "2/2 - [ OK ] - Deploy Stack"
 #else
 #    echo "2/2 - [ OFF ] - Deploy Stack"
-#    echo "Não foi possível Subir a stack do hoppscotch"
+#    echo "Não foi possivel Subir a stack do hoppscotch"
 #fi
 
 ## Mensagem de Passo
@@ -35550,9 +35550,9 @@ echo ""
 sleep 1
 
 ## Baixando imagens:
-pull hoppscotch/hoppscotch-backend:latestá hoppscotch/hoppscotch-frontend:latestá hoppscotch/hoppscotch-admin:latestá
+pull hoppscotch/hoppscotch-backend:latest hoppscotch/hoppscotch-frontend:latest hoppscotch/hoppscotch-admin:latest
 
-## Usa o serviço wait_hoppscotch para verificar se o serviço estáa online
+## Usa o serviço wait_hoppscotch para verificar se o serviço esta online
 wait_stack hoppscotch${1:+_$1}_hoppscotch${1:+_$1}_migrate hoppscotch${1:+_$1}_hoppscotch${1:+_$1}_app hoppscotch${1:+_$1}_hoppscotch${1:+_$1}_admin hoppscotch${1:+_$1}_hoppscotch${1:+_$1}_backend
 
 telemetria Hoppscotch finalizado
@@ -35641,17 +35641,17 @@ nome_transcrevezap
 ## Mostra mensagem para preencher informações
 preencha_as_info
 
-## Inicia um Loop até os dados estáarem certos
+## Inicia um Loop até os dados estarem certos
 while true; do
 
     ##Pergunta o Dominio para a ferramenta
     echo -e "\e[97mPasso$amarelo 1/4\e[0m"
-    echo -en "\e[33mDigite o dominio para a API do TranscreveZap (ex: apitranscreve.seudominio.com): \e[0m" && read -r api_transcrevezap
+    echo -en "\e[33mDigite o dominio para a API do TranscreveZap (ex: apitranscreve.openorion.art.br): \e[0m" && read -r api_transcrevezap
     echo ""
 
     ##Pergunta o Dominio para a ferramenta
     echo -e "\e[97mPasso$amarelo 2/4\e[0m"
-    echo -en "\e[33mDigite o dominio para o Manager do TranscreveZap (ex: transcrevezap.seudominio.com): \e[0m" && read -r url_transcrevezap
+    echo -en "\e[33mDigite o dominio para o Manager do TranscreveZap (ex: transcrevezap.openorion.art.br): \e[0m" && read -r url_transcrevezap
     echo ""
 
     ##Pergunta o Dominio para a ferramenta
@@ -35689,11 +35689,11 @@ while true; do
     echo -e "\e[33mSenha do TranscreveZap:\e[97m $pass_transcrevezap\e[0m"
     echo ""
     
-    ## Pergunta se as respostas estáão corretas
-    read -p "As respostas estáão corretas? (Y/N): " confirmacao
+    ## Pergunta se as respostas estão corretas
+    read -p "As respostas estão corretas? (Y/N): " confirmacao
     if [ "$confirmacao" = "Y" ] || [ "$confirmacao" = "y" ]; then
 
-        ## Digitou Y para confirmar que as informações estáão corretas
+        ## Digitou Y para confirmar que as informações estão corretas
 
         ## Limpar o terminal
         clear
@@ -35705,7 +35705,7 @@ while true; do
         break
     else
 
-        ## Digitou N para dizer que as informações não estáão corretas.
+        ## Digitou N para dizer que as informações não estão corretas.
 
         ## Limpar o terminal
         clear
@@ -35744,7 +35744,7 @@ services:
 ## --------------------------- ORION --------------------------- ##
 
   transcrevezap${1:+_$1}:
-    image: impacteai/transcrevezap:latestá
+    image: impacteai/transcrevezap:latest
     command: ./start.sh
 
     networks:
@@ -35827,7 +35827,7 @@ if [ $? -eq 0 ]; then
     echo "1/10 - [ OK ] - Criando Stack"
 else
     echo "1/10 - [ OFF ] - Criando Stack"
-    echo "Não foi possível criar a stack do TranscreveZap"
+    echo "Não foi possivel criar a stack do TranscreveZap"
 fi
 STACK_NAME="transcrevezap${1:+_$1}"
 stack_editavel # > /dev/null 2>&1
@@ -35836,7 +35836,7 @@ stack_editavel # > /dev/null 2>&1
 #    echo "2/2 - [ OK ] - Deploy Stack"
 #else
 #    echo "2/2 - [ OFF ] - Deploy Stack"
-#    echo "Não foi possível Subir a stack do transcrevezap"
+#    echo "Não foi possivel Subir a stack do transcrevezap"
 #fi
 
 ## Mensagem de Passo
@@ -35845,9 +35845,9 @@ echo ""
 sleep 1
 
 ## Baixando imagens:
-pull impacteai/transcrevezap:latestá redis:6
+pull impacteai/transcrevezap:latest redis:6
 
-## Usa o serviço wait_transcrevezap para verificar se o serviço estáa online
+## Usa o serviço wait_transcrevezap para verificar se o serviço esta online
 wait_stack transcrevezap${1:+_$1}_transcrevezap${1:+_$1} transcrevezap${1:+_$1}_redis_transcrevezap${1:+_$1}
 
 telemetria TranscreveZap finalizado
@@ -35923,12 +35923,12 @@ nome_omnitools
 ## Mostra mensagem para preencher informações
 preencha_as_info
 
-## Inicia um Loop até os dados estáarem certos
+## Inicia um Loop até os dados estarem certos
 while true; do
 
     ##Pergunta o Dominio para a ferramenta
     echo -e "\e[97mPasso$amarelo 1/1\e[0m"
-    echo -en "\e[33mDigite o dominio para o OmniTools (ex: omnitools.seudominio.com): \e[0m" && read -r url_omnitools
+    echo -en "\e[33mDigite o dominio para o OmniTools (ex: omnitools.openorion.art.br): \e[0m" && read -r url_omnitools
     echo ""
     
     ## Limpa o terminal
@@ -35944,11 +35944,11 @@ while true; do
     echo -e "\e[33mDominio do OmniTools:\e[97m $url_omnitools\e[0m"
     echo ""
     
-    ## Pergunta se as respostas estáão corretas
-    read -p "As respostas estáão corretas? (Y/N): " confirmacao
+    ## Pergunta se as respostas estão corretas
+    read -p "As respostas estão corretas? (Y/N): " confirmacao
     if [ "$confirmacao" = "Y" ] || [ "$confirmacao" = "y" ]; then
 
-        ## Digitou Y para confirmar que as informações estáão corretas
+        ## Digitou Y para confirmar que as informações estão corretas
 
         ## Limpar o terminal
         clear
@@ -35960,7 +35960,7 @@ while true; do
         break
     else
 
-        ## Digitou N para dizer que as informações não estáão corretas.
+        ## Digitou N para dizer que as informações não estão corretas.
 
         ## Limpar o terminal
         clear
@@ -35994,7 +35994,7 @@ services:
 ## --------------------------- ORION --------------------------- ##
 
   omnitools${1:+_$1}:
-    image: iib0011/omni-tools:latestá
+    image: iib0011/omni-tools:latest
 
     networks:
       - $nome_rede_interna ## Nome da rede interna
@@ -36033,7 +36033,7 @@ if [ $? -eq 0 ]; then
     echo "1/10 - [ OK ] - Criando Stack"
 else
     echo "1/10 - [ OFF ] - Criando Stack"
-    echo "Não foi possível criar a stack do OmniTools"
+    echo "Não foi possivel criar a stack do OmniTools"
 fi
 
 STACK_NAME="omnitools${1:+_$1}"
@@ -36043,7 +36043,7 @@ stack_editavel # > /dev/null 2>&1
 #    echo "2/2 - [ OK ] - Deploy Stack"
 #else
 #    echo "2/2 - [ OFF ] - Deploy Stack"
-#    echo "Não foi possível Subir a stack do omnitools"
+#    echo "Não foi possivel Subir a stack do omnitools"
 #fi
 
 ## Mensagem de Passo
@@ -36052,9 +36052,9 @@ echo ""
 sleep 1
 
 ## Baixando imagens:
-pull iib0011/omni-tools:latestá
+pull iib0011/omni-tools:latest
 
-## Usa o serviço wait_stack para verificar se o serviço estáa online
+## Usa o serviço wait_stack para verificar se o serviço esta online
 wait_stack omnitools${1:+_$1}_omnitools${1:+_$1}
 
 telemetria OmniTools finalizado
@@ -36115,12 +36115,12 @@ nome_serpbear
 ## Mostra mensagem para preencher informações
 preencha_as_info
 
-## Inicia um Loop até os dados estáarem certos
+## Inicia um Loop até os dados estarem certos
 while true; do
 
     ##Pergunta o Dominio para a ferramenta
     echo -e "\e[97mPasso$amarelo 1/3\e[0m"
-    echo -en "\e[33mDigite o Dominio para o Serpbear (ex: serpbear.seudominio.com): \e[0m" && read -r url_serpbear
+    echo -en "\e[33mDigite o Dominio para o Serpbear (ex: serpbear.openorion.art.br): \e[0m" && read -r url_serpbear
     echo ""
 
     ##Pergunta o usuario
@@ -36154,11 +36154,11 @@ while true; do
     echo -e "\e[33mSenha do Serpbear:\e[97m $pass_serpbear\e[0m"
     echo ""
     
-    ## Pergunta se as respostas estáão corretas
-    read -p "As respostas estáão corretas? (Y/N): " confirmacao
+    ## Pergunta se as respostas estão corretas
+    read -p "As respostas estão corretas? (Y/N): " confirmacao
     if [ "$confirmacao" = "Y" ] || [ "$confirmacao" = "y" ]; then
 
-        ## Digitou Y para confirmar que as informações estáão corretas
+        ## Digitou Y para confirmar que as informações estão corretas
 
         ## Limpar o terminal
         clear
@@ -36170,7 +36170,7 @@ while true; do
         break
     else
 
-        ## Digitou N para dizer que as informações não estáão corretas.
+        ## Digitou N para dizer que as informações não estão corretas.
 
         ## Limpar o terminal
         clear
@@ -36207,7 +36207,7 @@ services:
 ## --------------------------- ORION --------------------------- ##
 
   serpbear${1:+_$1}:
-    image: towfiqi/serpbear:latestá
+    image: towfiqi/serpbear:latest
 
     volumes:
       - serpbear${1:+_$1}_appdata:/app/data
@@ -36262,7 +36262,7 @@ if [ $? -eq 0 ]; then
     echo "1/10 - [ OK ] - Criando Stack"
 else
     echo "1/10 - [ OFF ] - Criando Stack"
-    echo "Não foi possível criar a stack do Serpbear"
+    echo "Não foi possivel criar a stack do Serpbear"
 fi
 
 STACK_NAME="serpbear${1:+_$1}"
@@ -36272,7 +36272,7 @@ stack_editavel # > /dev/null 2>&1
 #    echo "2/2 - [ OK ] - Deploy Stack"
 #else
 #    echo "2/2 - [ OFF ] - Deploy Stack"
-#    echo "Não foi possível Subir a stack do serpbear"
+#    echo "Não foi possivel Subir a stack do serpbear"
 #fi
 
 ## Mensagem de Passo
@@ -36281,9 +36281,9 @@ echo ""
 sleep 1
 
 ## Baixando imagens:
-pull towfiqi/serpbear:latestá
+pull towfiqi/serpbear:latest
 
-## Usa o serviço wait_stack para verificar se o serviço estáa online
+## Usa o serviço wait_stack para verificar se o serviço esta online
 wait_stack serpbear${1:+_$1}_serpbear${1:+_$1}
 
 telemetria Serpbear finalizado
@@ -36354,12 +36354,12 @@ nome_activepieces
 ## Mostra mensagem para preencher informações
 preencha_as_info
 
-## Inicia um Loop até os dados estáarem certos
+## Inicia um Loop até os dados estarem certos
 while true; do
 
     ##Pergunta o Dominio para a ferramenta
     echo -e "\e[97mPasso$amarelo 1/1\e[0m"
-    echo -en "\e[33mDigite o Dominio para o ActivePieces (ex: activepieces.seudominio.com): \e[0m" && read -r url_activepieces
+    echo -en "\e[33mDigite o Dominio para o ActivePieces (ex: activepieces.openorion.art.br): \e[0m" && read -r url_activepieces
     echo ""
     
     ## Limpa o terminal
@@ -36375,11 +36375,11 @@ while true; do
     echo -e "\e[33mDominio do ActivePieces:\e[97m $url_activepieces\e[0m"
     echo ""
     
-    ## Pergunta se as respostas estáão corretas
-    read -p "As respostas estáão corretas? (Y/N): " confirmacao
+    ## Pergunta se as respostas estão corretas
+    read -p "As respostas estão corretas? (Y/N): " confirmacao
     if [ "$confirmacao" = "Y" ] || [ "$confirmacao" = "y" ]; then
 
-        ## Digitou Y para confirmar que as informações estáão corretas
+        ## Digitou Y para confirmar que as informações estão corretas
 
         ## Limpar o terminal
         clear
@@ -36391,7 +36391,7 @@ while true; do
         break
     else
 
-        ## Digitou N para dizer que as informações não estáão corretas.
+        ## Digitou N para dizer que as informações não estão corretas.
 
         ## Limpar o terminal
         clear
@@ -36453,7 +36453,7 @@ services:
 ## --------------------------- ORION --------------------------- ##
 
   activepieces${1:+_$1}_app:
-    image: activepieces/activepieces:latestá
+    image: activepieces/activepieces:latest
 
     volumes:
       - activepieces${1:+_$1}_cache:/usr/src/app/cache
@@ -36515,7 +36515,7 @@ services:
 ## --------------------------- ORION --------------------------- ##
 
   activepieces${1:+_$1}_redis:
-    image: redis:latestá  ## Versão do Redis
+    image: redis:latest  ## Versão do Redis
     command: [
         "redis-server",
         "--appendonly",
@@ -36562,7 +36562,7 @@ if [ $? -eq 0 ]; then
     echo "1/10 - [ OK ] - Criando Stack"
 else
     echo "1/10 - [ OFF ] - Criando Stack"
-    echo "Não foi possível criar a stack do ActivePieces"
+    echo "Não foi possivel criar a stack do ActivePieces"
 fi
 
 STACK_NAME="activepieces${1:+_$1}"
@@ -36572,7 +36572,7 @@ stack_editavel # > /dev/null 2>&1
 #    echo "2/2 - [ OK ] - Deploy Stack"
 #else
 #    echo "2/2 - [ OFF ] - Deploy Stack"
-#    echo "Não foi possível Subir a stack do activepieces"
+#    echo "Não foi possivel Subir a stack do activepieces"
 #fi
 
 ## Mensagem de Passo
@@ -36581,9 +36581,9 @@ echo ""
 sleep 1
 
 ## Baixando imagens:
-pull redis:latestá activepieces/activepieces:latestá
+pull redis:latest activepieces/activepieces:latest
 
-## Usa o serviço wait_stack para verificar se o serviço estáa online
+## Usa o serviço wait_stack para verificar se o serviço esta online
 wait_stack activepieces${1:+_$1}_activepieces${1:+_$1}_redis activepieces${1:+_$1}_activepieces${1:+_$1}_app
 
 telemetria ActivePieces finalizado
@@ -36653,17 +36653,17 @@ nome_authentik
 ## Mostra mensagem para preencher informações
 preencha_as_info
 
-## Inicia um Loop até os dados estáarem certos
+## Inicia um Loop até os dados estarem certos
 while true; do
 
     ##Pergunta o Dominio para a ferramenta
     echo -e "\e[97mPasso$amarelo 1/3\e[0m"
-    echo -en "\e[33mDigite o Dominio para o Authentik (ex: authentik.seudominio.com): \e[0m" && read -r url_authentik
+    echo -en "\e[33mDigite o Dominio para o Authentik (ex: authentik.openorion.art.br): \e[0m" && read -r url_authentik
     echo ""
 
     ##Pergunta o Dominio para a ferramenta
     echo -e "\e[97mPasso$amarelo 2/3\e[0m"
-    echo -en "\e[33mDigite o email para o Authentik (ex: orion@seudominio.com): \e[0m" && read -r email_authentik
+    echo -en "\e[33mDigite o email para o Authentik (ex: orion@openorion.art.br): \e[0m" && read -r email_authentik
     echo ""
 
     ##Pergunta o Dominio para a ferramenta
@@ -36692,11 +36692,11 @@ while true; do
     echo -e "\e[33mSenha do authentik:\e[97m $senha_authentik\e[0m"
     echo ""
     
-    ## Pergunta se as respostas estáão corretas
-    read -p "As respostas estáão corretas? (Y/N): " confirmacao
+    ## Pergunta se as respostas estão corretas
+    read -p "As respostas estão corretas? (Y/N): " confirmacao
     if [ "$confirmacao" = "Y" ] || [ "$confirmacao" = "y" ]; then
 
-        ## Digitou Y para confirmar que as informações estáão corretas
+        ## Digitou Y para confirmar que as informações estão corretas
 
         ## Limpar o terminal
         clear
@@ -36708,7 +36708,7 @@ while true; do
         break
     else
 
-        ## Digitou N para dizer que as informações não estáão corretas.
+        ## Digitou N para dizer que as informações não estão corretas.
 
         ## Limpar o terminal
         clear
@@ -36768,7 +36768,7 @@ services:
 ## --------------------------- ORION --------------------------- ##
 
   authentik${1:+_$1}_server:
-    image: ghcr.io/goauthentik/server:latestá
+    image: ghcr.io/goauthentik/server:latest
     command: server
     
     volumes:
@@ -36818,7 +36818,7 @@ services:
 ## --------------------------- ORION --------------------------- ##
 
   authentik${1:+_$1}_worker:
-    image: ghcr.io/goauthentik/server:latestá
+    image: ghcr.io/goauthentik/server:latest
     command: worker
    
     volumes:
@@ -36862,7 +36862,7 @@ services:
 ## --------------------------- ORION --------------------------- ##
 
   authentik${1:+_$1}_redis:
-    image: redis:latestá  ## Versão do Redis
+    image: redis:latest  ## Versão do Redis
     command: [
         "redis-server",
         "--appendonly",
@@ -36916,7 +36916,7 @@ if [ $? -eq 0 ]; then
     echo "1/10 - [ OK ] - Criando Stack"
 else
     echo "1/10 - [ OFF ] - Criando Stack"
-    echo "Não foi possível criar a stack do Authentik"
+    echo "Não foi possivel criar a stack do Authentik"
 fi
 
 STACK_NAME="authentik${1:+_$1}"
@@ -36926,7 +36926,7 @@ stack_editavel # > /dev/null 2>&1
 #    echo "2/2 - [ OK ] - Deploy Stack"
 #else
 #    echo "2/2 - [ OFF ] - Deploy Stack"
-#    echo "Não foi possível Subir a stack do authentik"
+#    echo "Não foi possivel Subir a stack do authentik"
 #fi
 
 ## Mensagem de Passo
@@ -36935,9 +36935,9 @@ echo ""
 sleep 1
 
 ## Baixando imagens:
-pull redis:latestá ghcr.io/goauthentik/server:latestá
+pull redis:latest ghcr.io/goauthentik/server:latest
 
-## Usa o serviço wait_stack para verificar se o serviço estáa online
+## Usa o serviço wait_stack para verificar se o serviço esta online
 wait_stack authentik${1:+_$1}_authentik${1:+_$1}_redis authentik${1:+_$1}_authentik${1:+_$1}_worker authentik${1:+_$1}_authentik${1:+_$1}_server 
 
 telemetria Authentik finalizado
@@ -37009,17 +37009,17 @@ nome_checkmate
 ## Mostra mensagem para preencher informações
 preencha_as_info
 
-## Inicia um Loop até os dados estáarem certos
+## Inicia um Loop até os dados estarem certos
 while true; do
 
     ##Pergunta o Dominio para a ferramenta
     echo -e "\e[97mPasso$amarelo 1/2\e[0m"
-    echo -en "\e[33mDigite o Dominio para o Checkmate (ex: checkmate.seudominio.com): \e[0m" && read -r url_checkmate
+    echo -en "\e[33mDigite o Dominio para o Checkmate (ex: checkmate.openorion.art.br): \e[0m" && read -r url_checkmate
     echo ""
 
     ##Pergunta o Dominio para a ferramenta
     echo -e "\e[97mPasso$amarelo 2/2\e[0m"
-    echo -en "\e[33mDigite o Dominio para a API do Checkmate (ex: checkmate-api.seudominio.com): \e[0m" && read -r url_checkmate_api
+    echo -en "\e[33mDigite o Dominio para a API do Checkmate (ex: checkmate-api.openorion.art.br): \e[0m" && read -r url_checkmate_api
     echo ""
 
     ## Limpa o terminal
@@ -37040,11 +37040,11 @@ while true; do
     echo ""
 
     
-    ## Pergunta se as respostas estáão corretas
-    read -p "As respostas estáão corretas? (Y/N): " confirmacao
+    ## Pergunta se as respostas estão corretas
+    read -p "As respostas estão corretas? (Y/N): " confirmacao
     if [ "$confirmacao" = "Y" ] || [ "$confirmacao" = "y" ]; then
 
-        ## Digitou Y para confirmar que as informações estáão corretas
+        ## Digitou Y para confirmar que as informações estão corretas
 
         ## Limpar o terminal
         clear
@@ -37056,7 +37056,7 @@ while true; do
         break
     else
 
-        ## Digitou N para dizer que as informações não estáão corretas.
+        ## Digitou N para dizer que as informações não estão corretas.
 
         ## Limpar o terminal
         clear
@@ -37093,7 +37093,7 @@ services:
 ## --------------------------- ORION --------------------------- ##
 
   checkmate${1:+_$1}_client:
-    image: ghcr.io/bluewave-labs/checkmate-client:latestá
+    image: ghcr.io/bluewave-labs/checkmate-client:latest
 
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
@@ -37130,7 +37130,7 @@ services:
 ## --------------------------- ORION --------------------------- ##
 
   checkmate${1:+_$1}_server:
-    image: ghcr.io/bluewave-labs/checkmate-backend:latestá
+    image: ghcr.io/bluewave-labs/checkmate-backend:latest
 
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
@@ -37181,7 +37181,7 @@ services:
 ## --------------------------- ORION --------------------------- ##
 
   checkmate${1:+_$1}_redis:
-    image: redis:latestá  ## Versão do Redis
+    image: redis:latest  ## Versão do Redis
     command: [
         "redis-server",
         "--appendonly",
@@ -37228,7 +37228,7 @@ if [ $? -eq 0 ]; then
     echo "1/10 - [ OK ] - Criando Stack"
 else
     echo "1/10 - [ OFF ] - Criando Stack"
-    echo "Não foi possível criar a stack do checkmate"
+    echo "Não foi possivel criar a stack do checkmate"
 fi
 
 STACK_NAME="checkmate${1:+_$1}"
@@ -37238,7 +37238,7 @@ stack_editavel # > /dev/null 2>&1
 #    echo "2/2 - [ OK ] - Deploy Stack"
 #else
 #    echo "2/2 - [ OFF ] - Deploy Stack"
-#    echo "Não foi possível Subir a stack do checkmate"
+#    echo "Não foi possivel Subir a stack do checkmate"
 #fi
 
 ## Mensagem de Passo
@@ -37247,9 +37247,9 @@ echo ""
 sleep 1
 
 ## Baixando imagens:
-pull redis:latestá ghcr.io/bluewave-labs/checkmate-client:latestá ghcr.io/bluewave-labs/checkmate-backend:latestá
+pull redis:latest ghcr.io/bluewave-labs/checkmate-client:latest ghcr.io/bluewave-labs/checkmate-backend:latest
 
-## Usa o serviço wait_stack para verificar se o serviço estáa online
+## Usa o serviço wait_stack para verificar se o serviço esta online
 wait_stack checkmate${1:+_$1}_checkmate${1:+_$1}_redis checkmate${1:+_$1}_checkmate${1:+_$1}_server checkmate${1:+_$1}_checkmate${1:+_$1}_client 
 
 telemetria Checkmate finalizado
@@ -37322,12 +37322,12 @@ nome_heyform
 ## Mostra mensagem para preencher informações
 preencha_as_info
 
-## Inicia um Loop até os dados estáarem certos
+## Inicia um Loop até os dados estarem certos
 while true; do
 
     ##Pergunta o Dominio para a ferramenta
     echo -e "\e[97mPasso$amarelo 1/1\e[0m"
-    echo -en "\e[33mDigite o Dominio para o HeyForm (ex: heyform.seudominio.com): \e[0m" && read -r url_heyform
+    echo -en "\e[33mDigite o Dominio para o HeyForm (ex: heyform.openorion.art.br): \e[0m" && read -r url_heyform
     echo ""
 
     ## Limpa o terminal
@@ -37344,11 +37344,11 @@ while true; do
     echo ""
 
     
-    ## Pergunta se as respostas estáão corretas
-    read -p "As respostas estáão corretas? (Y/N): " confirmacao
+    ## Pergunta se as respostas estão corretas
+    read -p "As respostas estão corretas? (Y/N): " confirmacao
     if [ "$confirmacao" = "Y" ] || [ "$confirmacao" = "y" ]; then
 
-        ## Digitou Y para confirmar que as informações estáão corretas
+        ## Digitou Y para confirmar que as informações estão corretas
 
         ## Limpar o terminal
         clear
@@ -37360,7 +37360,7 @@ while true; do
         break
     else
 
-        ## Digitou N para dizer que as informações não estáão corretas.
+        ## Digitou N para dizer que as informações não estão corretas.
 
         ## Limpar o terminal
         clear
@@ -37476,7 +37476,7 @@ services:
 ## --------------------------- ORION --------------------------- ##
 
   heyform${1:+_$1}_redis:
-    image: redis:latestá  ## Versão do Redis
+    image: redis:latest  ## Versão do Redis
     command: [
         "redis-server",
         "--appendonly",
@@ -37525,7 +37525,7 @@ if [ $? -eq 0 ]; then
     echo "1/10 - [ OK ] - Criando Stack"
 else
     echo "1/10 - [ OFF ] - Criando Stack"
-    echo "Não foi possível criar a stack do heyform"
+    echo "Não foi possivel criar a stack do heyform"
 fi
 
 STACK_NAME="heyform${1:+_$1}"
@@ -37535,7 +37535,7 @@ stack_editavel # > /dev/null 2>&1
 #    echo "2/2 - [ OK ] - Deploy Stack"
 #else
 #    echo "2/2 - [ OFF ] - Deploy Stack"
-#    echo "Não foi possível Subir a stack do heyform"
+#    echo "Não foi possivel Subir a stack do heyform"
 #fi
 
 ## Mensagem de Passo
@@ -37544,9 +37544,9 @@ echo ""
 sleep 1
 
 ## Baixando imagens:
-pull redis:latestá heyform/community-edition:v0.1.0
+pull redis:latest heyform/community-edition:v0.1.0
 
-## Usa o serviço wait_stack para verificar se o serviço estáa online
+## Usa o serviço wait_stack para verificar se o serviço esta online
 wait_stack heyform${1:+_$1}_heyform${1:+_$1}_redis heyform${1:+_$1}_heyform${1:+_$1}_app
 
 telemetria Heyform finalizado
@@ -37614,12 +37614,12 @@ nome_wekan
 ## Mostra mensagem para preencher informações
 preencha_as_info
 
-## Inicia um Loop até os dados estáarem certos
+## Inicia um Loop até os dados estarem certos
 while true; do
 
     ##Pergunta o Dominio para a ferramenta
     echo -e "\e[97mPasso$amarelo 1/1\e[0m"
-    echo -en "\e[33mDigite o Dominio para o Wekan (ex: wekan.seudominio.com): \e[0m" && read -r url_wekan
+    echo -en "\e[33mDigite o Dominio para o Wekan (ex: wekan.openorion.art.br): \e[0m" && read -r url_wekan
     echo ""
 
     ## Limpa o terminal
@@ -37636,11 +37636,11 @@ while true; do
     echo ""
 
     
-    ## Pergunta se as respostas estáão corretas
-    read -p "As respostas estáão corretas? (Y/N): " confirmacao
+    ## Pergunta se as respostas estão corretas
+    read -p "As respostas estão corretas? (Y/N): " confirmacao
     if [ "$confirmacao" = "Y" ] || [ "$confirmacao" = "y" ]; then
 
-        ## Digitou Y para confirmar que as informações estáão corretas
+        ## Digitou Y para confirmar que as informações estão corretas
 
         ## Limpar o terminal
         clear
@@ -37652,7 +37652,7 @@ while true; do
         break
     else
 
-        ## Digitou N para dizer que as informações não estáão corretas.
+        ## Digitou N para dizer que as informações não estão corretas.
 
         ## Limpar o terminal
         clear
@@ -37686,7 +37686,7 @@ services:
 ## --------------------------- ORION --------------------------- ##
 
   wekan${1:+_$1}:
-    image: ghcr.io/wekan/wekan:latestá
+    image: ghcr.io/wekan/wekan:latest
 
     volumes:
       - wekan${1:+_$1}_files:/data:rw
@@ -37754,7 +37754,7 @@ if [ $? -eq 0 ]; then
     echo "1/10 - [ OK ] - Criando Stack"
 else
     echo "1/10 - [ OFF ] - Criando Stack"
-    echo "Não foi possível criar a stack do Wekan"
+    echo "Não foi possivel criar a stack do Wekan"
 fi
 
 STACK_NAME="wekan${1:+_$1}"
@@ -37764,7 +37764,7 @@ stack_editavel # > /dev/null 2>&1
 #    echo "2/2 - [ OK ] - Deploy Stack"
 #else
 #    echo "2/2 - [ OFF ] - Deploy Stack"
-#    echo "Não foi possível Subir a stack do wekan"
+#    echo "Não foi possivel Subir a stack do wekan"
 #fi
 
 ## Mensagem de Passo
@@ -37773,9 +37773,9 @@ echo ""
 sleep 1
 
 ## Baixando imagens:
-pull ghcr.io/wekan/wekan:latestá
+pull ghcr.io/wekan/wekan:latest
 
-## Usa o serviço wait_stack para verificar se o serviço estáa online
+## Usa o serviço wait_stack para verificar se o serviço esta online
 wait_stack wekan${1:+_$1}_wekan${1:+_$1}
 
 telemetria Wekan finalizado
@@ -37843,12 +37843,12 @@ nome_opensign
 ## Mostra mensagem para preencher informações
 preencha_as_info
 
-## Inicia um Loop até os dados estáarem certos
+## Inicia um Loop até os dados estarem certos
 while true; do
 
     ##Pergunta o Dominio para a ferramenta
     echo -e "\e[97mPasso$amarelo 1/1\e[0m"
-    echo -en "\e[33mDigite o Dominio para o OpenSign (ex: opensign.seudominio.com): \e[0m" && read -r url_opensign
+    echo -en "\e[33mDigite o Dominio para o OpenSign (ex: opensign.openorion.art.br): \e[0m" && read -r url_opensign
     echo ""
 
     ## Limpa o terminal
@@ -37865,11 +37865,11 @@ while true; do
     echo ""
 
     
-    ## Pergunta se as respostas estáão corretas
-    read -p "As respostas estáão corretas? (Y/N): " confirmacao
+    ## Pergunta se as respostas estão corretas
+    read -p "As respostas estão corretas? (Y/N): " confirmacao
     if [ "$confirmacao" = "Y" ] || [ "$confirmacao" = "y" ]; then
 
-        ## Digitou Y para confirmar que as informações estáão corretas
+        ## Digitou Y para confirmar que as informações estão corretas
 
         ## Limpar o terminal
         clear
@@ -37881,7 +37881,7 @@ while true; do
         break
     else
 
-        ## Digitou N para dizer que as informações não estáão corretas.
+        ## Digitou N para dizer que as informações não estão corretas.
 
         ## Limpar o terminal
         clear
@@ -37986,7 +37986,7 @@ services:
     deploy:
       mode: replicated
       replicas: 1
-      restáart_policy:
+      restart_policy:
         condition: on-failure
       placement:
         constraints:
@@ -38060,7 +38060,7 @@ if [ $? -eq 0 ]; then
     echo "1/10 - [ OK ] - Criando Stack"
 else
     echo "1/10 - [ OFF ] - Criando Stack"
-    echo "Não foi possível criar a stack do opensign"
+    echo "Não foi possivel criar a stack do opensign"
 fi
 
 STACK_NAME="opensign${1:+_$1}"
@@ -38070,7 +38070,7 @@ stack_editavel # > /dev/null 2>&1
 #    echo "2/2 - [ OK ] - Deploy Stack"
 #else
 #    echo "2/2 - [ OFF ] - Deploy Stack"
-#    echo "Não foi possível Subir a stack do opensign"
+#    echo "Não foi possivel Subir a stack do opensign"
 #fi
 
 ## Mensagem de Passo
@@ -38081,7 +38081,7 @@ sleep 1
 ## Baixando imagens:
 pull opensign/opensignserver:main opensign/opensign:main
 
-## Usa o serviço wait_stack para verificar se o serviço estáa online
+## Usa o serviço wait_stack para verificar se o serviço esta online
 wait_stack opensign${1:+_$1}_opensign${1:+_$1}_server opensign${1:+_$1}_opensign${1:+_$1}_client
 
 telemetria OpenSign finalizado
@@ -38148,12 +38148,12 @@ nome_docmost
 ## Mostra mensagem para preencher informações
 preencha_as_info
 
-## Inicia um Loop até os dados estáarem certos
+## Inicia um Loop até os dados estarem certos
 while true; do
 
     ##Pergunta o Dominio para a ferramenta
     echo -e "\e[97mPasso$amarelo 1/1\e[0m"
-    echo -en "\e[33mDigite o Dominio para o Docmost (ex: docmost.seudominio.com): \e[0m" && read -r url_docmost
+    echo -en "\e[33mDigite o Dominio para o Docmost (ex: docmost.openorion.art.br): \e[0m" && read -r url_docmost
     echo ""
 
     ## Limpa o terminal
@@ -38170,11 +38170,11 @@ while true; do
     echo ""
 
     
-    ## Pergunta se as respostas estáão corretas
-    read -p "As respostas estáão corretas? (Y/N): " confirmacao
+    ## Pergunta se as respostas estão corretas
+    read -p "As respostas estão corretas? (Y/N): " confirmacao
     if [ "$confirmacao" = "Y" ] || [ "$confirmacao" = "y" ]; then
 
-        ## Digitou Y para confirmar que as informações estáão corretas
+        ## Digitou Y para confirmar que as informações estão corretas
 
         ## Limpar o terminal
         clear
@@ -38186,7 +38186,7 @@ while true; do
         break
     else
 
-        ## Digitou N para dizer que as informações não estáão corretas.
+        ## Digitou N para dizer que as informações não estão corretas.
 
         ## Limpar o terminal
         clear
@@ -38248,7 +38248,7 @@ services:
 ## --------------------------- ORION --------------------------- ##
 
   docmost${1:+_$1}_app:
-    image: docmost/docmost:latestá
+    image: docmost/docmost:latest
 
     volumes:
       - docmost${1:+_$1}_storage:/app/data/storage
@@ -38314,7 +38314,7 @@ services:
 ## --------------------------- ORION --------------------------- ##
 
   docmost${1:+_$1}_redis:
-    image: redis:latestá  ## Versão do Redis
+    image: redis:latest  ## Versão do Redis
     command: [
         "redis-server",
         "--appendonly",
@@ -38361,7 +38361,7 @@ if [ $? -eq 0 ]; then
     echo "1/10 - [ OK ] - Criando Stack"
 else
     echo "1/10 - [ OFF ] - Criando Stack"
-    echo "Não foi possível criar a stack do docmost"
+    echo "Não foi possivel criar a stack do docmost"
 fi
 
 STACK_NAME="docmost${1:+_$1}"
@@ -38371,7 +38371,7 @@ stack_editavel # > /dev/null 2>&1
 #    echo "2/2 - [ OK ] - Deploy Stack"
 #else
 #    echo "2/2 - [ OFF ] - Deploy Stack"
-#    echo "Não foi possível Subir a stack do docmost"
+#    echo "Não foi possivel Subir a stack do docmost"
 #fi
 
 ## Mensagem de Passo
@@ -38380,9 +38380,9 @@ echo ""
 sleep 1
 
 ## Baixando imagens:
-pull redis:latestá docmost/docmost:latestá
+pull redis:latest docmost/docmost:latest
 
-## Usa o serviço wait_stack para verificar se o serviço estáa online
+## Usa o serviço wait_stack para verificar se o serviço esta online
 wait_stack docmost${1:+_$1}_docmost${1:+_$1}_redis docmost${1:+_$1}_docmost${1:+_$1}_app
 
 telemetria Docmost finalizado
@@ -38449,12 +38449,12 @@ nome_netbox
 ## Mostra mensagem para preencher informações
 preencha_as_info
 
-## Inicia um Loop até os dados estáarem certos
+## Inicia um Loop até os dados estarem certos
 while true; do
 
     ##Pergunta o Dominio para a ferramenta
     echo -e "\e[97mPasso$amarelo 1/1\e[0m"
-    echo -en "\e[33mDigite o Dominio para o NetBox (ex: netbox.seudominio.com): \e[0m" && read -r url_netbox
+    echo -en "\e[33mDigite o Dominio para o NetBox (ex: netbox.openorion.art.br): \e[0m" && read -r url_netbox
     echo ""
 
     ## Limpa o terminal
@@ -38471,11 +38471,11 @@ while true; do
     echo ""
 
     
-    ## Pergunta se as respostas estáão corretas
-    read -p "As respostas estáão corretas? (Y/N): " confirmacao
+    ## Pergunta se as respostas estão corretas
+    read -p "As respostas estão corretas? (Y/N): " confirmacao
     if [ "$confirmacao" = "Y" ] || [ "$confirmacao" = "y" ]; then
 
-        ## Digitou Y para confirmar que as informações estáão corretas
+        ## Digitou Y para confirmar que as informações estão corretas
 
         ## Limpar o terminal
         clear
@@ -38487,7 +38487,7 @@ while true; do
         break
     else
 
-        ## Digitou N para dizer que as informações não estáão corretas.
+        ## Digitou N para dizer que as informações não estão corretas.
 
         ## Limpar o terminal
         clear
@@ -38695,7 +38695,7 @@ services:
       placement:
         constraints:
           - node.role == manager
-      restáart_policy:
+      restart_policy:
         condition: on-failure
         delay: 5s
         max_attempts: 10
@@ -38815,7 +38815,7 @@ if [ $? -eq 0 ]; then
     echo "1/10 - [ OK ] - Criando Stack"
 else
     echo "1/10 - [ OFF ] - Criando Stack"
-    echo "Não foi possível criar a stack do netbox"
+    echo "Não foi possivel criar a stack do netbox"
 fi
 
 STACK_NAME="netbox${1:+_$1}"
@@ -38825,7 +38825,7 @@ stack_editavel # > /dev/null 2>&1
 #    echo "2/2 - [ OK ] - Deploy Stack"
 #else
 #    echo "2/2 - [ OFF ] - Deploy Stack"
-#    echo "Não foi possível Subir a stack do netbox"
+#    echo "Não foi possivel Subir a stack do netbox"
 #fi
 
 ## Mensagem de Passo
@@ -38836,7 +38836,7 @@ sleep 1
 ## Baixando imagens:
 pull docker.io/postgres:17-alpine docker.io/valkey/valkey:8.1-alpine docker.io/netboxcommunity/netbox:v4.4-3.4.2
 
-## Usa o serviço wait_stack para verificar se o serviço estáa online
+## Usa o serviço wait_stack para verificar se o serviço esta online
 wait_stack netbox${1:+_$1}_netbox${1:+_$1}_db netbox${1:+_$1}_netbox${1:+_$1}_redis netbox${1:+_$1}_netbox${1:+_$1}_redis_cache netbox${1:+_$1}_netbox${1:+_$1}_app  netbox${1:+_$1}_netbox${1:+_$1}_worker
 
 telemetria NetBox finalizado
@@ -38914,12 +38914,12 @@ nome_kafka
 ## Mostra mensagem para preencher informações
 preencha_as_info
 
-## Inicia um Loop até os dados estáarem certos
+## Inicia um Loop até os dados estarem certos
 while true; do
 
     ##Pergunta o Dominio para a ferramenta
     echo -e "\e[97mPasso$amarelo 1/3\e[0m"
-    echo -en "\e[33mDigite o Dominio para o Kafka (ex: kafka.seudominio.com): \e[0m" && read -r url_kafka
+    echo -en "\e[33mDigite o Dominio para o Kafka (ex: kafka.openorion.art.br): \e[0m" && read -r url_kafka
     echo ""
 
     ##Pergunta o Dominio para a ferramenta
@@ -38953,11 +38953,11 @@ while true; do
     echo -e "\e[33mSenha do Kafka:\e[97m $pass_ntfy\e[0m"
     echo ""
     
-    ## Pergunta se as respostas estáão corretas
-    read -p "As respostas estáão corretas? (Y/N): " confirmacao
+    ## Pergunta se as respostas estão corretas
+    read -p "As respostas estão corretas? (Y/N): " confirmacao
     if [ "$confirmacao" = "Y" ] || [ "$confirmacao" = "y" ]; then
 
-        ## Digitou Y para confirmar que as informações estáão corretas
+        ## Digitou Y para confirmar que as informações estão corretas
 
         ## Limpar o terminal
         clear
@@ -38969,7 +38969,7 @@ while true; do
         break
     else
 
-        ## Digitou N para dizer que as informações não estáão corretas.
+        ## Digitou N para dizer que as informações não estão corretas.
 
         ## Limpar o terminal
         clear
@@ -39007,7 +39007,7 @@ services:
 ## --------------------------- ORION --------------------------- ##
 
   kafka${1:+_$1}_broker:
-    image: apache/kafka:latestá
+    image: apache/kafka:latest
 
     volumes:
       - kafka${1:+_$1}_data:/var/lib/kafka/data
@@ -39079,7 +39079,7 @@ services:
 ## --------------------------- ORION --------------------------- ##
 
   kafka${1:+_$1}_ui:
-    image: provectuslabs/kafka-ui:latestá
+    image: provectuslabs/kafka-ui:latest
 
     networks:
       - $nome_rede_interna ## Nome da rede interna
@@ -39134,7 +39134,7 @@ if [ $? -eq 0 ]; then
     echo "1/10 - [ OK ] - Criando Stack"
 else
     echo "1/10 - [ OFF ] - Criando Stack"
-    echo "Não foi possível criar a stack do Kafka"
+    echo "Não foi possivel criar a stack do Kafka"
 fi
 
 STACK_NAME="kafka${1:+_$1}"
@@ -39144,7 +39144,7 @@ stack_editavel # > /dev/null 2>&1
 #    echo "2/2 - [ OK ] - Deploy Stack"
 #else
 #    echo "2/2 - [ OFF ] - Deploy Stack"
-#    echo "Não foi possível Subir a stack do kafka"
+#    echo "Não foi possivel Subir a stack do kafka"
 #fi
 
 ## Mensagem de Passo
@@ -39153,9 +39153,9 @@ echo ""
 sleep 1
 
 ## Baixando imagens:
-pull apache/kafka:latestá provectuslabs/kafka-ui:latestá
+pull apache/kafka:latest provectuslabs/kafka-ui:latest
 
-## Usa o serviço wait_stack para verificar se o serviço estáa online
+## Usa o serviço wait_stack para verificar se o serviço esta online
 wait_stack kafka${1:+_$1}_kafka${1:+_$1}_broker kafka${1:+_$1}_kafka${1:+_$1}_ui
 
 telemetria Kafka finalizado
@@ -39229,12 +39229,12 @@ nome_astracampaign
 ## Mostra mensagem para preencher informações
 preencha_as_info
 
-## Inicia um Loop até os dados estáarem certos
+## Inicia um Loop até os dados estarem certos
 while true; do
 
     ##Pergunta o Dominio para a ferramenta
     echo -e "\e[97mPasso$amarelo 1/1\e[0m"
-    echo -en "\e[33mDigite o Dominio para o AstraCampaign (ex: astracampaign.seudominio.com): \e[0m" && read -r url_astracampaign
+    echo -en "\e[33mDigite o Dominio para o AstraCampaign (ex: astracampaign.openorion.art.br): \e[0m" && read -r url_astracampaign
     echo ""
 
     ## Limpa o terminal
@@ -39251,11 +39251,11 @@ while true; do
     echo ""
 
     
-    ## Pergunta se as respostas estáão corretas
-    read -p "As respostas estáão corretas? (Y/N): " confirmacao
+    ## Pergunta se as respostas estão corretas
+    read -p "As respostas estão corretas? (Y/N): " confirmacao
     if [ "$confirmacao" = "Y" ] || [ "$confirmacao" = "y" ]; then
 
-        ## Digitou Y para confirmar que as informações estáão corretas
+        ## Digitou Y para confirmar que as informações estão corretas
 
         ## Limpar o terminal
         clear
@@ -39267,7 +39267,7 @@ while true; do
         break
     else
 
-        ## Digitou N para dizer que as informações não estáão corretas.
+        ## Digitou N para dizer que as informações não estão corretas.
 
         ## Limpar o terminal
         clear
@@ -39329,7 +39329,7 @@ services:
 ## --------------------------- ORION --------------------------- ##
 
   astracampaign${1:+_$1}_backend:
-    image: astraonline/astracampaignbackend:latestá
+    image: astraonline/astracampaignbackend:latest
 
     volumes:
       - astracampaign${1:+_$1}_contacts:/app/data
@@ -39357,7 +39357,7 @@ services:
     
     ## 🏢 Configuração da Aplicação
       - DEFAULT_COMPANY_NAME=OpenOrion
-      - DEFAULT_PAGE_TITLE=Sistema de Gestáão de Contatos - By AstraOnline
+      - DEFAULT_PAGE_TITLE=Sistema de Gestão de Contatos - By AstraOnline
 
     ## 🔓 Configuração de CORS
       - ALLOWED_ORIGINS=https://$url_astracampaign,http://$url_astracampaign,http://astracampaign${1:+_$1}_frontend,http://astracampaign${1:+_$1}_frontend:80
@@ -39384,7 +39384,7 @@ services:
 ## --------------------------- ORION --------------------------- ##
 
   astracampaign${1:+_$1}_frontend:
-    image: astraonline/astracampaignfrontend:latestá
+    image: astraonline/astracampaignfrontend:latest
 
     networks:
       - $nome_rede_interna ## Nome da rede interna
@@ -39411,7 +39411,7 @@ services:
 ## --------------------------- ORION --------------------------- ##
 
   astracampaign${1:+_$1}_redis:
-    image: redis:latestá  ## Versão do Redis
+    image: redis:latest  ## Versão do Redis
     command: [
         "redis-server",
         "--appendonly",
@@ -39466,7 +39466,7 @@ if [ $? -eq 0 ]; then
     echo "1/10 - [ OK ] - Criando Stack"
 else
     echo "1/10 - [ OFF ] - Criando Stack"
-    echo "Não foi possível criar a stack do AstraCampaign"
+    echo "Não foi possivel criar a stack do AstraCampaign"
 fi
 
 STACK_NAME="astracampaign${1:+_$1}"
@@ -39476,7 +39476,7 @@ stack_editavel # > /dev/null 2>&1
 #    echo "2/2 - [ OK ] - Deploy Stack"
 #else
 #    echo "2/2 - [ OFF ] - Deploy Stack"
-#    echo "Não foi possível Subir a stack do astracampaign"
+#    echo "Não foi possivel Subir a stack do astracampaign"
 #fi
 
 ## Mensagem de Passo
@@ -39485,9 +39485,9 @@ echo ""
 sleep 1
 
 ## Baixando imagens:
-pull redis:latestá astraonline/astracampaignbackend:latestá astraonline/astracampaignfrontend:latestá
+pull redis:latest astraonline/astracampaignbackend:latest astraonline/astracampaignfrontend:latest
 
-## Usa o serviço wait_stack para verificar se o serviço estáa online
+## Usa o serviço wait_stack para verificar se o serviço esta online
 wait_stack astracampaign${1:+_$1}_astracampaign${1:+_$1}_redis astracampaign${1:+_$1}_astracampaign${1:+_$1}_backend astracampaign${1:+_$1}_astracampaign${1:+_$1}_frontend
 
 telemetria AstraCampaign finalizado
@@ -39558,12 +39558,12 @@ nome_duplicati
 ## Mostra mensagem para preencher informações
 preencha_as_info
 
-## Inicia um Loop até os dados estáarem certos
+## Inicia um Loop até os dados estarem certos
 while true; do
 
     ##Pergunta o Dominio para a ferramenta
     echo -e "\e[97mPasso$amarelo 1/2\e[0m"
-    echo -en "\e[33mDigite o Dominio para o Duplicati (ex: duplicati.seudominio.com): \e[0m" && read -r url_duplicati
+    echo -en "\e[33mDigite o Dominio para o Duplicati (ex: duplicati.openorion.art.br): \e[0m" && read -r url_duplicati
     echo ""
 
     ##Pergunta o Dominio para a ferramenta
@@ -39589,11 +39589,11 @@ while true; do
     echo ""
 
     
-    ## Pergunta se as respostas estáão corretas
-    read -p "As respostas estáão corretas? (Y/N): " confirmacao
+    ## Pergunta se as respostas estão corretas
+    read -p "As respostas estão corretas? (Y/N): " confirmacao
     if [ "$confirmacao" = "Y" ] || [ "$confirmacao" = "y" ]; then
 
-        ## Digitou Y para confirmar que as informações estáão corretas
+        ## Digitou Y para confirmar que as informações estão corretas
 
         ## Limpar o terminal
         clear
@@ -39605,7 +39605,7 @@ while true; do
         break
     else
 
-        ## Digitou N para dizer que as informações não estáão corretas.
+        ## Digitou N para dizer que as informações não estão corretas.
 
         ## Limpar o terminal
         clear
@@ -39641,7 +39641,7 @@ services:
 ## --------------------------- ORION --------------------------- ##
 
   duplicati${1:+_$1}:
-    image: duplicati/duplicati:latestá
+    image: duplicati/duplicati:latest
 
     volumes:
       - duplicati${1:+_$1}_data:/data
@@ -39702,7 +39702,7 @@ if [ $? -eq 0 ]; then
     echo "1/10 - [ OK ] - Criando Stack"
 else
     echo "1/10 - [ OFF ] - Criando Stack"
-    echo "Não foi possível criar a stack do duplicati"
+    echo "Não foi possivel criar a stack do duplicati"
 fi
 
 STACK_NAME="duplicati${1:+_$1}"
@@ -39712,7 +39712,7 @@ stack_editavel # > /dev/null 2>&1
 #    echo "2/2 - [ OK ] - Deploy Stack"
 #else
 #    echo "2/2 - [ OFF ] - Deploy Stack"
-#    echo "Não foi possível Subir a stack do duplicati"
+#    echo "Não foi possivel Subir a stack do duplicati"
 #fi
 
 ## Mensagem de Passo
@@ -39721,9 +39721,9 @@ echo ""
 sleep 1
 
 ## Baixando imagens:
-pull duplicati/duplicati:latestá
+pull duplicati/duplicati:latest
 
-## Usa o serviço wait_stack para verificar se o serviço estáa online
+## Usa o serviço wait_stack para verificar se o serviço esta online
 wait_stack duplicati${1:+_$1}_duplicati${1:+_$1}
 
 telemetria Duplicati finalizado
@@ -39789,12 +39789,12 @@ nome_pgbackweb
 ## Mostra mensagem para preencher informações
 preencha_as_info
 
-## Inicia um Loop até os dados estáarem certos
+## Inicia um Loop até os dados estarem certos
 while true; do
 
     ##Pergunta o Dominio para a ferramenta
     echo -e "\e[97mPasso$amarelo 1/1\e[0m"
-    echo -en "\e[33mDigite o Dominio para o PgBackWeb (ex: pgbackweb.seudominio.com): \e[0m" && read -r url_pgbackweb
+    echo -en "\e[33mDigite o Dominio para o PgBackWeb (ex: pgbackweb.openorion.art.br): \e[0m" && read -r url_pgbackweb
     echo ""
 
     ## Limpa o terminal
@@ -39810,11 +39810,11 @@ while true; do
     echo -e "\e[33mDominio do PgBackWeb:\e[97m $url_pgbackweb\e[0m"
     echo ""
 
-    ## Pergunta se as respostas estáão corretas
-    read -p "As respostas estáão corretas? (Y/N): " confirmacao
+    ## Pergunta se as respostas estão corretas
+    read -p "As respostas estão corretas? (Y/N): " confirmacao
     if [ "$confirmacao" = "Y" ] || [ "$confirmacao" = "y" ]; then
 
-        ## Digitou Y para confirmar que as informações estáão corretas
+        ## Digitou Y para confirmar que as informações estão corretas
 
         ## Limpar o terminal
         clear
@@ -39826,7 +39826,7 @@ while true; do
         break
     else
 
-        ## Digitou N para dizer que as informações não estáão corretas.
+        ## Digitou N para dizer que as informações não estão corretas.
 
         ## Limpar o terminal
         clear
@@ -39888,7 +39888,7 @@ services:
 ## --------------------------- ORION --------------------------- ##
 
   pgbackweb${1:+_$1}:
-    image: eduardolat/pgbackweb:latestá
+    image: eduardolat/pgbackweb:latest
 
     volumes:
       - pgbackweb${1:+_$1}_backups:/backups #Pasta backups locais caso nao utilize Minio S3
@@ -39941,7 +39941,7 @@ if [ $? -eq 0 ]; then
     echo "1/10 - [ OK ] - Criando Stack"
 else
     echo "1/10 - [ OFF ] - Criando Stack"
-    echo "Não foi possível criar a stack do pgbackweb"
+    echo "Não foi possivel criar a stack do pgbackweb"
 fi
 
 STACK_NAME="pgbackweb${1:+_$1}"
@@ -39951,7 +39951,7 @@ stack_editavel # > /dev/null 2>&1
 #    echo "2/2 - [ OK ] - Deploy Stack"
 #else
 #    echo "2/2 - [ OFF ] - Deploy Stack"
-#    echo "Não foi possível Subir a stack do pgbackweb"
+#    echo "Não foi possivel Subir a stack do pgbackweb"
 #fi
 
 ## Mensagem de Passo
@@ -39960,9 +39960,9 @@ echo ""
 sleep 1
 
 ## Baixando imagens:
-pull eduardolat/pgbackweb:latestá
+pull eduardolat/pgbackweb:latest
 
-## Usa o serviço wait_stack para verificar se o serviço estáa online
+## Usa o serviço wait_stack para verificar se o serviço esta online
 wait_stack pgbackweb${1:+_$1}_pgbackweb${1:+_$1}
 
 telemetria PgBackWeb finalizado
@@ -40029,12 +40029,12 @@ nome_jitsi
 ## Mostra mensagem para preencher informações
 preencha_as_info
 
-## Inicia um Loop até os dados estáarem certos
+## Inicia um Loop até os dados estarem certos
 while true; do
 
     ##Pergunta o Dominio para a ferramenta
     echo -e "\e[97mPasso$amarelo 1/4\e[0m"
-    echo -en "\e[33mDigite o Dominio para o Jitsi (ex: jitsi.seudominio.com): \e[0m" && read -r url_jitsi
+    echo -en "\e[33mDigite o Dominio para o Jitsi (ex: jitsi.openorion.art.br): \e[0m" && read -r url_jitsi
     echo ""
 
     read -r ip _ <<<$(hostname -I | tr ' ' '\n' | grep -v '^127\.0\.0\.1' | grep -v '^10\.0\.0\.' | tr '\n' ' ')
@@ -40079,11 +40079,11 @@ while true; do
     echo -e "\e[33mSenha do Jitsi:\e[97m $pass_jitsi\e[0m"
     echo ""
 
-    ## Pergunta se as respostas estáão corretas
-    read -p "As respostas estáão corretas? (Y/N): " confirmacao
+    ## Pergunta se as respostas estão corretas
+    read -p "As respostas estão corretas? (Y/N): " confirmacao
     if [ "$confirmacao" = "Y" ] || [ "$confirmacao" = "y" ]; then
 
-        ## Digitou Y para confirmar que as informações estáão corretas
+        ## Digitou Y para confirmar que as informações estão corretas
 
         ## Limpar o terminal
         clear
@@ -40095,7 +40095,7 @@ while true; do
         break
     else
 
-        ## Digitou N para dizer que as informações não estáão corretas.
+        ## Digitou N para dizer que as informações não estão corretas.
 
         ## Limpar o terminal
         clear
@@ -40178,7 +40178,7 @@ services:
     ## 🎧 Conexão e Qualidade de Áudio/Vídeo
       - ENABLE_P2P=1 ## P2P quando só 2 participantes
       - ENABLE_NOISE_SUPPRESSION=1 ## Supressão de ruído (client-side)
-      - ENABLE_STEREO=0 ## Áudio estáéreo (consome mais banda)
+      - ENABLE_STEREO=0 ## Áudio estéreo (consome mais banda)
       - ENABLE_TALK_WHILE_MUTED=1 ## Aviso ao falar no mudo
       - ENABLE_NO_AUDIO_DETECTION=1      ## Aviso quando não há áudio
 
@@ -40186,7 +40186,7 @@ services:
       - XMPP_SERVER=jitsi${1:+_$1}_prosody
       - XMPP_DOMAIN=meet.jitsi
       - XMPP_AUTH_DOMAIN=auth.meet.jitsi
-      - XMPP_GUEST_DOMAIN=guestá.meet.jitsi
+      - XMPP_GUEST_DOMAIN=guest.meet.jitsi
       - XMPP_MUC_DOMAIN=muc.meet.jitsi
       - XMPP_BOSH_URL_BASE=http://jitsi${1:+_$1}_prosody:5280
       - ENABLE_XMPP_WEBSOCKET=1
@@ -40241,7 +40241,7 @@ services:
     ## 📄 Configuração do XMPP/Prosody
       - XMPP_DOMAIN=meet.jitsi
       - XMPP_AUTH_DOMAIN=auth.meet.jitsi
-      - XMPP_GUEST_DOMAIN=guestá.meet.jitsi
+      - XMPP_GUEST_DOMAIN=guest.meet.jitsi
       - XMPP_MUC_DOMAIN=muc.meet.jitsi
       - XMPP_INTERNAL_MUC_DOMAIN=internal-muc.meet.jitsi
       - ENABLE_XMPP_WEBSOCKET=1
@@ -40390,7 +40390,7 @@ if [ $? -eq 0 ]; then
     echo "1/10 - [ OK ] - Criando Stack"
 else
     echo "1/10 - [ OFF ] - Criando Stack"
-    echo "Não foi possível criar a stack do jitsi"
+    echo "Não foi possivel criar a stack do jitsi"
 fi
 
 STACK_NAME="jitsi${1:+_$1}"
@@ -40400,7 +40400,7 @@ stack_editavel # > /dev/null 2>&1
 #    echo "2/2 - [ OK ] - Deploy Stack"
 #else
 #    echo "2/2 - [ OFF ] - Deploy Stack"
-#    echo "Não foi possível Subir a stack do jitsi"
+#    echo "Não foi possivel Subir a stack do jitsi"
 #fi
 
 ## Mensagem de Passo
@@ -40411,7 +40411,7 @@ sleep 1
 ## Baixando imagens:
 pull jitsi/web:stable jitsi/prosody:stable jitsi/jicofo:stable jitsi/jvb:stable
 
-## Usa o serviço wait_stack para verificar se o serviço estáa online
+## Usa o serviço wait_stack para verificar se o serviço esta online
 wait_stack jitsi${1:+_$1}_jitsi${1:+_$1}_web jitsi${1:+_$1}_jitsi${1:+_$1}_prosody jitsi${1:+_$1}_jitsi${1:+_$1}_jicofo jitsi${1:+_$1}_jitsi${1:+_$1}_jvb
 
 
@@ -40491,12 +40491,12 @@ nome_code_server
 ## Mostra mensagem para preencher informações
 preencha_as_info
 
-## Inicia um Loop até os dados estáarem certos
+## Inicia um Loop até os dados estarem certos
 while true; do
 
     ##Pergunta o Dominio para a ferramenta
     echo -e "\e[97mPasso$amarelo 1/3\e[0m"
-    echo -en "\e[33mDigite o Dominio para o CodeServer (ex: code-server.seudominio.com): \e[0m" && read -r url_code_server
+    echo -en "\e[33mDigite o Dominio para o CodeServer (ex: code-server.openorion.art.br): \e[0m" && read -r url_code_server
     echo ""
 
     ##Pergunta o Dominio para a ferramenta
@@ -40530,11 +40530,11 @@ while true; do
     echo -e "\e[33mSenha SuperAdmin do CodeServer:\e[97m $pass_super_admin_code_server\e[0m"
     echo ""
 
-    ## Pergunta se as respostas estáão corretas
-    read -p "As respostas estáão corretas? (Y/N): " confirmacao
+    ## Pergunta se as respostas estão corretas
+    read -p "As respostas estão corretas? (Y/N): " confirmacao
     if [ "$confirmacao" = "Y" ] || [ "$confirmacao" = "y" ]; then
 
-        ## Digitou Y para confirmar que as informações estáão corretas
+        ## Digitou Y para confirmar que as informações estão corretas
 
         ## Limpar o terminal
         clear
@@ -40546,7 +40546,7 @@ while true; do
         break
     else
 
-        ## Digitou N para dizer que as informações não estáão corretas.
+        ## Digitou N para dizer que as informações não estão corretas.
 
         ## Limpar o terminal
         clear
@@ -40580,7 +40580,7 @@ services:
 ## --------------------------- ORION --------------------------- ##
 
   code_server${1:+_$1}:
-    image: lscr.io/linuxserver/code-server:latestá
+    image: lscr.io/linuxserver/code-server:latest
 
     volumes:
       - code_server${1:+_$1}_config:/config
@@ -40647,7 +40647,7 @@ if [ $? -eq 0 ]; then
     echo "1/10 - [ OK ] - Criando Stack"
 else
     echo "1/10 - [ OFF ] - Criando Stack"
-    echo "Não foi possível criar a stack do code_server"
+    echo "Não foi possivel criar a stack do code_server"
 fi
 
 STACK_NAME="code_server${1:+_$1}"
@@ -40657,7 +40657,7 @@ stack_editavel # > /dev/null 2>&1
 #    echo "2/2 - [ OK ] - Deploy Stack"
 #else
 #    echo "2/2 - [ OFF ] - Deploy Stack"
-#    echo "Não foi possível Subir a stack do code_server"
+#    echo "Não foi possivel Subir a stack do code_server"
 #fi
 
 ## Mensagem de Passo
@@ -40666,9 +40666,9 @@ echo ""
 sleep 1
 
 ## Baixando imagens:
-pull lscr.io/linuxserver/code-server:latestá
+pull lscr.io/linuxserver/code-server:latest
 
-## Usa o serviço wait_stack para verificar se o serviço estáa online
+## Usa o serviço wait_stack para verificar se o serviço esta online
 wait_stack code_server${1:+_$1}_code_server${1:+_$1}
 
 telemetria code_server finalizado
@@ -40739,12 +40739,12 @@ nome_papra
 ## Mostra mensagem para preencher informações
 preencha_as_info
 
-## Inicia um Loop até os dados estáarem certos
+## Inicia um Loop até os dados estarem certos
 while true; do
 
     ##Pergunta o Dominio para a ferramenta
     echo -e "\e[97mPasso$amarelo 1/1\e[0m"
-    echo -en "\e[33mDigite o Dominio para o Papra (ex: papra.seudominio.com): \e[0m" && read -r url_papra
+    echo -en "\e[33mDigite o Dominio para o Papra (ex: papra.openorion.art.br): \e[0m" && read -r url_papra
     echo ""
 
     ## Limpa o terminal
@@ -40760,11 +40760,11 @@ while true; do
     echo -e "\e[33mDominio do Papra:\e[97m $url_papra\e[0m"
     echo ""
 
-    ## Pergunta se as respostas estáão corretas
-    read -p "As respostas estáão corretas? (Y/N): " confirmacao
+    ## Pergunta se as respostas estão corretas
+    read -p "As respostas estão corretas? (Y/N): " confirmacao
     if [ "$confirmacao" = "Y" ] || [ "$confirmacao" = "y" ]; then
 
-        ## Digitou Y para confirmar que as informações estáão corretas
+        ## Digitou Y para confirmar que as informações estão corretas
 
         ## Limpar o terminal
         clear
@@ -40776,7 +40776,7 @@ while true; do
         break
     else
 
-        ## Digitou N para dizer que as informações não estáão corretas.
+        ## Digitou N para dizer que as informações não estão corretas.
 
         ## Limpar o terminal
         clear
@@ -40813,7 +40813,7 @@ services:
 ## --------------------------- ORION --------------------------- ##
 
   papra${1:+_$1}:
-    image: ghcr.io/papra-hq/papra:latestá
+    image: ghcr.io/papra-hq/papra:latest
 
     volumes:
       - papra${1:+_$1}_db:/app/app-data/db
@@ -40882,7 +40882,7 @@ if [ $? -eq 0 ]; then
     echo "1/10 - [ OK ] - Criando Stack"
 else
     echo "1/10 - [ OFF ] - Criando Stack"
-    echo "Não foi possível criar a stack do papra"
+    echo "Não foi possivel criar a stack do papra"
 fi
 
 STACK_NAME="papra${1:+_$1}"
@@ -40892,7 +40892,7 @@ stack_editavel # > /dev/null 2>&1
 #    echo "2/2 - [ OK ] - Deploy Stack"
 #else
 #    echo "2/2 - [ OFF ] - Deploy Stack"
-#    echo "Não foi possível Subir a stack do papra"
+#    echo "Não foi possivel Subir a stack do papra"
 #fi
 
 ## Mensagem de Passo
@@ -40901,9 +40901,9 @@ echo ""
 sleep 1
 
 ## Baixando imagens:
-pull ghcr.io/papra-hq/papra:latestá
+pull ghcr.io/papra-hq/papra:latest
 
-## Usa o serviço wait_stack para verificar se o serviço estáa online
+## Usa o serviço wait_stack para verificar se o serviço esta online
 wait_stack papra${1:+_$1}_papra${1:+_$1}
 
 telemetria Papra finalizado
@@ -40974,12 +40974,12 @@ nome_zerobyte
 ## Mostra mensagem para preencher informações
 preencha_as_info
 
-## Inicia um Loop até os dados estáarem certos
+## Inicia um Loop até os dados estarem certos
 while true; do
 
     ##Pergunta o Dominio para a ferramenta
     echo -e "\e[97mPasso$amarelo 1/1\e[0m"
-    echo -en "\e[33mDigite o Dominio para o ZeroByte (ex: zerobyte.seudominio.com): \e[0m" && read -r url_zerobyte
+    echo -en "\e[33mDigite o Dominio para o ZeroByte (ex: zerobyte.openorion.art.br): \e[0m" && read -r url_zerobyte
     echo ""
 
     ## Limpa o terminal
@@ -40995,11 +40995,11 @@ while true; do
     echo -e "\e[33mDominio do ZeroByte:\e[97m $url_zerobyte\e[0m"
     echo ""
 
-    ## Pergunta se as respostas estáão corretas
-    read -p "As respostas estáão corretas? (Y/N): " confirmacao
+    ## Pergunta se as respostas estão corretas
+    read -p "As respostas estão corretas? (Y/N): " confirmacao
     if [ "$confirmacao" = "Y" ] || [ "$confirmacao" = "y" ]; then
 
-        ## Digitou Y para confirmar que as informações estáão corretas
+        ## Digitou Y para confirmar que as informações estão corretas
 
         ## Limpar o terminal
         clear
@@ -41011,7 +41011,7 @@ while true; do
         break
     else
 
-        ## Digitou N para dizer que as informações não estáão corretas.
+        ## Digitou N para dizer que as informações não estão corretas.
 
         ## Limpar o terminal
         clear
@@ -41047,7 +41047,7 @@ services:
 ## --------------------------- ORION --------------------------- ##
 
   zerobyte${1:+_$1}:
-    image: ghcr.io/nicotsx/zerobyte:latestá
+    image: ghcr.io/nicotsx/zerobyte:latest
 
     volumes:
       - zerobyte${1:+_$1}_data:/var/lib/zerobyte
@@ -41113,7 +41113,7 @@ if [ $? -eq 0 ]; then
     echo "1/10 - [ OK ] - Criando Stack"
 else
     echo "1/10 - [ OFF ] - Criando Stack"
-    echo "Não foi possível criar a stack do ZeroByte"
+    echo "Não foi possivel criar a stack do ZeroByte"
 fi
 
 STACK_NAME="zerobyte${1:+_$1}"
@@ -41123,7 +41123,7 @@ stack_editavel # > /dev/null 2>&1
 #    echo "2/2 - [ OK ] - Deploy Stack"
 #else
 #    echo "2/2 - [ OFF ] - Deploy Stack"
-#    echo "Não foi possível Subir a stack do zerobyte"
+#    echo "Não foi possivel Subir a stack do zerobyte"
 #fi
 
 ## Mensagem de Passo
@@ -41132,9 +41132,9 @@ echo ""
 sleep 1
 
 ## Baixando imagens:
-pull ghcr.io/nicotsx/zerobyte:latestá
+pull ghcr.io/nicotsx/zerobyte:latest
 
-## Usa o serviço wait_stack para verificar se o serviço estáa online
+## Usa o serviço wait_stack para verificar se o serviço esta online
 wait_stack zerobyte${1:+_$1}_zerobyte${1:+_$1}
 
 telemetria ZeroByte finalizado
@@ -41205,12 +41205,12 @@ nome_evolution_go
 ## Mostra mensagem para preencher informações
 preencha_as_info
 
-## Inicia um Loop até os dados estáarem certos
+## Inicia um Loop até os dados estarem certos
 while true; do
 
     ##Pergunta o Dominio para aplicação
     echo -e "\e[97mPasso$amarelo 1/1\e[0m"
-    echo -en "\e[33mDigite o Dominio para o Evolution Go (ex: go.seudominio.com): \e[0m" && read -r url_evolution_go
+    echo -en "\e[33mDigite o Dominio para o Evolution Go (ex: go.openorion.art.br): \e[0m" && read -r url_evolution_go
     echo ""
 
     ## Limpa o terminal
@@ -41226,11 +41226,11 @@ while true; do
     echo -e "\e[33mDominio da Evolution Go:\e[97m $url_evolution_go\e[0m"
     echo ""
 
-    ## Pergunta se as respostas estáão corretas
-    read -p "As respostas estáão corretas? (Y/N): " confirmacao
+    ## Pergunta se as respostas estão corretas
+    read -p "As respostas estão corretas? (Y/N): " confirmacao
     if [ "$confirmacao" = "Y" ] || [ "$confirmacao" = "y" ]; then
 
-        ## Digitou Y para confirmar que as informações estáão corretas
+        ## Digitou Y para confirmar que as informações estão corretas
 
         ## Limpar o terminal
         clear
@@ -41242,7 +41242,7 @@ while true; do
         break
     else
 
-        ## Digitou N para dizer que as informações não estáão corretas.
+        ## Digitou N para dizer que as informações não estão corretas.
 
         ## Limpar o terminal
         clear
@@ -41314,7 +41314,7 @@ services:
 ## --------------------------- ORION --------------------------- ##
 
   evolution_go${1:+_$1}:
-    image: evoapicloud/evolution-go:latestá
+    image: evoapicloud/evolution-go:latest
 
     volumes:
       - evolution_go${1:+_$1}_data:/app/dbdata
@@ -41352,7 +41352,7 @@ services:
       ## 🖥️ Configuração do Sistema
       - OS_NAME=Linux
 
-      ## 🎵 Configuração do Conversãor de Áudio
+      ## 🎵 Configuração do Conversor de Áudio
       #- API_AUDIO_CONVERTER=
       #- API_AUDIO_CONVERTER_KEY=
 
@@ -41416,7 +41416,7 @@ if [ $? -eq 0 ]; then
     echo "1/10 - [ OK ] - Criando Stack"
 else
     echo "1/10 - [ OFF ] - Criando Stack"
-    echo "Não foi possível criar a stack da Evolution Go"
+    echo "Não foi possivel criar a stack da Evolution Go"
 fi
 STACK_NAME="evolution_go${1:+_$1}"
 stack_editavel # > /dev/null 2>&1
@@ -41426,7 +41426,7 @@ stack_editavel # > /dev/null 2>&1
 #    echo "2/2 - [ OK ] - Deploy Stack"
 #else
 #    echo "2/2 - [ OFF ] - Deploy Stack"
-#    echo "Não foi possível subir a stack da Evolution API"
+#    echo "Não foi possivel subir a stack da Evolution API"
 #fi
 
 sleep 10
@@ -41437,9 +41437,9 @@ echo ""
 sleep 1
 
 ## Baixando imagens:
-pull evoapicloud/evolution-go:latestá
+pull evoapicloud/evolution-go:latest
 
-## Usa o serviço wait_evolution para verificar se o serviço estáa online
+## Usa o serviço wait_evolution para verificar se o serviço esta online
 wait_stack evolution_go${1:+_$1}_evolution_go${1:+_$1}
 
 telemetria "Evolution Go" "finalizado"
@@ -41492,7 +41492,7 @@ requisitar_outra_instalacao
 ## ███████╗ ╚████╔╝ ╚██████╔╝    ╚██████╗██║  ██║██║ ╚═╝ ██║
 ## ╚══════╝  ╚═══╝   ╚═════╝      ╚═════╝╚═╝  ╚═╝╚═╝     ╚═╝
 
-ferramenta_evocêrm() {
+ferramenta_evocrm() {
 
 ## Verifica os recursos
 recursos 4 8 && continue || return
@@ -41504,98 +41504,98 @@ clear
 dados
 
 ## Mostra o nome da aplicação
-nome_evocêrm
+nome_evocrm
 
 ## Mostra mensagem para preencher informações
 preencha_as_info
 
-## Inicia um Loop até os dados estáarem certos
+## Inicia um Loop até os dados estarem certos
 while true; do
 
     ##Pergunta o Dominio do Builder
     echo -e "\e[97mPasso$amarelo 1/7\e[0m"
-    echo -en "\e[33mDigite o Dominio para o EvoCRM (ex: evocêrm.seudominio.com): \e[0m" && read -r url_evocêrm_frontend
+    echo -en "\e[33mDigite o Dominio para o EvoCRM (ex: evocrm.openorion.art.br): \e[0m" && read -r url_evocrm_frontend
     echo ""
 
     ##Pergunta o Dominio do Viewer
     echo -e "\e[97mPasso$amarelo 2/7\e[0m"
-    echo -en "\e[33mDigite o Dominio para a API do EvoCRM (ex: api-evocêrm.seudominio.com): \e[0m" && read -r url_evocêrm_api
+    echo -en "\e[33mDigite o Dominio para a API do EvoCRM (ex: api-evocrm.openorion.art.br): \e[0m" && read -r url_evocrm_api
     echo ""
 
     ##Pergunta o Email SMTP
     echo -e "\e[97mPasso$amarelo 3/7\e[0m"
-    echo -en "\e[33mDigite o Email para SMTP (ex: admin@seudominio.com): \e[0m" && read -r email_smtp_evocêrm
+    echo -en "\e[33mDigite o Email para SMTP (ex: contato@openorion.art.br): \e[0m" && read -r email_smtp_evocrm
     echo ""
 
     ##Pergunta o usuário do Email SMTP
     echo -e "\e[97mPasso$amarelo 4/7\e[0m"
     echo -e "$amarelo--> Caso não tiver um usuario do email, use o proprio email abaixo"
-    echo -en "\e[33mDigite o Usuário para SMTP (ex: openorion ou admin@seudominio.com): \e[0m" && read -r username_smtp_evocêrm
+    echo -en "\e[33mDigite o Usuário para SMTP (ex: openorion ou contato@openorion.art.br): \e[0m" && read -r username_smtp_evocrm
     echo ""
     
     ## Pergunta a senha do SMTP
     echo -e "\e[97mPasso$amarelo 5/7\e[0m"
-    echo -e "$amarelo--> Sem caracteres especiais: \!#$ | Se estáiver usando gmail use a senha de app"
-    echo -en "\e[33mDigite a Senha SMTP do Email (ex: @Senha123_): \e[0m" && read -r senha_smtp_evocêrm
+    echo -e "$amarelo--> Sem caracteres especiais: \!#$ | Se estiver usando gmail use a senha de app"
+    echo -en "\e[33mDigite a Senha SMTP do Email (ex: @Senha123_): \e[0m" && read -r senha_smtp_evocrm
     echo ""
 
     ## Pergunta o Host SMTP do email
     echo -e "\e[97mPasso$amarelo 6/7\e[0m"
-    echo -en "\e[33mDigite o Host SMTP do Email (ex: smtp.hostinger.com): \e[0m" && read -r host_smtp_evocêrm
+    echo -en "\e[33mDigite o Host SMTP do Email (ex: smtp.hostinger.com): \e[0m" && read -r host_smtp_evocrm
     echo ""
 
     ## Pergunta a porta SMTP do email
     echo -e "\e[97mPasso$amarelo 7/7\e[0m"
-    echo -en "\e[33mDigite a porta SMTP do Email (ex: 465): \e[0m" && read -r port_smtp_evocêrm
+    echo -en "\e[33mDigite a porta SMTP do Email (ex: 465): \e[0m" && read -r port_smtp_evocrm
     echo ""
 
     ## extrai o dominio do email
-    if [[ "$email_smtp_evocêrm" == *"@"* ]]; then
-      domain_smtp_evocêrm="${email_smtp_evocêrm#*@}"  # Remove tudo até o @
+    if [[ "$email_smtp_evocrm" == *"@"* ]]; then
+      domain_smtp_evocrm="${email_smtp_evocrm#*@}"  # Remove tudo até o @
     fi
 
     ## Limpa o terminal
     clear
     
     ## Mostra o nome da aplicação
-    nome_evocêrm
+    nome_evocrm
     
     ## Mostra mensagem para verificar as informações
     conferindo_as_info
     
     ## Informação sobre URL do Builder
-    echo -e "\e[33mDominio do EvoCRM:\e[97m $url_evocêrm_frontend\e[0m"
+    echo -e "\e[33mDominio do EvoCRM:\e[97m $url_evocrm_frontend\e[0m"
     echo ""
 
     ## Informação sobre URL do Viewer
-    echo -e "\e[33mDominio da API do EvoCRM:\e[97m $url_evocêrm_api\e[0m"
+    echo -e "\e[33mDominio da API do EvoCRM:\e[97m $url_evocrm_api\e[0m"
     echo ""
 
     ## Informação sobre Email
-    echo -e "\e[33mEmail do SMTP:\e[97m $email_smtp_evocêrm\e[0m"
+    echo -e "\e[33mEmail do SMTP:\e[97m $email_smtp_evocrm\e[0m"
     echo ""
 
     ## Informação sobre Email
-    echo -e "\e[33mUsuário do SMTP:\e[97m $username_smtp_evocêrm\e[0m"
+    echo -e "\e[33mUsuário do SMTP:\e[97m $username_smtp_evocrm\e[0m"
     echo ""
 
     ## Informação sobre Senha do Email
-    echo -e "\e[33mSenha do Email:\e[97m $senha_smtp_evocêrm\e[0m"
+    echo -e "\e[33mSenha do Email:\e[97m $senha_smtp_evocrm\e[0m"
     echo ""
 
     ## Informação sobre Host SMTP
-    echo -e "\e[33mHost SMTP do Email:\e[97m $host_smtp_evocêrm\e[0m"
+    echo -e "\e[33mHost SMTP do Email:\e[97m $host_smtp_evocrm\e[0m"
     echo ""
 
     ## Informação sobre Porta SMTP
-    echo -e "\e[33mPorta SMTP do Email:\e[97m $port_smtp_evocêrm\e[0m"
+    echo -e "\e[33mPorta SMTP do Email:\e[97m $port_smtp_evocrm\e[0m"
     echo ""
 
-    ## Pergunta se as respostas estáão corretas
-    read -p "As respostas estáão corretas? (Y/N): " confirmacao
+    ## Pergunta se as respostas estão corretas
+    read -p "As respostas estão corretas? (Y/N): " confirmacao
     if [ "$confirmacao" = "Y" ] || [ "$confirmacao" = "y" ]; then
 
-        ## Digitou Y para confirmar que as informações estáão corretas
+        ## Digitou Y para confirmar que as informações estão corretas
 
         ## Limpar o terminal
         clear
@@ -41607,13 +41607,13 @@ while true; do
         break
     else
 
-        ## Digitou N para dizer que as informações não estáão corretas.
+        ## Digitou N para dizer que as informações não estão corretas.
 
         ## Limpar o terminal
         clear
 
         ## Mostra o nome da ferramenta
-        nome_evocêrm
+        nome_evocrm
 
         ## Mostra mensagem para preencher informações
         preencha_as_info
@@ -41645,13 +41645,13 @@ if [ $? -eq 0 ]; then
     echo "1/3 - [ OK ] - pgvector já instalado"
     pegar_senha_pgvector > /dev/null 2>&1
     echo "2/3 - [ OK ] - Copiando senha do PgVector"
-    criar_banco_pgvector_da_stack "evocêrm${1:+_$1}"
+    criar_banco_pgvector_da_stack "evocrm${1:+_$1}"
     echo "3/3 - [ OK ] - Criando banco de dados"
     echo ""
 else
     ferramenta_pgvector
     pegar_senha_pgvector > /dev/null 2>&1
-    criar_banco_pgvector_da_stack "evocêrm${1:+_$1}"
+    criar_banco_pgvector_da_stack "evocrm${1:+_$1}"
 fi
 
 ## Mensagem de Passo
@@ -41660,36 +41660,36 @@ echo ""
 sleep 1
 
 ## Criando key Aleatória
-secret_key_base_evocêrm=$(openssl rand -hex 64)
-jwt_secret_evocêrm=$(openssl rand -hex 32)
+secret_key_base_evocrm=$(openssl rand -hex 64)
+jwt_secret_evocrm=$(openssl rand -hex 32)
 evoai_crm_api_token=$(openssl rand -hex 32)
 doorkeeper_jwt_secret_key=$(openssl rand -hex 32)
 bot_runtime_secret=$(openssl rand -hex 32)
 auth_apikey_integration_local=$(openssl rand -hex 32)
-clickhouse_password_evocêrm=$(openssl rand -hex 16)
-rabbitmq_password_evocêrm=$(openssl rand -hex 16)
+clickhouse_password_evocrm=$(openssl rand -hex 16)
+rabbitmq_password_evocrm=$(openssl rand -hex 16)
 apt install python3 -y > /dev/null 2>&1
 encryption_key=$(python3 -c "from cryptography.fernet import Fernet; print(Fernet.generate_key().decode())")
 
-## Criando a stack evocêrm.yaml
-cat > evocêrm${1:+_$1}.yaml <<EOL
+## Criando a stack evocrm.yaml
+cat > evocrm${1:+_$1}.yaml <<EOL
 version: "3.7"
 services:
 
 ## --------------------------- ORION --------------------------- ##
 
-  evocêrm${1:+_$1}_gateway:
-    image: evoapicloud/evo-crm-gateway:latestá
+  evocrm${1:+_$1}_gateway:
+    image: evoapicloud/evo-crm-gateway:latest
 
     networks:
       - $nome_rede_interna ## Nome da rede interna
     
     environment:                                                                                                                                              
-      - AUTH_UPSTREAM=evocêrm${1:+_$1}_auth:3001                                                                                                                         
-      - CRM_UPSTREAM=evocêrm${1:+_$1}_crm:3000                                                                                                                           
-      - CORE_UPSTREAM=evocêrm${1:+_$1}_core:5555                       
-      - PROCESSOR_UPSTREAM=evocêrm${1:+_$1}_processor:8000                                                                                                               
-      - BOT_RUNTIME_UPSTREAM=evocêrm${1:+_$1}_bot_runtime:8080
+      - AUTH_UPSTREAM=evocrm${1:+_$1}_auth:3001                                                                                                                         
+      - CRM_UPSTREAM=evocrm${1:+_$1}_crm:3000                                                                                                                           
+      - CORE_UPSTREAM=evocrm${1:+_$1}_core:5555                       
+      - PROCESSOR_UPSTREAM=evocrm${1:+_$1}_processor:8000                                                                                                               
+      - BOT_RUNTIME_UPSTREAM=evocrm${1:+_$1}_bot_runtime:8080
 
     deploy:
       placement:
@@ -41702,18 +41702,18 @@ services:
       labels:
         - traefik.enable=1
         - traefik.docker.network=$nome_rede_interna ## Nome da rede interna
-        - traefik.http.routers.evocêrm${1:+_$1}_gateway.rule=Host(\`$url_evocêrm_api\`) ##&& (PathPrefix(\`/api/v1/auth\`) || PathPrefix(\`/api\`) || PathPrefix(\`/rails\`) || PathPrefix(\`/setup\`) || PathPrefix(\`/oauth\`) || PathPrefix(\`/cable\`) || PathPrefix(\`/.well-known\`) || PathPrefix(\`/webhooks\`) || PathPrefix(\`/bot\`) || PathPrefix(\`/platform\`)) ## Domínio API (gateway)
-        - traefik.http.routers.evocêrm${1:+_$1}_gateway.entrypoints=websecure
-        - traefik.http.routers.evocêrm${1:+_$1}_gateway.priority=1
-        - traefik.http.routers.evocêrm${1:+_$1}_gateway.tls.certresolver=letsencryptresolver
-        - traefik.http.routers.evocêrm${1:+_$1}_gateway.service=evocêrm${1:+_$1}_gateway
-        - traefik.http.services.evocêrm${1:+_$1}_gateway.loadbalancer.server.port=3030
-        - traefik.http.services.evocêrm${1:+_$1}_gateway.loadbalancer.passHostHeader=true
+        - traefik.http.routers.evocrm${1:+_$1}_gateway.rule=Host(\`$url_evocrm_api\`) ##&& (PathPrefix(\`/api/v1/auth\`) || PathPrefix(\`/api\`) || PathPrefix(\`/rails\`) || PathPrefix(\`/setup\`) || PathPrefix(\`/oauth\`) || PathPrefix(\`/cable\`) || PathPrefix(\`/.well-known\`) || PathPrefix(\`/webhooks\`) || PathPrefix(\`/bot\`) || PathPrefix(\`/platform\`)) ## Domínio API (gateway)
+        - traefik.http.routers.evocrm${1:+_$1}_gateway.entrypoints=websecure
+        - traefik.http.routers.evocrm${1:+_$1}_gateway.priority=1
+        - traefik.http.routers.evocrm${1:+_$1}_gateway.tls.certresolver=letsencryptresolver
+        - traefik.http.routers.evocrm${1:+_$1}_gateway.service=evocrm${1:+_$1}_gateway
+        - traefik.http.services.evocrm${1:+_$1}_gateway.loadbalancer.server.port=3030
+        - traefik.http.services.evocrm${1:+_$1}_gateway.loadbalancer.passHostHeader=true
 
 ## --------------------------- ORION --------------------------- ##
 
-  evocêrm${1:+_$1}_auth:
-    image: evoapicloud/evo-auth-service-community:latestá
+  evocrm${1:+_$1}_auth:
+    image: evoapicloud/evo-auth-service-community:latest
     command: bash -c "bundle exec rails db:migrate 2>&1 || echo 'Migration had errors, continuing...'; bundle exec rails s -p 3001 -b 0.0.0.0"
     
     networks:
@@ -41725,8 +41725,8 @@ services:
       - RAILS_MAX_THREADS=5
 
     ## 🔐 Segredos e tokens
-      - SECRET_KEY_BASE=$secret_key_base_evocêrm
-      - JWT_SECRET_KEY=$jwt_secret_evocêrm
+      - SECRET_KEY_BASE=$secret_key_base_evocrm
+      - JWT_SECRET_KEY=$jwt_secret_evocrm
       - EVOAI_CRM_API_TOKEN=$evoai_crm_api_token
       - ENCRYPTION_KEY=$encryption_key
 
@@ -41735,24 +41735,24 @@ services:
       - POSTGRES_PORT=5432
       - POSTGRES_USERNAME=postgres
       - POSTGRES_PASSWORD=$senha_pgvector
-      - POSTGRES_DATABASE=evocêrm${1:+_$1}
+      - POSTGRES_DATABASE=evocrm${1:+_$1}
       - POSTGRES_SSLMODE=disable
 
     ## 🧊 Redis
-      - REDIS_URL=redis://evocêrm${1:+_$1}_redis:6379/1
+      - REDIS_URL=redis://evocrm${1:+_$1}_redis:6379/1
 
     ## 🌐 URLs públicas e CORS
-      - FRONTEND_URL=https://$url_evocêrm_frontend
-      - BACKEND_URL=https://$url_evocêrm_api
-      - CORS_ORIGINS=https://$url_evocêrm_frontend,https://$url_evocêrm_api
+      - FRONTEND_URL=https://$url_evocrm_frontend
+      - BACKEND_URL=https://$url_evocrm_api
+      - CORS_ORIGINS=https://$url_evocrm_frontend,https://$url_evocrm_api
 
     ## ✉️ E-mail (Mailer + SMTP)
-      - SMTP_DOMAIN=$domain_smtp_evocêrm
-      - MAILER_SENDER_EMAIL=$email_smtp_evocêrm
-      - SMTP_USERNAME=$username_smtp_evocêrm
-      - SMTP_PASSWORD=$senha_smtp_evocêrm
-      - SMTP_ADDRESS=$host_smtp_evocêrm
-      - SMTP_PORT=$port_smtp_evocêrm
+      - SMTP_DOMAIN=$domain_smtp_evocrm
+      - MAILER_SENDER_EMAIL=$email_smtp_evocrm
+      - SMTP_USERNAME=$username_smtp_evocrm
+      - SMTP_PASSWORD=$senha_smtp_evocrm
+      - SMTP_ADDRESS=$host_smtp_evocrm
+      - SMTP_PORT=$port_smtp_evocrm
       - SMTP_AUTHENTICATION=plain
       - SMTP_ENABLE_STARTTLS_AUTO=true
 
@@ -41766,19 +41766,19 @@ services:
       - SIDEKIQ_CONCURRENCY=10
       - OAUTH_TOKEN_EXPIRES_IN=28800
 
-    ## 🗂️ Storage — 'local' por padrão: mídia gravada em disco (volume evocêrm${1:+_$1}_auth_storage).
+    ## 🗂️ Storage — 'local' por padrão: mídia gravada em disco (volume evocrm${1:+_$1}_auth_storage).
     ## Para usar S3/R2/MinIO externo, troque para s3_compatible e descomente/preencha as STORAGE_* abaixo.
       - ACTIVE_STORAGE_SERVICE=local
-      - ACTIVE_STORAGE_URL=https://$url_evocêrm_api   # URL publica p/ midia local (browser) = BACKEND_URL
+      - ACTIVE_STORAGE_URL=https://$url_evocrm_api   # URL publica p/ midia local (browser) = BACKEND_URL
     #  - ACTIVE_STORAGE_SERVICE=s3_compatible
     #  - STORAGE_BUCKET_NAME=evoaicrm        # Nome do seu bucket
     #  - STORAGE_ACCESS_KEY_ID=              # Access key do seu S3
     #  - STORAGE_SECRET_ACCESS_KEY=          # Secret key do seu S3
     #  - STORAGE_REGION=auto
-    #  - STORAGE_ENDPOINT=https://           # Endpoint do seu S3. Ex.: https://xxxx.r2.cloudflarestáãorage.com
+    #  - STORAGE_ENDPOINT=https://           # Endpoint do seu S3. Ex.: https://xxxx.r2.cloudflarestorage.com
 
     volumes:
-      - evocêrm${1:+_$1}_auth_storage:/app/storage
+      - evocrm${1:+_$1}_auth_storage:/app/storage
     
     deploy:
       placement:
@@ -41791,8 +41791,8 @@ services:
 
 ## --------------------------- ORION --------------------------- ##
 
-  evocêrm${1:+_$1}_auth_sidekiq:
-    image: evoapicloud/evo-auth-service-community:latestá
+  evocrm${1:+_$1}_auth_sidekiq:
+    image: evoapicloud/evo-auth-service-community:latest
     command: ["bundle", "exec", "sidekiq", "-C", "config/sidekiq.yml"]
 
     networks:
@@ -41801,14 +41801,14 @@ services:
     environment:
     ## ⚙️ Rails (ambiente)
       - RAILS_ENV=production
-    ## 🚫 Sidekiq não roda migrations (quem migra é o serviço web evocêrm_auth)
+    ## 🚫 Sidekiq não roda migrations (quem migra é o serviço web evocrm_auth)
       - RUN_MIGRATIONS=false
     ## 🩺 Healthcheck em modo sidekiq (checa o processo, não HTTP)
       - SERVICE_ROLE=sidekiq
 
     ## 🔐 Segredos e tokens
-      - SECRET_KEY_BASE=$secret_key_base_evocêrm
-      - JWT_SECRET_KEY=$jwt_secret_evocêrm
+      - SECRET_KEY_BASE=$secret_key_base_evocrm
+      - JWT_SECRET_KEY=$jwt_secret_evocrm
       - EVOAI_CRM_API_TOKEN=$evoai_crm_api_token
       - ENCRYPTION_KEY=$encryption_key
 
@@ -41817,24 +41817,24 @@ services:
       - POSTGRES_PORT=5432
       - POSTGRES_USERNAME=postgres
       - POSTGRES_PASSWORD=$senha_pgvector
-      - POSTGRES_DATABASE=evocêrm${1:+_$1}
+      - POSTGRES_DATABASE=evocrm${1:+_$1}
       - POSTGRES_SSLMODE=disable
 
     ## 🧊 Redis
-      - REDIS_URL=redis://evocêrm${1:+_$1}_redis:6379/1
+      - REDIS_URL=redis://evocrm${1:+_$1}_redis:6379/1
 
     ## 🌐 CORS
-      - FRONTEND_URL=https://$url_evocêrm_frontend
-      - BACKEND_URL=https://$url_evocêrm_api
-      - CORS_ORIGINS=https://$url_evocêrm_frontend,https://$url_evocêrm_api
+      - FRONTEND_URL=https://$url_evocrm_frontend
+      - BACKEND_URL=https://$url_evocrm_api
+      - CORS_ORIGINS=https://$url_evocrm_frontend,https://$url_evocrm_api
 
     ## ✉️ E-mail (Mailer + SMTP)
-      - SMTP_DOMAIN=$domain_smtp_evocêrm
-      - MAILER_SENDER_EMAIL=$email_smtp_evocêrm
-      - SMTP_USERNAME=$username_smtp_evocêrm
-      - SMTP_PASSWORD=$senha_smtp_evocêrm
-      - SMTP_ADDRESS=$host_smtp_evocêrm
-      - SMTP_PORT=$port_smtp_evocêrm
+      - SMTP_DOMAIN=$domain_smtp_evocrm
+      - MAILER_SENDER_EMAIL=$email_smtp_evocrm
+      - SMTP_USERNAME=$username_smtp_evocrm
+      - SMTP_PASSWORD=$senha_smtp_evocrm
+      - SMTP_ADDRESS=$host_smtp_evocrm
+      - SMTP_PORT=$port_smtp_evocrm
       - SMTP_AUTHENTICATION=plain
       - SMTP_ENABLE_STARTTLS_AUTO=true
 
@@ -41848,19 +41848,19 @@ services:
       - SIDEKIQ_CONCURRENCY=10
       - OAUTH_TOKEN_EXPIRES_IN=28800
 
-    ## 🗂️ Storage — 'local' por padrão: mídia gravada em disco (volume evocêrm${1:+_$1}_auth_storage).
+    ## 🗂️ Storage — 'local' por padrão: mídia gravada em disco (volume evocrm${1:+_$1}_auth_storage).
     ## Para usar S3/R2/MinIO externo, troque para s3_compatible e descomente/preencha as STORAGE_* abaixo.
       - ACTIVE_STORAGE_SERVICE=local
-      - ACTIVE_STORAGE_URL=https://$url_evocêrm_api   # URL publica p/ midia local (browser) = BACKEND_URL
+      - ACTIVE_STORAGE_URL=https://$url_evocrm_api   # URL publica p/ midia local (browser) = BACKEND_URL
     #  - ACTIVE_STORAGE_SERVICE=s3_compatible
     #  - STORAGE_BUCKET_NAME=evoaicrm        # Nome do seu bucket
     #  - STORAGE_ACCESS_KEY_ID=              # Access key do seu S3
     #  - STORAGE_SECRET_ACCESS_KEY=          # Secret key do seu S3
     #  - STORAGE_REGION=auto
-    #  - STORAGE_ENDPOINT=https://           # Endpoint do seu S3. Ex.: https://xxxx.r2.cloudflarestáãorage.com
+    #  - STORAGE_ENDPOINT=https://           # Endpoint do seu S3. Ex.: https://xxxx.r2.cloudflarestorage.com
 
     volumes:
-      - evocêrm${1:+_$1}_auth_storage:/app/storage
+      - evocrm${1:+_$1}_auth_storage:/app/storage
     
     healthcheck:
       disable: true
@@ -41876,9 +41876,9 @@ services:
 
 ## --------------------------- ORION --------------------------- ##
 
-  evocêrm${1:+_$1}_crm:
-    image: evoapicloud/evo-ai-crm-community:latestá
-    command: sh -c "until wget -qO- http://evocêrm${1:+_$1}_auth:3001/health >/dev/null 2>&1; do echo 'Waiting for auth...'; sleep 5; done; bundle exec rails db:migrate 2>&1 || echo 'Migration had errors, continuing...'; bundle exec rails s -p 3000 -b 0.0.0.0"
+  evocrm${1:+_$1}_crm:
+    image: evoapicloud/evo-ai-crm-community:latest
+    command: sh -c "until wget -qO- http://evocrm${1:+_$1}_auth:3001/health >/dev/null 2>&1; do echo 'Waiting for auth...'; sleep 5; done; bundle exec rails db:migrate 2>&1 || echo 'Migration had errors, continuing...'; bundle exec rails s -p 3000 -b 0.0.0.0"
     
     networks:
       - $nome_rede_interna ## Nome da rede interna
@@ -41890,8 +41890,8 @@ services:
       - RAILS_LOG_TO_STDOUT=true
 
     ## 🔐 Segredos e tokens
-      - SECRET_KEY_BASE=$secret_key_base_evocêrm
-      - JWT_SECRET_KEY=$jwt_secret_evocêrm
+      - SECRET_KEY_BASE=$secret_key_base_evocrm
+      - JWT_SECRET_KEY=$jwt_secret_evocrm
       - EVOAI_CRM_API_TOKEN=$evoai_crm_api_token
       - ENCRYPTION_KEY=$encryption_key
 
@@ -41900,27 +41900,27 @@ services:
       - POSTGRES_PORT=5432
       - POSTGRES_USERNAME=postgres
       - POSTGRES_PASSWORD=$senha_pgvector
-      - POSTGRES_DATABASE=evocêrm${1:+_$1}
+      - POSTGRES_DATABASE=evocrm${1:+_$1}
       - POSTGRES_SSLMODE=disable
 
     ## 🧊 Redis (DB 2 dedicada ao CRM — Sidekiq + cache + ActionCable)
-      - REDIS_URL=redis://evocêrm${1:+_$1}_redis:6379/2
+      - REDIS_URL=redis://evocrm${1:+_$1}_redis:6379/2
 
     ## 🔗 Serviços internos (Auth + Core)
-      - EVO_AUTH_SERVICE_URL=http://evocêrm${1:+_$1}_auth:3001
-      - EVO_AI_CORE_SERVICE_URL=http://evocêrm${1:+_$1}_core:5555
+      - EVO_AUTH_SERVICE_URL=http://evocrm${1:+_$1}_auth:3001
+      - EVO_AI_CORE_SERVICE_URL=http://evocrm${1:+_$1}_core:5555
 
     ## 🔀 EvoFlow (tela de Segments + tracking de eventos do contato) — porta 3334
-    ## Sem estáas 4 variáveis o CRM levanta EvoFlow::ConfigurationError e /api/v1/segments responde 500.
+    ## Sem estas 4 variáveis o CRM levanta EvoFlow::ConfigurationError e /api/v1/segments responde 500.
       - EVO_FLOW_ENABLED=true
-      - EVO_FLOW_API_URL=http://evocêrm${1:+_$1}_evoflow:3334/api/v1
+      - EVO_FLOW_API_URL=http://evocrm${1:+_$1}_evoflow:3334/api/v1
       - AUTH_APIKEY_INTEGRATION_LOCAL=$auth_apikey_integration_local
       - EVO_FLOW_ALLOW_INSECURE=true
 
     ## 🌐 URLs públicas e CORS
-      - BACKEND_URL=https://$url_evocêrm_api
-      - FRONTEND_URL=https://$url_evocêrm_frontend
-      - CORS_ORIGINS=https://$url_evocêrm_frontend,https://$url_evocêrm_api
+      - BACKEND_URL=https://$url_evocrm_api
+      - FRONTEND_URL=https://$url_evocrm_frontend
+      - CORS_ORIGINS=https://$url_evocrm_frontend,https://$url_evocrm_api
     
     ## 📊 Telemetria e logs
       - DISABLE_TELEMETRY=true
@@ -41932,23 +41932,23 @@ services:
       - ENABLE_INBOX_EVENTS=true
     
     ## 🤖 Bot runtime
-      - BOT_RUNTIME_URL=http://evocêrm${1:+_$1}_bot_runtime:8080
+      - BOT_RUNTIME_URL=http://evocrm${1:+_$1}_bot_runtime:8080
       - BOT_RUNTIME_SECRET=$bot_runtime_secret
-      - BOT_RUNTIME_POSTBACK_BASE_URL=http://evocêrm${1:+_$1}_crm:3000
+      - BOT_RUNTIME_POSTBACK_BASE_URL=http://evocrm${1:+_$1}_crm:3000
 
-    ## 🗂️ Storage — 'local' por padrão: mídia gravada em disco (volume evocêrm${1:+_$1}_storage).
+    ## 🗂️ Storage — 'local' por padrão: mídia gravada em disco (volume evocrm${1:+_$1}_storage).
     ## Para usar S3/R2/MinIO externo, troque para s3_compatible e descomente/preencha as STORAGE_* abaixo.
       - ACTIVE_STORAGE_SERVICE=local
-      - ACTIVE_STORAGE_URL=https://$url_evocêrm_api   # URL publica p/ midia local (browser) = BACKEND_URL
+      - ACTIVE_STORAGE_URL=https://$url_evocrm_api   # URL publica p/ midia local (browser) = BACKEND_URL
     #  - ACTIVE_STORAGE_SERVICE=s3_compatible
     #  - STORAGE_BUCKET_NAME=evoaicrm        # Nome do seu bucket
     #  - STORAGE_ACCESS_KEY_ID=              # Access key do seu S3
     #  - STORAGE_SECRET_ACCESS_KEY=          # Secret key do seu S3
     #  - STORAGE_REGION=auto
-    #  - STORAGE_ENDPOINT=https://           # Endpoint do seu S3. Ex.: https://xxxx.r2.cloudflarestáãorage.com
+    #  - STORAGE_ENDPOINT=https://           # Endpoint do seu S3. Ex.: https://xxxx.r2.cloudflarestorage.com
 
     volumes:
-      - evocêrm${1:+_$1}_storage:/app/storage
+      - evocrm${1:+_$1}_storage:/app/storage
 
     deploy:
       placement:
@@ -41961,8 +41961,8 @@ services:
 
 ## --------------------------- ORION --------------------------- ##
 
-  evocêrm${1:+_$1}_crm_sidekiq:
-    image: evoapicloud/evo-ai-crm-community:latestá
+  evocrm${1:+_$1}_crm_sidekiq:
+    image: evoapicloud/evo-ai-crm-community:latest
     command: ["bundle", "exec", "sidekiq", "-C", "config/sidekiq.yml"]
 
     networks:
@@ -41971,12 +41971,12 @@ services:
     environment:
     ## ⚙️ Rails (ambiente)
       - RAILS_ENV=production
-    ## 🚫 Sidekiq não roda migrations (quem migra é o serviço web evocêrm_crm)
+    ## 🚫 Sidekiq não roda migrations (quem migra é o serviço web evocrm_crm)
       - RUN_MIGRATIONS=false
     
     ## 🔐 Segredos e tokens
-      - SECRET_KEY_BASE=$secret_key_base_evocêrm
-      - JWT_SECRET_KEY=$jwt_secret_evocêrm
+      - SECRET_KEY_BASE=$secret_key_base_evocrm
+      - JWT_SECRET_KEY=$jwt_secret_evocrm
       - EVOAI_CRM_API_TOKEN=$evoai_crm_api_token
       - ENCRYPTION_KEY=$encryption_key
     
@@ -41985,46 +41985,46 @@ services:
       - POSTGRES_PORT=5432
       - POSTGRES_USERNAME=postgres
       - POSTGRES_PASSWORD=$senha_pgvector
-      - POSTGRES_DATABASE=evocêrm${1:+_$1}
+      - POSTGRES_DATABASE=evocrm${1:+_$1}
       - POSTGRES_SSLMODE=disable
     
-    ## 🧊 Redis (DB 2 — mesma DB do evocêrm_crm)
-      - REDIS_URL=redis://evocêrm${1:+_$1}_redis:6379/2
+    ## 🧊 Redis (DB 2 — mesma DB do evocrm_crm)
+      - REDIS_URL=redis://evocrm${1:+_$1}_redis:6379/2
 
     ## 🔗 Serviços internos (Auth + Core)
-      - EVO_AUTH_SERVICE_URL=http://evocêrm${1:+_$1}_auth:3001
-      - EVO_AI_CORE_SERVICE_URL=http://evocêrm${1:+_$1}_core:5555
+      - EVO_AUTH_SERVICE_URL=http://evocrm${1:+_$1}_auth:3001
+      - EVO_AI_CORE_SERVICE_URL=http://evocrm${1:+_$1}_core:5555
 
     ## 🔀 EvoFlow (tela de Segments + tracking de eventos do contato) — porta 3334
-    ## Sem estáas 4 variáveis o CRM levanta EvoFlow::ConfigurationError e /api/v1/segments responde 500.
+    ## Sem estas 4 variáveis o CRM levanta EvoFlow::ConfigurationError e /api/v1/segments responde 500.
       - EVO_FLOW_ENABLED=true
-      - EVO_FLOW_API_URL=http://evocêrm${1:+_$1}_evoflow:3334/api/v1
+      - EVO_FLOW_API_URL=http://evocrm${1:+_$1}_evoflow:3334/api/v1
       - AUTH_APIKEY_INTEGRATION_LOCAL=$auth_apikey_integration_local
       - EVO_FLOW_ALLOW_INSECURE=true
     
     ## 🌐 CORS
-      - BACKEND_URL=https://$url_evocêrm_api
-      - FRONTEND_URL=https://$url_evocêrm_frontend
-      - CORS_ORIGINS=https://$url_evocêrm_frontend,https://$url_evocêrm_api
+      - BACKEND_URL=https://$url_evocrm_api
+      - FRONTEND_URL=https://$url_evocrm_frontend
+      - CORS_ORIGINS=https://$url_evocrm_frontend,https://$url_evocrm_api
     
     ## 🤖 Bot runtime
-      - BOT_RUNTIME_URL=http://evocêrm${1:+_$1}_bot_runtime:8080
+      - BOT_RUNTIME_URL=http://evocrm${1:+_$1}_bot_runtime:8080
       - BOT_RUNTIME_SECRET=$bot_runtime_secret
-      - BOT_RUNTIME_POSTBACK_BASE_URL=http://evocêrm${1:+_$1}_crm:3000
+      - BOT_RUNTIME_POSTBACK_BASE_URL=http://evocrm${1:+_$1}_crm:3000
 
-    ## 🗂️ Storage — 'local' por padrão: mídia gravada em disco (volume evocêrm${1:+_$1}_storage).
+    ## 🗂️ Storage — 'local' por padrão: mídia gravada em disco (volume evocrm${1:+_$1}_storage).
     ## Para usar S3/R2/MinIO externo, troque para s3_compatible e descomente/preencha as STORAGE_* abaixo.
       - ACTIVE_STORAGE_SERVICE=local
-      - ACTIVE_STORAGE_URL=https://$url_evocêrm_api   # URL publica p/ midia local (browser) = BACKEND_URL
+      - ACTIVE_STORAGE_URL=https://$url_evocrm_api   # URL publica p/ midia local (browser) = BACKEND_URL
     #  - ACTIVE_STORAGE_SERVICE=s3_compatible
     #  - STORAGE_BUCKET_NAME=evoaicrm        # Nome do seu bucket
     #  - STORAGE_ACCESS_KEY_ID=              # Access key do seu S3
     #  - STORAGE_SECRET_ACCESS_KEY=          # Secret key do seu S3
     #  - STORAGE_REGION=auto
-    #  - STORAGE_ENDPOINT=https://           # Endpoint do seu S3. Ex.: https://xxxx.r2.cloudflarestáãorage.com
+    #  - STORAGE_ENDPOINT=https://           # Endpoint do seu S3. Ex.: https://xxxx.r2.cloudflarestorage.com
 
     volumes:
-      - evocêrm${1:+_$1}_storage:/app/storage
+      - evocrm${1:+_$1}_storage:/app/storage
 
     deploy:
       placement:
@@ -42037,8 +42037,8 @@ services:
 
 ## --------------------------- ORION --------------------------- ##
 
-  evocêrm${1:+_$1}_core:
-    image: evoapicloud/evo-ai-core-service-community:latestá
+  evocrm${1:+_$1}_core:
+    image: evoapicloud/evo-ai-core-service-community:latest
     
     networks:
       - $nome_rede_interna ## Nome da rede interna
@@ -42049,7 +42049,7 @@ services:
       - DB_PORT=5432
       - DB_USER=postgres
       - DB_PASSWORD=$senha_pgvector
-      - DB_NAME=evocêrm${1:+_$1}
+      - DB_NAME=evocrm${1:+_$1}
       - DB_SSLMODE=disable
     
     ## 📈 Pool de conexões
@@ -42062,14 +42062,14 @@ services:
       - PORT=5555
     
     ## 🔐 Segredos e JWT — o core NÃO usa SECRET_KEY_BASE; valida JWT com JWT_SECRET_KEY
-      - JWT_SECRET_KEY=$jwt_secret_evocêrm
+      - JWT_SECRET_KEY=$jwt_secret_evocrm
       - JWT_ALGORITHM=HS256
       - ENCRYPTION_KEY=$encryption_key
     
     ## 🔗 Serviços internos
-      - EVOLUTION_BASE_URL=http://evocêrm${1:+_$1}_crm:3000
-      - EVO_AUTH_BASE_URL=http://evocêrm${1:+_$1}_auth:3001
-      - AI_PROCESSOR_URL=http://evocêrm${1:+_$1}_processor:8000
+      - EVOLUTION_BASE_URL=http://evocrm${1:+_$1}_crm:3000
+      - EVO_AUTH_BASE_URL=http://evocrm${1:+_$1}_auth:3001
+      - AI_PROCESSOR_URL=http://evocrm${1:+_$1}_processor:8000
       - AI_PROCESSOR_VERSION=v1
     
     deploy:
@@ -42083,22 +42083,22 @@ services:
 
 ## --------------------------- ORION --------------------------- ##
 
-  evocêrm${1:+_$1}_processor:
-    image: evoapicloud/evo-ai-processor-community:latestá
+  evocrm${1:+_$1}_processor:
+    image: evoapicloud/evo-ai-processor-community:latest
     command: sh -c "alembic upgrade head 2>&1 || echo 'Alembic migration had errors, continuing...'; python -m scripts.run_seeders; uvicorn src.main:app --host \$\$HOST --port \$\$PORT"
     
     volumes:
-      - evocêrm${1:+_$1}_processor_logs:/app/logs
+      - evocrm${1:+_$1}_processor_logs:/app/logs
     
     networks:
       - $nome_rede_interna ## Nome da rede interna
 
     environment:
     ## 🗄️ PostgreSQL
-      - POSTGRES_CONNECTION_STRING=postgresql://postgres:$senha_pgvector@pgvector:5432/evocêrm${1:+_$1}?sslmode=disable
+      - POSTGRES_CONNECTION_STRING=postgresql://postgres:$senha_pgvector@pgvector:5432/evocrm${1:+_$1}?sslmode=disable
     
     ## 🧊 Redis
-      - REDIS_HOST=evocêrm${1:+_$1}_redis
+      - REDIS_HOST=evocrm${1:+_$1}_redis
       - REDIS_PORT=6379
       - REDIS_PASSWORD=
       - REDIS_SSL=false
@@ -42113,17 +42113,17 @@ services:
     ## 🐛 Debug e segredos
       - DEBUG=false
       - ENCRYPTION_KEY=$encryption_key
-      - JWT_SECRET_KEY=$jwt_secret_evocêrm
+      - JWT_SECRET_KEY=$jwt_secret_evocrm
       - EVOAI_CRM_API_TOKEN=$evoai_crm_api_token
     
     ## 🔗 Integração CRM e Core
-      - EVO_AUTH_BASE_URL=http://evocêrm${1:+_$1}_auth:3001
-      - EVO_AI_CRM_URL=http://evocêrm${1:+_$1}_crm:3000
-      - CORE_SERVICE_URL=http://evocêrm${1:+_$1}_core:5555/api/v1
+      - EVO_AUTH_BASE_URL=http://evocrm${1:+_$1}_auth:3001
+      - EVO_AI_CRM_URL=http://evocrm${1:+_$1}_crm:3000
+      - CORE_SERVICE_URL=http://evocrm${1:+_$1}_core:5555/api/v1
    
     ## 🌍 URLs públicas da API
-      - APP_URL=https://$url_evocêrm_api
-      - API_URL=https://$url_evocêrm_api
+      - APP_URL=https://$url_evocrm_api
+      - API_URL=https://$url_evocrm_api
     
     ## 📋 Metadados da API (OpenAPI)
       - API_TITLE=Agent Processor Community
@@ -42146,8 +42146,8 @@ services:
 
 ## --------------------------- ORION --------------------------- ##
 
-  evocêrm${1:+_$1}_bot_runtime:
-    image: evoapicloud/evo-bot-runtime:latestá
+  evocrm${1:+_$1}_bot_runtime:
+    image: evoapicloud/evo-bot-runtime:latest
     
     networks:
       - $nome_rede_interna ## Nome da rede interna
@@ -42156,18 +42156,18 @@ services:
     ## 🌐 Rede (listen)
       - LISTEN_ADDR=0.0.0.0:8080
     
-    ## 🧊 Redis (DB 5 dedicada ao bot_runtime — estáado das pipelines)
-      - REDIS_URL=redis://evocêrm${1:+_$1}_redis:6379/5
+    ## 🧊 Redis (DB 5 dedicada ao bot_runtime — estado das pipelines)
+      - REDIS_URL=redis://evocrm${1:+_$1}_redis:6379/5
 
     ## 🤖 Processor e segurança
-      - AI_PROCESSOR_URL=http://evocêrm${1:+_$1}_processor:8000
+      - AI_PROCESSOR_URL=http://evocrm${1:+_$1}_processor:8000
       - BOT_RUNTIME_SECRET=$bot_runtime_secret
       - AI_CALL_TIMEOUT_SECONDS=30
       - AI_CALL_MAX_RETRIES=2
       - AI_CALL_RETRY_BASE_MS=200
 
     ## 🖼️ Mídia recebida pelo agente — host do BACKEND_URL (sem esquema/porta). Vazio = agente não recebe mídia.
-      - MEDIA_HOST_ALLOWLIST=$url_evocêrm_api
+      - MEDIA_HOST_ALLOWLIST=$url_evocrm_api
     
     deploy:
       placement:
@@ -42180,8 +42180,8 @@ services:
 
 ## --------------------------- ORION --------------------------- ##
 
-  evocêrm${1:+_$1}_frontend:
-    image: evoapicloud/evo-ai-frontend-community:latestá
+  evocrm${1:+_$1}_frontend:
+    image: evoapicloud/evo-ai-frontend-community:latest
     
     networks:
       - $nome_rede_interna ## Nome da rede interna
@@ -42191,15 +42191,15 @@ services:
       - VITE_APP_ENV=production
     
     ## 🌐 URLs da API (build-time)
-      - VITE_API_URL=https://$url_evocêrm_api
-      - VITE_AUTH_API_URL=https://$url_evocêrm_api
-      - VITE_EVOAI_API_URL=https://$url_evocêrm_api
-      - VITE_AGENT_PROCESSOR_URL=https://$url_evocêrm_api
-      - VITE_WS_URL=https://$url_evocêrm_api
+      - VITE_API_URL=https://$url_evocrm_api
+      - VITE_AUTH_API_URL=https://$url_evocrm_api
+      - VITE_EVOAI_API_URL=https://$url_evocrm_api
+      - VITE_AGENT_PROCESSOR_URL=https://$url_evocrm_api
+      - VITE_WS_URL=https://$url_evocrm_api
     ## EvoFlow (Journeys/Campaigns): o Traefik expõe SÓ /api/v1/journeys e /api/v1/campaigns no
     ## domínio da API (ver labels do serviço evoflow). VITE_EVOFLOW_API_URL = domínio da API,
     ## mesma origem do frontend -> sem CORS.
-      - VITE_EVOFLOW_API_URL=https://$url_evocêrm_api
+      - VITE_EVOFLOW_API_URL=https://$url_evocrm_api
 
     deploy:
       placement:
@@ -42212,18 +42212,18 @@ services:
       labels:
         - traefik.enable=1
         - traefik.docker.network=$nome_rede_interna ## Nome da rede interna
-        - traefik.http.routers.evocêrm${1:+_$1}_frontend.rule=Host(\`$url_evocêrm_frontend\`) ## Domínio frontend (React)
-        - traefik.http.routers.evocêrm${1:+_$1}_frontend.entrypoints=websecure
-        - traefik.http.routers.evocêrm${1:+_$1}_frontend.priority=1
-        - traefik.http.routers.evocêrm${1:+_$1}_frontend.tls.certresolver=letsencryptresolver
-        - traefik.http.routers.evocêrm${1:+_$1}_frontend.service=evocêrm${1:+_$1}_frontend
-        - traefik.http.services.evocêrm${1:+_$1}_frontend.loadbalancer.server.port=80
-        - traefik.http.services.evocêrm${1:+_$1}_frontend.loadbalancer.passHostHeader=true
+        - traefik.http.routers.evocrm${1:+_$1}_frontend.rule=Host(\`$url_evocrm_frontend\`) ## Domínio frontend (React)
+        - traefik.http.routers.evocrm${1:+_$1}_frontend.entrypoints=websecure
+        - traefik.http.routers.evocrm${1:+_$1}_frontend.priority=1
+        - traefik.http.routers.evocrm${1:+_$1}_frontend.tls.certresolver=letsencryptresolver
+        - traefik.http.routers.evocrm${1:+_$1}_frontend.service=evocrm${1:+_$1}_frontend
+        - traefik.http.services.evocrm${1:+_$1}_frontend.loadbalancer.server.port=80
+        - traefik.http.services.evocrm${1:+_$1}_frontend.loadbalancer.passHostHeader=true
         
 ## --------------------------- ORION --------------------------- ##
 
-  evocêrm${1:+_$1}_redis:
-    image: redis:latestá  ## Versão do Redis
+  evocrm${1:+_$1}_redis:
+    image: redis:latest  ## Versão do Redis
     command: [
         "redis-server",
         "--appendonly",
@@ -42233,7 +42233,7 @@ services:
       ]
     
     volumes:
-      - evocêrm${1:+_$1}_redis:/data
+      - evocrm${1:+_$1}_redis:/data
     
     networks:
       - $nome_rede_interna ## Nome da rede interna
@@ -42253,16 +42253,16 @@ services:
 
   ## ClickHouse — storage dos eventos do EvoFlow (STORAGE_MODE=clickhouse).
   ## Sem portas publicadas: só a rede interna alcança.
-  evocêrm${1:+_$1}_clickhouse:
-    image: clickhouse/clickhouse-server:latestá  ## Versão do ClickHouse
+  evocrm${1:+_$1}_clickhouse:
+    image: clickhouse/clickhouse-server:latest  ## Versão do ClickHouse
 
     environment:
       - CLICKHOUSE_USER=default
-      - CLICKHOUSE_PASSWORD=$clickhouse_password_evocêrm
+      - CLICKHOUSE_PASSWORD=$clickhouse_password_evocrm
       - CLICKHOUSE_DB=default
 
     volumes:
-      - evocêrm${1:+_$1}_clickhouse_data:/var/lib/clickhouse
+      - evocrm${1:+_$1}_clickhouse_data:/var/lib/clickhouse
 
     networks:
       - $nome_rede_interna ## Nome da rede interna
@@ -42279,15 +42279,15 @@ services:
 ## --------------------------- ORION --------------------------- ##
 
   ## RabbitMQ — o EvoFlow exige um broker no boot, mesmo com QUEUE_MODE=direct.
-  evocêrm${1:+_$1}_rabbitmq:
+  evocrm${1:+_$1}_rabbitmq:
     image: rabbitmq:3-alpine  ## Versão do RabbitMQ
 
     environment:
       - RABBITMQ_DEFAULT_USER=evoflow
-      - RABBITMQ_DEFAULT_PASS=$rabbitmq_password_evocêrm
+      - RABBITMQ_DEFAULT_PASS=$rabbitmq_password_evocrm
 
     volumes:
-      - evocêrm${1:+_$1}_rabbitmq_data:/var/lib/rabbitmq
+      - evocrm${1:+_$1}_rabbitmq_data:/var/lib/rabbitmq
 
     networks:
       - $nome_rede_interna ## Nome da rede interna
@@ -42303,16 +42303,16 @@ services:
 
 ## --------------------------- ORION --------------------------- ##
 
-  ## EvoFlow (NestáJS) — serve /api/v1/segments ao CRM (que faz proxy) — porta 3334.
+  ## EvoFlow (NestJS) — serve /api/v1/segments ao CRM (que faz proxy) — porta 3334.
   ## Postgres DEDICADO (evo_campaign) no mesmo pgvector: o boot cria o banco e roda as migrations.
-  ## O banco do CRM (evocêrm) não é tocado. O swarm ignora depends_on → o boot espera o ClickHouse sozinho.
-  evocêrm${1:+_$1}_evoflow:
-    image: evoapicloud/evo-flow-community:latestá
+  ## O banco do CRM (evocrm) não é tocado. O swarm ignora depends_on → o boot espera o ClickHouse sozinho.
+  evocrm${1:+_$1}_evoflow:
+    image: evoapicloud/evo-flow-community:latest
     command:
       - sh
       - -c
       - |
-        until node -e 'require("http").get("http://evocêrm${1:+_$1}_clickhouse:8123/ping",r=>process.exit(r.statusCode===200?0:1)).on("error",()=>process.exit(1))'; do echo 'Waiting for clickhouse...'; sleep 5; done
+        until node -e 'require("http").get("http://evocrm${1:+_$1}_clickhouse:8123/ping",r=>process.exit(r.statusCode===200?0:1)).on("error",()=>process.exit(1))'; do echo 'Waiting for clickhouse...'; sleep 5; done
         node -e 'const{Client}=require("pg");const db=process.env.POSTGRES_DB_DATABASE;const c=new Client({host:process.env.POSTGRES_DB_HOST,port:+(process.env.POSTGRES_DB_PORT||5432),user:process.env.POSTGRES_DB_USERNAME,password:process.env.POSTGRES_DB_PASSWORD,database:"postgres"});c.connect().then(()=>c.query("CREATE DATABASE "+db)).then(()=>console.log("[init] created "+db)).catch(e=>console.log("[init] "+(e.code==="42P04"?"db already exists":e.message))).finally(()=>c.end());'
         node_modules/.bin/typeorm migration:run -d dist/database/ormconfig.js || echo "[init] migration:run failed (continuing)"
         exec node dist/main.js
@@ -42334,24 +42334,24 @@ services:
       - AUTH_APIKEY_INTEGRATION_LOCAL=$auth_apikey_integration_local
 
     ## 🔗 Serviços internos (Auth + CRM)
-      - EVO_AUTH_SERVICE_URL=http://evocêrm${1:+_$1}_auth:3001
+      - EVO_AUTH_SERVICE_URL=http://evocrm${1:+_$1}_auth:3001
       - EVO_AUTH_VALIDATE_TOKEN_ENDPOINT=/api/v1/auth/validate
-      - EVOAI_CRM_BASE_URL=http://evocêrm${1:+_$1}_crm:3000
+      - EVOAI_CRM_BASE_URL=http://evocrm${1:+_$1}_crm:3000
       - EVOAI_CRM_API_TOKEN=$evoai_crm_api_token
 
     ## 🐇 Broker (exigido no boot mesmo em QUEUE_MODE=direct)
       - BROKER_TYPE=rabbitmq
-      - RABBITMQ_URL=amqp://evoflow:$rabbitmq_password_evocêrm@evocêrm${1:+_$1}_rabbitmq:5672
+      - RABBITMQ_URL=amqp://evoflow:$rabbitmq_password_evocrm@evocrm${1:+_$1}_rabbitmq:5672
 
     ## 🧊 ClickHouse (eventos)
-      - CLICKHOUSE_HOST=evocêrm${1:+_$1}_clickhouse
+      - CLICKHOUSE_HOST=evocrm${1:+_$1}_clickhouse
       - CLICKHOUSE_PORT=8123
       - CLICKHOUSE_DATABASE=evo_campaign
       - CLICKHOUSE_USERNAME=default
-      - CLICKHOUSE_PASSWORD=$clickhouse_password_evocêrm
+      - CLICKHOUSE_PASSWORD=$clickhouse_password_evocrm
       - CLICKHOUSE_TABLE=contact_events
 
-    ## 🗄️ PostgreSQL — banco dedicado no MESMO Postgres (não toca o evocêrm)
+    ## 🗄️ PostgreSQL — banco dedicado no MESMO Postgres (não toca o evocrm)
       - POSTGRES_DB_HOST=pgvector
       - POSTGRES_DB_PORT=5432
       - POSTGRES_DB_USERNAME=postgres
@@ -42359,7 +42359,7 @@ services:
       - POSTGRES_DB_DATABASE=evo_campaign${1:+_$1}
 
     ## 🧊 Redis (cache de token/sessão) — DB 4 para não colidir com o CRM (1)
-      - REDIS_HOST=evocêrm${1:+_$1}_redis
+      - REDIS_HOST=evocrm${1:+_$1}_redis
       - REDIS_PORT=6379
       - REDIS_PASSWORD=
       - REDIS_DB=4
@@ -42376,37 +42376,37 @@ services:
         - traefik.enable=1
         - traefik.docker.network=$nome_rede_interna ## Nome da rede interna
         ## Expõe SOMENTE /api/v1/journeys e /api/v1/campaigns no domínio da API (mesma origem do
-        ## frontend, sem CORS). priority=10 > 1 do gateway: estáes 2 prefixos vão pro evo-flow;
-        ## todo o restáão do /api/v1 continua indo pro gateway/CRM.
-        - traefik.http.routers.evocêrm${1:+_$1}_evoflow.rule=Host(\`$url_evocêrm_api\`) && (PathPrefix(\`/api/v1/journeys\`) || PathPrefix(\`/api/v1/campaigns\`))
-        - traefik.http.routers.evocêrm${1:+_$1}_evoflow.entrypoints=websecure
-        - traefik.http.routers.evocêrm${1:+_$1}_evoflow.priority=10
-        - traefik.http.routers.evocêrm${1:+_$1}_evoflow.tls.certresolver=letsencryptresolver
-        - traefik.http.routers.evocêrm${1:+_$1}_evoflow.service=evocêrm${1:+_$1}_evoflow
-        - traefik.http.services.evocêrm${1:+_$1}_evoflow.loadbalancer.server.port=3334
-        - traefik.http.services.evocêrm${1:+_$1}_evoflow.loadbalancer.passHostHeader=true
+        ## frontend, sem CORS). priority=10 > 1 do gateway: estes 2 prefixos vão pro evo-flow;
+        ## todo o resto do /api/v1 continua indo pro gateway/CRM.
+        - traefik.http.routers.evocrm${1:+_$1}_evoflow.rule=Host(\`$url_evocrm_api\`) && (PathPrefix(\`/api/v1/journeys\`) || PathPrefix(\`/api/v1/campaigns\`))
+        - traefik.http.routers.evocrm${1:+_$1}_evoflow.entrypoints=websecure
+        - traefik.http.routers.evocrm${1:+_$1}_evoflow.priority=10
+        - traefik.http.routers.evocrm${1:+_$1}_evoflow.tls.certresolver=letsencryptresolver
+        - traefik.http.routers.evocrm${1:+_$1}_evoflow.service=evocrm${1:+_$1}_evoflow
+        - traefik.http.services.evocrm${1:+_$1}_evoflow.loadbalancer.server.port=3334
+        - traefik.http.services.evocrm${1:+_$1}_evoflow.loadbalancer.passHostHeader=true
 
 ## --------------------------- ORION --------------------------- ##
 
 volumes:
-  evocêrm${1:+_$1}_processor_logs:
+  evocrm${1:+_$1}_processor_logs:
     external: true
-    name: evocêrm${1:+_$1}_processor_logs
-  evocêrm${1:+_$1}_redis:
+    name: evocrm${1:+_$1}_processor_logs
+  evocrm${1:+_$1}_redis:
     external: true
-    name: evocêrm${1:+_$1}_redis
-  evocêrm${1:+_$1}_storage:
+    name: evocrm${1:+_$1}_redis
+  evocrm${1:+_$1}_storage:
     external: true
-    name: evocêrm${1:+_$1}_storage
-  evocêrm${1:+_$1}_auth_storage:
+    name: evocrm${1:+_$1}_storage
+  evocrm${1:+_$1}_auth_storage:
     external: true
-    name: evocêrm${1:+_$1}_auth_storage
-  evocêrm${1:+_$1}_clickhouse_data:
+    name: evocrm${1:+_$1}_auth_storage
+  evocrm${1:+_$1}_clickhouse_data:
     external: true
-    name: evocêrm${1:+_$1}_clickhouse_data
-  evocêrm${1:+_$1}_rabbitmq_data:
+    name: evocrm${1:+_$1}_clickhouse_data
+  evocrm${1:+_$1}_rabbitmq_data:
     external: true
-    name: evocêrm${1:+_$1}_rabbitmq_data
+    name: evocrm${1:+_$1}_rabbitmq_data
 
 networks:
   $nome_rede_interna: ## Nome da rede interna
@@ -42417,17 +42417,17 @@ if [ $? -eq 0 ]; then
     echo "1/10 - [ OK ] - Criando Stack"
 else
     echo "1/10 - [ OFF ] - Criando Stack"
-    echo "Não foi possível criar a stack do EVO CRM"
+    echo "Não foi possivel criar a stack do EVO CRM"
 fi
-STACK_NAME="evocêrm${1:+_$1}"
+STACK_NAME="evocrm${1:+_$1}"
 stack_editavel # > /dev/null 2>&1
-#docker stack deploy --prune --resolve-image always -c evocêrm.yaml evocêrm > /dev/null 2>&1
+#docker stack deploy --prune --resolve-image always -c evocrm.yaml evocrm > /dev/null 2>&1
 
 #if [ $? -eq 0 ]; then
 #    echo "2/2 - [ OK ] - Deploy Stack"
 #else
 #    echo "2/2 - [ OFF ] - Deploy Stack"
-#    echo "Não foi possível subir a stack do EVOCRM"
+#    echo "Não foi possivel subir a stack do EVOCRM"
 #fi
 
 ## Mensagem de Passo
@@ -42442,21 +42442,21 @@ echo -e "\e[33m--> A tela pode parecer travada durante o download. Isso é norma
 echo ""
 
 ## Baixando imagens:
-pull redis:latestá clickhouse/clickhouse-server:latestá rabbitmq:3-alpine evoapicloud/evo-auth-service-community:latestá evoapicloud/evo-ai-core-service-community:latestá evoapicloud/evo-ai-processor-community:latestá evoapicloud/evo-bot-runtime:latestá evoapicloud/evo-ai-crm-community:latestá evoapicloud/evo-flow-community:latestá evoapicloud/evo-crm-gateway:latestá evoapicloud/evo-ai-frontend-community:latestá
+pull redis:latest clickhouse/clickhouse-server:latest rabbitmq:3-alpine evoapicloud/evo-auth-service-community:latest evoapicloud/evo-ai-core-service-community:latest evoapicloud/evo-ai-processor-community:latest evoapicloud/evo-bot-runtime:latest evoapicloud/evo-ai-crm-community:latest evoapicloud/evo-flow-community:latest evoapicloud/evo-crm-gateway:latest evoapicloud/evo-ai-frontend-community:latest
 
-## Usa o serviço wait_EVOCRM para verificar se o serviço estáa online
-wait_stack evocêrm${1:+_$1}_evocêrm${1:+_$1}_redis evocêrm${1:+_$1}_evocêrm${1:+_$1}_clickhouse evocêrm${1:+_$1}_evocêrm${1:+_$1}_rabbitmq evocêrm${1:+_$1}_evocêrm${1:+_$1}_auth evocêrm${1:+_$1}_evocêrm${1:+_$1}_auth_sidekiq evocêrm${1:+_$1}_evocêrm${1:+_$1}_core evocêrm${1:+_$1}_evocêrm${1:+_$1}_processor evocêrm${1:+_$1}_evocêrm${1:+_$1}_bot_runtime evocêrm${1:+_$1}_evocêrm${1:+_$1}_crm evocêrm${1:+_$1}_evocêrm${1:+_$1}_crm_sidekiq evocêrm${1:+_$1}_evocêrm${1:+_$1}_evoflow evocêrm${1:+_$1}_evocêrm${1:+_$1}_gateway evocêrm${1:+_$1}_evocêrm${1:+_$1}_frontend
+## Usa o serviço wait_EVOCRM para verificar se o serviço esta online
+wait_stack evocrm${1:+_$1}_evocrm${1:+_$1}_redis evocrm${1:+_$1}_evocrm${1:+_$1}_clickhouse evocrm${1:+_$1}_evocrm${1:+_$1}_rabbitmq evocrm${1:+_$1}_evocrm${1:+_$1}_auth evocrm${1:+_$1}_evocrm${1:+_$1}_auth_sidekiq evocrm${1:+_$1}_evocrm${1:+_$1}_core evocrm${1:+_$1}_evocrm${1:+_$1}_processor evocrm${1:+_$1}_evocrm${1:+_$1}_bot_runtime evocrm${1:+_$1}_evocrm${1:+_$1}_crm evocrm${1:+_$1}_evocrm${1:+_$1}_crm_sidekiq evocrm${1:+_$1}_evocrm${1:+_$1}_evoflow evocrm${1:+_$1}_evocrm${1:+_$1}_gateway evocrm${1:+_$1}_evocrm${1:+_$1}_frontend
 
 telemetria EvoCRM finalizado
 
 cd dados_vps
 
-cat > dados_evocêrm${1:+_$1} <<EOL
+cat > dados_evocrm${1:+_$1} <<EOL
 [ EVO CRM ]
 
-Dominio do EvoCRM: https://$url_evocêrm_frontend
+Dominio do EvoCRM: https://$url_evocrm_frontend
 
-Dominio da API do EvoCRM: https://$url_evocêrm_api
+Dominio da API do EvoCRM: https://$url_evocrm_api
 EOL
 
 cd
@@ -42475,10 +42475,10 @@ guarde_os_dados_msg
 echo -e "\e[32m[ EVO CRM ]\e[0m"
 echo ""
 
-echo -e "\e[33mDominio do EvoCRM:\e[97m https://$url_evocêrm_frontend\e[0m"
+echo -e "\e[33mDominio do EvoCRM:\e[97m https://$url_evocrm_frontend\e[0m"
 echo ""
 
-echo -e "\e[33mDominio da API do EvoCRM:\e[97m https://$url_evocêrm_api\e[0m"
+echo -e "\e[33mDominio da API do EvoCRM:\e[97m https://$url_evocrm_api\e[0m"
 
 ## Creditos do instalador
 creditos_msg
@@ -42578,7 +42578,7 @@ services:
 ## --------------------------- ORION --------------------------- ##
 
   n8n${1:+_$1}_mcp:
-    image: n8nio/n8n:latestá ## Versão do N8N
+    image: n8nio/n8n:latest ## Versão do N8N
     command: webhook
 
     networks:
@@ -42690,7 +42690,7 @@ if [ $? -eq 0 ]; then
     echo "1/10 - [ OK ] - Criando Stack"
 else
     echo "1/10 - [ OFF ] - Criando Stack"
-    echo "Não foi possível criar a stack do MCP do N8N"
+    echo "Não foi possivel criar a stack do MCP do N8N"
 fi
 STACK_NAME="n8n${1:+_$1}_mcp"
 stack_editavel
@@ -42701,7 +42701,7 @@ echo ""
 sleep 1
 
 ## Baixando imagens:
-pull n8nio/n8n:latestá
+pull n8nio/n8n:latest
 
 wait_stack n8n${1:+_$1}_mcp_n8n${1:+_$1}_mcp
 
@@ -42766,12 +42766,12 @@ nome_openwebui
 ## Mostra mensagem para preencher informações
 preencha_as_info
 
-## Inicia um Loop até os dados estáarem certos
+## Inicia um Loop até os dados estarem certos
 while true; do
 
     ##Pergunta o Dominio para a ferramenta
     echo -e "\e[97mPasso$amarelo 1/1\e[0m"
-    echo -en "\e[33mDigite o dominio para o OpenWebUI (ex: openwebui.seudominio.com): \e[0m" && read -r url_openwebui
+    echo -en "\e[33mDigite o dominio para o OpenWebUI (ex: openwebui.openorion.art.br): \e[0m" && read -r url_openwebui
     echo ""
     
     ## Limpa o terminal
@@ -42787,11 +42787,11 @@ while true; do
     echo -e "\e[33mDominio para o OpenWebUI:\e[97m $url_openwebui\e[0m"
     echo ""
     
-     ## Pergunta se as respostas estáão corretas
-    read -p "As respostas estáão corretas? (Y/N): " confirmacao
+     ## Pergunta se as respostas estão corretas
+    read -p "As respostas estão corretas? (Y/N): " confirmacao
     if [ "$confirmacao" = "Y" ] || [ "$confirmacao" = "y" ]; then
 
-        ## Digitou Y para confirmar que as informações estáão corretas
+        ## Digitou Y para confirmar que as informações estão corretas
 
         ## Limpar o terminal
         clear
@@ -42803,7 +42803,7 @@ while true; do
         break
     else
 
-        ## Digitou N para dizer que as informações não estáão corretas.
+        ## Digitou N para dizer que as informações não estão corretas.
 
         ## Limpar o terminal
         clear
@@ -42892,7 +42892,7 @@ if [ $? -eq 0 ]; then
     echo "1/10 - [ OK ] - Criando Stack"
 else
     echo "1/10 - [ OFF ] - Criando Stack"
-    echo "Não foi possível criar a stack do openwebui"
+    echo "Não foi possivel criar a stack do openwebui"
 fi
 STACK_NAME="openwebui${1:+_$1}"
 stack_editavel # > /dev/null 2>&1
@@ -42901,7 +42901,7 @@ stack_editavel # > /dev/null 2>&1
 #    echo "2/2 - [ OK ] - Deploy Stack"
 #else
 #    echo "2/2 - [ OFF ] - Deploy Stack"
-#    echo "Não foi possível Subir a stack do openwebui"
+#    echo "Não foi possivel Subir a stack do openwebui"
 #fi
 
 ## Mensagem de Passo
@@ -42912,7 +42912,7 @@ sleep 1
 ## Baixando imagens:
 pull ghcr.io/open-webui/open-webui:main
 
-## Usa o serviço wait_nocodb para verificar se o serviço estáa online
+## Usa o serviço wait_nocodb para verificar se o serviço esta online
 wait_stack openwebui${1:+_$1}_openwebui${1:+_$1}_app
 
 telemetria OpenWebUI finalizado
@@ -42961,7 +42961,7 @@ creditos_msg
 requisitar_outra_instalacao
 }
 
-## Ignore estáa parte, só para facilitar minha identificação com estáa parte "XXOOXX"
+## Ignore esta parte, só para facilitar minha identificação com esta parte "XXOOXX"
 
 ## // ## // ## // ## // ## // ## // ## // ## //## // ## // ## // ## // ## // ## // ## // ## // ##
 ##                                         OPENORION ENGINE                                        ##
@@ -42969,7 +42969,7 @@ requisitar_outra_instalacao
 
 ## Comandos extras
 
-portainer.restáart() {
+portainer.restart() {
 
     echo ""
     echo "Aguarde enquanto reiniciamos o Portainer"
@@ -42979,14 +42979,14 @@ portainer.restáart() {
         echo "1/2 - [ OK ]"
     else
         echo "1/2 - [ OFF ]"
-        echo "Não foi possível reiniciar o portainer"
+        echo "Não foi possivel reiniciar o portainer"
     fi
     docker service update --force $(docker service ls --filter name='portainer_portainer' -q) > /dev/null 2>&1
     if [ $? -eq 0 ]; then
         echo "2/2 - [ OK ]"
     else
         echo "2/2 - [ OFF ]"
-        echo "Não foi possível reiniciar o portainer"
+        echo "Não foi possivel reiniciar o portainer"
     fi
     sleep 2
     clear
@@ -43007,28 +43007,28 @@ chatwoot.mail() {
         echo "1/9 - [ OK ]"
     else
         echo "1/9 - [ OFF ]"
-        echo "Não foi possível mudar email."
+        echo "Não foi possivel mudar email."
     fi
     mv confirmation_instructions.html.erb confirmation_instructions.html.erb.old > /dev/null 2>&1
     if [ $? -eq 0 ]; then
         echo "2/9 - [ OK ]"
     else
         echo "2/9 - [ OFF ]"
-        echo "Não foi possível mudar email."
+        echo "Não foi possivel mudar email."
     fi
     mv reset_password_instructions.html.erb reset_password_instructions.html.erb.old > /dev/null 2>&1
     if [ $? -eq 0 ]; then
         echo "3/9 - [ OK ]"
     else
         echo "3/9 - [ OFF ]"
-        echo "Não foi possível mudar email."
+        echo "Não foi possivel mudar email."
     fi
     mv unlock_instructions.html.erb unlock_instructions.html.erb.old > /dev/null 2>&1
     if [ $? -eq 0 ]; then
         echo "4/9 - [ OK ]"
     else
         echo "4/9 - [ OFF ]"
-        echo "Não foi possível mudar email."
+        echo "Não foi possivel mudar email."
     fi
     
     # Baixa os novos arquivos
@@ -43037,28 +43037,28 @@ chatwoot.mail() {
         echo "5/9 - [ OK ]"
     else
         echo "5/9 - [ OFF ]"
-        echo "Não foi possível baixar email."
+        echo "Não foi possivel baixar email."
     fi
     if [ -f "$HOME/openorion/extras/Chatwoot/emails/password_change.html.erb" ]; then cp "$HOME/openorion/extras/Chatwoot/emails/password_change.html.erb" ./password_change.html.erb; elif [ -f "/root/extras/Chatwoot/emails/password_change.html.erb" ]; then cp "/root/extras/Chatwoot/emails/password_change.html.erb" ./password_change.html.erb; fi
     if [ $? -eq 0 ]; then
         echo "6/9 - [ OK ]"
     else
         echo "6/9 - [ OFF ]"
-        echo "Não foi possível baixar email."
+        echo "Não foi possivel baixar email."
     fi
     if [ -f "$HOME/openorion/extras/Chatwoot/emails/reset_password_instructions.html.erb" ]; then cp "$HOME/openorion/extras/Chatwoot/emails/reset_password_instructions.html.erb" ./reset_password_instructions.html.erb; elif [ -f "/root/extras/Chatwoot/emails/reset_password_instructions.html.erb" ]; then cp "/root/extras/Chatwoot/emails/reset_password_instructions.html.erb" ./reset_password_instructions.html.erb; fi
     if [ $? -eq 0 ]; then
         echo "7/9 - [ OK ]"
     else
         echo "7/9 - [ OFF ]"
-        echo "Não foi possível baixar email."
+        echo "Não foi possivel baixar email."
     fi
     if [ -f "$HOME/openorion/extras/Chatwoot/emails/unlock_instructions.html.erb" ]; then cp "$HOME/openorion/extras/Chatwoot/emails/unlock_instructions.html.erb" ./unlock_instructions.html.erb; elif [ -f "/root/extras/Chatwoot/emails/unlock_instructions.html.erb" ]; then cp "/root/extras/Chatwoot/emails/unlock_instructions.html.erb" ./unlock_instructions.html.erb; fi
     if [ $? -eq 0 ]; then
         echo "8/9 - [ OK ]"
     else
         echo "8/9 - [ OFF ]"
-        echo "Não foi possível baixar email."
+        echo "Não foi possivel baixar email."
     fi
     
     cd
@@ -43071,7 +43071,7 @@ chatwoot.mail() {
         echo "9/9 - [ OK ]"
     else
         echo "9/9 - [ OFF ]"
-        echo "Não foi possível deletar containers."
+        echo "Não foi possivel deletar containers."
     fi
 
     echo ""
@@ -43090,7 +43090,7 @@ chatwoot.n.mail() {
     echo ""
 
     #cd /var/lib/docker/volumes/chatwoot_mailer/_data/app/views/devise/mailer/
-    cd /var/lib/docker/volumes/chatwoot_nestáãor_mailer/_data/
+    cd /var/lib/docker/volumes/chatwoot_nestor_mailer/_data/
 
     # Renomeia os arquivos
     mv password_change.html.erb password_change.html.erb.old > /dev/null 2>&1
@@ -43098,28 +43098,28 @@ chatwoot.n.mail() {
         echo "1/9 - [ OK ]"
     else
         echo "1/9 - [ OFF ]"
-        echo "Não foi possível mudar email."
+        echo "Não foi possivel mudar email."
     fi
     mv confirmation_instructions.html.erb confirmation_instructions.html.erb.old > /dev/null 2>&1
     if [ $? -eq 0 ]; then
         echo "2/9 - [ OK ]"
     else
         echo "2/9 - [ OFF ]"
-        echo "Não foi possível mudar email."
+        echo "Não foi possivel mudar email."
     fi
     mv reset_password_instructions.html.erb reset_password_instructions.html.erb.old > /dev/null 2>&1
     if [ $? -eq 0 ]; then
         echo "3/9 - [ OK ]"
     else
         echo "3/9 - [ OFF ]"
-        echo "Não foi possível mudar email."
+        echo "Não foi possivel mudar email."
     fi
     mv unlock_instructions.html.erb unlock_instructions.html.erb.old > /dev/null 2>&1
     if [ $? -eq 0 ]; then
         echo "4/9 - [ OK ]"
     else
         echo "4/9 - [ OFF ]"
-        echo "Não foi possível mudar email."
+        echo "Não foi possivel mudar email."
     fi
     
     # Baixa os novos arquivos
@@ -43128,28 +43128,28 @@ chatwoot.n.mail() {
         echo "5/9 - [ OK ]"
     else
         echo "5/9 - [ OFF ]"
-        echo "Não foi possível baixar email."
+        echo "Não foi possivel baixar email."
     fi
     if [ -f "$HOME/openorion/extras/Chatwoot/emails/password_change.html.erb" ]; then cp "$HOME/openorion/extras/Chatwoot/emails/password_change.html.erb" ./password_change.html.erb; elif [ -f "/root/extras/Chatwoot/emails/password_change.html.erb" ]; then cp "/root/extras/Chatwoot/emails/password_change.html.erb" ./password_change.html.erb; fi
     if [ $? -eq 0 ]; then
         echo "6/9 - [ OK ]"
     else
         echo "6/9 - [ OFF ]"
-        echo "Não foi possível baixar email."
+        echo "Não foi possivel baixar email."
     fi
     if [ -f "$HOME/openorion/extras/Chatwoot/emails/reset_password_instructions.html.erb" ]; then cp "$HOME/openorion/extras/Chatwoot/emails/reset_password_instructions.html.erb" ./reset_password_instructions.html.erb; elif [ -f "/root/extras/Chatwoot/emails/reset_password_instructions.html.erb" ]; then cp "/root/extras/Chatwoot/emails/reset_password_instructions.html.erb" ./reset_password_instructions.html.erb; fi
     if [ $? -eq 0 ]; then
         echo "7/9 - [ OK ]"
     else
         echo "7/9 - [ OFF ]"
-        echo "Não foi possível baixar email."
+        echo "Não foi possivel baixar email."
     fi
     if [ -f "$HOME/openorion/extras/Chatwoot/emails/unlock_instructions.html.erb" ]; then cp "$HOME/openorion/extras/Chatwoot/emails/unlock_instructions.html.erb" ./unlock_instructions.html.erb; elif [ -f "/root/extras/Chatwoot/emails/unlock_instructions.html.erb" ]; then cp "/root/extras/Chatwoot/emails/unlock_instructions.html.erb" ./unlock_instructions.html.erb; fi
     if [ $? -eq 0 ]; then
         echo "8/9 - [ OK ]"
     else
         echo "8/9 - [ OFF ]"
-        echo "Não foi possível baixar email."
+        echo "Não foi possivel baixar email."
     fi
     
     cd
@@ -43162,7 +43162,7 @@ chatwoot.n.mail() {
         echo "9/9 - [ OK ]"
     else
         echo "9/9 - [ OFF ]"
-        echo "Não foi possível deletar containers."
+        echo "Não foi possivel deletar containers."
     fi
 
     echo ""
@@ -43186,7 +43186,7 @@ while true; do
             exit 1
         fi
 
-        # Executar o código no contêiner apenas se ele estáiver em execução
+        # Executar o código no contêiner apenas se ele estiver em execução
         docker exec "$container_id" /bin/sh -c '
             # Criando diretório temporário
             temp_dir=$(mktemp -d)
@@ -43242,8 +43242,8 @@ while true; do
         clear
         erro_msg
         echo ""
-        echo -e "Ops, parece que vocêê não instalou a opção \e[32m[28] N8N + Nodes Quepasa${reset} ${branco}do nosso instalador.${reset}"
-        echo "Instale antes de tentar instalar estáa aplicação."
+        echo -e "Ops, parece que você não instalou a opção \e[32m[28] N8N + Nodes Quepasa${reset} ${branco}do nosso instalador.${reset}"
+        echo "Instale antes de tentar instalar esta aplicação."
         echo ""
         echo "Pressione CTRL C para sair do instalador."
         sleep 5
@@ -43265,7 +43265,7 @@ portainer.reset() {
         echo "1/7 - [ OK ]"
     else
         echo "1/7 - [ OFF ]"
-        echo "Ops, não foi possível derrubar o serviço do portainer"
+        echo "Ops, não foi possivel derrubar o serviço do portainer"
     fi
 
     docker pull portainer/helper-reset-password > /dev/null 2>&1
@@ -43273,7 +43273,7 @@ portainer.reset() {
         echo "2/7 - [ OK ]"
     else
         echo "2/7 - [ OFF ]"
-        echo "Ops, não foi possível super o serviço de reset password do portainer"
+        echo "Ops, não foi possivel super o serviço de reset password do portainer"
     fi
 
     script -c "docker run --rm -v /var/lib/docker/volumes/portainer_data/_data:/data portainer/helper-reset-password" output.txt > /dev/null 2>&1
@@ -43281,7 +43281,7 @@ portainer.reset() {
         echo "3/7 - [ OK ]"
     else
         echo "3/7 - [ OFF ]"
-        echo "Ops, não foi possível resetar a senha do portainer"
+        echo "Ops, não foi possivel resetar a senha do portainer"
     fi
 
     cd
@@ -43292,7 +43292,7 @@ portainer.reset() {
         echo "4/7 - [ OK ]"
     else
         echo "4/7 - [ OFF ]"
-        echo "Ops, não foi possível subir a stack do portainer"
+        echo "Ops, não foi possivel subir a stack do portainer"
     fi
 
     USER=$(grep -oP 'user: \K[^,]*' output.txt)
@@ -43300,7 +43300,7 @@ portainer.reset() {
         echo "5/7 - [ OK ]"
     else
         echo "5/7 - [ OFF ]"
-        echo "Ops, não foi possível pegar o usuario do portainer"
+        echo "Ops, não foi possivel pegar o usuario do portainer"
     fi
 
     PASSWORD=$(grep -oP 'login: \K.*' output.txt)
@@ -43308,7 +43308,7 @@ portainer.reset() {
         echo "6/7 - [ OK ]"
     else
         echo "6/7 - [ OFF ]"
-        echo "Ops, não foi possível pegar a senha do portainer"
+        echo "Ops, não foi possivel pegar a senha do portainer"
     fi
 
     rm output.txt
@@ -43316,7 +43316,7 @@ portainer.reset() {
         echo "7/7 - [ OK ]"
     else
         echo "7/7 - [ OFF ]"
-        echo "Ops, não foi possível remover o arquivo output. txt ou ele não existe"
+        echo "Ops, não foi possivel remover o arquivo output. txt ou ele não existe"
     fi
 
     echo ""
@@ -43354,7 +43354,7 @@ ctop() {
         echo "1/2 - [ OK ] - Baixando CTOP"
     else
         echo "1/2 - [ OFF ] - Baixando CTOP"
-        echo "Ops, não foi possível baixar o CTOP"
+        echo "Ops, não foi possivel baixar o CTOP"
     fi
 
     sudo chmod +x /usr/local/bin/ctop
@@ -43362,7 +43362,7 @@ ctop() {
         echo "2/2 - [ OK ] - Dando permissão ao CTOP"
     else
         echo "2/2 - [ OFF ] - Dando permissão ao CTOP"
-        echo "Ops, não foi possível dar permissão ao CTOP"
+        echo "Ops, não foi possivel dar permissão ao CTOP"
     fi
     echo ""
     echo "Instalado, digite CTOP fora do nosso Setup oara executa-lo a qualquer momento."
@@ -43404,14 +43404,14 @@ portainer.update() {
         echo "1/2 - [ OK ] - Comando de atualização enviado"
     else
         echo "1/2 - [ OFF ] - Erro ao atualizar o Portainer"
-        echo "Verifique se o arquivo 'portainer.yaml' existe e estáá correto."
+        echo "Verifique se o arquivo 'portainer.yaml' existe e está correto."
         return 1
     fi
 
     # Passo 2: Espera a stack ficar online
     if wait_stack "portainer"; then
         sleep 20
-        echo "2/2 - [ OK ] - Portainer estáá online"
+        echo "2/2 - [ OK ] - Portainer está online"
     else
         echo "2/2 - [ OFF ] - Portainer não ficou online"
         echo "Verifique os logs para mais detalhes."
@@ -43532,7 +43532,7 @@ if [ $? -eq 0 ]; then
     echo "1/3 - [ OK ] - Criando Stack"
 else
     echo "1/3 - [ OFF ] - Criando Stack"
-    echo "Ops, não foi possível criar a stack do Traefik"
+    echo "Ops, não foi possivel criar a stack do Traefik"
 fi
 
 docker stack deploy --prune --resolve-image always -c traefik.yaml traefik
@@ -43540,14 +43540,14 @@ if [ $? -eq 0 ]; then
     echo "2/3 - [ OK ] - Subindo stack do traefik"
 else
     echo "2/3 - [ OFF ] - Erro ao subir stack do traefik"
-    echo "Verifique se o arquivo 'traefik.yaml' existe e estáá correto."
+    echo "Verifique se o arquivo 'traefik.yaml' existe e está correto."
     return 1
 fi
 
 # Passo 2: Espera a stack ficar online
 if wait_stack "traefik"; then
     sleep 20
-    echo "3/3 - [ OK ] - Traefik estáá online"
+    echo "3/3 - [ OK ] - Traefik está online"
     rm /root/traefik.yaml.old
 else
     echo "3/3 - [ OFF ] - Traefik não ficou online"
@@ -43567,11 +43567,11 @@ nome_traefik
 ## Mostra mensagem para preencher informações
 preencha_as_info
 
-## Inicia um Loop até os dados estáarem certos
+## Inicia um Loop até os dados estarem certos
 while true; do
     ## Pergunta o link do Dashboard
     echo -e "\e[97mPasso$amarelo 1/3\e[0m"
-    echo -en "\e[33mDigite um link para o Dashboard do Traefik (ex: traefik.seudominio.com): \e[0m" && read -r traefik_url_dashboard
+    echo -en "\e[33mDigite um link para o Dashboard do Traefik (ex: traefik.openorion.art.br): \e[0m" && read -r traefik_url_dashboard
     echo ""
 
     ## Pergunta o usuario da ferramenta
@@ -43586,17 +43586,17 @@ while true; do
     echo -en "\e[33mDigite uma Senha (ex: @Senha123_): \e[0m" && read -r traefik_pass
     echo ""
 
-## Pergunta se as respostas estáão corretas
-    read -p "As respostas estáão corretas? (Y/N): " confirmacao
+## Pergunta se as respostas estão corretas
+    read -p "As respostas estão corretas? (Y/N): " confirmacao
     if [ "$confirmacao" = "Y" ] || [ "$confirmacao" = "y" ]; then
 
-        ## Digitou Y para confirmar que as informações estáão corretas
+        ## Digitou Y para confirmar que as informações estão corretas
         echo ""
         ## Sai do Loop
         break
     else
 
-        ## Digitou N para dizer que as informações não estáão corretas.
+        ## Digitou N para dizer que as informações não estão corretas.
 
         ## Limpar o terminal
         clear
@@ -43727,7 +43727,7 @@ if [ $? -eq 0 ]; then
     echo "1/3 - [ OK ] - Criando Stack"
 else
     echo "1/3 - [ OFF ] - Criando Stack"
-    echo "Ops, não foi possível criar a stack do Traefik"
+    echo "Ops, não foi possivel criar a stack do Traefik"
 fi
 
 docker stack deploy --prune --resolve-image always -c traefik.yaml traefik
@@ -43735,14 +43735,14 @@ if [ $? -eq 0 ]; then
     echo "2/3 - [ OK ] - Subindo stack do traefik"
 else
     echo "2/3 - [ OFF ] - Erro ao subir stack do traefik"
-    echo "Verifique se o arquivo 'traefik.yaml' existe e estáá correto."
+    echo "Verifique se o arquivo 'traefik.yaml' existe e está correto."
     return 1
 fi
 
 # Passo 2: Espera a stack ficar online
 if wait_stack "traefik"; then
     sleep 20
-    echo "3/3 - [ OK ] - Traefik estáá online"
+    echo "3/3 - [ OK ] - Traefik está online"
     rm /root/traefik.yaml.old
 else
     echo "3/3 - [ OFF ] - Traefik não ficou online"
@@ -43779,7 +43779,7 @@ quepasa.setup.off(){
         echo "1/1 - [ OK ] - Painel /setup Desativado"
     else
         echo "1/1 - [ OFF ] - Erro ao desativar painel"
-        echo "Tente novamente mais tarde ou verifique se vocêê tem Quepasa instalado."
+        echo "Tente novamente mais tarde ou verifique se você tem Quepasa instalado."
     fi
     echo ""
     echo "Voltando ao menu de ferramentas..."
@@ -43794,7 +43794,7 @@ quepasa.setup.on(){
         echo "1/1 - [ OK ] - Painel /setup Ativado"
     else
         echo "1/1 - [ OFF ] - Erro ao Ativar painel"
-        echo "Tente novamente mais tarde ou verifique se vocêê tem Quepasa instalado."
+        echo "Tente novamente mais tarde ou verifique se você tem Quepasa instalado."
     fi
     echo ""
     echo "Voltando ao menu de ferramentas..."
@@ -43880,7 +43880,7 @@ if [ $? -eq 0 ]; then
 else
     echo "4/6 - [ OFF ] - Recarregando as configurações do systemd"
 fi
-sudo systemctl restáart docker > /dev/null 2>&1
+sudo systemctl restart docker > /dev/null 2>&1
 if [ $? -eq 0 ]; then
     echo "5/6 - [ OK ] - Reiniciando o serviço Docker"
 else
@@ -43923,10 +43923,10 @@ fi
 #    | head -n1)
 #
 #if [ -z "$DOCKER_VERSION" ]; then
-#    echo "Não foi possível encontrar uma versão estáável próxima. Instalando a última disponível..."
+#    echo "Não foi possível encontrar uma versão estável próxima. Instalando a última disponível..."
 #    sudo apt install -y docker-ce docker-ce-cli containerd.io
 #else
-#    echo "Instalando Docker versão estáável próxima: $DOCKER_VERSION"
+#    echo "Instalando Docker versão estável próxima: $DOCKER_VERSION"
 #    sudo apt install --allow-downgrades -y \
 #        docker-ce=$DOCKER_VERSION \
 #        docker-ce-cli=$DOCKER_VERSION \
@@ -43972,10 +43972,10 @@ DOCKER_VERSION=$(apt-cache madison docker-ce \
     | head -n1)
 
 if [ -z "$DOCKER_VERSION" ]; then
-    echo "Não foi possível encontrar uma versão estáável próxima. Instalando a última disponível..."
+    echo "Não foi possível encontrar uma versão estável próxima. Instalando a última disponível..."
     sudo apt install -y docker-ce docker-ce-cli containerd.io
 else
-    echo "Instalando Docker versão estáável próxima: $DOCKER_VERSION"
+    echo "Instalando Docker versão estável próxima: $DOCKER_VERSION"
     sudo apt install --allow-downgrades -y \
         docker-ce=$DOCKER_VERSION \
         docker-ce-cli=$DOCKER_VERSION \
@@ -44002,7 +44002,7 @@ minio.bucket() {
   BUCKET_NAME="$1"
 
   if [ -z "$BUCKET_NAME" ]; then
-    echo "❌ Vocêê precisa informar o nome do bucket. Exemplo: minio.bucket dify"
+    echo "❌ Você precisa informar o nome do bucket. Exemplo: minio.bucket dify"
     return 1
   fi
 
@@ -44207,7 +44207,7 @@ minio.bucket.delete() {
 
   # Remove a bucket com todos os objetos
   $MC_CMD rb --force admin/"$BUCKET" >/dev/null 2>&1 || {
-    echo "❌ Falha ao remover a bucket. Verifique se ela existe e estáá vazia."
+    echo "❌ Falha ao remover a bucket. Verifique se ela existe e está vazia."
     exit 1
   }
 
@@ -44243,8 +44243,8 @@ while true; do
 
     case $opcao1 in
 
-        0|00|testáe_smtp|TESTE_SMTP)
-            ferramenta_testáeemail
+        0|00|teste_smtp|TESTE_SMTP)
+            ferramenta_testeemail
             ;;
 
         1|01|portainer|traefik|PORTAINER|TRAEFIK)
@@ -45860,18 +45860,18 @@ while true; do
             fi   
             ;;
         
-        98|evocêrm|EVOCRM)
+        98|evocrm|EVOCRM)
 
-            verificar_stack "evocêrm${opcao2:+_$opcao2}" && continue || echo ""
+            verificar_stack "evocrm${opcao2:+_$opcao2}" && continue || echo ""
 
             if verificar_docker_e_portainer_traefik; then
                 ## INICIO TOKEN
-                STACK_NAME="evocêrm${opcao2:+_$opcao2}"
+                STACK_NAME="evocrm${opcao2:+_$opcao2}"
                 if grep -q "Token: .\+" /root/dados_vps/dados_portainer; then
-                    ferramenta_evocêrm "$opcao2"
+                    ferramenta_evocrm "$opcao2"
                 else
-                    APP_ORION="ferramenta_evocêrm"
-                    ferramenta_evocêrm
+                    APP_ORION="ferramenta_evocrm"
+                    ferramenta_evocrm
                 fi
                 ## FIM TOKEN
             fi   
@@ -46136,15 +46136,15 @@ while true; do
         
         chatwoot.mega)
 
-            verificar_stack "chatwoot_nestáãor${opcao2:+_$opcao2}" && continue || echo ""
+            verificar_stack "chatwoot_nestor${opcao2:+_$opcao2}" && continue || echo ""
 
             if verificar_docker_e_portainer_traefik; then
                 ## INICIO TOKEN
-                STACK_NAME="chatwoot_nestáãor${opcao2:+_$opcao2}"
+                STACK_NAME="chatwoot_nestor${opcao2:+_$opcao2}"
                 if grep -q "Token: .\+" /root/dados_vps/dados_portainer; then
-                    ferramenta_chatwoot_nestáãor "$opcao2"
+                    ferramenta_chatwoot_nestor "$opcao2"
                 else
-                    APP_ORION="ferramenta_chatwoot_nestáãor"
+                    APP_ORION="ferramenta_chatwoot_nestor"
                     verificar_arquivo
                 fi
                 ## FIM TOKEN
@@ -46173,8 +46173,8 @@ while true; do
 ## // ## // ## // ## // ## // ## // ## // ## //## // ## // ## // ## // ## // ## // ## // ## // ##
 
         ## Reiniciar portainer
-        portainer.restáart)
-            portainer.restáart
+        portainer.restart)
+            portainer.restart
             ;;
 
         ## Redefinir senha do portainer
