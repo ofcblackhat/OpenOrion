@@ -82,14 +82,3 @@ bash <(curl -sSL https://raw.githubusercontent.com/ofcblackhat/OpenOrion/main/se
   </blockquote>
 </details>
 
----
-
-<p align="center">
-  <a href="https://star-history.dera.page/#ofcblackhat/OpenOrion&Date">
-    <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="https://star-history.dera.page/svg?repos=ofcblackhat/OpenOrion&type=Date&theme=dark" />
-      <source media="(prefers-color-scheme: light)" srcset="https://star-history.dera.page/svg?repos=ofcblackhat/OpenOrion&type=Date" />
-      <img alt="Star History Chart" src="https://star-history.dera.page/svg?repos=ofcblackhat/OpenOrion&type=Date" />
-    </picture>
-  </a>
-</p>
