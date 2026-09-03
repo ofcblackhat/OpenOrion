@@ -1,48 +1,95 @@
-<img src="https://github.com/user-attachments/assets/f1381a28-79e2-4fea-984c-4440476cdcc2" alt="OpenOrion">
+<p align="center">
+  <img src="banner.jpg" alt="OpenOrion" width="100%">
+</p>
 
 <p align="center">
   Este Auto instalador é uma solução <b>100% gratuita e open-source</b>, com o intuito de ajudar toda a comunidade a instalar as principais ferramentas do mercado de Automações/Marketing/IA em seu servidor.
-  <b>Você não precisa instalar todos os programas contidos no mesmo, pois você poderá escolher qual das ferramentas você quer instalar.</b>
+  <br>
+  <b>Você não precisa instalar todos os programas contidos no mesmo, pois você poderá escolher qual das ferramentas deseja instalar individualmente.</b>
 </p>
 
 ---
 
-<h3> Observações e Recomendações</h3>
+<h3>📌 Observações e Recomendações</h3>
 
-- Recomendo usar a VPS da **Hostinger**, **Hetzner**, **Digital Ocean** ou **AWS**. NÃO recomendamos e nem encorajamos usar outras VPS.
-- **O Servidor precisa estar vazio** para efetuar a instalação das ferramentas. Executar o Setup com outras ferramentas pode acarretar na perca dos dados.
-- Recomenda-se utilizar **Ubuntu 20.04** ou **Debian 11/12**, com **mínimo de 4Gb e 2vCPU**. É necessário analisar os requisitos de cada aplicação que for instalar.
+- **Provedores de VPS Recomendados:** **Hostinger**, **Hetzner**, **Digital Ocean** ou **AWS**.
+- **O Servidor precisa estar limpo (recém-formatado):** Executar o setup sobre um servidor em produção com outras aplicações pode sobrescrever portas e configurações de rede.
+- **Sistema Operacional:** **Ubuntu 20.04/22.04 LTS** ou **Debian 11/12**.
+- **Hardware Mínimo Sugerido:** **2 vCPUs e 4GB de RAM** (ajuste conforme o volume de aplicações que planeja rodar simultaneamente).
 
 ---
 
-<h3> Como executar o instalador</h3>
-<p>Pensando em deixar a instalação das ferramentas o mais fácil possível, criamos um código curto que vai atualizar o seu servidor, baixar o script do setup e executar o mesmo. Tudo para que qualquer um consiga usá-lo.</p>
+<h3>🚀 Como executar o instalador</h3>
 
-<p>Basta executar esse código no terminal do seu servidor:</p>
+<p>Criamos um comando único que atualiza pacotes essenciais, baixa o instalador e inicia a interface de gerenciamento:</p>
 
-```
+```bash
 bash <(curl -sSL https://raw.githubusercontent.com/ofcblackhat/OpenOrion/main/setup.sh)
 ```
-<p>Após isso basta aguardar alguns instantes enquanto o script é iniciado e por fim, instalar as ferramentas que desejar.</p>
+
+<p>Após executar, o menu interativo será carregado no seu terminal para você escolher e instalar as ferramentas com poucos cliques.</p>
 
 ---
 
-<h3 align="center"><b>Ferramentas disponíveis</b></h3>
+<h3 align="center">🛠️ Ferramentas Disponíveis (Organizadas por Categoria)</h3>
+
+<details open>
+  <summary><b>🤖 Inteligência Artificial, LLMs & Agentes</b></summary>
+  <blockquote>
+    Dify AI • Ollama • Anything LLM • Flowise • LangFlow • Langfuse • ZEP Memory • Evo AI • Firecrawl
+  </blockquote>
+</details>
+
+<details open>
+  <summary><b>💬 Atendimento, WhatsApp & Omnichannel</b></summary>
+  <blockquote>
+    Chatwoot • Chatwoot Mega • Evolution API • Typebot • WppConnect • Wuzapi • Quepasa • Quepasa API • Uno API • Botpress
+  </blockquote>
+</details>
+
+<details open>
+  <summary><b>⚡ Automação, Low-Code & Integrações</b></summary>
+  <blockquote>
+    N8N • N8N + Nodes • Appsmith • ToolJet • LowCoder • Formbricks • Docuseal • Documenso
+  </blockquote>
+</details>
+
+<details open>
+  <summary><b>🗄️ Bancos de Dados & Gerenciadores</b></summary>
+  <blockquote>
+    PostgreSQL • PgAdmin 4 • MySQL • PhpMyAdmin • MongoDB • RedisInsight • Qdrant • ClickHouse • Supabase
+  </blockquote>
+</details>
+
+<details open>
+  <summary><b>📊 CRM, Gestão & Marketing</b></summary>
+  <blockquote>
+    Mautic • Baserow • NocoDB • Nocobase • TwentyCRM • Krayin CRM • Woofed CRM • Odoo • Cal.com • Easy!Appointments
+  </blockquote>
+</details>
+
+<details open>
+  <summary><b>🌐 Infraestrutura, Proxy & Monitoramento</b></summary>
+  <blockquote>
+    Traefik • Portainer • Grafana • Prometheus • cAdvisor • Uptime Kuma • RabbitMQ • MinIO
+  </blockquote>
+</details>
+
+<details open>
+  <summary><b>📑 Produtividade, CMS & Colaboração</b></summary>
+  <blockquote>
+    NextCloud • WordPress • Strapi • Directus • VaultWarden • Passbolt • Keycloak • Mattermost • Outline • Focalboard • Planka • Affine • Wiki.js • Stirling PDF • Gotenberg • Excalidraw • Moodle • GLPI • OpenProject • HumHub • Yourls • Shlink • RustDesk • Traccar • Browserless • Frappe • Bolt • WiseMapping • AzuraCast • Ntfy • Hoppscotch
+  </blockquote>
+</details>
+
+---
+
 <p align="center">
-   Traefik  Portainer  Chatwoot  Evolution API  MinIO  Typebot  N8N  Flowise  PgAdmin 4  Nocobase   Botpress   Wordpress  Baserow  MongoDB  RabbitMQ   Uptime Kuma  Cal.com  Mautic   Appsmith   Qdrant  Woofed CRM  Formbricks  NocoDB  Langfuse  Metabase  Odoo  Chatwoot Mega  Uno API  N8N + Nodes Quepasa  Quepasa API  Docuseal  Grafana  Prometheus  cAdvisor  Dify AI  Ollama  Affine  Directus  VaultWarden  NextCloud  Strapi  PhpMyAdmin  Supabase  Ntfy  LowCoder   LangFlow  OpenProject  ZEP  HumHub   Yourls  TwentyCRM  Mattermost  Outline  Focalboard  GLPI  Anything LLM  Excalidraw  Easy!Appointments  Documeso  Moodle  ToolJet  Stirling PDF  ClickHouse  RedisInsight  Traccar  Firecrawl  Wuzapi  Krayin CRM  Planka  WppConnect  Browserless  Frappe  Bolt  WiseMapping  Evo AI  Keycloak  Passbolt  Gotenberg  Wiki.js  AzuraCast  Shlink  RustDesk  Hoppscotch
+  <a href="https://star-history.dera.page/#ofcblackhat/OpenOrion&Date">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="https://star-history.dera.page/svg?repos=ofcblackhat/OpenOrion&type=Date&theme=dark" />
+      <source media="(prefers-color-scheme: light)" srcset="https://star-history.dera.page/svg?repos=ofcblackhat/OpenOrion&type=Date" />
+      <img alt="Star History Chart" src="https://star-history.dera.page/svg?repos=ofcblackhat/OpenOrion&type=Date" />
+    </picture>
+  </a>
 </p>
-
----
-
-<h3 align="center"> Principais contribuidores</h3>
-<a align="center" href="https://github.com/ofcblackhat/OpenOrion/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=ofcblackhat/OpenOrion" />
-</a>
-
-<a href="https://star-history.dera.page/#ofcblackhat/OpenOrion&Date">
- <picture>
-   <source media="(prefers-color-scheme: dark)" srcset="https://star-history.dera.page/svg?repos=ofcblackhat/OpenOrion&type=Date&theme=dark" />
-   <source media="(prefers-color-scheme: light)" srcset="https://star-history.dera.page/svg?repos=ofcblackhat/OpenOrion&type=Date" />
-   <img alt="Star History Chart" src="https://star-history.dera.page/svg?repos=ofcblackhat/OpenOrion&type=Date" />
- </picture>
-</a>
