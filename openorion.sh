@@ -81,12 +81,14 @@ direitos_setup() {
 direitos_instalador() {
     echo -e "$amarelo===================================================================================================\e[0m"
     echo -e "$amarelo=                                                                                                 =\e[0m"
-    echo -e "$amarelo=  $branco Este auto instalador foi desenvolvido para auxiliar na instalação das principais aplicações $amarelo  =\e[0m"
-    echo -e "$amarelo=  $branco  disponíveis no mercado open source. Já deixo todos os créditos aos desenvolvedores de cada $amarelo  =\e[0m"
-    echo -e "$amarelo=  $branco aplicação disponíveis aqui. Este Setup é licenciado sob a Licença MIT (MIT). Você pode usar, $amarelo =\e[0m"
-    echo -e "$amarelo=  $branco  copiar, modificar, integrar, publicar, distribuir e/ou vender cópias dos produtos finais,  $amarelo  =\e[0m"
-    echo -e "$amarelo=  $branco   mas deve sempre declarar que OpenOrion (contato@openorion.art.br) é o autor original  $amarelo  =\e[0m"
-    echo -e "$amarelo=  $branco           destes códigos e atribuir um link para https://openorion.art.br/setup           $amarelo  =\e[0m"
+    echo -e "$amarelo=  $branco Este instalador foi desenvolvido para automatizar o deploy das principais aplicações open    $amarelo =\e[0m"
+    echo -e "$amarelo=  $branco source do mercado. Todos os créditos pertencem aos desenvolvedores originais de cada projeto. $amarelo =\e[0m"
+    echo -e "$amarelo=  $branco Este script é distribuído sob a Licença MIT. Você pode usar, copiar, modificar, integrar,    $amarelo =\e[0m"
+    echo -e "$amarelo=  $branco publicar, distribuir e/ou vender cópias, desde que mantenha os créditos aos autores          $amarelo =\e[0m"
+    echo -e "$amarelo=  $branco originais de cada aplicação aqui integrada.                                                  $amarelo =\e[0m"
+    echo -e "$amarelo=  $branco                                                                                              $amarelo =\e[0m"
+    echo -e "$amarelo=  $branco Este script NÃO envia telemetria, dados da sua VPS ou qualquer informação pessoal para       $amarelo =\e[0m"
+    echo -e "$amarelo=  $branco terceiros. Foi auditado e está limpo de qualquer coleta ou transmissão de dados.             $amarelo =\e[0m"
     echo -e "$amarelo=                                                                                                 =\e[0m"
     echo -e "$amarelo===================================================================================================\e[0m"
     echo ""
@@ -2291,8 +2293,8 @@ menu_instalador_pg_3(){
     echo -e "${amarelo}[ 96 ]${reset} - ${branco}ZeroByte ${verde}[1/1]${reset}                         ${verde}| ${reset}  ${amarelo}[ 119 ]${reset} - ${branco}EM BREVE...${reset}"
     echo -e "${amarelo}[ 97 ]${reset} - ${branco}Evolution GO ${verde}[1/1]${reset} ${verde}[NOVO]${reset}              ${verde}| ${reset}  ${amarelo}[ 120 ]${reset} - ${branco}EM BREVE...${reset}"
     echo -e "${amarelo}[ 98 ]${reset} - ${branco}EvoCRM ${verde}[4/8]${reset} ${verde}[NOVO]${reset}                    ${verde}| ${reset}  ${amarelo}[ 121 ]${reset} - ${branco}EM BREVE...${reset}"
-    echo -e "${amarelo}[ 99 ]${reset} - ${branco}EM BREVE...${reset}                            ${verde}| ${reset}  ${amarelo}[ 122 ]${reset} - ${branco}EM BREVE...${reset}"
-    echo -e "${amarelo}[ 100 ]${reset} - ${branco}EM BREVE...${reset}                           ${verde}| ${reset}  ${amarelo}[ 123 ]${reset} - ${branco}EM BREVE...${reset}"
+    echo -e "${amarelo}[ 99 ]${reset} - ${branco}Getfy ${verde}[1/1]${reset} ${verde}[NOVO]${reset}                     ${verde}| ${reset}  ${amarelo}[ 122 ]${reset} - ${branco}EM BREVE...${reset}"
+    echo -e "${amarelo}[ 100 ]${reset} - ${branco}Chat BullQ ${verde}[2/4]${reset} ${verde}[NOVO]${reset}               ${verde}| ${reset}  ${amarelo}[ 123 ]${reset} - ${branco}EM BREVE...${reset}"
     echo -e "${amarelo}[ 101 ]${reset} - ${branco}EM BREVE...${reset}                           ${verde}| ${reset}  ${amarelo}[ 124 ]${reset} - ${branco}EM BREVE...${reset}"
     echo -e "${amarelo}[ 102 ]${reset} - ${branco}EM BREVE...${reset}                           ${verde}| ${reset}  ${amarelo}[ 125 ]${reset} - ${branco}EM BREVE...${reset}"
     echo -e "${amarelo}[ 103 ]${reset} - ${branco}EM BREVE...${reset}                           ${verde}| ${reset}  ${amarelo}[ 126 ]${reset} - ${branco}EM BREVE...${reset}"
@@ -42487,6 +42489,829 @@ creditos_msg
 requisitar_outra_instalacao
 }
 
+## ██████╗ ███████╗████████╗███████╗██╗   ██╗
+##██╔════╝ ██╔════╝╚══██╔══╝██╔════╝╚██╗ ██╔╝
+##██║  ███╗█████╗     ██║   █████╗   ╚████╔╝
+##██║   ██║██╔══╝     ██║   ██╔══╝    ╚██╔╝
+##╚██████╔╝███████╗   ██║   ██║        ██║
+## ╚═════╝ ╚══════╝   ╚═╝   ╚═╝        ╚═╝
+
+nome_getfy() {
+    clear
+    echo ""
+    echo -e "$branco  ██████╗ ███████╗████████╗███████╗██╗   ██╗\e[0m"
+    echo -e "$branco ██╔════╝ ██╔════╝╚══██╔══╝██╔════╝╚██╗ ██╔╝\e[0m"
+    echo -e "$branco ██║  ███╗█████╗     ██║   █████╗   ╚████╔╝ \e[0m"
+    echo -e "$branco ██║   ██║██╔══╝     ██║   ██╔══╝    ╚██╔╝  \e[0m"
+    echo -e "$branco ╚██████╔╝███████╗   ██║   ██║        ██║   \e[0m"
+    echo -e "$branco  ╚═════╝ ╚══════╝   ╚═╝   ╚═╝        ╚═╝   \e[0m"
+    echo -e "$branco            💳 Checkout de Pagamentos         \e[0m"
+    echo ""
+    echo ""
+}
+
+ferramenta_getfy() {
+
+## Verifica os recursos
+recursos 2 2 && continue || return
+
+## Limpa o terminal
+clear
+
+## Ativa a função dados para pegar os dados da vps
+dados
+
+## Mostra o nome da aplicação
+nome_getfy
+
+## Mostra mensagem para preencher informações
+preencha_as_info
+
+## Inicia um Loop até os dados estarem certos
+while true; do
+
+    ## Pergunta o domínio
+    echo -e "\e[97mPasso$amarelo 1/1\e[0m"
+    echo -en "\e[33mDigite o Dominio para o Getfy (ex: checkout.openorion.art.br): \e[0m" && read -r url_getfy
+    echo ""
+
+    ## Limpa o terminal
+    clear
+
+    ## Mostra o nome da aplicação
+    nome_getfy
+
+    ## Mostra mensagem para verificar as informações
+    conferindo_as_info
+
+    ## Informação sobre URL
+    echo -e "\e[33mDominio do Getfy:\e[97m $url_getfy\e[0m"
+    echo ""
+
+    ## Pergunta se as respostas estão corretas
+    read -p "As respostas estão corretas? (Y/N): " confirmacao
+    if [ "$confirmacao" = "Y" ] || [ "$confirmacao" = "y" ]; then
+        clear
+        instalando_msg
+        break
+    else
+        clear
+        nome_getfy
+        preencha_as_info
+    fi
+done
+
+## Mensagem de Passo
+echo -e "\e[97m• INICIANDO A INSTALAÇÃO DO GETFY \e[33m[1/6]\e[0m"
+echo ""
+sleep 1
+
+telemetria Getfy iniciado
+
+## Ativa a função dados para pegar os dados da vps
+dados
+
+## Mensagem de Passo
+echo -e "\e[97m• VERIFICANDO/INSTALANDO MYSQL \e[33m[2/6]\e[0m"
+echo ""
+sleep 1
+
+## Verifica container MySQL e cria banco de dados
+verificar_container_mysql
+if [ $? -eq 0 ]; then
+    echo "1/3 - [ OK ] - MySQL já instalado"
+    pegar_senha_mysql > /dev/null 2>&1
+    echo "2/3 - [ OK ] - Copiando senha do MySQL"
+    criar_banco_mysql_da_stack "getfy${1:+_$1}"
+    echo "3/3 - [ OK ] - Criando banco de dados"
+    echo ""
+else
+    ferramenta_mysql
+    pegar_senha_mysql > /dev/null 2>&1
+    criar_banco_mysql_da_stack "getfy${1:+_$1}"
+fi
+
+## Mensagem de Passo
+echo -e "\e[97m• COMPILANDO IMAGEM GETFY \e[33m[3/6]\e[0m"
+echo ""
+sleep 1
+
+echo "--> Clonando repositório Getfy (https://github.com/getfy-opensource/getfy)..."
+
+## Clona ou atualiza o repositório
+if [ -d "/root/getfy-src${1:+_$1}" ]; then
+    echo "1/2 - [ OK ] - Repositório já existe, atualizando..."
+    git -C /root/getfy-src${1:+_$1} pull --ff-only > /dev/null 2>&1
+else
+    echo "1/2 - [ OK ] - Clonando repositório..."
+    git clone https://github.com/getfy-opensource/getfy /root/getfy-src${1:+_$1} > /dev/null 2>&1
+fi
+
+echo "2/2 - Construindo imagem Docker (pode levar alguns minutos)..."
+docker build -t getfy_app${1:+_$1}:latest /root/getfy-src${1:+_$1} > /dev/null 2>&1
+if [ $? -eq 0 ]; then
+    echo "      [ OK ] - Imagem getfy_app${1:+_$1}:latest criada com sucesso"
+else
+    echo "      [ OFF ] - Erro ao construir imagem Docker do Getfy"
+fi
+
+## Mensagem de Passo
+echo -e "\e[97m• INSTALANDO GETFY \e[33m[4/6]\e[0m"
+echo ""
+sleep 1
+
+## Gera chaves aleatórias
+getfy_app_key=$(openssl rand -base64 32)
+getfy_cron_secret=$(openssl rand -hex 16)
+
+## Criando volumes externos
+docker volume create getfy${1:+_$1}_storage > /dev/null 2>&1
+docker volume create getfy${1:+_$1}_env > /dev/null 2>&1
+docker volume create getfy${1:+_$1}_redis > /dev/null 2>&1
+
+## Criando a stack getfy.yaml
+cat > /root/getfy${1:+_$1}.yaml <<EOL
+version: "3.7"
+services:
+
+## --------------------------- ORION --------------------------- ##
+
+  getfy${1:+_$1}_app:
+    image: getfy_app${1:+_$1}:latest
+
+    volumes:
+      - getfy${1:+_$1}_storage:/var/www/html/storage
+      - getfy${1:+_$1}_env:/var/www/html/vendor/getfy/core
+
+    networks:
+      - $nome_rede_interna
+
+    environment:
+    ## 🌐 URL da aplicação
+      - APP_URL=https://$url_getfy
+      - APP_ENV=production
+      - APP_DEBUG=false
+      - APP_INSTALLED=false
+
+    ## 🗄️ Banco de dados MySQL
+      - DB_CONNECTION=mysql
+      - DB_HOST=mysql_mysql
+      - DB_PORT=3306
+      - DB_DATABASE=getfy${1:+_$1}
+      - DB_USERNAME=root
+      - DB_PASSWORD=$senha_mysql
+
+    ## 🧊 Redis
+      - SESSION_DRIVER=redis
+      - CACHE_DRIVER=redis
+      - QUEUE_CONNECTION=redis
+      - REDIS_HOST=getfy${1:+_$1}_redis
+      - REDIS_PORT=6379
+
+    ## 🔐 Segurança
+      - APP_KEY=base64:$getfy_app_key
+      - CRON_SECRET=$getfy_cron_secret
+
+    ## 🌍 Localização
+      - APP_LOCALE=pt_BR
+      - APP_TIMEZONE=America/Sao_Paulo
+
+    deploy:
+      mode: replicated
+      replicas: 1
+      placement:
+        constraints:
+          - node.role == manager
+      resources:
+        limits:
+          cpus: "1"
+          memory: 512M
+      labels:
+        - traefik.enable=true
+        - traefik.http.routers.getfy${1:+_$1}_app.rule=Host(\`$url_getfy\`)
+        - traefik.http.routers.getfy${1:+_$1}_app.entrypoints=websecure
+        - traefik.http.routers.getfy${1:+_$1}_app.tls.certresolver=letsencryptresolver
+        - traefik.http.routers.getfy${1:+_$1}_app.priority=1
+        - traefik.http.routers.getfy${1:+_$1}_app.service=getfy${1:+_$1}_app
+        - traefik.http.services.getfy${1:+_$1}_app.loadbalancer.server.port=80
+        - traefik.http.services.getfy${1:+_$1}_app.loadbalancer.passHostHeader=true
+        - traefik.http.middlewares.sslheader.headers.customrequestheaders.X-Forwarded-Proto=https
+        - traefik.http.routers.getfy${1:+_$1}_app.middlewares=sslheader
+
+## --------------------------- ORION --------------------------- ##
+
+  getfy${1:+_$1}_queue:
+    image: getfy_app${1:+_$1}:latest
+    command: ["php", "artisan", "queue:work", "--sleep=3", "--tries=3", "--max-time=3600"]
+
+    volumes:
+      - getfy${1:+_$1}_storage:/var/www/html/storage
+      - getfy${1:+_$1}_env:/var/www/html/vendor/getfy/core
+
+    networks:
+      - $nome_rede_interna
+
+    environment:
+    ## 🌐 URL da aplicação
+      - APP_URL=https://$url_getfy
+      - APP_ENV=production
+      - APP_DEBUG=false
+
+    ## 🗄️ Banco de dados MySQL
+      - DB_CONNECTION=mysql
+      - DB_HOST=mysql_mysql
+      - DB_PORT=3306
+      - DB_DATABASE=getfy${1:+_$1}
+      - DB_USERNAME=root
+      - DB_PASSWORD=$senha_mysql
+
+    ## 🧊 Redis
+      - SESSION_DRIVER=redis
+      - CACHE_DRIVER=redis
+      - QUEUE_CONNECTION=redis
+      - REDIS_HOST=getfy${1:+_$1}_redis
+      - REDIS_PORT=6379
+
+    ## 🔐 Segurança
+      - APP_KEY=base64:$getfy_app_key
+      - CRON_SECRET=$getfy_cron_secret
+
+    deploy:
+      mode: replicated
+      replicas: 1
+      placement:
+        constraints:
+          - node.role == manager
+      resources:
+        limits:
+          cpus: "0.5"
+          memory: 256M
+
+## --------------------------- ORION --------------------------- ##
+
+  getfy${1:+_$1}_redis:
+    image: redis:alpine
+    command: ["redis-server", "--appendonly", "yes", "--port", "6379"]
+
+    volumes:
+      - getfy${1:+_$1}_redis:/data
+
+    networks:
+      - $nome_rede_interna
+
+    deploy:
+      placement:
+        constraints:
+          - node.role == manager
+      resources:
+        limits:
+          cpus: "0.5"
+          memory: 128M
+
+## --------------------------- ORION --------------------------- ##
+
+volumes:
+  getfy${1:+_$1}_storage:
+    external: true
+    name: getfy${1:+_$1}_storage
+  getfy${1:+_$1}_env:
+    external: true
+    name: getfy${1:+_$1}_env
+  getfy${1:+_$1}_redis:
+    external: true
+    name: getfy${1:+_$1}_redis
+
+networks:
+  $nome_rede_interna:
+    external: true
+    name: $nome_rede_interna
+EOL
+if [ $? -eq 0 ]; then
+    echo "1/10 - [ OK ] - Criando Stack"
+else
+    echo "1/10 - [ OFF ] - Criando Stack"
+    echo "Não foi possivel criar a stack do Getfy"
+fi
+STACK_NAME="getfy${1:+_$1}"
+stack_editavel # > /dev/null 2>&1
+
+## Mensagem de Passo
+echo -e "\e[97m• VERIFICANDO SERVIÇO \e[33m[5/6]\e[0m"
+echo ""
+sleep 1
+
+## Baixando imagens
+pull redis:alpine
+
+## Usa o serviço wait_stack para verificar se o serviço esta online
+wait_stack getfy${1:+_$1}_getfy${1:+_$1}_redis getfy${1:+_$1}_getfy${1:+_$1}_app getfy${1:+_$1}_getfy${1:+_$1}_queue
+
+telemetria Getfy finalizado
+
+cd dados_vps
+
+cat > dados_getfy${1:+_$1} <<EOL
+[ GETFY CHECKOUT ]
+
+Dominio: https://$url_getfy
+Setup inicial: https://$url_getfy/install
+
+App Key: base64:$getfy_app_key
+Cron Secret: $getfy_cron_secret
+
+Banco MySQL: getfy${1:+_$1}
+EOL
+
+cd
+cd
+
+## Espera 30 segundos
+wait_30_sec
+
+## Mensagem de finalizado
+instalado_msg
+
+## Mensagem de Guarde os Dados
+guarde_os_dados_msg
+
+## Dados da Aplicação:
+echo -e "\e[32m[ GETFY CHECKOUT ]\e[0m"
+echo ""
+echo -e "\e[33mDominio do Getfy:\e[97m https://$url_getfy\e[0m"
+echo ""
+echo -e "\e[33mSetup inicial em:\e[97m https://$url_getfy/install\e[0m"
+echo ""
+echo -e "\e[33mApp Key:\e[97m base64:$getfy_app_key\e[0m"
+echo ""
+echo -e "\e[33mCron Secret:\e[97m $getfy_cron_secret\e[0m"
+
+## Creditos do instalador
+creditos_msg
+
+## Pergunta se deseja instalar outra aplicação
+requisitar_outra_instalacao
+}
+
+## ██████╗██╗  ██╗ █████╗ ████████╗    ██████╗ ██╗   ██╗██╗     ██╗      ██████╗
+##██╔════╝██║  ██║██╔══██╗╚══██╔══╝    ██╔══██╗██║   ██║██║     ██║     ██╔═══██╗
+##██║     ███████║███████║   ██║       ██████╔╝██║   ██║██║     ██║     ██║   ██║
+##██║     ██╔══██║██╔══██║   ██║       ██╔══██╗██║   ██║██║     ██║     ██║▄▄ ██║
+##╚██████╗██║  ██║██║  ██║   ██║       ██████╔╝╚██████╔╝███████╗███████╗╚██████╔╝
+## ╚═════╝╚═╝  ╚═╝╚═╝  ╚═╝   ╚═╝       ╚═════╝  ╚═════╝ ╚══════╝╚══════╝ ╚══▀▀═╝
+
+nome_chatbullq() {
+    clear
+    echo ""
+    echo -e "$branco ██████╗██╗  ██╗ █████╗ ████████╗    ██████╗ ██╗   ██╗██╗     ██╗      ██████╗ \e[0m"
+    echo -e "$branco██╔════╝██║  ██║██╔══██╗╚══██╔══╝    ██╔══██╗██║   ██║██║     ██║     ██╔═══██╗\e[0m"
+    echo -e "$branco██║     ███████║███████║   ██║       ██████╔╝██║   ██║██║     ██║     ██║   ██║\e[0m"
+    echo -e "$branco██║     ██╔══██║██╔══██║   ██║       ██╔══██╗██║   ██║██║     ██║     ██║▄▄ ██║\e[0m"
+    echo -e "$branco╚██████╗██║  ██║██║  ██║   ██║       ██████╔╝╚██████╔╝███████╗███████╗╚██████╔╝\e[0m"
+    echo -e "$branco ╚═════╝╚═╝  ╚═╝╚═╝  ╚═╝   ╚═╝       ╚═════╝  ╚═════╝ ╚══════╝╚══════╝ ╚══▀▀═╝\e[0m"
+    echo -e "$branco                   📱 SaaS Omnichannel — API · Web · MCP                         \e[0m"
+    echo ""
+    echo ""
+}
+
+ferramenta_chatbullq() {
+
+## Verifica os recursos
+recursos 2 4 && continue || return
+
+## Limpa o terminal
+clear
+
+## Ativa a função dados para pegar os dados da vps
+dados
+
+## Mostra o nome da aplicação
+nome_chatbullq
+
+## Mostra mensagem para preencher informações
+preencha_as_info
+
+## Inicia um Loop até os dados estarem certos
+while true; do
+
+    ## Pergunta o domínio do Web
+    echo -e "\e[97mPasso$amarelo 1/4\e[0m"
+    echo -en "\e[33mDigite o Dominio para o Chat BullQ Web (ex: chat.openorion.art.br): \e[0m" && read -r url_chatbullq_web
+    echo ""
+
+    ## Pergunta o domínio da API
+    echo -e "\e[97mPasso$amarelo 2/4\e[0m"
+    echo -en "\e[33mDigite o Dominio para a API do Chat BullQ (ex: api-chat.openorion.art.br): \e[0m" && read -r url_chatbullq_api
+    echo ""
+
+    ## Pergunta o domínio do MCP
+    echo -e "\e[97mPasso$amarelo 3/4\e[0m"
+    echo -en "\e[33mDigite o Dominio para o MCP do Chat BullQ (ex: mcp-chat.openorion.art.br): \e[0m" && read -r url_chatbullq_mcp
+    echo ""
+
+    ## Pergunta a chave da OpenAI (opcional)
+    echo -e "\e[97mPasso$amarelo 4/4\e[0m"
+    echo -e "$amarelo--> Deixe em branco caso não queira usar IA integrada"
+    echo -en "\e[33mDigite sua OpenAI API Key (ex: sk-proj-...): \e[0m" && read -r chatbullq_openai_key
+    echo ""
+
+    ## Limpa o terminal
+    clear
+
+    ## Mostra o nome da aplicação
+    nome_chatbullq
+
+    ## Mostra mensagem para verificar as informações
+    conferindo_as_info
+
+    ## Informação sobre URLs
+    echo -e "\e[33mDominio Web:\e[97m $url_chatbullq_web\e[0m"
+    echo ""
+    echo -e "\e[33mDominio API:\e[97m $url_chatbullq_api\e[0m"
+    echo ""
+    echo -e "\e[33mDominio MCP:\e[97m $url_chatbullq_mcp\e[0m"
+    echo ""
+    echo -e "\e[33mOpenAI Key:\e[97m ${chatbullq_openai_key:-[não informada]}\e[0m"
+    echo ""
+
+    ## Pergunta se as respostas estão corretas
+    read -p "As respostas estão corretas? (Y/N): " confirmacao
+    if [ "$confirmacao" = "Y" ] || [ "$confirmacao" = "y" ]; then
+        clear
+        instalando_msg
+        break
+    else
+        clear
+        nome_chatbullq
+        preencha_as_info
+    fi
+done
+
+## Mensagem de Passo
+echo -e "\e[97m• INICIANDO A INSTALAÇÃO DO CHAT BULLQ \e[33m[1/7]\e[0m"
+echo ""
+sleep 1
+
+telemetria ChatBullQ iniciado
+
+## Ativa a função dados para pegar os dados da vps
+dados
+
+## Mensagem de Passo
+echo -e "\e[97m• VERIFICANDO/INSTALANDO PGVECTOR \e[33m[2/7]\e[0m"
+echo ""
+sleep 1
+
+## Verifica container postgres e cria banco de dados
+verificar_container_pgvector
+if [ $? -eq 0 ]; then
+    echo "1/3 - [ OK ] - PgVector já instalado"
+    pegar_senha_pgvector > /dev/null 2>&1
+    echo "2/3 - [ OK ] - Copiando senha do PgVector"
+    criar_banco_pgvector_da_stack "chatbullq${1:+_$1}"
+    echo "3/3 - [ OK ] - Criando banco de dados"
+    echo ""
+else
+    ferramenta_pgvector
+    pegar_senha_pgvector > /dev/null 2>&1
+    criar_banco_pgvector_da_stack "chatbullq${1:+_$1}"
+fi
+
+## Mensagem de Passo
+echo -e "\e[97m• VERIFICANDO/INSTALANDO MINIO \e[33m[3/7]\e[0m"
+echo ""
+sleep 1
+
+## Verifica se o MinIO já está instalado
+verificar_container_minio
+if [ $? -eq 0 ]; then
+    echo "1/2 - [ OK ] - MinIO já instalado"
+    pegar_senha_minio > /dev/null 2>&1
+    echo "2/2 - [ OK ] - Copiando credenciais do MinIO"
+    echo ""
+else
+    ferramenta_minio
+    pegar_senha_minio > /dev/null 2>&1
+fi
+
+## Mensagem de Passo
+echo -e "\e[97m• COMPILANDO IMAGENS CHAT BULLQ \e[33m[4/7]\e[0m"
+echo ""
+sleep 1
+
+echo "--> Clonando repositórios (API, Web, MCP)..."
+
+## Clone ou atualiza API
+if [ -d "/root/chatbullq-api-src${1:+_$1}" ]; then
+    git -C /root/chatbullq-api-src${1:+_$1} pull --ff-only > /dev/null 2>&1
+else
+    git clone https://github.com/ofcblackhat/chat-bullq-api /root/chatbullq-api-src${1:+_$1} > /dev/null 2>&1
+fi
+
+## Clone ou atualiza Web
+if [ -d "/root/chatbullq-web-src${1:+_$1}" ]; then
+    git -C /root/chatbullq-web-src${1:+_$1} pull --ff-only > /dev/null 2>&1
+else
+    git clone https://github.com/ofcblackhat/chat-bullq-web /root/chatbullq-web-src${1:+_$1} > /dev/null 2>&1
+fi
+
+## Clone ou atualiza MCP
+if [ -d "/root/chatbullq-mcp-src${1:+_$1}" ]; then
+    git -C /root/chatbullq-mcp-src${1:+_$1} pull --ff-only > /dev/null 2>&1
+else
+    git clone https://github.com/ofcblackhat/chat-bullq-mcp /root/chatbullq-mcp-src${1:+_$1} > /dev/null 2>&1
+fi
+
+echo "1/3 - [ OK ] - Repositórios clonados"
+
+## Build da API
+echo "--> Construindo imagem da API (NestJS + Prisma)..."
+docker build -t chatbullq_api${1:+_$1}:latest /root/chatbullq-api-src${1:+_$1} > /dev/null 2>&1
+if [ $? -eq 0 ]; then
+    echo "2/3 - [ OK ] - Imagem chatbullq_api${1:+_$1}:latest criada"
+else
+    echo "2/3 - [ OFF ] - Erro ao construir imagem da API"
+fi
+
+## Build do Web (passa NEXT_PUBLIC_API_URL como build arg)
+echo "--> Construindo imagem do Web (Next.js)..."
+docker build \
+  --build-arg NEXT_PUBLIC_API_URL=https://$url_chatbullq_api \
+  -t chatbullq_web${1:+_$1}:latest \
+  /root/chatbullq-web-src${1:+_$1} > /dev/null 2>&1
+if [ $? -eq 0 ]; then
+    echo "2/3 - [ OK ] - Imagem chatbullq_web${1:+_$1}:latest criada"
+else
+    echo "2/3 - [ OFF ] - Erro ao construir imagem do Web"
+fi
+
+## Build do MCP
+echo "--> Construindo imagem do MCP (TypeScript)..."
+docker build -t chatbullq_mcp${1:+_$1}:latest /root/chatbullq-mcp-src${1:+_$1} > /dev/null 2>&1
+if [ $? -eq 0 ]; then
+    echo "3/3 - [ OK ] - Imagem chatbullq_mcp${1:+_$1}:latest criada"
+else
+    echo "3/3 - [ OFF ] - Erro ao construir imagem do MCP"
+fi
+
+## Mensagem de Passo
+echo -e "\e[97m• INSTALANDO CHAT BULLQ \e[33m[5/7]\e[0m"
+echo ""
+sleep 1
+
+## Gera segredos JWT
+chatbullq_jwt_secret=$(openssl rand -hex 32)
+chatbullq_jwt_refresh_secret=$(openssl rand -hex 32)
+
+## Criando volumes externos
+docker volume create chatbullq${1:+_$1}_redis > /dev/null 2>&1
+
+## Criando a stack chatbullq.yaml
+cat > /root/chatbullq${1:+_$1}.yaml <<EOL
+version: "3.7"
+services:
+
+## --------------------------- ORION --------------------------- ##
+
+  chatbullq${1:+_$1}_api:
+    image: chatbullq_api${1:+_$1}:latest
+
+    networks:
+      - $nome_rede_interna
+
+    environment:
+    ## ⚙️ Node
+      - NODE_ENV=production
+      - PORT=3001
+
+    ## 🗄️ PostgreSQL
+      - DATABASE_URL=postgresql://postgres:$senha_pgvector@pgvector:5432/chatbullq${1:+_$1}
+
+    ## 🔐 JWT
+      - JWT_SECRET=$chatbullq_jwt_secret
+      - JWT_EXPIRATION=15m
+      - JWT_REFRESH_SECRET=$chatbullq_jwt_refresh_secret
+      - JWT_REFRESH_EXPIRATION=7d
+
+    ## 🧊 Redis
+      - REDIS_HOST=chatbullq${1:+_$1}_redis
+      - REDIS_PORT=6379
+
+    ## 🌍 CORS
+      - CORS_ORIGIN=https://$url_chatbullq_web
+
+    ## 📦 MinIO (Storage S3)
+      - MINIO_ENDPOINT=$url_s3
+      - MINIO_PORT=443
+      - MINIO_USE_SSL=true
+      - MINIO_ACCESS_KEY=$user_minio
+      - MINIO_SECRET_KEY=$senha_minio
+      - MINIO_BUCKET=chatbullq${1:+_$1}
+
+    ## 🤖 OpenAI (opcional)
+      - OPENAI_API_KEY=${chatbullq_openai_key}
+
+    ## 📧 Notificações Push VAPID (preencha após instalar)
+      - VAPID_SUBJECT=mailto:admin@$url_chatbullq_web
+
+    deploy:
+      mode: replicated
+      replicas: 1
+      placement:
+        constraints:
+          - node.role == manager
+      resources:
+        limits:
+          cpus: "1"
+          memory: 512M
+      labels:
+        - traefik.enable=true
+        - traefik.http.routers.chatbullq${1:+_$1}_api.rule=Host(\`$url_chatbullq_api\`)
+        - traefik.http.routers.chatbullq${1:+_$1}_api.entrypoints=websecure
+        - traefik.http.routers.chatbullq${1:+_$1}_api.tls.certresolver=letsencryptresolver
+        - traefik.http.routers.chatbullq${1:+_$1}_api.priority=1
+        - traefik.http.routers.chatbullq${1:+_$1}_api.service=chatbullq${1:+_$1}_api
+        - traefik.http.services.chatbullq${1:+_$1}_api.loadbalancer.server.port=3001
+        - traefik.http.services.chatbullq${1:+_$1}_api.loadbalancer.passHostHeader=true
+        - traefik.http.middlewares.sslheader.headers.customrequestheaders.X-Forwarded-Proto=https
+        - traefik.http.routers.chatbullq${1:+_$1}_api.middlewares=sslheader
+
+## --------------------------- ORION --------------------------- ##
+
+  chatbullq${1:+_$1}_web:
+    image: chatbullq_web${1:+_$1}:latest
+
+    networks:
+      - $nome_rede_interna
+
+    environment:
+    ## 🌐 URL pública da API (baked no build — reconstruir se mudar)
+      - NEXT_PUBLIC_API_URL=https://$url_chatbullq_api
+
+    deploy:
+      mode: replicated
+      replicas: 1
+      placement:
+        constraints:
+          - node.role == manager
+      resources:
+        limits:
+          cpus: "0.5"
+          memory: 512M
+      labels:
+        - traefik.enable=true
+        - traefik.http.routers.chatbullq${1:+_$1}_web.rule=Host(\`$url_chatbullq_web\`)
+        - traefik.http.routers.chatbullq${1:+_$1}_web.entrypoints=websecure
+        - traefik.http.routers.chatbullq${1:+_$1}_web.tls.certresolver=letsencryptresolver
+        - traefik.http.routers.chatbullq${1:+_$1}_web.priority=1
+        - traefik.http.routers.chatbullq${1:+_$1}_web.service=chatbullq${1:+_$1}_web
+        - traefik.http.services.chatbullq${1:+_$1}_web.loadbalancer.server.port=3000
+        - traefik.http.services.chatbullq${1:+_$1}_web.loadbalancer.passHostHeader=true
+        - traefik.http.middlewares.sslheader.headers.customrequestheaders.X-Forwarded-Proto=https
+        - traefik.http.routers.chatbullq${1:+_$1}_web.middlewares=sslheader
+
+## --------------------------- ORION --------------------------- ##
+
+  chatbullq${1:+_$1}_mcp:
+    image: chatbullq_mcp${1:+_$1}:latest
+
+    networks:
+      - $nome_rede_interna
+
+    environment:
+    ## ⚙️ Node
+      - NODE_ENV=production
+      - PORT=3110
+
+    ## 🔗 URL interna da API
+      - CHAT_BULLQ_API_URL=http://chatbullq${1:+_$1}_api:3001
+
+    deploy:
+      mode: replicated
+      replicas: 1
+      placement:
+        constraints:
+          - node.role == manager
+      resources:
+        limits:
+          cpus: "0.25"
+          memory: 128M
+      labels:
+        - traefik.enable=true
+        - traefik.http.routers.chatbullq${1:+_$1}_mcp.rule=Host(\`$url_chatbullq_mcp\`)
+        - traefik.http.routers.chatbullq${1:+_$1}_mcp.entrypoints=websecure
+        - traefik.http.routers.chatbullq${1:+_$1}_mcp.tls.certresolver=letsencryptresolver
+        - traefik.http.routers.chatbullq${1:+_$1}_mcp.priority=1
+        - traefik.http.routers.chatbullq${1:+_$1}_mcp.service=chatbullq${1:+_$1}_mcp
+        - traefik.http.services.chatbullq${1:+_$1}_mcp.loadbalancer.server.port=3110
+        - traefik.http.services.chatbullq${1:+_$1}_mcp.loadbalancer.passHostHeader=true
+        - traefik.http.middlewares.sslheader.headers.customrequestheaders.X-Forwarded-Proto=https
+        - traefik.http.routers.chatbullq${1:+_$1}_mcp.middlewares=sslheader
+
+## --------------------------- ORION --------------------------- ##
+
+  chatbullq${1:+_$1}_redis:
+    image: redis:alpine
+    command: ["redis-server", "--appendonly", "yes", "--port", "6379"]
+
+    volumes:
+      - chatbullq${1:+_$1}_redis:/data
+
+    networks:
+      - $nome_rede_interna
+
+    deploy:
+      placement:
+        constraints:
+          - node.role == manager
+      resources:
+        limits:
+          cpus: "0.5"
+          memory: 128M
+
+## --------------------------- ORION --------------------------- ##
+
+volumes:
+  chatbullq${1:+_$1}_redis:
+    external: true
+    name: chatbullq${1:+_$1}_redis
+
+networks:
+  $nome_rede_interna:
+    external: true
+    name: $nome_rede_interna
+EOL
+if [ $? -eq 0 ]; then
+    echo "1/10 - [ OK ] - Criando Stack"
+else
+    echo "1/10 - [ OFF ] - Criando Stack"
+    echo "Não foi possivel criar a stack do Chat BullQ"
+fi
+STACK_NAME="chatbullq${1:+_$1}"
+stack_editavel # > /dev/null 2>&1
+
+## Mensagem de Passo
+echo -e "\e[97m• VERIFICANDO SERVIÇO \e[33m[6/7]\e[0m"
+echo ""
+sleep 1
+
+## Baixando imagens de suporte
+pull redis:alpine
+
+## Usa o serviço wait_stack para verificar se o serviço esta online
+wait_stack chatbullq${1:+_$1}_chatbullq${1:+_$1}_redis chatbullq${1:+_$1}_chatbullq${1:+_$1}_api chatbullq${1:+_$1}_chatbullq${1:+_$1}_web chatbullq${1:+_$1}_chatbullq${1:+_$1}_mcp
+
+telemetria ChatBullQ finalizado
+
+cd dados_vps
+
+cat > dados_chatbullq${1:+_$1} <<EOL
+[ CHAT BULLQ OMNICHANNEL ]
+
+Web:  https://$url_chatbullq_web
+API:  https://$url_chatbullq_api
+MCP:  https://$url_chatbullq_mcp
+
+JWT Secret:         $chatbullq_jwt_secret
+JWT Refresh Secret: $chatbullq_jwt_refresh_secret
+
+Banco PostgreSQL: chatbullq${1:+_$1}
+MinIO Bucket:     chatbullq${1:+_$1}
+EOL
+
+cd
+cd
+
+## Espera 30 segundos
+wait_30_sec
+
+## Mensagem de finalizado
+instalado_msg
+
+## Mensagem de Guarde os Dados
+guarde_os_dados_msg
+
+## Dados da Aplicação:
+echo -e "\e[32m[ CHAT BULLQ OMNICHANNEL ]\e[0m"
+echo ""
+echo -e "\e[33mApp Web:\e[97m https://$url_chatbullq_web\e[0m"
+echo ""
+echo -e "\e[33mAPI:\e[97m https://$url_chatbullq_api\e[0m"
+echo ""
+echo -e "\e[33mMCP:\e[97m https://$url_chatbullq_mcp\e[0m"
+echo ""
+echo -e "\e[33mJWT Secret:\e[97m $chatbullq_jwt_secret\e[0m"
+echo ""
+echo -e "\e[33mJWT Refresh:\e[97m $chatbullq_jwt_refresh_secret\e[0m"
+echo ""
+echo -e "\e[33mMinIO Bucket:\e[97m chatbullq${1:+_$1}\e[0m"
+
+## Creditos do instalador
+creditos_msg
+
+## Pergunta se deseja instalar outra aplicação
+requisitar_outra_instalacao
+}
+
 ## ███╗   ███╗ ██████╗██████╗     ███╗   ██╗ █████╗ ███╗   ██╗
 ## ████╗ ████║██╔════╝██╔══██╗    ████╗  ██║██╔══██╗████╗  ██║
 ## ██╔████╔██║██║     ██████╔╝    ██╔██╗ ██║╚█████╔╝██╔██╗ ██║
@@ -45885,6 +46710,40 @@ while true; do
         ##    fi   
         ##    ;;
 
+        99|getfy|GETFY)
+
+            verificar_stack "getfy${opcao2:+_$opcao2}" && continue || echo ""
+
+            if verificar_docker_e_portainer_traefik; then
+                ## INICIO TOKEN
+                STACK_NAME="getfy${opcao2:+_$opcao2}"
+                if grep -q "Token: .\+" /root/dados_vps/dados_portainer; then
+                    ferramenta_getfy "$opcao2"
+                else
+                    APP_ORION="ferramenta_getfy"
+                    ferramenta_getfy
+                fi
+                ## FIM TOKEN
+            fi
+            ;;
+
+        100|chatbullq|CHATBULLQ)
+
+            verificar_stack "chatbullq${opcao2:+_$opcao2}" && continue || echo ""
+
+            if verificar_docker_e_portainer_traefik; then
+                ## INICIO TOKEN
+                STACK_NAME="chatbullq${opcao2:+_$opcao2}"
+                if grep -q "Token: .\+" /root/dados_vps/dados_portainer; then
+                    ferramenta_chatbullq "$opcao2"
+                else
+                    APP_ORION="ferramenta_chatbullq"
+                    ferramenta_chatbullq
+                fi
+                ## FIM TOKEN
+            fi
+            ;;
+
         sair|fechar|exit|close|x)
             clear
             nome_saindo
@@ -45897,7 +46756,7 @@ while true; do
         ##
         ##        ferramenta_remover_stack
         ##
-        ##    fi   
+        ##    fi
         ##    ;;
 
         sair|fechar|exit|close|x)
