@@ -42587,6 +42587,7 @@ if [ $? -eq 0 ]; then
     echo ""
 else
     ferramenta_mysql
+    cd /root/ > /dev/null 2>&1
     pegar_senha_mysql > /dev/null 2>&1
     criar_banco_mysql_da_stack "getfy${1:+_$1}"
 fi
@@ -42972,6 +42973,7 @@ if [ $? -eq 0 ]; then
     echo ""
 else
     ferramenta_pgvector
+    cd /root/ > /dev/null 2>&1
     pegar_senha_pgvector > /dev/null 2>&1
     criar_banco_pgvector_da_stack "chatbullq${1:+_$1}"
 fi
@@ -42990,6 +42992,7 @@ if [ $? -eq 0 ]; then
     echo ""
 else
     ferramenta_minio
+    cd /root/ > /dev/null 2>&1
     pegar_senha_minio > /dev/null 2>&1
 fi
 
