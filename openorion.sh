@@ -3396,8 +3396,8 @@ criar_banco_postgres_da_stack() {
 ## Criar banco PgVector
 criar_banco_pgvector_da_stack() {
     while :; do
-        if docker ps -q --filter "name=^pgvector_pgvector" | grep -q .; then
-            CONTAINER_PGVECTOR_ID=$(docker ps -q --filter "name=^pgvector_pgvector")
+        if docker ps -q --filter "name=pgvector_pgvector.1" | grep -q .; then
+            CONTAINER_PGVECTOR_ID=$(docker ps -q --filter "name=pgvector_pgvector.1")
 
             # Verificar se o banco de dados já existe
             docker exec "$CONTAINER_PGVECTOR_ID" psql -U postgres -lqt | cut -d \| -f 1 | grep -qw "$1"
@@ -3443,8 +3443,8 @@ criar_banco_pgvector_da_stack() {
 ## Criar banco MySQL
 criar_banco_mysql_da_stack() {
     while :; do
-        if docker ps -q --filter "name=^mysql_mysql" | grep -q .; then
-            CONTAINER_ID=$(docker ps -q --filter "name=^mysql_mysql")
+        if docker ps -q --filter "name=mysql_mysql.1" | grep -q .; then
+            CONTAINER_ID=$(docker ps -q --filter "name=mysql_mysql.1")
 
             # Verificar se o banco de dados já existe
             docker exec -e MYSQL_PWD="$senha_mysql" "$CONTAINER_ID" mysql -u root \
